@@ -118,42 +118,267 @@ Is it possible to define it for finite $N$?
 \section{RG equation for continuum limit}
 
 In this section, I review the RG method proposed in 
-\urlref{https://arxiv.org/abs/hep-th/9206035}{Brezin92}.
+\urlref{https://arxiv.org/abs/hep-th/9206035}{BZ92}.
 This is proposed as another way to find the critical point of continuum limit,
 so $N\to\infty$ is imposed in the calculation.
 They use an even potential as example $V(\lambda)=\frac{1}{2}\lambda^2+\frac{g}{4}\lambda^4$,
 whose critical point is $g_*=-\frac{1}{12}<0$.
-It's hard to make sense of the matrix integral with $g<0$.
+It's hard to make sense of the matrix integral with $g<0$, so it should be understood as analytic continuation.
 
-Another point I want to remark.
-The direction of the flow is $N\to N-1$ which is opposite to the continuum limit $N\to\infty$. 
-If the RG flow is interpreted as a result of coarse-graining,
-it's impossible to reverse the flow.
-Then how to argue that this method will give us information about the continuum limit?
-
-I try to understand this point.
-A matrix model defines by itself a sequence of models in terms of $N$.
-By studying how the model behaves as $N\to\infty$, one finds scaling of $Z$ around certain coupling $g_*$.
-However, there are other way to get a sequence of models:
-given a $N\times N$ matrix, there are various way to embed it into a $(N+1)\times(N+1)$ matrix
-or map a $(N+1)\times(N+1)$ matrix to a $N\times N$ matrix.
-Then the action can be induced on the smaller matrices.
-Although such a sequence must be ad hoc, especially when considering the matrix model action work for all $N$. 
-However, it's natural to believe that the continuum limit should be independent of how the sequence defined.
-In other word, starting from $N$-model, the induced $N-1$-models are different,
-but the difference should tend to zero when $N\to\infty$.
-I'm not sure to what extent we should believe this.
+How does this method give the critical point?
+The critical point is defined as the point at where the matrix model free energy$Z_N(g)$ has a scaling law.
+Then this scaling law is formulated as a Callan-Symanzik like equation
+\[
+	\left[N \frac{\partial}{\partial N}- \beta(g)\frac{\partial}{\partial g}+\gamma(g)\right]Z_N(g) = r(g)
+.\]
+At the fix point $\beta(g_*)=0$, the scaling law can be recovered.
+Such an equation will arise from the RG calculation, from which one could obtain the functions $\beta(g),\gamma(g),r(g)$.
+Then one can find the point $g_*$ where the free energy exhibits proper scaling law.
 
 Another point is that
 an RG method could allow us to study more general matrix models,
 especially those without an eigenvalue representation.
 This application of the RG method appears in
-\urlref{https://arxiv.org/abs/1306.3019}{Kawamoto13}
+\urlref{https://arxiv.org/abs/1306.3019}{KT13}
 in which the ``Yang-Mills two-matrices model'' is studied.
 This model is characterized by a term $[A_1,A_2]^2$ in the action.
 Such a term can arise from the Yang-Mills Lagrangian $F^2=(\mathrm{d}A)^2$ by ignoring the derivative terms.
 The gauge group of this model is $U(N)$.
-Until now, this is the only paper I find that using RG method to study multi-matrices model.
+
+\subsection{simpler example: the vector model}
+Integration could be studied using an RG spirit method,
+which is similar to the Wilson's RG scheme.
+However, there is no natural notion of energy associated with the integral.
+
+Let's take the ``$O(N)$ vector model'' as the example
+\urlref{https://arxiv.org/abs/1410.1635}{Zinn14}
+\begin{equation}
+	\mathrm{e}^{Z_N} = \left(\frac{N}{2\pi}\right)^{N / 2} \int \mathrm{d}^N \mathbf{x} \mathrm{e}^{-N V(\mathbf{x}^2)}
+.\end{equation}
+The normalization is chosen to normalize a Gaussian integral.
+The factor $N$ before $V(\mathbf{x}^2)$ gives a ``dimension'' of $V$ under the scaling of $N$.
+To implement the changing of $N$, one calculates $Z_{N+1}$ by integrating out one component of the vector $\mathbf{x}$
+\begin{equation}
+	\mathrm{e}^{Z_{N+1}} = \left(\frac{N+1}{2\pi}\right)^{(N+1)/2} \int \mathrm{d}^N \mathbf{x} \int \mathrm{d} y \mathrm{e}^{-(N+1) V(\mathbf{x}^2 + y^2)}
+\end{equation}
+It's impossible to integrate out $y$ exactly in general,
+so one may use the saddle point approximation.
+For a generic $\mathbf{x}$, the integrand $\mathrm{e}^{-(N+1)V(\mathbf{x}^2 + y^2)}$ is localized at the critical value of $y$ when $N\to\infty$.
+To the leading order, assuming that the saddle point is at $y=0$,the approximation gives \[
+	\mathrm{e}^{Z_{N+1}} = \left(\frac{N+1}{2\pi}\right)^{N / 2} \int \mathrm{d}^N \mathbf{x} \mathrm{e}^{-(N+1)V(\mathbf{x}) - \frac{1}{2} \ln 2 V'(\mathbf{x}^2)} \left(1 + O(\frac{1}{N})\right)
+.\] 
+It should be noted that the saddle point approximation fail when $V'(\mathbf{x}^2) = 0$.
+The Gaussian potential $V(\mathbf{x}^2) = (1 /2) \mathbf{x}^2$ will give $ V'(\mathbf{x}^2) = 1 /2$.
+In this case, the leading order vanishes.
+
+It's not clear to what extent the subleading corrections will modify the scaling around the critical point;
+however, I guess they are not very important if the critical point by itself requires $N\to\infty$
+(similar to the fact that phase transition requires thermodynamic limit).
+Due to various methods to solve $N\to\infty$ model, it deserves study;
+however, is it possible to obtain a matrix model that has scaling covariance for all $N$?
+This is a stringent requirement,
+but there is example of matrix model that is independent of $N$.
+For example, see the discussion of the Kontsevich integral in
+\urlref{https://arxiv.org/abs/hep-th/9303139}{Morozov94}
+below the equation (3.70).
+
+Come back to the discussion of the vector model.
+The change $N\to N+1 $ induces a change in $\mathbf{x}$ and $V$
+\begin{align}
+	\mathbf{x} \to \mathbf{x} \left(1- \frac{1}{2N}(1+\gamma)\right),\\
+	V \to V + \delta V
+\end{align}
+such that the partition function scales as
+\begin{equation}
+	Z_{N+1}(V) = -\frac{1}{2} \gamma + Z_N(V+\delta V) + O(\frac{1}{N})
+\end{equation}
+The $-\frac{1}{2}\gamma$ term comes form the scaling of the integration measure $\mathrm{d}^N \mathbf{x}$.
+The $V+\delta V$ comes from the integration over $y$, also the scaling of $\mathbf{x}$
+\[
+N \delta V (\rho) = V(\rho) - (1+\gamma) \rho V'(\rho) + \frac{1}{2} \ln 2 V'(\rho) + O(\frac{1}{N})
+.\] 
+the $\rho$ is a shorthand notation for $\mathbf{x}^2$.
+The differential equation for the deformation of $V$ along the RG flow reads then
+\begin{equation}
+	\lambda \frac{\mathrm{d}}{\mathrm{d} \lambda} V(\rho,\lambda) = V(\rho,\lambda) - \left(1+\gamma(\lambda)\right) \rho V'(\rho,\lambda) + \frac{1}{2} \ln 2V'(\rho,\lambda)
+\end{equation}
+where $\lambda$ is a continuous parameter $N\to \lambda N$.
+Note that $\gamma$ is assumed to depend on $N$.
+
+
+$V(\rho) = \frac{1}{2} \rho$ is a fix point with $\gamma=0$, the Gaussian fixed point.
+It's not obvious in general how to solve the fix point equation due to the non-linear term $\ln V'$.
+One possible solution is
+\[
+V(\rho) = \frac{1}{2} \ln \rho
+.\] 
+with $\gamma=-1$ such that the second term vanish.
+If plugging this back to the integral, one finds the integrand is $\rho^{- N / 2}$.
+This cancels with the radius measure in spherical coordinate.
+Therefore, this potential corresponds to a trivial vector model.
+
+In general, it turns out that it's easier to solve the equation for $V'$.
+Actually, if one define a function $R(\rho)$
+\[
+R(\rho) \equiv \frac{1}{2 V'(\rho)}
+.\] 
+Then the fix point equation will simply be
+\begin{equation}
+	\gamma R + R R' - (1 + \gamma) \rho R' = 0
+\end{equation}
+The $\gamma = -1$ case gives $R'=1$, which corresponding to the solution $V(\rho)=\frac{1}{2}\ln\rho$.
+Then how to obtain the solution of, for example $\gamma=-2$?
+
+Note that the finite scaling of $\mathbf{x}$ is
+\[
+\mathbf{x} \to \mathbf{x} \left(1 + \frac{1 + \gamma}{2} \ln \lambda\right)
+.\] 
+Instead of power of $\lambda$, it scales as $\ln \lambda$.
+
+\subsection{a matrix integral calulation}
+Similar calculation is done in the following references: ...
+I'll present a slightly different method which is natural to consider.
+
+
+The model under consideration is the one-matrix $\phi^4$ model
+\begin{equation}
+    \zeta_N(g) = \int \mathrm{d}\phi_N \mathrm{exp}(-S_N[\phi_N,g]),
+\end{equation}
+with an action
+\begin{equation}
+    S_N[\phi_N,g] = \mathrm{Tr} (\frac{1}{2}\phi_N^2 + \frac{g}{4}\phi_N^4).
+\end{equation}
+
+Start with the rank $N+1$ model, and decomposing the matrix $\phi_{N+1}$ as
+\begin{equation}
+    \phi_{N+1} = \begin{pmatrix}
+\phi_N & v\\ 
+ v^\dagger & \alpha
+\end{pmatrix}.
+\end{equation}
+Then the action can be expanded as
+\begin{align}
+	S_{N+1}[\phi_{N+1},g] = &\mathrm{Tr}\left( \frac{1}{2}\phi_N^2+\frac{g}{4}\phi_N^4\right) + v^\dagger v + \frac{1}{2}\alpha^2 \notag \\
+	&+ g\left( v^\dagger \phi_N^2 v + \alpha v^\dagger \phi_N v + \alpha^2v^\dagger v + \frac{1}{2}(v^\dagger v)^2 + \frac{1}{4}\alpha^4\right ).
+\end{align}
+Now the trace is over $N\times N$ matrix.
+
+Recall that the matrix model is $U(N)$-invariant;
+it may be useful to first gauge away some variables in $v,a$.
+Let's consider how the gauge transformation acting on $\phi_N, v$ and $a$.
+The infinitesimal transformation reads
+\begin{align}
+    \delta_t\phi_N &= i (vt^\dagger - tv^\dagger) \notag\\
+	\delta_t v &= i(\phi_N - \alpha\mathds{1})t\notag\\
+\delta_t v^\dagger &= it^\dagger (\alpha\mathds{1}-\phi_N) \notag\\
+\delta_t \alpha &= i(v^\dagger t - t^\dagger v)
+\end{align}
+where $t$ ($N\times 1$ vector) is the components of the following generator
+\[
+ T = \begin{pmatrix}
+	 0 & t \\
+	 t^\dagger & 0
+ \end{pmatrix}
+.\] 
+It's possible to choose $t$ to gauge away $v$ if $\phi_N - \alpha \mathds{1}$ is not degenerate.
+So let's impose the gauge fixing condition as $v=0,v^\dagger=0$.
+
+How to implement this condition in the integral?
+Essentially what we should do is to change the integration variable from $v$ to $t$.
+$t$ is understood as the parameter for the coset $U(N+1)/U(N)$ through exponent.
+Around infinitesimal neighbour of $v=0$, $v(t)$ is a linear function given by the infinitesimal gauge transformation
+\[
+	v(t) = - i (\phi_N -\alpha \mathds{1})t
+.\] 
+Then the ``coordinate transformation'' will give a Jacobian that is proportional to $\mathrm{det} (\phi_N - \alpha \mathds{1})$.
+The same factor will be obtained from $v^\dagger$.
+Therefore we get
+\[\left[\mathrm{det}(\phi_N - \alpha \mathds{1})\right]^2\]
+in the integrand, which can be re-exponentiate to give a term in the action
+\begin{equation}
+    S_{N+1}[\phi_{N+1},g] = \mathrm{Tr}\left( \frac{1}{2}\phi_N^2+\frac{g}{4}\phi_N^4\right) + \frac{1}{2}\alpha^2 +  \frac{g}{4}\alpha^4 - 2 \mathrm{Tr} \mathrm{ln}(\phi_N - \alpha \mathds{1}).
+\end{equation}
+Note that this formula is equivalent to the eigenvalue representation if we diagonalize $\phi_N$.
+
+However, the above calculation based on the linearized version of gauge transformation.
+The full gauge transformation is more complicate.
+We can proceed as following.
+Consider a $(N+1)\times (N+1)$-matrix $\phi_{N+1}(\phi_N,0,a)$ with $v=0$.
+Then do a gauge transformation, parameterized by $t$, on this matrix $\phi_{N+1}\to \tilde{\phi}_{N+1} = U(t) \phi_{N+1} U^\dagger(t)$.
+The idea is that the integration over $\tilde{\phi}_{N+1}$ can be replaced with an integration over $\phi_{N+1}$ and $t$,
+with a proper Jacobian that taking into account the functional dependence $\tilde{\phi}_{N+1}(\phi_{N+1},t)$.
+In the exponent, because of the gauge invariance, one can replace $\tilde{\phi}$ directly with $\phi$.
+To write down the Jacobian, one needs to solve for the $\tilde{v}(t)$, which is fixed by the condition $v=0$.
+It turns out that the $t$-dependence of the Jacobian can be factorized out, so the $t$-integral can be performed independently.
+This factorization property also implies that the linearized result giving the exact Jacobian for the $\phi$ factor,
+although we don't know the $t$-factor.
+
+In summary, we have
+\begin{equation}
+	\int \mathrm{d}\phi_N \mathrm{d}\alpha  [\mathrm{det}(\phi_N-\alpha\mathds{1})]^2 \mathrm{e}^{-\frac{1}{2}\alpha^2 - \frac{g}{4}\alpha^4-S_N[\phi_N,g]}
+\end{equation}
+or
+\begin{equation}
+	\int \mathrm{d} \phi_N \mathrm{d}\alpha \mathrm{e}^{-\frac{1}{2} \alpha^2 - \frac{g}{4}\alpha^4 - S_N[\phi_N,g] + 2 \mathrm{Tr}\ln (\phi_N - \alpha \mathds{1})} 
+\end{equation}
+The $\alpha$ integral is difficult to understand.
+But I try to study it as follows.
+
+The determinant is a characteristic polynomial $\mathrm{det}( \alpha\mathds{1} - \phi_N)\equiv p_N (\alpha)$ of $\phi_N$ in $\alpha$ with coefficients given by the following formula
+\begin{equation}
+    p_N (\alpha) = \sum_{k=0}^N \alpha^{N-k}(-1)^k \mathrm{Tr} \left(\wedge^k \phi_N \right),
+\end{equation}
+with
+\[\mathrm{Tr} \left(\wedge^k \phi \right) = \frac{1}{k!}\mathrm{det}\begin{vmatrix}
+\mathrm{Tr} \phi & k-1 & 0 & \cdots & 0\\ 
+\mathrm{Tr} \phi^2 & \mathrm{Tr} \phi & k-2 & \cdots & 0 \\ 
+\vdots & \vdots & \ddots  &  &\vdots \\ 
+\mathrm{Tr} \phi^{k-1} & \mathrm{Tr} \phi^{k-2} &  & \ddots  & 1\\ 
+\mathrm{Tr} \phi^k & \mathrm{Tr} \phi^{k-1} & \mathrm{Tr} \phi^{k-2} & \cdots & \mathrm{Tr} \phi
+\end{vmatrix}\]
+The leading term of $p_N(\alpha)$ is $\alpha^N$, and the last term is $(-1)^N \mathrm{det}\phi_N$. Also, let's write down first few terms to get a feeling
+\[p_N(\alpha) = \alpha^N - \alpha^{N-1}\mathrm{Tr}\phi + \frac{1}{2}\alpha^{N-2}\left[(\mathrm{Tr} \phi)^2 - \mathrm{Tr} \phi^2\right] - \frac{1}{6}\alpha^{N-3}\left[(\mathrm{Tr}\phi)^3 - 3\mathrm{Tr}\phi \mathrm{Tr}\phi^2 + \mathrm{Tr}\phi^3\right] + \cdots\]
+If we square it as in the integrand, we get
+\begin{align}
+	p_N^2(\alpha) =& \alpha^{2N} - 2 \alpha^{2N-1} \mathrm{Tr}\phi + \alpha^{2N-2}\left[2(\mathrm{Tr}\phi)^2 - \mathrm{Tr} \phi^2 \right] \notag\\
+				   & -\alpha^{2N-3} \left[\frac{4}{3}(\mathrm{Tr}\phi)^3 -2 (\mathrm{Tr}\phi)(\mathrm{Tr}\phi^2) + \frac{1}{3}\mathrm{Tr}\phi^3\right] \cdots
+\end{align}
+One can only consider even terms if the potential is even.
+For each term, $\alpha$ is decoupled from $\phi$, therefore can be integrated out.
+
+To simpilfy the result, the following equation maybe useful
+\begin{align}
+	2\left\langle \mathrm{Tr}\phi^2 \right\rangle + \left\langle (\mathrm{Tr}\phi)^2 \right\rangle &= \left\langle \mathrm{Tr}(\phi^4 + g \phi^6) \right\rangle \notag\\
+	2\left\langle \mathrm{Tr}\phi^3 \right\rangle + 2\left\langle (\mathrm{Tr}\phi)(\mathrm{Tr}\phi^2) \right\rangle &= \left\langle \mathrm{Tr}(\phi^5 + g \phi^7) \right\rangle
+\end{align}
+The $\langle \rangle$ indicates the matrix integral.
+These equations follow from changing the integral variable $\phi \to \phi + \epsilon \phi^{3,4}$, with infinitesimal $\epsilon$.
+The left hand side comes from the change of measure; while the right hand side follows from the change of the action.
+For example, the $\alpha^{2N-2}$ term becomes
+\[
+	\alpha^{2N-2}\left[\mathrm{Tr}(-5\phi^2 + 2\phi^4 + 2g\phi^6)\right]
+.\] 
+
+As for the integration over $\alpha$
+\[
+	\int (\mathrm{d}\alpha) \alpha^{2N - k} \mathrm{e}^{- \frac{1}{2} \alpha^2 - \frac{g}{4} \alpha^4}
+.\] 
+The same trick allows us to derive that
+\[
+	(2N-k) \langle \alpha^{2N-k-1}\rangle = \langle \alpha^{2N-k + 1} \rangle + g \langle \alpha^{2N-k+3} \rangle
+.\] 
+For example $k=1$
+\[
+	\langle \alpha^{2N-2} \rangle = \frac{1}{2N-1} (\langle \alpha^{2N} \rangle + g \langle \alpha^{2N+2}\rangle)
+.\] 
+$k=3$
+\[
+	\langle \alpha^{2N-4} \rangle = \frac{1}{2N-3}(\langle \alpha^{2N-2} \rangle + g \langle \alpha^{2N} \rangle)
+.\] 
+For small $g$, it's reasonable that we only keep the $\alpha^{2N},\alpha^{2N-2}$ terms in large $N$ limit.
+For a general $g$, it's not clear that whether or not $\alpha^{2N-2},\alpha^{2N-4}$ are in the same order or not.
+
+\subsection{confusing remarks on RG flow}
 
 Intuition of RG flow starts from statistical model, 
 but is also applied in studying various QFT. 
@@ -182,4 +407,11 @@ A difference maybe, one doesn't think the cut-off scale is physical in QFT, but 
 Fortunately, RG flow method doesn't care this philosophical aspect of that scale, but just ask what happens if a coarse-graining procedure taking us from one scale to a nearby another scale. 
 Moreover, if there exist a fixed point, then one may relieve: a certain continuum theory is stable along the coarse-graining.
 
+\section{related references}
 
+In this section I will give a short remark on references.
+The idea stems from \urlref{https://arxiv.org/pdf/hep-th/9206035}{BZ92}.
+A more systematic way to extend the calculation to subleading orders was presented at \urlref{https://arxiv.org/abs/hep-th/9304090}{Aya93}.
+The idea of using the reparameterization identity to reduce the number of coupling constants in the flow equation appears in \urlref{https://arxiv.org/abs/hep-th/9307154}{HIS93};
+A more compact flow equation that realizes this idea is given in a following paper \urlref{https://arxiv.org/abs/hep-th/9409157}{HINS94-a}.
+A similar discussion that involving a two-matrix model is presented in \urlref{https://arxiv.org/abs/hep-th/9409009}{HINS94-b}.
