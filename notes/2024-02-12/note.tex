@@ -1,0 +1,90 @@
+\section{an RG study of integral}
+Integration could be studied using an RG spirit method,
+which is similar to the Wilson's RG scheme.
+However, there is no natural notion of energy associated with the integral.
+
+Let's take the ``$O(N)$ vector model'' as the example
+\urlref{https://arxiv.org/abs/1410.1635}{Zinn-Justin14}
+\begin{equation}
+	\mathrm{e}^{Z_N} = \left(\frac{N}{2\pi}\right)^{N / 2} \int \mathrm{d}^N \mathbf{x} \mathrm{e}^{-N V(\mathbf{x}^2)}
+.\end{equation}
+The normalization is chosen to normalize a Gaussian integral.
+The factor $N$ before $V(\mathbf{x}^2)$ gives a ``dimension'' of $V$ under the scaling of $N$.
+To implement the changing of $N$, one calculates $Z_{N+1}$ by integrating out one component of the vector $\mathbf{x}$
+\begin{equation}
+	\mathrm{e}^{Z_{N+1}} = \left(\frac{N+1}{2\pi}\right)^{(N+1)/2} \int \mathrm{d}^N \mathbf{x} \int \mathrm{d} y \mathrm{e}^{-(N+1) V(\mathbf{x}^2 + y^2)}
+\end{equation}
+It's impossible to integrate out $y$ exactly in general,
+so one may use the saddle point approximation.
+For a generic $\mathbf{x}$, the integrand $\mathrm{e}^{-(N+1)V(\mathbf{x}^2 + y^2)}$ is localized at the critical value of $y$ when $N\to\infty$.
+To the leading order, assuming that the saddle point is at $y=0$,the approximation gives \[
+	\mathrm{e}^{Z_{N+1}} = \left(\frac{N+1}{2\pi}\right)^{N / 2} \int \mathrm{d}^N \mathbf{x} \mathrm{e}^{-(N+1)V(\mathbf{x}) - \frac{1}{2} \ln 2 V'(\mathbf{x}^2)} \left(1 + O(\frac{1}{N})\right)
+.\] 
+It should be noted that the saddle point approximation fail when $V'(\mathbf{x}^2) = 0$.
+The Gaussian potential $V(\mathbf{x}^2) = (1 /2) \mathbf{x}^2$ will give $ V'(\mathbf{x}^2) = 1 /2$.
+In this case, the leading order vanishes.
+
+I'm not clear to what extent the subleading corrections will modify the scaling around the critical point;
+however, I guess they are not very important if the critical point by itself requires $N\to\infty$
+(similar to the fact that phase transition requires thermodynamic limit).
+Due to various methods to solve $N\to\infty$ model, it deserves study;
+however, is it possible to obtain a matrix model that has scaling covariance for all $N$?
+This is a stringent requirement,
+but there is example of matrix model that is independent of $N$.
+For example, see the discussion of the Kontsevich integral in
+\urlref{https://arxiv.org/abs/hep-th/9303139}{Morozov94}
+below the equation (3.70).
+
+Come back to the discussion of the vector model.
+The change $N\to N+1 $ induces a change in $\mathbf{x}$ and $V$
+\begin{align}
+	\mathbf{x} \to \mathbf{x} \left(1- \frac{1}{2N}(1+\gamma)\right),\\
+	V \to V + \delta V
+\end{align}
+such that the partition function scales as
+\begin{equation}
+	Z_{N+1}(V) = -\frac{1}{2} \gamma + Z_N(V+\delta V) + O(\frac{1}{N})
+\end{equation}
+The $-\frac{1}{2}\gamma$ term comes form the scaling of the integration measure $\mathrm{d}^N \mathbf{x}$.
+The $V+\delta V$ comes from the integration over $y$, also the scaling of $\mathbf{x}$
+\[
+N \delta V (\rho) = V(\rho) - (1+\gamma) \rho V'(\rho) + \frac{1}{2} \ln 2 V'(\rho) + O(\frac{1}{N})
+.\] 
+the $\rho$ is a shorthand notation for $\mathbf{x}^2$.
+The differential equation for the deformation of $V$ along the RG flow reads then
+\begin{equation}
+	\lambda \frac{\mathrm{d}}{\mathrm{d} \lambda} V(\rho,\lambda) = V(\rho,\lambda) - \left(1+\gamma(\lambda)\right) \rho V'(\rho,\lambda) + \frac{1}{2} \ln 2V'(\rho,\lambda)
+\end{equation}
+where $\lambda$ is a continuous parameter $N\to \lambda N$.
+Note that $\gamma$ is assumed to depend on $N$.
+
+
+$V(\rho) = \frac{1}{2} \rho$ is a fix point with $\gamma=0$, the Gaussian fixed point.
+It's not obvious in general how to solve the fix point equation due to the non-linear term $\ln V'$.
+One possible solution is
+\[
+V(\rho) = \frac{1}{2} \ln \rho
+.\] 
+with $\gamma=-1$ such that the second term vanish.
+If plugging this back to the integral, one finds the integrand is $\rho^{- N / 2}$.
+This cancels with the radius measure in spherical coordinate.
+Therefore, this potential corresponds to a trivial vector model.
+
+In general, it turns out that it's easier to solve the equation for $V'$.
+Actually, if one define a function $R(\rho)$
+\[
+R(\rho) \equiv \frac{1}{2 V'(rho)}
+.\] 
+Then the fix point equation will simply be
+\begin{equation}
+	\gamma R + R R' - (1 + \gamma) \rho R' = 0
+\end{equation}
+The $\gamma = -1$ case gives $R'=1$, which corresponding to the solution $V(\rho)=\frac{1}{2}\ln\rho$.
+Then how to obtain the solution of, for example $\gamma=-2$?
+
+Note that the finite scaling of $\mathbf{x}$ is
+\[
+\mathbf{x} \to \mathbf{x} \left(1 + \frac{1 + \gamma}{2} \ln \lambda\right)
+.\] 
+Instead of power of $\lambda$, it scales as $\ln \lambda$.
+

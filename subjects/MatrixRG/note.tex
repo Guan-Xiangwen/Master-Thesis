@@ -1,0 +1,185 @@
+\section{continum limit}
+\marginpar{\today}
+A critical point can be defined for matrix integral in the $N\to\infty$ imit. 
+Consider the partition function $Z(g;N)$ 
+\begin{equation}
+	\mathrm{e}^{Z} = \int [\mathrm{d}M] \mathrm{e}^{-\frac{N}{g}V[M]}
+.\end{equation}
+and denote the leading order in $N\to\infty$ as $Z_0(g)$. 
+This corresponds to the planar diagrams.
+The critical point $g_*$ then is conventionally defined as the point where
+\[
+Z_0(g)\sim (g-g_*)^{2-\gamma}
+.\]
+The critical exponent $\gamma$ is introduced in such a way to make contact with that of string susceptibility (in the contex of 2d gravity).
+This definition follows
+\urlref{https://arxiv.org/abs/hep-th/9306153}{Francesco92}.
+
+The motivation for introducing the critical point is that
+at this point the matrix model is argued to generate the partition function of a continuous 2d surface.
+This can be proved order by order:
+the order in $N$ labels the genus and the order in $g$ labels the area.
+It is around the critical point that the ``macroscopic'' area contributes significantly to the partition function.
+However, this ``order by order argument'' leads to a non-perturbative statement which is skeptical...
+One should also note that $Z$ is the $\ln$ of the matrix integral, or the matrix partition function.
+It's the free energy in the matrix model sense.
+
+What's the value of $\gamma$? The typical value that is calculated in conformal field theory of 2d gravity is $\gamma = -1 / m, m=2,3,\cdots$.
+The value $m$ is related to the central charge.
+In these cases, $g_*$ is the end point of branch cuts of $Z_0(g)$.
+Let's remark on the position of $g_*$.
+The matrix integral is usually well defined on the positive real axis $g>0$.
+However, to locate the critical point,
+one needs to continue $g$ to the complex plane.
+The $g_*$ generally locate at the extended regime.
+A typical example for quartic action $V(M)=\frac{1}{2}M^2 + \frac{1}{4}M^4$ will give a critical point $g_*=-\frac{1}{12}$.
+The calculation is sketched in
+\urlref{https://arxiv.org/abs/hep-th/9306153}{Francesco92}.
+I will review it in the following.
+
+\subsection{methods of calculating the critical point (the resolvent method)}
+It's possible to determine $g_*$ by the resolvent method.
+
+This method bases on the assumption that
+the $N\to\infty$ limit of matrix model can be studied according to a contitnuous function $\rho(\lambda)$.
+It's defined as
+\begin{equation*}
+    \rho(\lambda) := \lim_{N\to\infty} \frac{1}{N}\left\langle \sum_{i=1}^N \delta(\lambda - \lambda_i) \right\rangle.
+\end{equation*}
+$\langle\cdots\rangle$ denotes the average over the probability distribution;
+$\lambda_i$ are the eigenvalues of the matrices in the ensemble.
+By definition the moment $\langle \frac{1}{N} \mathrm{Tr} M^k \rangle$ can be calculated by $\int \lambda^k \rho(\lambda)\mathrm{d}\lambda$.
+
+I'd like to add here a remark on $\rho(\lambda)$.
+It's by no mean a complete characterization of the matrix model.
+In particular, it's impossible to rewrite the $\mathrm{exp}(-S[M])$ in terms of $\rho(\lambda)$.
+Interesting quantities, like ``average level spacing'' or trace product $\langle\mathrm{Tr} M^k \mathrm{Tr} M^j\rangle$, can not be calculated from $\rho(\lambda)$.
+A proper understanding of $\rho(\lambda)$ is
+rather than telling us how the probability distribution looks like,
+it tells us what's the ``typical matrix'' of the matrix model in $N\to\infty$.
+
+$\rho(\lambda)$ is analized by an auxillary function $\omega(z)$, the average trace of the resolvent,
+\begin{equation}
+	\omega(z) := \left\langle \mathrm{tr}\frac{1}{z - M} \right\rangle
+.\end{equation}
+It turns out that $\omega(z)$ is the Stieltjes transformation of $\rho(\lambda)$.
+Reversely, $\rho(\lambda)$ is determined by the discontinuity of $\omega(z)$ acrossing the branch cut.
+The analyticity of $\omega(z)$ will be determined by the saddle point equation of $N\to\infty$,
+It turns out that the singular part of $\omega(z)$ has the form of branch cuts of square root.
+The end points of the branch cuts are essentially determined by the action $S[M]$.
+After solving for the $\omega(z)$,
+one can use the saddle point approximation to evaluate $Z_0(g)$,
+for which the ``on shell action'' is evaluated at $\rho(\lambda)$. 
+
+Let's illustrate the result for the quartic potential $V(\lambda)=\frac{1}{2}\lambda^2+\frac{1}{4}\lambda^4$.
+There is only one branch cut $[-a,a]$, and the end point turns out to be \[
+	a^2(g) = \frac{2}{3}(-1+\sqrt{1+12 g})
+.\] 
+$a$ decreases to $0$ as $g$ decreasing to $0$.
+The matrix model is ill defined for $g\leq 0$,
+however the partition function can be defined by continuation.
+Then for $g<0$, the branch cut is on the imaginary axis.
+Until $g=g_*=-\frac{1}{12}$, one expects a branch cut singularity,
+which turns out to be the critical point of $Z_0(g)$.
+I will simply cite the equations that can be used to study the singularity of $Z_0(g)$
+\begin{align}
+	\frac{\partial}{\partial g} \left(g^3 \frac{\partial Z_0(g)}{\partial g}\right) \equiv g u(g),\\
+	\frac{\partial gu(g)}{\partial g} = 2 N^2 g \frac{\ln a(g)}{\partial g}.
+\end{align}
+By integrating one gets the leading singularity of $Z_0(g)$ is
+\begin{equation}
+	Z_0(g) \sim - \frac{4}{15} N^2 x^{\frac{5}{2}} + \cdots
+\end{equation}
+with $x=1 - \frac{g}{g_c}$.
+
+It's also possible to determine $g_*$ with the orthogonal polynomial method.
+Assume that one finds the family of orthogonal polynomials with the normalization
+\begin{equation}
+	\int (\mathrm{d}\lambda) \mathrm{e}^{-\frac{N}{g}\mathrm{tr}V(\lambda)}p_n(\lambda) p_m(\lambda) = s_n \delta_{nm}
+.\end{equation}
+To obtain the continuum limit, one must first take $N\to\infty$,
+then replacing $s_n/s_{n-1}=f(\xi),\xi=n/N$ with a continuous function.
+The matrix partition function $Z(g)$ then can be calculated from $f(\xi)$ through
+\begin{equation}
+	\lim_{N\to\infty} \frac{1}{N^2} \ln Z(g) \sim \int \mathrm{d}\xi (1-\xi) \ln f(\xi)
+.\end{equation}
+We use $\sim$ to ignore additive constant which is irrelavent to the asymptotic $g\to g_*$.
+It turns out that around the critical point $g\approx g_*$,
+$f(\xi)$ should have the following scaling
+\begin{equation}
+	f(\xi) - f_* \sim (g_* - g\xi)^{-\gamma}
+.\end{equation}
+where $f_*$ is some constant determined by the potential.
+This will give the expected scaling of $\ln Z(g)$.
+
+The definition of $g_*$ above based on $N\to\infty$.
+Is it possible to define it for finite $N$?
+
+\section{RG equation for continuum limit}
+
+In this section, I review the RG method proposed in 
+\urlref{https://arxiv.org/abs/hep-th/9206035}{Brezin92}.
+This is proposed as another way to find the critical point of continuum limit,
+so $N\to\infty$ is imposed in the calculation.
+They use an even potential as example $V(\lambda)=\frac{1}{2}\lambda^2+\frac{g}{4}\lambda^4$,
+whose critical point is $g_*=-\frac{1}{12}<0$.
+It's hard to make sense of the matrix integral with $g<0$.
+
+Another point I want to remark.
+The direction of the flow is $N\to N-1$ which is opposite to the continuum limit $N\to\infty$. 
+If the RG flow is interpreted as a result of coarse-graining,
+it's impossible to reverse the flow.
+Then how to argue that this method will give us information about the continuum limit?
+
+I try to understand this point.
+A matrix model defines by itself a sequence of models in terms of $N$.
+By studying how the model behaves as $N\to\infty$, one finds scaling of $Z$ around certain coupling $g_*$.
+However, there are other way to get a sequence of models:
+given a $N\times N$ matrix, there are various way to embed it into a $(N+1)\times(N+1)$ matrix
+or map a $(N+1)\times(N+1)$ matrix to a $N\times N$ matrix.
+Then the action can be induced on the smaller matrices.
+Although such a sequence must be ad hoc, especially when considering the matrix model action work for all $N$. 
+However, it's natural to believe that the continuum limit should be independent of how the sequence defined.
+In other word, starting from $N$-model, the induced $N-1$-models are different,
+but the difference should tend to zero when $N\to\infty$.
+I'm not sure to what extent we should believe this.
+
+Another point is that
+an RG method could allow us to study more general matrix models,
+especially those without an eigenvalue representation.
+This application of the RG method appears in
+\urlref{https://arxiv.org/abs/1306.3019}{Kawamoto13}
+in which the ``Yang-Mills two-matrices model'' is studied.
+This model is characterized by a term $[A_1,A_2]^2$ in the action.
+Such a term can arise from the Yang-Mills Lagrangian $F^2=(\mathrm{d}A)^2$ by ignoring the derivative terms.
+The gauge group of this model is $U(N)$.
+Until now, this is the only paper I find that using RG method to study multi-matrices model.
+
+Intuition of RG flow starts from statistical model, 
+but is also applied in studying various QFT. 
+Lattice spacing is a natural scale in statistical model, 
+which allows us to define a family of models with different scales but related with the same observables. 
+Classical field theory, on the other hand, as a continuum theory, is not defined with a particular scale: 
+a continuum model is defined naturally in all scales. 
+However, one can still define a family of models by rescaling various ingredients: $x,\phi,g$ etc. 
+There is a natural way to do that such that the functional form of the action doesn't change along the rescaling. 
+This way of rescaling gives the notion of ``engineer dimension'' of those ingredients. 
+Without any additional input, there maybe ambiguous in how to rescale: 
+for example, if one ingredient (or a certain combination of two ingredients) is homogeneous, 
+then one can give it an arbitrary engineer dimension. 
+The most common input is like: the action should be dimensionless (in natural unit), 
+but more may necessary to eliminate the ambiguity. 
+But such rescaling does not lead to any interesting RG flow: 
+no coarse-graining is involved because a continuum model is defined naturally in all scales. 
+Instead, the rescaling invariance plays a more important role. 
+When it comes to QFT, the theory is usually defined in the form of path integral of classical field theory. 
+This is the formalism where the analogs with a statistical model is intriguing, 
+which makes a nontrivial notion of RG flow possible while the rescaling invariance still present in the action. 
+The invariant property in QFT is usually formulated in terms of the Ward identity, 
+while the coarse-graining procedure naturally appears when one realizes that a regulator is necessary to make sense the path integral measure. 
+Usually, regulator will introduce a particular scale in the theory, just like what happens in statistical model. 
+A difference maybe, one doesn't think the cut-off scale is physical in QFT, but it may be taken as essential in a statistical model (a part of definition of the model). 
+Fortunately, RG flow method doesn't care this philosophical aspect of that scale, but just ask what happens if a coarse-graining procedure taking us from one scale to a nearby another scale. 
+Moreover, if there exist a fixed point, then one may relieve: a certain continuum theory is stable along the coarse-graining.
+
+

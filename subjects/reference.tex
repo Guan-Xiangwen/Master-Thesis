@@ -1,0 +1,14 @@
+\usepackage{hyperref}
+\hypersetup{hidelinks}% hide links (remove color and boarder)
+\usepackage{fontawesome}% font containing web-related icons: \faLink below
+\usepackage{xifthen}% provides \isempty test: check whether a string is empty or not
+\newcommand\pdfref[3]{%
+    \href{MasterThesis://open-paper?id=#1&page=#2}{%
+    \textup{[\textbf{\ifthenelse{\isempty{#3}}{here}{#3}}]}}% print a text (#3) linking to the address
+}% how to understand the first argument of \href: phd://open-paper?id=#1&page=#2
+\newcommand\urlref[2]{%
+    \href{#1}{\raisebox{0.15ex}{\scriptsize \faLink}\:\textup{\textbf{#2}}}%
+}
+\newcommand\absolutefileref[2]{%
+    \href{run:#1}{\raisebox{0.15ex}{\scriptsize \faFile}\:\textup{\textbf{#2}}}%
+}

@@ -1,0 +1,25 @@
+\section{one-matrix integral}
+One-matrix model for a $N\times N$ Hermitian matrix $M=M^\dagger$ is defined by the following gauge transformation
+\begin{equation}
+    M \to M' = U M U^\dagger,\quad U\in U(N).
+\end{equation}
+Hermicity is kept under this transformation. It maybe useful also to write down the infinitesimal version
+\begin{equation}
+    \delta_A M = i[A,M] \equiv \mathrm{ad}_A M, \quad A\in\mathfrak{u}(1)
+\end{equation}
+where $A$ is Hermitian.
+
+Not all transformations in $U(N)$ will change the matrix.
+Note that a $U(1)$ subgroup $\mathrm{e}^{i\theta}\in U(1)$ will leave the matrix invariant.
+For a general diagonal matrix, a subgroup $U(1)\times \cdots \times U(1)$ will leave it invariant;
+if one or more diagonal elements are equal, this subgroup will be enhanced to $U(N_1)\times\cdots\times U(N_k),\sum_i N_i=N$.
+
+A Gaussian distribution can be associated to each entry of $M$, for which the measure can be written as
+\[\mathrm{exp}\left(-\frac{1}{2}\mathrm{Tr} M^2\right)[\mathrm{d}M].\]
+The measure is gauge invariant, and can be understood as a measure on $\mathfrak{u}(1)$ on which $\mathfrak{u}(1)$ acts by $\mathrm{ad}$.
+
+This model can be modified by adding extra terms like $\mathrm{Tr} M^3,\mathrm{Tr} M^4,\cdots$ or like $(\mathrm{Tr} M^2)^2,\cdots$. 
+We can study the modification by expanding around the original Gaussian model if the extra terms are small in some sense.
+However, it should be careful that such term has $N$ dependence from trace.
+In large $N$-limit, $N$ is another order counter.
+

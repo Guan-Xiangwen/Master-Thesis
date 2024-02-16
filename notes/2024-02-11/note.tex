@@ -1,0 +1,120 @@
+The saddle point equation of resolvent method.
+\begin{equation}
+	\omega^2(z) + \frac{1}{g} V'(z) \omega(z)
+	+ \frac{1}{4g^2} R(z) = 0
+.\end{equation}
+where $R(z)$ is an unknow polynomial of degree $l-2$ when $V$ is of degree $l$.
+\begin{equation*}
+	R(z) = 4g \int \mathrm{d}\lambda \rho(\lambda) \frac{V'(z)-V'(\lambda)}{z-\lambda}
+.\end{equation*}
+This equation is important because it tells us the singular part of $\omega_{\text{sing}}(z)$ has the form
+\[
+	2g\omega_{\text{sing}}(z) = \sqrt{(V'(z))^2 - R(z)}
+.\]
+Therefore, there are branch cuts connecting the zeros of the polynomial $(V'(z))^2-R(z)$.
+However, it's impossible to determine the zeros directly because $R(z)$ is unknown.
+
+\subsection{review the resolvent method}
+
+In the resolvent method, instead of $\rho(\lambda)$, the central object under study is the resolvent $\omega(z),z\in \mathbb{C}\backslash\mathbb{R}$
+\[
+	\omega(z) = \int \frac{\rho(\lambda){\mathrm{d}\lambda}}{\lambda-z}
+.\]
+Then the basic equations of $\omega(z)$ follow from the saddle point equation.
+One of them simply says that
+\begin{equation}
+	\omega(\lambda+i0) + \omega(\lambda-i0) = -\frac{1}{g} V'(\lambda) \quad \lambda\in\mathbb{R}
+.\end{equation}
+This combining with the analyticity of $\omega(\lambda)$ will give us an expression of $\omega(z),z\in\mathbb{C}$.
+The simplest assumption is $\omega(z)$ has one branch cut at $[a_1,a_2]$,
+which corresponding to $\rho(\lambda)$ supported on $[a_1,a_2]$.
+It turns out that the form
+\[
+	\omega(z) = \frac{\sqrt{(z-a_1)(z-a_2)}}{2\pi g} \int_{a_1}^{a_2} \frac{\mathrm{d}\lambda}{\lambda - z}\frac{V'(\lambda)}{\sqrt{(a_2-\lambda)(\lambda-a_1)}}
+.\]
+satisfies all the requirement for the one cut solution.
+
+$a_1,a_2$ can be determined by the asymptotic $\omega(z)\sim - 1/z$.
+The integral form simplies for $|z|\to\infty$, the leading piece $O(1)$ should vanish
+\[
+	\frac{1}{2\pi g} \int_{a_1}^{a_2} \frac{V'(\lambda)\mathrm{d}\lambda}{\sqrt{(a_2-\lambda)(\lambda-a_1)}} = 0
+.\]
+The $O(1/z)$ piece should give the correct coefficient
+\[
+	\int_{a_1}^{a_2} \mathrm{d}\lambda \frac{\lambda V'(\lambda)}{\sqrt{(a_2-\lambda)(\lambda-a_1)}} = 2\pi g
+.\]
+The integral can be simplified by changing the variables
+\[
+	\lambda = z + \frac{1}{2} (a_1 + a_2) + \frac{(a_1-a_2)^2}{16 z}
+.\]
+Then the integral path can be written as a circle around origin for $z\in\mathbb{C}$
+\begin{align}
+	\oint \frac{\mathrm{d}z}{2\pi i z} V'(\lambda(z)) = 0 \\
+	\oint \frac{\mathrm{d}z}{2\pi i} V'(\lambda(z)) = g
+.\end{align}
+There are some properties can be read directly from above equations.
+If $V(\lambda)$ is even, $V'(\lambda)$ is odd.
+Then the first equation is always satisfied by $a_1+a_2=0$.
+This means that one can always find a solution whose branch cut is symmetric $[-a,a]$.
+If $a_1 = a_2$,  $\lambda = z + \frac{1}{2}(a_1 + a_2)$,
+the second equation implies that $g=0$.
+Therefore it seems like not possible to obtain $g_*\neq 0$ for one cut solution.
+
+\section{motivation letter}
+
+I've been lucky with my educations, 
+learning not just the knowledge and ideas in physics, 
+but also how to enjoy learning from people who have genuine passion in physics.
+Sometimes, I'd like to dream about being in Plato's Academy, 
+thinking about our knowledge of nature and sharing those ideas with others.
+I find that people today study physics in a similar way. 
+That's my motivation for continuing my physics career.
+
+What are my interests in general? 
+Quite generally, I'm interested in using the tools and ideas from quantum field theory (QFT) to understand physical models. 
+One of the intriguing aspects may be that how QFT offering people insights on the dynamics of a quantum system with numerous degrees of freedom. 
+The spectrum of applications of QFT is also wide: particle physics, string theory, and even mathematics. 
+Many deep physical ideas and mathematical structures can be formulated in the language of QFT. 
+It's definitely one of the most interesting subjects to study.
+ 
+Prof. Skenderis' research interests me, especially those about CFT.
+The initial success of QFT based on its perturbative structure,
+however many nowadays researches focus on the elusive non-perturbative structure.
+One highlight is the AdS/CFT.
+It not only provide a feasible way to understand quantum gravity,
+but also allowing people to rethink the problems in QFT from the geometry point of view.
+I want to learn more about QFTs with special symmetries,
+they show interesting structures while allowing people to apply various methods to study them.
+They may appear to be unrealistic,
+but there may be some universalities that pertaining to the real world.
+Skenderis's researches involve discussions on those toy model QFTs, 
+and look at them from various sides.
+The central role of CFT is obvious, which surprisingly related to a bunch of physics interests.
+CFT manifests itself in terms of the energy-momentum tensor, 
+the study of the energy-momentum tensor of a lattice field theory is interesting.
+It's interesting to see how the stress tensor is formulated in the lattice theory, and how the lattice regularization modifies the property of the stress tensor.
+Is it possible to have a lattice regularization of CFT?
+I love to think about these questions.
+
+I will also give a brief statement about my bachelor and master thesis topics. 
+The bachelor thesis is about the linear perturbation theory of black hole solution in pure general relativity. 
+I was fascinated by the interrelation between three properties of the theory: 
+separability, D-type curvature and Killing spinor. 
+The physics solution surprised me by its rich structure, 
+which somewhat is hidden behind the complex metric.
+
+In master thesis, I'm exploring possible scale invariant matrix models using the idea of renormalization group.
+The physics motivation is a D-instanton system in which the partition function being expected to be conformal invariant. 
+Without an intrinsic notion of spacetime, the scaling of couplings can only arise from the scaling of matrix rank: 
+a typical example is the double scaling limit. 
+With a similar spirit, we wonder whether the couplings in the D-instanton system are scale invariant. 
+This point of view is not well explored, especially for a supersymmetric system. Rum trying to gain some insights on this problem.
+
+\section*{REFERENCES}
+\textbf{Prof. Toine Van Proeyen}\\
+\textit{Emeritus Professor,  Institute for Theoretical Physics,  KU Leuven,  Celestijnenlaan 200D, B-3001 Leuven,  Belgium}\\
+E-mail: \href{antoine.vanproeyen@kuleuven.be}{antoine.vanproeyen@kuleuven.be}\\
+\textbf{Prof. Thomas Van Riet}\\
+\textit{Associate Professor,  Institute for Theoretical Physics,  KU Leuven,  Celestijnenlaan 200D, B-3001 Leuven,  Belgium}\\
+E-mail: \href{thomas.vanriet@kuleuven.be}{thomas.vanriet@kuleuven.be}
+

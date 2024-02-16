@@ -1,0 +1,18 @@
+\section{reparameterization identity}
+Consider the following matrix integral
+\begin{equation}
+	\int [\mathrm{d}\phi] \mathrm{e}^{-\frac{N}{g}\mathrm{Tr}V(\phi)}
+.\end{equation}
+and change the variable $\phi\to\phi'=\phi+\epsilon\phi^n$, where $\epsilon$ is small.
+The measure changes as $[\mathrm{d}\phi']=[\mathrm{d}\phi](1+\epsilon\sum_{k=0}^{n-1}\mathrm{tr}\phi^{k}\mathrm{tr}\phi^{n-k-1})$ to the first order.
+One can understand this by noting that taking derivative $\partial/\partial\phi$ of $\phi^n=\phi\cdots\phi$ will break the ``string'' into two parts, and the Jacobian determinant which becoming trace for small $\epsilon$ will take the trace of the two parts separately.
+and the exponent $V(\phi')=V(\phi)+\epsilon \phi^nV'(\phi)$.
+According to the identity
+\[
+\int [\mathrm{d}\phi] \mathrm{e}^{-\frac{N}{g}\mathrm{Tr}V(\phi)} = \int [\mathrm{d}\phi'] \mathrm{e}^{-\frac{N}{g}\mathrm{Tr}V(\phi')}
+.\]
+to the first order of $\epsilon$
+\begin{equation}
+	\left\langle \sum_{k=0}^{n-1} \mathrm{tr}\phi^k \mathrm{tr}\phi^{n-k-1} \right\rangle = \left\langle \frac{N}{g}\mathrm{tr} \phi^n V'(\phi) \right\rangle
+.\end{equation}
+This implies that the double trace correlators may be written as single trace correlators.

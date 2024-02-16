@@ -1,0 +1,16 @@
+\contentsline {section}{Wednesday, 07 Feb}{1}{section*.1}%
+\contentsline {section}{\numberline {1}one-matrix integral}{1}{section.1}%
+\contentsline {section}{Thursday, 08 Feb}{2}{equation.1.2}%
+\contentsline {section}{\numberline {2}reparameterization identity}{2}{section.2}%
+\contentsline {section}{Saturday, 10 Feb}{2}{equation.2.4}%
+\contentsline {section}{\numberline {3}IKKT}{2}{section.3}%
+\contentsline {section}{Sunday, 11 Feb}{3}{equation.3.6}%
+\contentsline {subsection}{\numberline {3.1}review the resolvent method}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {4}motivation letter}{4}{section.4}%
+\contentsline {section}{Monday, 12 Feb}{5}{section*.2}%
+\contentsline {section}{\numberline {5}an RG study of integral}{6}{section.5}%
+\contentsline {section}{Tuesday, 13 Feb}{7}{equation.5.17}%
+\contentsline {section}{\numberline {6}matrix integral from N to N-1}{7}{section.6}%
+\contentsline {section}{Thursday, 15 Feb}{10}{equation.6.29}%
+\contentsline {subsection}{\numberline {6.1}a nonlinear RG equation for matrix model}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}notes}{13}{subsection.6.2}%

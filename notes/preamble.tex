@@ -1,0 +1,45 @@
+% Packages
+\usepackage{cmbright}	% computer modern bright font
+\usepackage[T1]{fontenc}
+			% font encoding: related to the accented characters
+\usepackage{
+	amsmath,	% math
+	amssymb,	% math symbols
+	amsthm,		% theorem
+	amsfonts,	% use \mathfrak
+	dsfont,
+}
+\usepackage{
+	bookmark,	% replaces (and loads) hyperref
+	chngcntr,	% use counterwithin
+	enumerate,	% enumerate enviornments
+	fancyhdr,	% better headers
+	float,		% force image placement
+	mathrsfs,	% more math scripts
+	mathtools,	% allows prescripts
+	microtype,	% improved appearence
+	multicol,	% use multi-columns
+	multirow,	% use multi-rows
+	nicefrac, 	% alternative fractions
+	relsize,	% bigger math symbols
+	stmaryrd,	% power series brackets
+	thmtools,	% custom theorem environments
+	thm-restate,	% for re-stateable theorems
+	totcount,	% define counters
+	xcolor,		% define colors
+}
+\usepackage{tikz-cd}
+\usepackage{soul}	% underlining and striking out
+\usepackage{parskip}	% handle indentation of paragraphs
+
+% figure support ...? not sure about its function
+\usepackage{import}
+\usepackage[shortlabels]{enumitem}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+} 
