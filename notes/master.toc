@@ -14,3 +14,4 @@
 \contentsline {section}{Thursday, 15 Feb}{10}{equation.6.29}%
 \contentsline {subsection}{\numberline {6.1}a nonlinear RG equation for matrix model}{11}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}notes}{13}{subsection.6.2}%
+\contentsline {section}{Saturday, 17 Feb}{14}{subsection.6.2}%

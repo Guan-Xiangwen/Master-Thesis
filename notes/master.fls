@@ -409,6 +409,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/doublestroke/dsrom8.tfm
 INPUT ./2024-02-15/note.tex
 INPUT ./2024-02-15/note.tex
 INPUT ./2024-02-15/note.tex
+INPUT ./2024-02-17/note.tex
+INPUT ./2024-02-17/note.tex
+INPUT ./2024-02-17/note.tex
 INPUT master.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc
