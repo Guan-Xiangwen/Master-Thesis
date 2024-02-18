@@ -3,7 +3,7 @@
 \contentsline {section}{Thursday, 08 Feb}{2}{equation.1.2}%
 \contentsline {section}{\numberline {2}reparameterization identity}{2}{section.2}%
 \contentsline {section}{Saturday, 10 Feb}{2}{equation.2.4}%
-\contentsline {section}{\numberline {3}IKKT}{2}{section.3}%
+\contentsline {section}{\numberline {3}IKKT}{3}{section.3}%
 \contentsline {section}{Sunday, 11 Feb}{3}{equation.3.6}%
 \contentsline {subsection}{\numberline {3.1}review the resolvent method}{3}{subsection.3.1}%
 \contentsline {section}{\numberline {4}motivation letter}{4}{section.4}%
@@ -15,3 +15,4 @@
 \contentsline {subsection}{\numberline {6.1}a nonlinear RG equation for matrix model}{11}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}notes}{13}{subsection.6.2}%
 \contentsline {section}{Saturday, 17 Feb}{14}{subsection.6.2}%
+\contentsline {section}{Sunday, 18 Feb}{15}{equation.6.39}%
