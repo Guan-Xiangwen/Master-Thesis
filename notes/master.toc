@@ -16,3 +16,5 @@
 \contentsline {subsection}{\numberline {6.2}notes}{13}{subsection.6.2}%
 \contentsline {section}{Saturday, 17 Feb}{14}{subsection.6.2}%
 \contentsline {section}{Sunday, 18 Feb}{15}{equation.6.39}%
+\contentsline {paragraph}{the interaction between A and B}{15}{section*.3}%
+\contentsline {paragraph}{Discussion of symmetries}{16}{section*.4}%
