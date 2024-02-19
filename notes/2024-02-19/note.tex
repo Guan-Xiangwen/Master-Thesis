@@ -3,3 +3,111 @@
 \paragraph{how the BRST structure could be helpful?}
 
 Let's test that whether the BRST structure is restrictive enough such that no new interaction could be generated from the RG calculation.
+
+Let's get a closer look at the action
+\[
+	-\frac{1}{2}\mathrm{Tr}H^2 + ig \mathrm{Tr}\left([\overline{Z},Z]H\right) + ig \mathrm{Tr}\left([\overline{\Psi},Z]\eta + [\overline{Z},\Psi]\eta\right)
+.\] 
+Let's assume that $g$ is small and try to do the perturbative calculation.
+However, it's not possible because there is no quadratic term.
+To solve this, let's deform the action by adding the following term
+\[
+	i \kappa \delta\left(\mathrm{Tr}(\overline{Z}\Psi - Z \overline{\Psi})\right) = 2i \kappa \mathrm{Tr}\left(\overline{\Psi}\Psi\right) - 2 \kappa \epsilon \mathrm{Tr}\left(\overline{Z}Z\right) - 2i\kappa \mathrm{Tr}\left([\overline{Z},Z]H\right)
+.\] 
+Because its $\delta$-exact, the deformation is $\delta$-invariant.
+$\kappa$ is also a small parameter.
+To get the usual quadratic term for $Z$, we choose $\epsilon = 1 / 4\kappa$.
+Also note that the action can be simplified if $\kappa = g / 2$ because the term $\mathrm{Tr}\left([\overline{Z},Z]H\right)$ being cancelled.
+Let's keep this choice, then the action reads
+\[
+	- \frac{1}{2} \mathrm{Tr} H^2 - \frac{1}{2} \mathrm{Tr}(\overline{Z}Z) + ig \mathrm{Tr}(\overline{\Psi}\Psi) + ig \mathrm{Tr}\left([\overline{\Psi},Z]\eta + [\overline{Z},\Psi]\eta\right)
+.\] 
+Or getting back to the matrices $A,B,\psi,\chi$
+\[
+	- \frac{1}{2}\mathrm{Tr}H^2 - \frac{1}{2}\mathrm{Tr}A^2 - \frac{1}{2}\mathrm{Tr}B^2 - 2 g \mathrm{Tr}(\psi \chi) - 2 g \mathrm{Tr} \left([\psi,B]\eta - [\chi,A]\eta\right)
+.\] 
+
+Let's work with $2\times 2$ matrix and use the following parameterization
+\begin{align*}
+	A = \begin{pmatrix} A & \alpha \\ \alpha^* & a \end{pmatrix},\quad B = \begin{pmatrix} B & \beta \\ \beta^* & b \end{pmatrix} \\
+	\psi = \begin{pmatrix} \psi & y \\ y^* & \varphi \end{pmatrix},\quad \chi = \begin{pmatrix} \chi & x \\ x^* & \iota \end{pmatrix} ,\quad \eta = \begin{pmatrix} \eta & h \\ h^* & \theta \end{pmatrix}
+\end{align*}
+For the $(1,1)$ components, we use the same letter to indicate that they will not be integrated.
+Then the quadratic terms have the form
+\begin{align*}
+	- \frac{1}{2} A^2 - \frac{1}{2} B^2 - \frac{1}{2} a^2 - \frac{1}{2} b^2 - \alpha^* \alpha - \beta^* \beta \\
+	- 2g \psi\chi - 2g y x^* - 2g x y^* - 2g \varphi \iota
+\end{align*}
+The interaction term $ -2 g \mathrm{Tr}([\psi,B]\eta - [\chi,A]\eta)$ contains
+\begin{align*}
+	-2 g \psi \beta h^* + 2 g \beta^* \psi h - 2g y^* B h + 2 g B y h^* - 2 g y \beta^* \eta + 2 g \beta y^* \eta \\
+	+2 g \chi \alpha h^* - 2 g \alpha^* \chi h + 2g x^* A h - 2 g A x h^* + 2 g x \alpha^* \eta - 2 g \alpha x^* \eta \\
+	-2 g y^* b h + 2 g b y h^* - 2g \varphi \beta h^* + 2g \beta^* \varphi h - 2g y^* \beta \theta + 2g \beta^* y \theta \\
+	+2 g x^* a h - 2 g a x h^* + 2g \iota \alpha h^* - 2g \alpha^* \iota h + 2g x^* \alpha \theta - 2g \alpha^* x \theta \\
+	- 2g \varphi b \theta + 2g b \varphi \theta + 2g \iota a \theta - 2g a \iota \theta
+\end{align*}
+There is an additional term that only involving the $(1,1)$-component.
+It has the same form with the initial action $ -2 g \mathrm{Tr}([\psi,B]\eta - [\chi,A]\eta)$.
+
+For the Grassmann integral, to get non-vanishing result, one needs to saturate the measure $\mathrm{d}y \mathrm{d}y^* \mathrm{d}\varphi \mathrm{d}x \mathrm{d}x^* \mathrm{d}\iota \mathrm{d}h \mathrm{d}h^* \mathrm{d}\theta$.
+Because there is no quadratic term of $\eta$, the non-vanishing terms must include $hh^*\theta$.
+For other variables, if they appear, they must form the pairs
+\[
+a^2,\quad b^2,\quad \alpha^* \alpha,\quad \beta^* \beta,\quad y x^*,\quad x y^*,\quad \varphi \iota
+.\]
+For fermionic variables $yx^*,xy^*,\varphi\iota$, they must not appear more than one time.
+These are the basic constraints to get non-vanishing integral result.
+
+First note that $h,h^*,\theta$ appear in each term once.
+Therefore, to get non zero result, one needs at least the cubic term
+\[
+	- \frac{4}{3} g^3 \left[\mathrm{Tr}([\psi,B]\eta - [\chi,A]\eta)\right]^3
+.\] 
+Let's focus on the terms that containing these combinations: $\psi B, \psi A, \chi B, \chi A$. One would expect that all of them being vanish because they have an odd number of fermionic variables. For $\psi B, \chi A$, to fully contract the variables, one needs terms containing $x\beta^*,y\alpha^*$. There is no such term. For $\psi A$, one selects the following terms
+\[
+	(-\psi \beta h^*)(x^* A h)(\beta^* y \theta) + (\beta^* \psi h) (- A x h^*) (- y^* \beta \theta)
+.\] 
+By contracting $hh^*,xy^*,yx^*$ one finds that the result being zero.
+Similar for $\chi B$. So it's in accordance with the expectation.
+(TODO: analyze other terms like $A^2,AB,B^2,\psi\chi$)
+
+It's easy to understand that $\left[\mathrm{Tr}([\psi,B]\eta - [\chi,A]\eta)\right]^5$ always vanishing because one of the $h,h^*,\theta,\eta$ will appear twice. So one only need to consider the quartic term
+\[
+\frac{2}{3} g^4 \left[\mathrm{Tr}([\psi,B]\eta - [\chi,A]\eta)\right]^4
+.\] 
+Out of all possible combinations, it may be interestring to consider those containing $\psi\eta$ and $\chi\eta$ first.
+To find the terms that containing $\psi\eta$, one first select $(-\psi\beta h^*)$ or $(\beta^* \psi h)$.
+Let's take the first choice as an example.
+Then one needs to add a term that containing $h$ but not containing $A,B,\chi$ because we only focus on $\psi\eta$.
+The possibilities are the following
+\[
+	- y^* b h,\quad x^* a h,\quad \beta^* \varphi h,\quad -\alpha^* \iota h
+.\] 
+Each of them containing one of $a,b,\varphi,\iota$.
+To get non-vanishing result, one needs another term that only containing one of them.
+But there is no such term: they either contain $\varphi b,\iota a$ or containing none of them.
+Therefore, $\psi\eta$ will not be generated through the perturbative calculation.
+
+It's also easy to see that the terms like $A\psi\chi$ will not be generated because $h,h^*$ would be over-saturate.
+Then it's interesting to consider $\psi A \eta$ which does not appear in the original action.
+For example, one starts by selecting the two terms
+\[
+	(-\psi \beta h^*) (x^* A h)
+.\] 
+Then one must select the term $(- y \beta^* \eta)$ that containing $\eta$.
+Because otherwise $\beta,x^*$ cannot be contracted.
+However, then one must include also an extra $\theta$ term to saturate $\mathrm{d}\theta$.
+Any of them will contain one of $\alpha,\beta,\varphi,\iota,a,b$ that having no partner to contract.
+Therefore, no $\psi A \eta$ could be generated.
+
+Finally, let's consider another possible new term $\psi\chi\eta$.
+It contains three fermionic variables, therefore being expected to vanish.
+Let's verify it explicitly.
+The following terms would contribute to $\psi\chi\eta$
+\[
+	(-\psi \beta h^*) (- \alpha^* \chi h) \left[(-y \beta^* \eta)(x^* \alpha \theta) + (-\alpha x^* \eta)(\beta^* y \theta)\right]
+.\] 
+\[
+	(\beta^* \psi h)(\chi \alpha h^*)\left[(\beta y^* \eta)(\alpha^* x \theta) + (x \alpha^* \eta)(-y^* \beta \theta)\right]
+.\] 
+It's straightforward to check they vanish because the order of $y,x^*$ and $y^*,x$ are different in the two terms.
