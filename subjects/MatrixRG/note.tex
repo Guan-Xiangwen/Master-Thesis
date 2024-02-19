@@ -1,5 +1,16 @@
+A review of the matrix model renormalization group method is
+\urlref{http://arxiv.org/abs/1410.1635}{Zinn14}.
+Not only matrix model, but also simpler cases are contained in this review.
+Some solutions of the fix points (the potential that is invariant under the RG flow) are given.
+References that predate this review are given at the end of this note.
+More recently there are some articles about the ``functional renormalization group approach'' applied to the matrix model.
+For example
+\urlref{http://arxiv.org/abs/1909.03327}{LS19}.
+
 \section{continum limit}
-\marginpar{\today}
+The RG method of matrix model was proposed to study the continuum limit.
+Below I review the definition of it.
+
 A critical point can be defined for matrix integral in the $N\to\infty$ imit. 
 Consider the partition function $Z(g;N)$ 
 \begin{equation}
@@ -37,7 +48,7 @@ The calculation is sketched in
 \urlref{https://arxiv.org/abs/hep-th/9306153}{Francesco92}.
 I will review it in the following.
 
-\subsection{methods of calculating the critical point (the resolvent method)}
+\section{methods of calculating the critical point (the resolvent method)}
 It's possible to determine $g_*$ by the resolvent method.
 
 This method bases on the assumption that
@@ -145,7 +156,7 @@ This model is characterized by a term $[A_1,A_2]^2$ in the action.
 Such a term can arise from the Yang-Mills Lagrangian $F^2=(\mathrm{d}A)^2$ by ignoring the derivative terms.
 The gauge group of this model is $U(N)$.
 
-\subsection{simpler example: the vector model}
+\section{simpler example: the vector model}
 Integration could be studied using an RG spirit method,
 which is similar to the Wilson's RG scheme.
 However, there is no natural notion of energy associated with the integral.
@@ -235,10 +246,11 @@ Note that the finite scaling of $\mathbf{x}$ is
 .\] 
 Instead of power of $\lambda$, it scales as $\ln \lambda$.
 
-\subsection{a matrix integral calulation}
-Similar calculation is done in the following references: ...
-I'll present a slightly different method which is natural to consider.
-
+\section{a matrix integral calulation}
+I don't follow the calculation in the reference.
+There the calculation requires taking $N\to\infty$ because the use of saddle point equation.
+I try to avoid the use of saddle point approximation.
+However, there are still some problems to solve.
 
 The model under consideration is the one-matrix $\phi^4$ model
 \begin{equation}
@@ -377,35 +389,6 @@ $k=3$
 .\] 
 For small $g$, it's reasonable that we only keep the $\alpha^{2N},\alpha^{2N-2}$ terms in large $N$ limit.
 For a general $g$, it's not clear that whether or not $\alpha^{2N-2},\alpha^{2N-4}$ are in the same order or not.
-
-\subsection{confusing remarks on RG flow}
-
-Intuition of RG flow starts from statistical model, 
-but is also applied in studying various QFT. 
-Lattice spacing is a natural scale in statistical model, 
-which allows us to define a family of models with different scales but related with the same observables. 
-Classical field theory, on the other hand, as a continuum theory, is not defined with a particular scale: 
-a continuum model is defined naturally in all scales. 
-However, one can still define a family of models by rescaling various ingredients: $x,\phi,g$ etc. 
-There is a natural way to do that such that the functional form of the action doesn't change along the rescaling. 
-This way of rescaling gives the notion of ``engineer dimension'' of those ingredients. 
-Without any additional input, there maybe ambiguous in how to rescale: 
-for example, if one ingredient (or a certain combination of two ingredients) is homogeneous, 
-then one can give it an arbitrary engineer dimension. 
-The most common input is like: the action should be dimensionless (in natural unit), 
-but more may necessary to eliminate the ambiguity. 
-But such rescaling does not lead to any interesting RG flow: 
-no coarse-graining is involved because a continuum model is defined naturally in all scales. 
-Instead, the rescaling invariance plays a more important role. 
-When it comes to QFT, the theory is usually defined in the form of path integral of classical field theory. 
-This is the formalism where the analogs with a statistical model is intriguing, 
-which makes a nontrivial notion of RG flow possible while the rescaling invariance still present in the action. 
-The invariant property in QFT is usually formulated in terms of the Ward identity, 
-while the coarse-graining procedure naturally appears when one realizes that a regulator is necessary to make sense the path integral measure. 
-Usually, regulator will introduce a particular scale in the theory, just like what happens in statistical model. 
-A difference maybe, one doesn't think the cut-off scale is physical in QFT, but it may be taken as essential in a statistical model (a part of definition of the model). 
-Fortunately, RG flow method doesn't care this philosophical aspect of that scale, but just ask what happens if a coarse-graining procedure taking us from one scale to a nearby another scale. 
-Moreover, if there exist a fixed point, then one may relieve: a certain continuum theory is stable along the coarse-graining.
 
 \section{related references}
 
