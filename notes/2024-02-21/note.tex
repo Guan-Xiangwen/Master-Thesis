@@ -1,0 +1,119 @@
+%! Tex root: ../master.tex
+
+\paragraph{rethink the model}
+In constructing the previous model, the way we introduce the matrix $\eta$ is suspicious.
+Specifically $\delta^2 \eta = 0$, but it should generate the unitary transformation $\delta^2 \eta = [H,\eta]$.
+Remember that the idea behind the BRST construction is ``taking the square root of gauge transformation''.
+However, it seems impossible to satisfy $\delta^2 H = 0$ simultaneously.
+It seems like the only way to solve this problem is to introduce again an auxillary matrix such that $\delta H = [X,\eta]$.
+That is the gauge transformation is parameterized by the auxillary matrix $X$.
+
+What's the motivation to introduce $\eta$ in our model?
+I want to introduce a term $\mathrm{Tr}([\overline{Z},Z]H)$ in the action,
+from doing the variation $\delta(\cdots)$.
+To obtaine $H$ from $\delta$, I introduce $\eta$ such that $\delta \eta = H$.
+This is a bad move as having been said above: this breaks the unitary invariance when the model involving the matrix $\eta$.
+
+\paragraph{one possible solution to the previous problem?}
+If we introduce another auxillary matrix $X$ to parameterize the unitary transformation,
+and modify $\delta H = [X,\eta]$ with $\delta X = 0$. (Remark. $H,X,\eta$ should all be anti-hermitian to keep each term ``real'' under the hermitian conjugation $\dagger$)
+The model build may still start from the commutator term
+\[
+	- \frac{1}{2} \mathrm{Tr}H^2 + ig \mathrm{Tr}\left([\overline{Z},Z]H\right)
+.\] 
+Then one wants to find $\delta$-exact terms to generate these two terms.
+The candidates are
+\begin{align*}
+	i g \delta \mathrm{Tr}\left([\overline{Z},Z]\eta\right) - \frac{1}{2} \delta \mathrm{Tr}\left(\eta H\right)
+\end{align*}
+Other terms are generated along
+\[
+	i g \mathrm{Tr}\left([\overline{\Psi},Z]\eta + [\overline{Z},\Psi]\eta\right) + \frac{1}{2} \mathrm{Tr}\left(\eta [X,\eta]\right)
+.\] 
+Note that $(1 / 2)\mathrm{Tr}(\eta [X, \eta]) = \mathrm{Tr} (\eta X \eta)$ gives a quadratic term of $\eta$.
+To deal with the interaction terms $ig\mathrm{Tr}([\overline{Z},Z]H)$ and 
+$ig \mathrm{Tr}([\overline{\Psi},Z]\eta + [\overline{Z},\Psi]\eta)$,
+it's important to introduce quadratic term for $Z,\overline{Z}$ and $\Psi,\overline{\Psi}$.
+This is done by adding to following $\delta$-exact term
+\[
+	i \kappa \delta \mathrm{Tr}\left(\overline{Z}\Psi - Z \overline{\Psi}\right) = 2i \kappa \mathrm{Tr}(\overline{\Psi}\Psi) - 2\kappa \epsilon \mathrm{Tr}(\overline{Z}Z) - 2i\kappa \mathrm{Tr}\left([\overline{Z},Z]X\right)
+.\] 
+Here $X$ is not a dynamical matrix, and it should be anti-hermitian.
+In summary, let's collect all terms in the action
+\begin{align*}
+	- \frac{1}{2} \mathrm{Tr} H^2 + \mathrm{Tr} \eta X \eta \\
+	+ \frac{i}{2} \kappa \mathrm{Tr} \overline{\Psi}\Psi - \frac{1}{2} \kappa \epsilon \mathrm{Tr} \overline{Z} Z - \frac{i}{4} \kappa \mathrm{Tr}\left([\overline{Z},Z]X\right) \\
+	+ i g \mathrm{Tr} \left([\overline{Z},Z]H\right) + i g \mathrm{Tr}\left([\overline{\Psi},Z]\eta + [\overline{Z},\Psi]\eta\right)
+\end{align*}
+It can be verified all the terms are real under $\dagger$ (It acts on the matrix, will not take $i\to -i$).
+
+Compare to previous wrong model, it has several differences.
+First is the appearance of the $X$ matrix.
+It it is taken to be zero, the model will become very similar to what we have studied previously,
+but with an additional term $ ig \mathrm{Tr}\left([\overline{Z},Z]H\right) $.
+However, the previous calculation is wrong because $\eta$ should be anti-hermitian, rather than hermitian.
+This means that there is no $\theta$ variable to be integrated out;
+also $h^*$ and $h$ terms should have a relative minus sign.
+Let's list all terms that are relavent to the integration
+\begin{align*}
+	- v^* A \beta + \beta^* A v + v^* B \alpha - \alpha^* B v + \alpha^* H \beta - \beta^* H \alpha \\
+	x^* A h - h^* A x - y^* B h + h^* B y \\
+	\beta^* \psi h - h^* \psi \beta - \alpha^* \chi h + h^* \chi \alpha \\
+	- \alpha^* \eta x - x^* \eta \alpha + \beta^* \eta y + y^* \eta \beta
+\end{align*}
+
+It's interesting to take $X = i z \mathds{1}$.
+$z$ is a real constant to be determined later.
+One consequence is
+\[
+	\mathrm{Tr}\left(\eta X \eta\right) \sim - i z h_i^* h_i
+.\] 
+Remember that $\eta_{(N+1),i} = -h_i^*,~ \eta_{i,(N+1)} = h_i$.
+Another consequence is
+\[
+	\frac{\kappa}{2} \mathrm{Tr}\left([A,B]X\right) \sim \frac{\kappa}{2} iz (\beta_i^* \alpha_i - \alpha_i^* \beta_i)
+.\] 
+So the quadratic term for $\alpha,\beta$ is
+\[
+ - \frac{\kappa \epsilon}{2} (\alpha^*_i \alpha_i + \beta_i^* \beta_i) 
+ + \frac{i \kappa z}{2} (\beta_i^*\alpha_i - \alpha_i^* \beta_i)
+.\] 
+This motivates us to redefine
+\[
+	\tilde{\alpha} = \frac{1}{\sqrt{2}} (\alpha + i\beta),\quad 
+	\tilde{\beta} = \frac{1}{\sqrt{2}} (\alpha - i\beta)
+.\] 
+Then the quadratic term becomes
+\[
+	- \frac{\kappa}{2} \left[(\epsilon + z) \tilde{\alpha}^*_i \tilde{\alpha}_i 
+	+ (\epsilon - z) \tilde{\beta}^*_i \tilde{\beta}_i\right]
+.\] 
+
+The interaction of $A,B$ with the ``bosonic legs'' in terms of $\tilde{\alpha},\tilde{\beta}$ reads
+\[
+	\frac{1}{\sqrt{2}} \left( i v^* A \tilde{\alpha} + i \tilde{\alpha}^* A v
+	- i v^* A \tilde{\beta} - i \tilde{\beta}^* A v
++ v^* B \tilde{\alpha} - \tilde{\alpha}^* B v
++ v^* B \tilde{\beta} - \tilde{\beta}^* B v\right)
+.\] 
+It's possible to obtain a new operator $\mathrm{Tr}(AB)$ through the contraction.
+To the lowest order there are four terms that contribute to $\mathrm{Tr}(AB)$:
+\[
+	\frac{i}{2}\left(\tilde{\alpha}^* A v v^* B \tilde{\alpha}
+	- v^* A \tilde{\alpha} \tilde{\alpha}^* B v
++v^* A \tilde{\beta} \tilde{\beta}^* B v
+- \tilde{\beta}^* A v v^* B \tilde{\beta}\right)
+.\] 
+We see that there is actually no $\mathrm{Tr}(AB)$ generated at this order.
+For the interaction of $A,B$ with the ``fermionic legs''
+\[
+x^* A h - h^* A x - y^* B h + h^* B y
+.\] 
+There are two terms that contribute to the $\mathrm{Tr}(AB)$
+\[
+	x^* A h h^* B y + h^* A x y^* B h
+.\] 
+The order of contraction is $y x^*$ and $y^* x$.
+So there is also no contribution at this order.
+
+(TODO: more discussions on the propagators $\alpha^* \alpha$ and $\beta^* \beta$, and possible cancellation or suppression of new interaction generations.)

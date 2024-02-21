@@ -1,17 +1,17 @@
 \contentsline {section}{Wednesday, 07 Feb}{1}{section*.1}%
-\contentsline {section}{\numberline {1}one-matrix integral}{1}{section.1}%
+\contentsline {section}{\numberline {1}one-matrix integral}{2}{section.1}%
 \contentsline {section}{Thursday, 08 Feb}{2}{equation.1.2}%
 \contentsline {section}{\numberline {2}reparameterization identity}{2}{section.2}%
-\contentsline {section}{Saturday, 10 Feb}{2}{equation.2.4}%
+\contentsline {section}{Saturday, 10 Feb}{3}{equation.2.4}%
 \contentsline {section}{\numberline {3}IKKT}{3}{section.3}%
 \contentsline {section}{Sunday, 11 Feb}{3}{equation.3.6}%
 \contentsline {subsection}{\numberline {3.1}review the resolvent method}{3}{subsection.3.1}%
 \contentsline {section}{\numberline {4}motivation letter}{4}{section.4}%
-\contentsline {section}{Monday, 12 Feb}{5}{section*.2}%
+\contentsline {section}{Monday, 12 Feb}{6}{section*.2}%
 \contentsline {section}{\numberline {5}an RG study of integral}{6}{section.5}%
 \contentsline {section}{Tuesday, 13 Feb}{7}{equation.5.17}%
 \contentsline {section}{\numberline {6}matrix integral from N to N-1}{7}{section.6}%
-\contentsline {section}{Thursday, 15 Feb}{10}{equation.6.29}%
+\contentsline {section}{Thursday, 15 Feb}{11}{equation.6.29}%
 \contentsline {subsection}{\numberline {6.1}a nonlinear RG equation for matrix model}{11}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}notes}{13}{subsection.6.2}%
 \contentsline {section}{Saturday, 17 Feb}{14}{subsection.6.2}%
@@ -20,3 +20,8 @@
 \contentsline {paragraph}{Discussion of symmetries}{16}{section*.4}%
 \contentsline {section}{Monday, 19 Feb}{17}{equation.6.42}%
 \contentsline {paragraph}{how the BRST structure could be helpful?}{17}{section*.5}%
+\contentsline {section}{Tuesday, 20 Feb}{19}{section*.5}%
+\contentsline {paragraph}{Extend the previous analysis to other cases.}{20}{section*.6}%
+\contentsline {section}{Wednesday, 21 Feb}{21}{section*.6}%
+\contentsline {paragraph}{rethink the model}{21}{section*.7}%
+\contentsline {paragraph}{one possible solution to the previous problem?}{21}{section*.8}%

@@ -1,0 +1,69 @@
+%! Tex root: ../master.tex
+
+\paragraph{Extend the previous analysis to other cases.} It's clear that the fermionic matrix $\eta$ plays a special role in this model.
+It has no ``partner'', so the only way to get non-vanishing result is to saturate the measure.
+In the case of $2\times 2$ matrix, this forces the first non-vanishing perturbative expansion starting from the cubic term $(\text{interactions})^3$.
+Similarly, for $N\times N$ matrix, the first non-trivial contribution would start from $(\cdots)^{2N-1}$.
+
+There is one natrual question to think about.
+Given an $N \times N$ fermionic matrix $\psi$,
+one may wonder what's the largest power $\mathrm{Tr}\psi^k$ for non-zero result.
+It's obvious that if $k > N^2$, then it must vanish because there are only $N^2$ elements in $\psi$.
+But what if $k=N^2$?
+If $N$ is even, the $\mathrm{Tr}\psi^{N^2} = 0$ according to the cyclic identity.
+(TODO: I don't know how to prove it's non-vanishing for odd $N$. And how to prove that it's non-vanishing for $\mathrm{Tr}\psi^{N^2-1}$ with even $N$.)
+
+(TODO: There is an error in the analyze below: 
+the matrix product arising from the contraction of fermionic variables should not be understood in the usual sense.
+The same contraction, for example between $x_1,y_1^*$, can not happen twice.)
+
+For a general $N$, one needs to saturate $\mathrm{d}h_1 \mathrm{d}h_1^* \cdots \mathrm{d}h_{N-1} \mathrm{d}h_{N-1}^* \mathrm{d}\theta$.
+The first case that one may consider is that
+all the $h$s are contributed by $ x^* A h$ and $ h^* A x$.
+The only way to contract these two terms is by adding $ \beta^* \eta y$ and $ y^* \eta \beta$ in the following way
+\[
+	(h^* A x) (y^* \eta \beta) (\beta^* \eta y) (x^* A h)
+.\] 
+Then one expects that the term that could be generated containing the elements of the matrix $ A \eta \eta A $.
+For example, a typical term could look like
+\[
+	(A \eta \eta A)_{1 \sigma(1)} \cdots (A \eta \eta A)_{(N-1)\sigma(N-1)}
+.\] 
+where $\sigma$ is a certain permutation.
+However, one still need to saturate the fermionic variable $\theta$.
+That is, one must replace one of the $\eta$ above by $\theta$.
+This always accompanies with a same term with opposite sign $(A\eta \theta A)$ and $(A\theta\eta A)$.
+Or one can expect that by realizing there must be an odd number of fermionic variables.
+So there is no term that containing purely $A$ or $B$ could be generated.
+
+At this stage one may wonder that how is it possible to get only one $\theta$ in the perturbative expansion while getting non-vanishing result?
+This leads us to consider the coupling between the bosonic and fermionic matrices.
+Let's start with $A \psi$, the two structures $ x^* A h $ and $h^* \psi \beta$ can be contracted by using $\beta^* \eta y$ or $\beta^* \theta y$.
+\[
+	(h^* \psi \beta) (\beta^* \eta y) (x^* A h)
+.\] 
+Then one expect that the elements of matrix $\psi \eta A$ will appear.
+However, don't forget that whenever such a term exist, there is a corresponding possibility: replacing it with the following
+\[
+	(h^* A x) (y^* \eta \beta) (\beta^* \psi h)
+.\] 
+Note that they are conjugate to each other
+\[
+	\left[(h^* \psi \beta) (\beta^* \eta y) (x^* A h)\right]^\dagger = - 
+	(h^* A x) (y^* \eta \beta) (\beta^* \psi h)
+.\] 
+The minus sign arises from the interchange between fermionic numbers in each bracket $(\cdots)$.
+(TODO: So if the action is self-conjugate, one expects that the terms involving $A \eta \psi$ will vanish. But it's not clear that the action is self-conjugate.)
+
+The followings are all possible results of contraction
+\begin{align*}
+	A \eta \eta A,\quad B \eta \eta B,\quad AB \\
+	A\eta \psi,\quad B \eta \chi \\
+	\psi \psi,\quad \chi \chi,\quad \psi \eta \eta \chi
+\end{align*}
+These forms can be read from the structure of the interaction.
+A general term in the perturbative expansion will be a multiplication of matrix elements $M_{ij}$ with $M$ choosing from the above matrices and $i$ and $j$ run over all possible values from $1$ to $N-1$.
+This prescription is to ensure the saturation of $h$.
+For the saturation of $\theta$, one can replace one $\eta$ with $\theta$.
+But this replacement will lead to cancellation as above.
+Therefore, it is understood that the fermionic matrix $\eta$ plays an essential role in all the cancelation.
