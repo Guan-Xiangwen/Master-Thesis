@@ -1,0 +1,87 @@
+%! Tex root: ../master.tex
+
+To do the integration over $v,v^\dagger$ and $\alpha$,
+one needs to first identify the quadratic term
+around which the interaction is treated perturbatively.
+For $v,v^\dagger$, the quadratic term is
+\[
+	(N+1)	v^\dagger \left(\mathds{1} + g M^2\right) v
+.\] 
+For $\alpha$, it's
+\[
+\frac{N+1}{2} \alpha^2
+.\] 
+These leads to the following contraction rules
+\begin{align*}
+	\left<v_i^\dagger v_j \right> =\frac{1}{N+1} \left( \frac{1}{1 + g M^2} \right)_{ij} \\
+	\left<\alpha \alpha \right> = \frac{1}{N+1}
+\end{align*}
+The interaction terms are
+\[
+	(N+1)\left( g \alpha v^\dagger M v + g \alpha^2 v^\dagger v 
++ \frac{g}{2} (v^\dagger v)^2 + \frac{g}{4} \alpha^4\right)
+.\]
+
+First, at the zeroth order,
+the partition function has the form
+\[
+	Z_{N+1} \sim \int [\mathrm{d} M] \frac{1}{(N+1)^N \mathrm{Det} (\mathds{1} + g M^2)} \mathrm{e}^{- (N+1) \Tr \left( \frac{1}{2} M^2 + \frac{g}{4} M^4 \right) }
+.\] 
+The $\frac{1}{(N+1)^N}$ factor will be compensated by a rescaling of the effective partition function.
+The determinant can be re-exponented as
+\[
+	\frac{1}{\mathrm{Det}(\mathds{1} + g M^2)} = \mathrm{e}^{- \Tr \ln (1 + g M^2)}
+.\] 
+This leads to the following ``effective action''
+\begin{equation}
+ S_{\text{eff}} = (N+1) \Tr \left( \frac{1}{2} M^2 + \frac{g}{4} M^4 \right) + \Tr \ln (1 + g M^2).	
+\end{equation}
+
+Then at the order $g$,
+one could write the partition function $Z_{N+1}$ as
+\[
+	Z_{N+1} \sim -g (N+1)\int [\mathrm{d} M] \left<\alpha v^\dagger M v
+	+ \alpha^2 v^\dagger v + \frac{1}{2} (v^\dagger v)^2
+	+ \frac{1}{4} \alpha^4\right> \mathrm{e}^{- S_{\text{eff}}[M]}
+.\] 
+The first term will not contribute,
+while other terms giving
+\begin{align*}
+	\left<\alpha^2 v^\dagger v \right> = \frac{1}{(N+1)^{2}}\Tr \left( \frac{1}{\mathds{1} + g M^2} \right) \\
+	\frac{1}{2} \left<(v^\dagger v)^2 \right> = \frac{1}{2(N+1)^2} \left[ \Tr \left( \frac{1}{\mathds{1} + g M^2} \right)  \right]^2 + \frac{1}{2(N+1)^2} \Tr \left( \frac{1}{\mathds{1} + g M^2} \right)^2 \\
+	\frac{1}{4} \left<\alpha^4 \right> = \frac{3}{4(N+1)}.
+\end{align*}
+
+Let's study the case where $g$ is small and keep only the first order of $g$.
+The ``effective action'' becomes
+\[
+	S_{\text{eff}}[M] = (N+1) \Tr \left( \frac{1}{2} M^2 + \frac{g}{4} M^4 \right)  + g \Tr M^2 \\
+.\] 
+The corrections from the interactions to the partition function are
+\[
+	Z_{N+1} \sim -g (N+1)\int [\mathrm{d} M] \left(\frac{3N}{2(N+1)^{2}} 
+	+ \frac{N^2}{2(N+1)^2} + \frac{3}{4(N+1)} \right) \mathrm{e}^{- S_{\text{eff}}[M]} 
+.\] 
+Re-exponentiate these terms will give us a new action,
+which could reproduce the correlation functions calculated from $S_{N+1}[M]$ to the first order of $g$,
+\[
+	S'_{\text{eff}}[M] = (N+1) \Tr \left( \frac{1}{2} M^2 + \frac{g}{4} M^4 \right) + g \Tr M^2 + \frac{3N}{2(N+1)} g
+	+ \frac{N^2}{2(N+1)} g + \frac{3}{4} g
+.\] 
+A feature of the RG flow procedure is the appearance of terms with different orders of $N$.
+
+To put the effective action in the canonical form, one defines
+\begin{align*}
+	M' = \left( 1 + \frac{1 + 2g}{N} \right)^{\frac{1}{2}} M,\\
+	g' = \frac{N(N+1)}{(N+1+2g)^2} g
+\end{align*}
+To the first order of $g$
+\begin{align*}
+	M' \approx \left( \frac{N+1}{N} \right)^{\frac{1}{2}} \left( 1 + \frac{g}{N+1} \right) M,\\
+g' \approx \left( \frac{N}{N+1} \right) \left( 1 - \frac{4g}{N+1} \right) g  
+\end{align*}
+such that
+\begin{equation}
+	S'_{\text{eff}}[M] = N \Tr \left( \frac{1}{2} M'^2 + \frac{g'}{4} M'^4 \right) + \cdots 	
+\end{equation}
+

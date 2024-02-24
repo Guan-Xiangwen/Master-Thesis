@@ -1,0 +1,98 @@
+%! Tex root: ../master.tex
+
+\paragraph{A comparison between the ``dimensional model'' and the ``dimensionless model}
+
+Let's start with a ``dimensionful'' model, whose partition function is given by
+\begin{equation}\label{dim-quar-mod}
+	Z_N (g) = \int \mathrm{exp}\left[- N \left(\frac{1}{2}\Tr M^2 + \frac{g}{4} \Tr M^4 \right)\right]\mathrm{d} M.
+\end{equation}
+The scaling of the matrix $M$, and the coupling $g$ under $N \to \lambda N$ is
+\begin{align*}
+	M \to \lambda^{-1 / 2}M \\
+	g \to \lambda g
+\end{align*}
+One could also write the same theory in a ``dimensionless'' way,
+by introducing $\tilde{M} = \sqrt{N} M$ and $\tilde{g} = N^{-1}g$.
+Then in terms of $\tilde{M}$ and $\tilde{g}$ the partition function reads
+\begin{equation}\label{quar-mod}
+	Z_N (g) = N^{N^2 / 2} \int \mathrm{exp}\left[- \left(\frac{1}{2} \Tr \tilde{M}^2 
+	+ \frac{\tilde{g}}{4} \Tr \tilde{M}^4\right)\right] \mathrm{d}\tilde{M}.
+\end{equation}
+Starting from the ``dimensionless model'' \eqref{quar-mod},
+it's possible to recover the ``dimensionful model'' \eqref{dim-quar-mod} by specifying the quadratic term $\frac{N}{2}\Tr M^2$ first.
+
+\paragraph{the notions of scaling}
+
+First is the scaling from the RG flow.
+Let's start by thinking about the RG calculation to the lowest order.
+This will just reproduce the classical scaling: $g \to \lambda g$ and $\tilde{g}$ is invariant.
+However, they are essentially different.
+In the language of QFT, one can think of $N$ as a cut-off.
+Then the RG method allows us to relate theories with different cut-off such that they will produce the same results (the correlation functions).
+Specifically, to the lowest order, the coupling $g\to \lambda g$ with the change of cut-off $N\to \lambda N$.
+To the lowest order, these are exactly the same as the classical scaling.
+However, the higher order corrections are essential for the RG flow.
+
+Conceptually, the RG flow keeps the theory invariant, 
+while the classical scaling not:
+one knows that the matrix model has a non-trivial $N$ dependence 
+although they share the same form of action.
+The classical scaling is just a natural way to define 
+how the matrix and coupling depending on the underlying scale 
+such that the form of the action keeping the same.
+The classical scaling works like ``zooming in'' or ``zooming out''.
+However, the RG flow works like ``coarse graining''.
+There is no reason to believe that the ``coarse graining'' will give a similar result comparing to the ``zooming'' in general.
+The Gaussian model is a special example that they giving exactly the same result.
+
+Now what about the notion of ``scaling invariance''?
+In this case, it's more interesting to consider yet another scaling.
+Let's call it ``dynamical scaling''.
+The meaning is that only ``dynamical variables'' should be rescaled.
+The matrix is dynamical but the coupling constant is not.
+Therefore, this scaling should not be understood as a change of dimension;
+It's a symmetry of the action.
+The interesting thing about the RG flow is that
+the dynamical scaling invariance could emerge at certain critical point $g_*$.
+The existence of such a point $g_* \neq 0$ seems impossible by just looking at the action, 
+because it is written in a form that only the classical scaling is obvious.
+It's impossible to obtain a dynamical scaling invariance along the classical scaling.
+While the RG flow could deviate from the classical scaling significantly at some points, along which the scaling of $g$ could be frozen.
+
+%\paragraph{To understand RG flow without the distraction from classical scaling, one should work with the dimensionless form.}
+%If $N$ is taken to be a scale, it's not reasonable to apply the saddle point approximation of the action \eqref{dim-quar-mod}.
+%Anyway, let's try to analyze the RG flow of \eqref{quar-mod} further.
+
+Start with the $N+1$-model, and decomposing the matrix $M$ as
+\begin{equation*}
+\begin{pmatrix}
+M & v\\ 
+v^\dagger & \alpha
+\end{pmatrix}.
+\end{equation*}
+The action can be expanded as
+\begin{align}
+S_{N+1}[M,v,v^\dagger,\alpha;g] 
+= &(N + 1)\Tr\left( \frac{1}{2}M^2+\frac{g}{4}M^4\right) 
++ (N + 1) \left(v^\dagger v +\frac{1}{2}\alpha^2\right) \notag \\
+&+ g(N+1)\left( v^\dagger M^2 v + \alpha v^\dagger M v 
++ \alpha^2 v^\dagger v + \frac{1}{2}(v^\dagger v)^2 
++\frac{1}{4}\alpha^4\right ).
+\end{align}
+%Making use of the unitary symmetry,
+%it's possible to shift away the $v,v^\dagger$
+%with a proper Jacobian corresponding to the choose of gauge. 
+%The partition function then could be written as
+%\begin{equation}
+%Z_{N+1}(g) = \int  [\mathrm{Det}(M-\alpha\mathds{1})]^2 
+%\mathrm{exp}\left[-\left(\frac{1}{2}\alpha^2 + \frac{g}{4}\alpha^4
+%+ S_N[M;g]\right)\right]
+%\mathrm{d}\alpha \mathrm{d}M. 
+%\end{equation}
+%The same form holds for a general action 
+%\[
+%S[M] = \frac{1}{2}\Tr M^2 + \sum_{k=3}^{\infty} \frac{g_k}{k} \Tr M^k
+%.\] 
+%
+%The characteristic determinant $\mathrm{Det}(M - \alpha \mathds{1})$
+%is responsible for the non-trivial behavior of the RG flow.

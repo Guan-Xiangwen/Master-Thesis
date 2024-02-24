@@ -1,27 +1,27 @@
-\contentsline {section}{Wednesday, 07 Feb}{1}{section*.1}%
-\contentsline {section}{\numberline {1}one-matrix integral}{2}{section.1}%
-\contentsline {section}{Thursday, 08 Feb}{2}{equation.1.2}%
-\contentsline {section}{\numberline {2}reparameterization identity}{2}{section.2}%
-\contentsline {section}{Saturday, 10 Feb}{3}{equation.2.4}%
-\contentsline {section}{\numberline {3}IKKT}{3}{section.3}%
-\contentsline {section}{Sunday, 11 Feb}{3}{equation.3.6}%
-\contentsline {subsection}{\numberline {3.1}review the resolvent method}{3}{subsection.3.1}%
-\contentsline {section}{\numberline {4}motivation letter}{4}{section.4}%
-\contentsline {section}{Monday, 12 Feb}{6}{section*.2}%
-\contentsline {section}{\numberline {5}an RG study of integral}{6}{section.5}%
-\contentsline {section}{Tuesday, 13 Feb}{7}{equation.5.17}%
-\contentsline {section}{\numberline {6}matrix integral from N to N-1}{7}{section.6}%
-\contentsline {section}{Thursday, 15 Feb}{11}{equation.6.29}%
-\contentsline {subsection}{\numberline {6.1}a nonlinear RG equation for matrix model}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}notes}{13}{subsection.6.2}%
-\contentsline {section}{Saturday, 17 Feb}{14}{subsection.6.2}%
-\contentsline {section}{Sunday, 18 Feb}{15}{equation.6.39}%
-\contentsline {paragraph}{the interaction between A and B}{15}{section*.3}%
-\contentsline {paragraph}{Discussion of symmetries}{16}{section*.4}%
-\contentsline {section}{Monday, 19 Feb}{17}{equation.6.42}%
-\contentsline {paragraph}{how the BRST structure could be helpful?}{17}{section*.5}%
-\contentsline {section}{Tuesday, 20 Feb}{19}{section*.5}%
-\contentsline {paragraph}{Extend the previous analysis to other cases.}{20}{section*.6}%
-\contentsline {section}{Wednesday, 21 Feb}{21}{section*.6}%
-\contentsline {paragraph}{rethink the model}{21}{section*.7}%
-\contentsline {paragraph}{one possible solution to the previous problem?}{21}{section*.8}%
+\contentsline {section}{Saturday, 10 Feb}{1}{section*.1}%
+\contentsline {section}{\numberline {1}IKKT}{1}{section.1}%
+\contentsline {section}{Sunday, 11 Feb}{1}{equation.1.2}%
+\contentsline {subsection}{\numberline {1.1}review the resolvent method}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}motivation letter}{3}{section.2}%
+\contentsline {section}{Monday, 12 Feb}{4}{section*.2}%
+\contentsline {section}{\numberline {3}an RG study of integral}{4}{section.3}%
+\contentsline {section}{Tuesday, 13 Feb}{5}{equation.3.13}%
+\contentsline {section}{\numberline {4}matrix integral from N to N-1}{6}{section.4}%
+\contentsline {section}{Thursday, 15 Feb}{9}{equation.4.25}%
+\contentsline {subsection}{\numberline {4.1}a nonlinear RG equation for matrix model}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}notes}{11}{subsection.4.2}%
+\contentsline {section}{Saturday, 17 Feb}{12}{subsection.4.2}%
+\contentsline {section}{Sunday, 18 Feb}{13}{equation.4.35}%
+\contentsline {paragraph}{the interaction between A and B}{13}{section*.3}%
+\contentsline {paragraph}{Discussion of symmetries}{14}{section*.4}%
+\contentsline {section}{Monday, 19 Feb}{15}{equation.4.38}%
+\contentsline {paragraph}{how the BRST structure could be helpful?}{15}{section*.5}%
+\contentsline {section}{Tuesday, 20 Feb}{18}{section*.5}%
+\contentsline {paragraph}{Extend the previous analysis to other cases.}{18}{section*.6}%
+\contentsline {section}{Wednesday, 21 Feb}{19}{section*.6}%
+\contentsline {paragraph}{rethink the model}{19}{section*.7}%
+\contentsline {paragraph}{one possible solution to the previous problem?}{19}{section*.8}%
+\contentsline {section}{Friday, 23 Feb}{21}{section*.8}%
+\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{21}{section*.9}%
+\contentsline {paragraph}{the notions of scaling}{21}{section*.10}%
+\contentsline {section}{Saturday, 24 Feb}{22}{equation.4.41}%
