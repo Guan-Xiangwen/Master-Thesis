@@ -1,20 +1,18 @@
-\contentsline {section}{Saturday, 10 Feb}{1}{section*.1}%
-\contentsline {section}{\numberline {1}IKKT}{1}{section.1}%
-\contentsline {section}{Sunday, 11 Feb}{1}{equation.1.2}%
-\contentsline {subsection}{\numberline {1.1}review the resolvent method}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}motivation letter}{3}{section.2}%
+\contentsline {section}{Sunday, 11 Feb}{1}{section*.1}%
+\contentsline {subsection}{\numberline {0.1}review the resolvent method}{2}{subsection.0.1}%
+\contentsline {section}{\numberline {1}motivation letter}{3}{section.1}%
 \contentsline {section}{Monday, 12 Feb}{4}{section*.2}%
-\contentsline {section}{\numberline {3}an RG study of integral}{4}{section.3}%
-\contentsline {section}{Tuesday, 13 Feb}{5}{equation.3.13}%
-\contentsline {section}{\numberline {4}matrix integral from N to N-1}{6}{section.4}%
-\contentsline {section}{Thursday, 15 Feb}{9}{equation.4.25}%
-\contentsline {subsection}{\numberline {4.1}a nonlinear RG equation for matrix model}{9}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}notes}{11}{subsection.4.2}%
-\contentsline {section}{Saturday, 17 Feb}{12}{subsection.4.2}%
-\contentsline {section}{Sunday, 18 Feb}{13}{equation.4.35}%
+\contentsline {section}{\numberline {2}an RG study of integral}{4}{section.2}%
+\contentsline {section}{Tuesday, 13 Feb}{5}{equation.2.11}%
+\contentsline {section}{\numberline {3}matrix integral from N to N-1}{6}{section.3}%
+\contentsline {section}{Thursday, 15 Feb}{9}{equation.3.23}%
+\contentsline {subsection}{\numberline {3.1}a nonlinear RG equation for matrix model}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}notes}{11}{subsection.3.2}%
+\contentsline {section}{Saturday, 17 Feb}{12}{subsection.3.2}%
+\contentsline {section}{Sunday, 18 Feb}{13}{equation.3.33}%
 \contentsline {paragraph}{the interaction between A and B}{13}{section*.3}%
 \contentsline {paragraph}{Discussion of symmetries}{14}{section*.4}%
-\contentsline {section}{Monday, 19 Feb}{15}{equation.4.38}%
+\contentsline {section}{Monday, 19 Feb}{15}{equation.3.36}%
 \contentsline {paragraph}{how the BRST structure could be helpful?}{15}{section*.5}%
 \contentsline {section}{Tuesday, 20 Feb}{18}{section*.5}%
 \contentsline {paragraph}{Extend the previous analysis to other cases.}{18}{section*.6}%
@@ -24,4 +22,5 @@
 \contentsline {section}{Friday, 23 Feb}{21}{section*.8}%
 \contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{21}{section*.9}%
 \contentsline {paragraph}{the notions of scaling}{21}{section*.10}%
-\contentsline {section}{Saturday, 24 Feb}{22}{equation.4.41}%
+\contentsline {section}{Saturday, 24 Feb}{22}{equation.3.39}%
+\contentsline {section}{Sunday, 25 Feb}{24}{equation.3.41}%
