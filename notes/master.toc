@@ -1,26 +1,19 @@
-\contentsline {section}{Sunday, 11 Feb}{1}{section*.1}%
-\contentsline {subsection}{\numberline {0.1}review the resolvent method}{2}{subsection.0.1}%
-\contentsline {section}{\numberline {1}motivation letter}{3}{section.1}%
-\contentsline {section}{Monday, 12 Feb}{4}{section*.2}%
-\contentsline {section}{\numberline {2}an RG study of integral}{4}{section.2}%
-\contentsline {section}{Tuesday, 13 Feb}{5}{equation.2.11}%
-\contentsline {section}{\numberline {3}matrix integral from N to N-1}{6}{section.3}%
-\contentsline {section}{Thursday, 15 Feb}{9}{equation.3.23}%
-\contentsline {subsection}{\numberline {3.1}a nonlinear RG equation for matrix model}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}notes}{11}{subsection.3.2}%
-\contentsline {section}{Saturday, 17 Feb}{12}{subsection.3.2}%
-\contentsline {section}{Sunday, 18 Feb}{13}{equation.3.33}%
-\contentsline {paragraph}{the interaction between A and B}{13}{section*.3}%
-\contentsline {paragraph}{Discussion of symmetries}{14}{section*.4}%
-\contentsline {section}{Monday, 19 Feb}{15}{equation.3.36}%
-\contentsline {paragraph}{how the BRST structure could be helpful?}{15}{section*.5}%
-\contentsline {section}{Tuesday, 20 Feb}{18}{section*.5}%
-\contentsline {paragraph}{Extend the previous analysis to other cases.}{18}{section*.6}%
-\contentsline {section}{Wednesday, 21 Feb}{19}{section*.6}%
-\contentsline {paragraph}{rethink the model}{19}{section*.7}%
-\contentsline {paragraph}{one possible solution to the previous problem?}{19}{section*.8}%
-\contentsline {section}{Friday, 23 Feb}{21}{section*.8}%
-\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{21}{section*.9}%
-\contentsline {paragraph}{the notions of scaling}{21}{section*.10}%
-\contentsline {section}{Saturday, 24 Feb}{22}{equation.3.39}%
-\contentsline {section}{Sunday, 25 Feb}{24}{equation.3.41}%
+\contentsline {section}{Saturday, 17 Feb}{1}{section*.1}%
+\contentsline {section}{Sunday, 18 Feb}{2}{equation.0.1}%
+\contentsline {paragraph}{the interaction between A and B}{2}{section*.2}%
+\contentsline {paragraph}{Discussion of symmetries}{3}{section*.3}%
+\contentsline {section}{Monday, 19 Feb}{4}{equation.0.4}%
+\contentsline {paragraph}{how the BRST structure could be helpful?}{5}{section*.4}%
+\contentsline {section}{Tuesday, 20 Feb}{7}{section*.4}%
+\contentsline {paragraph}{Extend the previous analysis to other cases.}{7}{section*.5}%
+\contentsline {section}{Wednesday, 21 Feb}{8}{section*.5}%
+\contentsline {paragraph}{rethink the model}{8}{section*.6}%
+\contentsline {paragraph}{one possible solution to the previous problem?}{8}{section*.7}%
+\contentsline {section}{Friday, 23 Feb}{10}{section*.7}%
+\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{10}{section*.8}%
+\contentsline {paragraph}{the notions of scaling}{11}{section*.9}%
+\contentsline {section}{Saturday, 24 Feb}{12}{equation.0.7}%
+\contentsline {section}{Sunday, 25 Feb}{13}{equation.0.9}%
+\contentsline {section}{Wednesday, 28 Feb}{14}{equation.0.9}%
+\contentsline {section}{Thursday, 29 Feb}{14}{equation.0.9}%
+\contentsline {section}{Friday, 01 Mar}{14}{equation.0.9}%
