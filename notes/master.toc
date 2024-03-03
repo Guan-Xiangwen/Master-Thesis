@@ -1,19 +1,19 @@
-\contentsline {section}{Saturday, 17 Feb}{1}{section*.1}%
-\contentsline {section}{Sunday, 18 Feb}{2}{equation.0.1}%
-\contentsline {paragraph}{the interaction between A and B}{2}{section*.2}%
-\contentsline {paragraph}{Discussion of symmetries}{3}{section*.3}%
-\contentsline {section}{Monday, 19 Feb}{4}{equation.0.4}%
-\contentsline {paragraph}{how the BRST structure could be helpful?}{5}{section*.4}%
-\contentsline {section}{Tuesday, 20 Feb}{7}{section*.4}%
-\contentsline {paragraph}{Extend the previous analysis to other cases.}{7}{section*.5}%
-\contentsline {section}{Wednesday, 21 Feb}{8}{section*.5}%
-\contentsline {paragraph}{rethink the model}{8}{section*.6}%
-\contentsline {paragraph}{one possible solution to the previous problem?}{8}{section*.7}%
-\contentsline {section}{Friday, 23 Feb}{10}{section*.7}%
-\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{10}{section*.8}%
-\contentsline {paragraph}{the notions of scaling}{11}{section*.9}%
-\contentsline {section}{Saturday, 24 Feb}{12}{equation.0.7}%
-\contentsline {section}{Sunday, 25 Feb}{13}{equation.0.9}%
-\contentsline {section}{Wednesday, 28 Feb}{14}{equation.0.9}%
-\contentsline {section}{Thursday, 29 Feb}{14}{equation.0.9}%
-\contentsline {section}{Friday, 01 Mar}{14}{equation.0.9}%
+\contentsline {section}{Sunday, 18 Feb}{1}{section*.1}%
+\contentsline {paragraph}{the interaction between A and B}{1}{section*.2}%
+\contentsline {paragraph}{Discussion of symmetries}{2}{section*.3}%
+\contentsline {section}{Monday, 19 Feb}{3}{equation.0.3}%
+\contentsline {paragraph}{how the BRST structure could be helpful?}{4}{section*.4}%
+\contentsline {section}{Tuesday, 20 Feb}{6}{section*.4}%
+\contentsline {paragraph}{Extend the previous analysis to other cases.}{6}{section*.5}%
+\contentsline {section}{Wednesday, 21 Feb}{7}{section*.5}%
+\contentsline {paragraph}{rethink the model}{7}{section*.6}%
+\contentsline {paragraph}{one possible solution to the previous problem?}{7}{section*.7}%
+\contentsline {section}{Friday, 23 Feb}{9}{section*.7}%
+\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{9}{section*.8}%
+\contentsline {paragraph}{the notions of scaling}{10}{section*.9}%
+\contentsline {section}{Saturday, 24 Feb}{11}{equation.0.6}%
+\contentsline {section}{Sunday, 25 Feb}{12}{equation.0.8}%
+\contentsline {section}{Wednesday, 28 Feb}{13}{equation.0.8}%
+\contentsline {section}{Thursday, 29 Feb}{13}{equation.0.8}%
+\contentsline {section}{Friday, 01 Mar}{13}{equation.0.8}%
+\contentsline {section}{Sunday, 03 Mar}{14}{idea.1}%

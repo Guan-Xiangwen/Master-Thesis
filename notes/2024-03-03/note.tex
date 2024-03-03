@@ -1,0 +1,90 @@
+%! Tex root: ../master.tex
+
+To include supersymmetry in the matrix model,
+we are forced to consider the Grassmann-valued matrix.
+This leads us to think about how to build a matrix upon the Grassmann algebra.
+In particular, think about how the supersymmetry transformation is realized as a transformation inside the Grassmann algerba (interchange odd and even elements).
+
+First, one should difference between the elements of Grassmann algebra and the Grassmann variables.
+The later are the generators of the Grassmann algebra.
+The differential and integration are defined for the Grassmann variables.
+Then
+
+\begin{question}
+	The fermionic matrix has entries of the Grassmann variables or the general odd elements of the Grassmann algebra?
+\end{question}
+It seems natural to allow general odd elements and take the number of the Grassmann variables to infinity.
+\begin{question}
+	How to define the integration over such a Grassmann-valued matrix?
+\end{question}
+
+The supersymmetry of a matrix model may imply the vanishing of some correlation functions.
+This may be regarded as the matrix analog of the Ward identity.
+An example is the superfield model mentioned in
+\urlref{https://arxiv.org/abs/hep-th/9601041}{Ple96}.
+The reason behind the vanishing is the cancellation between bosonic and fermionic degrees of freedom.
+However, the prove given in the article based on the diagonalization of the bosonic matrix.
+One would like to see the cancellation in a direct way:
+how the cancellation works when calculating the effective action.
+The first step would be a careful study of the action under a parameterization of the model.
+
+One problem of the RG calculation is that
+the susy transformation of the reduced matrix involving the variables that being integrated out.
+This implies that the parameterization is not done in a way that the susy is preserved.
+To avoid the problem, maybe we should use the formalism where the susy is realized linearly.
+
+\begin{idea}
+	Do the RG calculation for a model where the supersymmetry is realized linearly.
+\end{idea}
+
+The supersymmetry Ward identity gives a relation between correlation functions
+\begin{equation}
+	\frac{1}{2} \left<\mathrm{Tr} V'(\phi) \phi^{n-1} \right>
+	= \sum_{a+b=n-2} \left<\mathrm{Tr} \phi^a \psi \phi^b \overline{\psi} \right>.
+\end{equation}
+This identity maybe used to reduce the result of the calculation.
+\begin{problem}
+Try to derive this Ward identity.	
+\end{problem}
+\begin{problem}
+How does the measure $\mathrm{d}\phi \mathrm{d}\psi \mathrm{d}\overline{\psi}$ transforms under the susy?	
+\end{problem}
+First note that the super-determinant must involve $\overline{\epsilon}\epsilon$ such that the integral is bosonic.
+So the measure is invariant to the first order of $\epsilon,\overline{\epsilon}$.
+The ``superfield'' $\Phi = \phi + \overline{\psi}\theta + \overline{\theta}\psi + \theta \overline{\theta} F$ could be the starting point for deriving the Ward identity.
+Calculate $\Phi^n$
+\begin{align*}
+	\Phi^n &= \left( \phi + \overline{\psi}\theta + \overline{\theta} \psi + \theta \overline{\theta} F \right)^n \\
+		   &= \phi^n + \left( \sum_{a+b=n-1} \phi^a \overline{\psi} \phi^b \right) \theta + \overline{\theta} \left( \sum_{a+b=n-1} \phi^a \psi \phi^b\right)  \\
+		   &+ \theta \overline{\theta}\left(\sum_{a+b+c=n-2} \phi^a \overline{\psi} \phi^b \psi \phi^c + \sum_{a+b=n-1}\phi^a F \phi^b\right).
+\end{align*}
+This leads us to consider the following reparameterization (induced by $\Phi^n$, this reparameterization should be supersymmetric.)
+\begin{align*}
+	\phi &\to \phi' = \phi + \varepsilon \phi^n \\	
+	\overline{\psi} &\to \overline{\psi}' = \overline{\psi} + \varepsilon\sum_{a+b=n-1} \phi^a \overline{\psi} \phi^b \\
+	\psi &\to \psi' = \psi + \varepsilon \sum_{a+b=n-1} \phi^a \psi \phi^b \\
+	F &\to F' = F + \varepsilon\left( \sum_{a+b+c=n-2} \phi^a \overline{\psi} \phi^b \psi \phi^c + \sum_{a+b=n-1} \phi^a F \phi^b\right)
+\end{align*}
+Consider how the measure $\mathrm{d}\phi \mathrm{d}\overline{\psi} \mathrm{d}\psi \mathrm{d}F$ changes to the first order of $\varepsilon$.
+The usual coordinate transformation formula $\mathrm{det} \mathrm{Jac}$ is generalized to that involving Grassmann variables $\mathrm{Ber} \mathrm{Jac}$.
+The Berezinian satisfies the formula
+\begin{equation}
+	\mathrm{Ber} \left( \mathds{1} + \varepsilon M \right) = 1 + \varepsilon \mathrm{STr} M.	
+\end{equation}
+Here the $\mathrm{STr}$ is the super-trace.
+It can be proved that there is no change of the measure.
+
+Now the following terms arise from the variation of the action
+\begin{align*}
+	\varepsilon \mathrm{Tr}[V''(\phi)\phi^n F]-2 \varepsilon \sum_{a+b=n-1} \mathrm{Tr} (\phi^a F \phi^b F) + \varepsilon \sum_{a+b=n-1} \mathrm{Tr}[V'(\phi)\phi^a F \phi^b] \\
+	-2 \varepsilon \sum_{a+b+c=n-2} \mathrm{Tr} (\phi^a \overline{\psi} \phi^b \psi \phi^c F) + \varepsilon \sum_{a+b+c=n-2} \mathrm{Tr} [V'(\phi) \phi^a \overline{\psi} \phi^b \psi \phi^c] \\
+	+\varepsilon \sum_{k=0}^\infty k g_k \sum_{a+b=k-2} \Big[ a \mathrm{Tr}(\phi^{a+n-1}\overline{\psi}\phi^b\psi) + b \mathrm{Tr}(\phi^a \overline{\psi}\phi^{b+n-1}\psi)   \\
+	+ 2 \sum_{c+d=n-1} \mathrm{Tr}(\phi^{a+c}\overline{\psi}\phi^{b+d}\psi)\Big]
+\end{align*}
+The second line will vanish after integrating over $F$.
+The first line will give $-2\varepsilon \sum_{a+b=n-1} \mathrm{Tr}\phi^a \mathrm{Tr}\phi^b + \frac{\varepsilon}{2} \mathrm{Tr}[V''(\phi)\phi^n V'(\phi)]$.
+\begin{remark}
+The above calculation gives a fairly complicate identity.
+It's also not clear whether it will be useful or not.
+Also, this does not lead to the Ward identity.
+\end{remark}
