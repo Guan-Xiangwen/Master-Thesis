@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1709499083 "master.tex" "master.pdf" "master" 1709499085
+["pdflatex"] 1709568978 "master.tex" "master.pdf" "master" 1709568979
   "/etc/texmf/web2c/texmf.cnf" 1652867606 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -234,7 +234,6 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1652868322 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1696320802 8255787 65367d96a2b0bfd45c366a86edcb3826 ""
-  "2024-02-18/note.tex" 1708289207 7520 1a94b72c59aca973243a88f3bb657cd5 ""
   "2024-02-19/note.tex" 1708375530 7234 21f80b640a42dda5f17db1e7bd3c55e9 ""
   "2024-02-20/note.tex" 1708448947 4263 d2b2fbb1e20f6c36fce08dfe7b137eb2 ""
   "2024-02-21/note.tex" 1708546626 6167 44b11718a153d6447b3a23e489c15c9d ""
@@ -244,16 +243,17 @@
   "2024-02-28/note.tex" 1709156429 995 196151433dcf13186a66f13971bb3698 ""
   "2024-02-29/note.tex" 1709238115 333 1163669cab686d0e09e452dfd1375c23 ""
   "2024-03-01/note.tex" 1709460521 3279 194a0db5916504c21b8da776867c5466 ""
-  "2024-03-03/note.tex" 1709499082 5591 284024523bc61275a0e1aef6999b904f ""
-  "master.aux" 1709499085 5135 7949257b360f8b072ea4f41838c7d27d "pdflatex"
+  "2024-03-03/note.tex" 1709499215 5591 284024523bc61275a0e1aef6999b904f ""
+  "2024-03-04/note.tex" 1709568975 8300 bdcd295e35c1b544553334f1fdabd818 ""
+  "master.aux" 1709568979 5184 222d030a059cbe9bb034547937bb29f7 "pdflatex"
   "master.tex" 1709296097 1226 ac1723194bb12a9102901445c9accb2f ""
-  "master.toc" 1709499085 1294 a6b68da859325183a11e2069a7ce7bf4 "pdflatex"
+  "master.toc" 1709568979 1146 ca96799edf1ff890b992d0ca3a845207 "pdflatex"
   "preamble.tex" 1708676613 1256 a39f83f2c16835c6991aeab625cf7ea1 ""
   "reference.tex" 1708095958 1099 46267a1ece2f73a3ae7473f22d630533 ""
   "symbols.tex" 1708677145 31 d67423f87bec0e7ffb14ccff3ebad4da ""
   "theorems.tex" 1709296426 1310 bdc66c8b55722ac8eba397561db85cb8 ""
   (generated)
-  "master.log"
-  "master.toc"
   "master.aux"
   "master.pdf"
+  "master.log"
+  "master.toc"

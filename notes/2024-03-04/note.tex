@@ -1,0 +1,182 @@
+%! Tex root: ../master.tex
+Study the RG flow of the ``superfield'' matrix model.
+This model is mentioned in
+\urlref{https://arxiv.org/abs/hep-th/9601041}{Ple96}
+
+The matrix-valude superfield is constructed as
+\begin{equation}
+\Phi = \phi + \overline{\psi} \theta + \overline{\theta} \psi + \theta \overline{\theta} F.	
+\end{equation}
+$\theta,\overline{\theta}$ are the coordinates of the superspace.
+$\phi,F$ are bosonic $N\times N$ matrix, and we assume them to be Hermitian.
+$\psi,\overline{\psi}$ are fermionic $N\times N$ matrix, whose entries are Grassmann variables.
+Recall that the complex conjugate of the product of Grassmann variables is defined as $ (\xi \eta)^* = \eta^* \xi^*$.
+To keep $\Phi$ Hermitian $\Phi^\dagger = \Phi$, we require that
+\[
+	\psi^\dagger  = \overline{\psi},\quad \theta^* = \overline{\theta}
+.\] 
+The measure over the superfield will be the usual Berezian integral of the matrix entries
+\begin{equation}
+\mathrm{d}\Phi = \mathrm{d}\phi \mathrm{d}F \mathrm{d}\overline{\psi} \mathrm{d}\psi.	
+\end{equation}
+
+The supersymmetric action can be constructed as
+\begin{equation}
+	S[\Phi] =\mathrm{Tr} \int \mathrm{d}\theta \mathrm{d}\overline{\theta}
+	\left\{ - D_\theta \Phi D_{\overline{\theta}} \Phi + \sum_{k=0}^\infty g_k \Phi^k \right\}.
+\end{equation}
+The super-derivative acts from the right.
+The matrix model partition function is
+\begin{equation}
+	Z_\Phi [g_k] = \int [\mathrm{d}\Phi] \mathrm{exp} \left( - N S[\Phi] \right) 	.
+\end{equation}
+We have $D_\theta \Phi = \overline{\psi} - \overline{\theta} F$ and $D_{\overline{\theta}} \Phi = -\psi + \theta F$.
+Their product will contribute to the action only if the measure $\mathrm{d}\theta \mathrm{d}\overline{\theta}$ is saturated.
+This will give a term $\mathrm{Tr}F^2$ in the action.
+We calculate the $\Phi^k$ term as
+\begin{align*}
+	\Phi^k &= \left( \phi + \overline{\psi}\theta + \overline{\theta} \psi + \theta \overline{\theta} F \right)^k \\
+		   &= \phi^k + \left( \sum_{a+b=k-1} \phi^a \overline{\psi} \phi^b \right) \theta + \overline{\theta} \left( \sum_{a+b=k-1} \phi^a \psi \phi^b\right)  \\
+		   &+ \theta \overline{\theta}\left(\sum_{a+b+c=k-2} \phi^a \overline{\psi} \phi^b \psi \phi^c + \sum_{a+b=k-1}\phi^a F \phi^b\right).
+\end{align*}
+By taking trace and keeping only the $\theta \overline{\theta}$ term, we get in the action a term
+\[
+	- \mathrm{Tr}[V'(\phi) F] - \sum_{k=0}^\infty k g_k \sum_{a+b=k-2} \mathrm{Tr}(\phi^a \overline{\psi} \phi^b \psi)
+.\] 
+
+Let's assume a quartic potential $V(\phi) = \frac{1}{2} \phi^2 + \frac{g}{4} \phi^4$,
+\begin{align*}
+	S[\Phi] &= \mathrm{Tr} F^2 - \mathrm{Tr} (\phi F) - g \mathrm{Tr}(\phi^3 F) 	 \\
+			& - \mathrm{Tr}(\overline{\psi}\psi) - g \left[ \mathrm{Tr}(\phi^2 \overline{\psi} \psi) + \mathrm{Tr} (\phi \overline{\psi} \phi \psi) + \mathrm{Tr}(\overline{\psi} \phi^2 \psi) \right] .
+\end{align*}
+Although it's easy to do the integral over $F$, we will not do that.
+Because it will lead to a non-linear supersymmetry transformation rule.
+However, let's define $F' = F - \frac{1}{2} \phi$ and rewrite the action in terms of $F$ such that a quadratic term in $\phi$ will appear in the action
+\begin{align*}
+	S[\Phi] &= \mathrm{Tr} F'^2 - \frac{1}{4} \mathrm{Tr} \phi^2 - \frac{g}{2} \mathrm{Tr} \phi^4 - g \mathrm{Tr} (\phi^3 F') 	 \\
+			& - \mathrm{Tr}(\overline{\psi}\psi) - g \left[ \mathrm{Tr}(\phi^2 \overline{\psi} \psi) + \mathrm{Tr} (\phi \overline{\psi} \phi \psi) + \mathrm{Tr}(\overline{\psi} \phi^2 \psi) \right] .
+\end{align*}
+The supersymmetry variation reads
+\begin{align*}
+	\delta \phi &= \overline{\varepsilon} \psi + \overline{\psi} \varepsilon \\
+	\delta \psi &= -\varepsilon (F' + \frac{1}{2}\phi) \\
+	\delta \overline{\psi} &= - \overline{\varepsilon} (F' + \frac{1}{2}\phi) \\
+	\delta F' &= -\frac{1}{2} (\overline{\varepsilon}\psi + \overline{\psi}\varepsilon)
+\end{align*}
+
+Think about applying the RG strategy on this action.
+If we denote $\phi_{i,N}=v_i,\phi_{N,i}=v_i^*$, the following term will appear
+\[
+-g v^\dagger F' \phi v - g v^\dagger \phi F' v
+\] 
+from the interaction $-g \mathrm{Tr} (\phi^3 F')$.
+It will contribute a $\mathrm{Tr}(\phi F')$ term to the effective action.
+Why the supersymmetry cancellation does not happen here?
+This is because the supersymmetry transformation acts on all matrix entries simultaneously: it does not realize solely on the variables that being integrated out.
+
+\begin{idea}
+Study the effect of a ``local'' supersymmetry transformation: that is, those only act on a part of the matrix.	
+\end{idea}
+
+\begin{idea}
+Carry out the calculation anyway, to see what you get.	
+\end{idea}
+
+For the RG strategy, let's decompose the matrix
+\begin{align*}
+	F'_0 = \begin{pmatrix} F' & f \\ f^\dagger & a \end{pmatrix},\quad \phi_0 = \begin{pmatrix} \phi & v \\ v^\dagger & \alpha \end{pmatrix} \\
+	\psi_0 = \begin{pmatrix} \psi & \chi \\ \omega^\dagger & \beta \end{pmatrix},\quad \overline{\psi}_0 = \begin{pmatrix} \overline{\psi} & \omega \\ \chi^\dagger & \overline{\beta} \end{pmatrix}
+\end{align*}
+The interactions decompose correspondingly
+\begin{align*}
+	\frac{g}{2} \mathrm{Tr} \phi_0^4 &= 
+	\frac{g}{2}\mathrm{Tr}\phi^4 
+	+ 2 g v^\dagger \phi^2 v + g (v^\dagger v)^2 
+	+ 2g \alpha v^\dagger \phi v + 2g \alpha^2 v^\dagger v	
+	+ \frac{g}{2} \alpha^4
+	\\
+	g \mathrm{Tr}(\phi_0^3 F_0') &= 
+	g \mathrm{Tr}(\phi^3 F') 
+	+ g (v^\dagger \phi^2 f + f^\dagger \phi^2 v) 
+	+ g (v^\dagger \phi F' v + v^\dagger F' \phi v) 
+	\\
+	&+ g (\alpha v^\dagger \phi f + \alpha f^\dagger \phi v) 
+	+ g a v^\dagger \phi v + g \alpha v^\dagger F' v
+	+ g (v^\dagger v v^\dagger f + v^\dagger v f^\dagger v)
+	\\
+	&+ g(\alpha^2 v^\dagger f + \alpha^2 f^\dagger v) 
+	+ 2 g a \alpha v^\dagger v + g a \alpha^3
+	\\
+	g \mathrm{Tr}(\phi_0^2 \overline{\psi}_0 \psi_0 
+	+ \overline{\psi}_0\phi_0^2 \psi_0) 
+	&=g \mathrm{Tr}(\phi^2 \overline{\psi} \psi 
+	+ \overline{\psi} \phi^2 \psi)
+	+ g (v^\dagger \overline{\psi} \psi v 
+	+ v^\dagger \psi \overline{\psi} v) 
+	- g (\omega^\dagger \phi^2 \omega 
+	- \chi^\dagger \phi^2 \chi) 
+	\\
+	&+ g (\chi^\dagger \psi \phi v 
+	+ v^\dagger \phi \overline{\psi} \chi 
+	- v^\dagger \phi \psi \omega 
+	-\omega^\dagger \overline{\psi} \phi v)
+	\\
+	&+ g (\alpha \chi^\dagger \psi v 
+	- \alpha v^\dagger \psi \omega 
+	+ \alpha v^\dagger \overline{\psi} \chi 
+	- \alpha \omega^\dagger \overline{\psi} v)
+    \\ 
+	&+ g (\overline{\beta} \omega^\dagger \phi v 
+	+ \overline{\beta} v^\dagger \phi \chi 
+	- \beta v^\dagger \phi \omega 
+	- \beta \chi^\dagger \phi v) 
+	\\
+	&+ g (v^\dagger \omega \omega^\dagger v 
+	- v^\dagger \chi \chi^\dagger v 
+	+ v^\dagger v \chi^\dagger \chi 
+	- v^\dagger v \omega^\dagger \omega)
+	\\
+	&+ g (\alpha \overline{\beta} \omega^\dagger v 
+	+ \alpha \overline{\beta} v^\dagger \chi 
+	+ v^\dagger \omega \beta \alpha 
+	+ \chi^\dagger v \alpha \beta) 
+	\\
+	&+ g (2 v^\dagger v \overline{\beta} \beta 
+	+ \alpha^2 \chi^\dagger \chi 
+	- \alpha^2 \omega^\dagger \omega) 
+	+ g \alpha^2 \overline{\beta} \beta
+	\\
+	g \mathrm{Tr} (\phi_0 \overline{\psi}_0 \phi_0 \psi_0)
+	&= g\mathrm{Tr} (\phi \overline{\psi} \phi \psi)
+	+ g(v^\dagger \overline{\psi} \phi \chi
+	+ \chi^\dagger \phi \psi v
+	- v^\dagger \psi \phi \omega
+	- \omega^\dagger \phi \overline{\psi} v) 
+	\\
+	&+ g(\alpha \chi^\dagger \phi \chi
+	- \alpha \omega^\dagger \phi \omega
+	+ \overline{\beta} v^\dagger \psi v
+	- \beta v^\dagger \overline{\psi} v)
+	+g (\chi^\dagger v \omega^\dagger v
+	+ v^\dagger \omega v^\dagger \chi)
+	\\
+	&+ g(\alpha \overline{\beta} \omega^\dagger v
+	-\alpha \beta v^\dagger \omega
+	+ \alpha \overline{\beta} v^\dagger \chi
+	- \alpha \beta \chi^\dagger v)
+	+ g \alpha^2 \overline{\beta}\beta. 
+\end{align*}
+To the first order of $g$, the non-vanishing contributions are
+\[
+2g v^\dagger \phi^2 v 
++ g (v^\dagger \phi F' v + v^\dagger F' \phi v) 
+- g(\omega^\dagger \phi^2 \omega - \chi^\dagger \phi^2 \chi)
+.\] 
+The quadratic terms are $\frac{1}{2}(v^\dagger v)$
+and $\chi^\dagger \chi - \omega^\dagger \omega$.
+
+\begin{idea}
+There are two ways through which the supersymmetry could help us in the calculation: 1. build up a model in which the supersymmetry is realized ``locally''; 2. develop another RG method which is compatible with the global supersymmetry;
+
+We focus on susy because we believe it's a crucial ingredient to build a conformal matrix model.
+\end{idea}
