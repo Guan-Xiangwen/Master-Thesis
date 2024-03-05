@@ -1,0 +1,79 @@
+%! Tex root: ../master.tex
+
+notes about \urlref{https://arxiv.org/abs/2101.01732}{BFFGLM21}:
+
+The paper consider a D(-1)/D7-brane system in the Type II B string theory
+with a magnetic flux along the world-volume of the D7-brane.
+There are $(N+M)$ D7-branes stacked along the first $8$ directions
+$\mu = 1,\dots,8$.
+A constant background field is introduced on the first $N$ D7-branes in the following way
+\[
+	2 \pi \alpha' F^{(0)} = \begin{pmatrix} F_1^{(0)} & 0 & 0 & 0 \\
+		0 & F_2^{(0)} & 0 & 0 \\
+		0 & 0 & F_3^{(0)} & 0 \\
+	0 & 0 & 0 & F_4^{(0)} \end{pmatrix} \mathds{1}_{N\times N}
+.\] 
+With $ F_i^{(0)} = \begin{pmatrix} 0 & + f_1 \\ - f_1 & 0 \end{pmatrix}$.
+The initial gauge symmetry group $U(N+M)$ is broken to $U(N)\times U(M)$
+by this constant background.
+It also breaks the Lorentz invariance in the $8$-dimensional space in general.
+
+The first $N$ D7-branes are labeled by D7;
+while the $M$ D7-branes are labeled by D7'.
+
+Then a stack of $k$ D(-1)-branes are added
+to study some non-perturbative features in the effective theory
+defined on the world-volume of the D7 and D7' branes.
+Now we study the physical states of the open strings
+stretching between two D(-1)-branes.
+Because they have Dirichlet/Dirchlet boundary conditions in all ten directions
+they do not carry any momentum and describe non-propagating degrees of freedom.
+
+For the open string, the fermionic world-sheet fields $\psi^\mu (z), \tilde{\psi}^\mu (\overline{z})$ have two sectors: Neveu-Schwarz and Ramond.
+To be specific, in the coordinate $(\sigma_1,\sigma_2),0\leq\sigma_1\leq\pi$
+the possible boundary conditions are
+\begin{equation}
+	\psi^\mu (0,\sigma_2) = \mathrm{exp}(2\pi i \nu) \tilde{\psi}^\mu(0,\sigma_2)
+	\quad
+	\psi^\mu (\pi,\sigma_2) = \mathrm{exp} (2\pi i \nu') \tilde{\psi}^\mu (\pi,\sigma_2).
+\end{equation}
+where $\nu,\nu'$ take the values $0$ and $\frac{1}{2}$.
+However, $\nu'$ can be set to zero $\nu'=0$
+by a redefinition of $\tilde{\psi}^\mu \to \mathrm{exp}(-2\pi i\nu')\tilde{\psi}^\mu$.
+Therefore, there are two sectors: $\nu=0$ for Ramond and $\nu=\frac{1}{2}$ For Neveu-Schwarz.
+
+The physical states vertex operators are written down in the following ways.
+The space-time indices are $I = 1,2,3,4$
+for the $8$-dimensions in four complex coordinates.
+The remaining $2$-dimensions are just labeled by different letters.
+
+The physical states in the NS sector under consideration
+are those excited by one fermionic oscillator.
+The vertex operators are written as
+\begin{align*}
+	V_{B^I} &= \frac{B^I}{\sqrt{2}} \overline{\Psi}_I (z) \mathrm{e}^{-\varphi(z)},\quad
+	V_{\overline{B}_I} = \frac{\overline{B}_I}{\sqrt{2}} \Psi^I (z) \mathrm{e}^{-\varphi(z)} 
+	\\
+	V_{\xi} &= \xi \overline{\Psi}_5 (z) \mathrm{e}^{-\varphi(z)},\quad
+	V_{\chi} = \chi \Psi^5 (z) \mathrm{e}^{-\varphi(z)}.
+\end{align*}
+$\Psi$s are the fermionic string coordinates; 
+the $\mathrm{e}^{-\varphi(z)}$ is the bosonization of the superconformal ghost operator $\delta(\gamma)$.
+This form of the vertex operator is called in the (-1)-picture.
+These vertex operators are conformal fields of dimension $1$,
+and possess an even $F$-charge;
+thus they are preserved by the GSO projection.
+\begin{problem}
+The vertex operators are objects that are defined for the world-sheet CFT.
+The ``moduli'' $B,\xi,\chi$ determine the strength of the vertex operators.
+The effective action is written down in terms of these ``moduli''.
+
+The structure of the effective action is obtained by 
+matching the calculation of the scattering amplitudes using the vertex operators.
+However, the world-sheet point of view seems quite different from the effective action point of view.
+Is it worth to review the world-sheet calculation to get some understanding of the structure of the effective action?
+Maybe first describing the scattering process in string theory?
+\end{problem}
+
+In the R sector, the only physical state is the vacuum.
+(What's the meaning of vacuum here?)

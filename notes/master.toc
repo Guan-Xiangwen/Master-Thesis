@@ -1,17 +1,16 @@
-\contentsline {section}{Monday, 19 Feb}{1}{section*.1}%
-\contentsline {paragraph}{how the BRST structure could be helpful?}{1}{section*.2}%
-\contentsline {section}{Tuesday, 20 Feb}{3}{section*.2}%
-\contentsline {paragraph}{Extend the previous analysis to other cases.}{3}{section*.3}%
-\contentsline {section}{Wednesday, 21 Feb}{5}{section*.3}%
-\contentsline {paragraph}{rethink the model}{5}{section*.4}%
-\contentsline {paragraph}{one possible solution to the previous problem?}{5}{section*.5}%
-\contentsline {section}{Friday, 23 Feb}{7}{section*.5}%
-\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{7}{section*.6}%
-\contentsline {paragraph}{the notions of scaling}{7}{section*.7}%
-\contentsline {section}{Saturday, 24 Feb}{8}{equation.0.3}%
-\contentsline {section}{Sunday, 25 Feb}{10}{equation.0.5}%
-\contentsline {section}{Wednesday, 28 Feb}{10}{equation.0.5}%
-\contentsline {section}{Thursday, 29 Feb}{11}{equation.0.5}%
-\contentsline {section}{Friday, 01 Mar}{11}{equation.0.5}%
-\contentsline {section}{Sunday, 03 Mar}{12}{idea.1}%
-\contentsline {section}{Monday, 04 Mar}{14}{remark.1}%
+\contentsline {section}{Tuesday, 20 Feb}{1}{section*.1}%
+\contentsline {paragraph}{Extend the previous analysis to other cases.}{1}{section*.2}%
+\contentsline {section}{Wednesday, 21 Feb}{2}{section*.2}%
+\contentsline {paragraph}{rethink the model}{3}{section*.3}%
+\contentsline {paragraph}{one possible solution to the previous problem?}{3}{section*.4}%
+\contentsline {section}{Friday, 23 Feb}{4}{section*.4}%
+\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{5}{section*.5}%
+\contentsline {paragraph}{the notions of scaling}{5}{section*.6}%
+\contentsline {section}{Saturday, 24 Feb}{6}{equation.0.3}%
+\contentsline {section}{Sunday, 25 Feb}{7}{equation.0.5}%
+\contentsline {section}{Wednesday, 28 Feb}{8}{equation.0.5}%
+\contentsline {section}{Thursday, 29 Feb}{8}{equation.0.5}%
+\contentsline {section}{Friday, 01 Mar}{8}{equation.0.5}%
+\contentsline {section}{Sunday, 03 Mar}{9}{idea.1}%
+\contentsline {section}{Monday, 04 Mar}{12}{remark.1}%
+\contentsline {section}{Tuesday, 05 Mar}{15}{idea.5}%

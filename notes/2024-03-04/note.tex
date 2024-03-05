@@ -22,7 +22,7 @@ The measure over the superfield will be the usual Berezian integral of the matri
 
 The supersymmetric action can be constructed as
 \begin{equation}
-	S[\Phi] =\mathrm{Tr} \int \mathrm{d}\theta \mathrm{d}\overline{\theta}
+	S[\Phi] =\mathrm{Tr} \int \mathrm{d}\overline{\theta} \mathrm{d}\theta
 	\left\{ - D_\theta \Phi D_{\overline{\theta}} \Phi + \sum_{k=0}^\infty g_k \Phi^k \right\}.
 \end{equation}
 The super-derivative acts from the right.
@@ -32,7 +32,7 @@ The matrix model partition function is
 \end{equation}
 We have $D_\theta \Phi = \overline{\psi} - \overline{\theta} F$ and $D_{\overline{\theta}} \Phi = -\psi + \theta F$.
 Their product will contribute to the action only if the measure $\mathrm{d}\theta \mathrm{d}\overline{\theta}$ is saturated.
-This will give a term $\mathrm{Tr}F^2$ in the action.
+This will give a term $-\mathrm{Tr}F^2$ in the action.
 We calculate the $\Phi^k$ term as
 \begin{align*}
 	\Phi^k &= \left( \phi + \overline{\psi}\theta + \overline{\theta} \psi + \theta \overline{\theta} F \right)^k \\
@@ -41,20 +41,20 @@ We calculate the $\Phi^k$ term as
 \end{align*}
 By taking trace and keeping only the $\theta \overline{\theta}$ term, we get in the action a term
 \[
-	- \mathrm{Tr}[V'(\phi) F] - \sum_{k=0}^\infty k g_k \sum_{a+b=k-2} \mathrm{Tr}(\phi^a \overline{\psi} \phi^b \psi)
+	 \mathrm{Tr}[V'(\phi) F] + \sum_{k=0}^\infty k g_k \sum_{a+b=k-2} \mathrm{Tr}(\phi^a \overline{\psi} \phi^b \psi)
 .\] 
 
 Let's assume a quartic potential $V(\phi) = \frac{1}{2} \phi^2 + \frac{g}{4} \phi^4$,
 \begin{align*}
-	S[\Phi] &= \mathrm{Tr} F^2 - \mathrm{Tr} (\phi F) - g \mathrm{Tr}(\phi^3 F) 	 \\
-			& - \mathrm{Tr}(\overline{\psi}\psi) - g \left[ \mathrm{Tr}(\phi^2 \overline{\psi} \psi) + \mathrm{Tr} (\phi \overline{\psi} \phi \psi) + \mathrm{Tr}(\overline{\psi} \phi^2 \psi) \right] .
+	S[\Phi] &= -\mathrm{Tr} F^2 + \mathrm{Tr} (\phi F) + g \mathrm{Tr}(\phi^3 F) 	 \\
+			& + \mathrm{Tr}(\overline{\psi}\psi) + g \left[ \mathrm{Tr}(\phi^2 \overline{\psi} \psi) + \mathrm{Tr} (\phi \overline{\psi} \phi \psi) + \mathrm{Tr}(\overline{\psi} \phi^2 \psi) \right] .
 \end{align*}
 Although it's easy to do the integral over $F$, we will not do that.
 Because it will lead to a non-linear supersymmetry transformation rule.
 However, let's define $F' = F - \frac{1}{2} \phi$ and rewrite the action in terms of $F$ such that a quadratic term in $\phi$ will appear in the action
 \begin{align*}
-	S[\Phi] &= \mathrm{Tr} F'^2 - \frac{1}{4} \mathrm{Tr} \phi^2 - \frac{g}{2} \mathrm{Tr} \phi^4 - g \mathrm{Tr} (\phi^3 F') 	 \\
-			& - \mathrm{Tr}(\overline{\psi}\psi) - g \left[ \mathrm{Tr}(\phi^2 \overline{\psi} \psi) + \mathrm{Tr} (\phi \overline{\psi} \phi \psi) + \mathrm{Tr}(\overline{\psi} \phi^2 \psi) \right] .
+	S[\Phi] &= -\mathrm{Tr} F'^2 + \frac{1}{4} \mathrm{Tr} \phi^2 + \frac{g}{2} \mathrm{Tr} \phi^4 + g \mathrm{Tr} (\phi^3 F') 	 \\
+			& + \mathrm{Tr}(\overline{\psi}\psi) + g \left[ \mathrm{Tr}(\phi^2 \overline{\psi} \psi) + \mathrm{Tr} (\phi \overline{\psi} \phi \psi) + \mathrm{Tr}(\overline{\psi} \phi^2 \psi) \right] .
 \end{align*}
 The supersymmetry variation reads
 \begin{align*}
@@ -67,9 +67,9 @@ The supersymmetry variation reads
 Think about applying the RG strategy on this action.
 If we denote $\phi_{i,N}=v_i,\phi_{N,i}=v_i^*$, the following term will appear
 \[
--g v^\dagger F' \phi v - g v^\dagger \phi F' v
+g v^\dagger F' \phi v + g v^\dagger \phi F' v
 \] 
-from the interaction $-g \mathrm{Tr} (\phi^3 F')$.
+from the interaction $g \mathrm{Tr} (\phi^3 F')$.
 It will contribute a $\mathrm{Tr}(\phi F')$ term to the effective action.
 Why the supersymmetry cancellation does not happen here?
 This is because the supersymmetry transformation acts on all matrix entries simultaneously: it does not realize solely on the variables that being integrated out.
@@ -172,8 +172,40 @@ To the first order of $g$, the non-vanishing contributions are
 + g (v^\dagger \phi F' v + v^\dagger F' \phi v) 
 - g(\omega^\dagger \phi^2 \omega - \chi^\dagger \phi^2 \chi)
 .\] 
-The quadratic terms are $\frac{1}{2}(v^\dagger v)$
-and $\chi^\dagger \chi - \omega^\dagger \omega$.
+The quadratic terms in the exponential are $-\frac{1}{2}(v^\dagger v)$
+and $-\chi^\dagger \chi + \omega^\dagger \omega$.
+Then the effective interaction to the first order of $g$ is
+\[
+\frac{2g}{N} \mathrm{Tr} \phi^2 + \frac{4g}{N} \mathrm{Tr} (F'\phi)
+.\] 
+The effective action becomes
+\begin{equation}
+	S_{\text{eff}} = - \mathrm{Tr} F'^2
+	+ \left( \frac{1}{4} + \frac{2g}{N} \right) \mathrm{Tr}\phi^2
+	+ \frac{g}{2} \mathrm{Tr} \phi^4
+	+ \frac{4g}{N} \mathrm{Tr} F'\phi
+	+ g \mathrm{Tr} \phi^3 F'
+	+ \cdots
+\end{equation}
+where $\cdots$ are those involving $\overline{\psi},\psi$,
+which does not change to this order.
+The new term $\mathrm{Tr}F'\phi$ could be absorbed by a redefinition of $F'$
+\[
+	\tilde{F}' = F' - \frac{2g}{N} \phi
+.\] 
+Then one could write the effective action as 
+\begin{equation}
+	S_{\text{eff}} = -\mathrm{Tr} \tilde{F}'^2
+	+ \left( \frac{1}{4} + \frac{2g}{N} \right) \mathrm{Tr}\phi^2
+	+ \frac{g}{2} \mathrm{Tr} \phi^4
+	+ g \mathrm{Tr} \phi^3 \tilde{F}'
+	+ \cdots
+\end{equation}
+where the correction of the order $g^2$ is ignored.
+Is it possible to take it back into the original form by rescaling $g,\phi$?
+It's impossible without a rescaling of $\tilde{F}'$.
+But then the term $-\mathrm{Tr}\tilde{F}'$ is modified.
+In this sense, the RG flow is even not well-defined.
 
 \begin{idea}
 There are two ways through which the supersymmetry could help us in the calculation: 1. build up a model in which the supersymmetry is realized ``locally''; 2. develop another RG method which is compatible with the global supersymmetry;
