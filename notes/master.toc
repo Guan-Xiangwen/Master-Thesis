@@ -1,16 +1,15 @@
-\contentsline {section}{Tuesday, 20 Feb}{1}{section*.1}%
-\contentsline {paragraph}{Extend the previous analysis to other cases.}{1}{section*.2}%
-\contentsline {section}{Wednesday, 21 Feb}{2}{section*.2}%
-\contentsline {paragraph}{rethink the model}{3}{section*.3}%
-\contentsline {paragraph}{one possible solution to the previous problem?}{3}{section*.4}%
-\contentsline {section}{Friday, 23 Feb}{4}{section*.4}%
-\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{5}{section*.5}%
-\contentsline {paragraph}{the notions of scaling}{5}{section*.6}%
-\contentsline {section}{Saturday, 24 Feb}{6}{equation.0.3}%
-\contentsline {section}{Sunday, 25 Feb}{7}{equation.0.5}%
-\contentsline {section}{Wednesday, 28 Feb}{8}{equation.0.5}%
-\contentsline {section}{Thursday, 29 Feb}{8}{equation.0.5}%
-\contentsline {section}{Friday, 01 Mar}{8}{equation.0.5}%
-\contentsline {section}{Sunday, 03 Mar}{9}{idea.1}%
-\contentsline {section}{Monday, 04 Mar}{12}{remark.1}%
-\contentsline {section}{Tuesday, 05 Mar}{15}{idea.5}%
+\contentsline {section}{Wednesday, 21 Feb}{1}{section*.1}%
+\contentsline {paragraph}{rethink the model}{1}{section*.2}%
+\contentsline {paragraph}{one possible solution to the previous problem?}{1}{section*.3}%
+\contentsline {section}{Friday, 23 Feb}{3}{section*.3}%
+\contentsline {paragraph}{A comparison between the ``dimensional model'' and the ``dimensionless model}{3}{section*.4}%
+\contentsline {paragraph}{the notions of scaling}{4}{section*.5}%
+\contentsline {section}{Saturday, 24 Feb}{5}{equation.0.3}%
+\contentsline {section}{Sunday, 25 Feb}{6}{equation.0.5}%
+\contentsline {section}{Wednesday, 28 Feb}{7}{equation.0.5}%
+\contentsline {section}{Thursday, 29 Feb}{7}{equation.0.5}%
+\contentsline {section}{Friday, 01 Mar}{7}{equation.0.5}%
+\contentsline {section}{Sunday, 03 Mar}{8}{idea.1}%
+\contentsline {section}{Monday, 04 Mar}{11}{remark.1}%
+\contentsline {section}{Tuesday, 05 Mar}{14}{idea.5}%
+\contentsline {section}{Wednesday, 06 Mar}{15}{problem.3}%

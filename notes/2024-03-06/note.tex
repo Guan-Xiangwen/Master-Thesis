@@ -1,0 +1,158 @@
+%! Tex root: ../master.tex
+
+\begin{todo}
+Learn something about the D1/D5 CFT.	
+\end{todo}
+
+Such a D5/D1 system is described in
+\urlref{https://arxiv.org/abs/hep-th/9711200}{Mal97}
+as the following:
+Consider IIB string theory compactified on $M^4$ 
+(where $M^4 = T^4 \text{or} K3$)
+to six spacetime dimensions.
+Introduce a D5-brane
+with four dimensions wrapping on $M^4$
+giving a string in six dimensions.
+Consider a system with $Q_5$ D5-branes and $Q_1$ D1-branes,
+where the D1-branes are parallel to the string in six dimensions
+arising from the D5-branes.
+This system is described at low energies by
+a 1+1 dimensional (4,4) superconformal field theory.
+
+\begin{problem}
+Why such a D-brane system has the (4,4) supersymmetry?
+Why the low energy field theory is conformal?
+\end{problem}
+
+\begin{todo}
+	Read \urlref{https://arxiv.org/abs/hep-th/9510135}{Wit95}
+	for the CFT description of p-branes.
+\end{todo}
+
+The symmetry of this system is discussed as follows
+\urlref{https://arxiv.org/abs/hep-th/9905111}{AGMOO99}.
+The D1-branes along one non-compact direction;
+The D5-branes extend in the same direction;
+and they are coincident in that direction.
+The unbroken Lorentz symmetry of this configuration is $SO(1,1)\times SO(4)$
+$SO(1,1)$ corresponds to boosts along the string,
+and $SO(4)$ is the group of rotations
+in the four non-compact directions transverse to the string.
+This configuration also preserves eight supersymmetries,
+actually $\mathcal{N}=(4,4)$ supersymmetry.
+We decompose the supercharges into left and right moving spinors of $SO(1,1)$.
+
+What's the conformal field theory on this system?
+\urlref{https://arxiv.org/abs/hep-th/9905111}{AGMOO99}.
+The conformal field theory is the IR fixed point of the field theory
+living on the D1-D5 branes.
+The symmetry of this theory before going into the IR fixed point
+is the $\mathcal{N} = (4,4)$ supersymmetry.
+This amount of supersymmetry is equivalent to $\mathcal{N}=2$ in $d=4$.
+There is a vector multiplet and a hypermultiplet.
+In two dimensions both multiplets have the same propagating degrees of freedom,
+four scalars and four fermions,
+but they have different properties under the $SU(2)_{L} \times SU(2)_{R}$
+global R-symmetry.
+Under this group, the scalars in the hypermultiplets are in the trivial representation,
+while the scalars in the vector multiplet are in the $(\mathbf{2},\mathbf{2})$.
+On the fermions these global symmetries act chirally.
+The left moving vector multiplet fermions are in the $(\mathbf{1},\mathbf{2})$
+and the left moving hypermultiplet fermions are in the $(\mathbf{2},\mathbf{1})$.
+The right moving fermions have similar properties with
+$SU(2)_L \leftrightarrow SU(2)_R$.
+The theory can have a Coulomb branch
+where the scalars in the vector multiplets have expectation values,
+and a Higgs branch
+where the scalars in the hypermultiplets have expectation values.
+
+\begin{question}
+A better understanding of the above discussion.
+\begin{itemize}
+	\item the supermultiplet structure
+	\item the global R-symmetry structure
+	\item the IR fixed point
+	\item the Coulomb branch and the Higgs branch
+\end{itemize}
+\end{question}
+
+How to interpret this CFT?
+\urlref{https://arxiv.org/abs/hep-th/9905111}{AGMOO99}.
+The D1-branes can be viewed as instantons of the low energy SYM on the D5-brane.
+These instantons live on $M^4$
+and are translationally invariant along the time and the $x_5$ direction,
+where $x_5$ is the non-compact direction along the D5-branes.
+This instanton configuration has moduli,
+which are the parameters that parameterize a continuous family of solutions.
+All these solutions have the same energy.
+Small fluctuation of this configuration (at low energy)
+are described by fluctuations of the instanton moduli.
+So the low energy dynamics is given by a 1+1 dimensional sigma model
+whose target space is the instanton moduli space.
+
+\begin{question}
+	Some questions related to the above paragraph:
+\begin{itemize}
+	\item What is the instanton of the SYM on D5-brane?
+	\item Why the D1-brane can be viewed as those instantons?
+	\item What's the meaning of the fluctuation of the moduli?
+	\item What's the meaning of a 2d sigma model with the moduli target space?
+	\item Is this sigma model the 2d SCFT discussed above?
+\end{itemize}	
+\end{question}
+
+\begin{todo}
+Read the papers that study the D1-D5 system:
+\urlref{https://arxiv.org/abs/hep-th/9807185}{Cos98},
+\urlref{https://arxiv.org/abs/hep-th/9712213}{HW97-a},
+\urlref{https://arxiv.org/abs/hep-th/9703163}{HW97-b}
+\end{todo}
+
+More on D5-brane bound state:
+a bound state of two D5-branes
+wrapped on $S^1\times T^4$
+with coordinates $x^1,\cdots,x^5$.
+\urlref{https://arxiv.org/abs/hep-th/9807185}{Cos98}
+Each D5-brane has winding number $N_i$ along $S^1$,
+$p_i$ along the $x^2$-direction
+and $\overline{p}_i$ along the $x^4$-direction.
+Thus, the worldvolume fields take values on the
+$U(N_1 p_1 \overline{p}_1 + N_2 p_2 \overline{p}_2)$ Lie algebra.
+To get a non-trivial D5-brane configuration
+we turn on the worldvolume gauge field
+such that the corresponding field strength is diagonal
+and self-dual on $T^4$.
+The non-vanishing components are taken to be
+(assume $\mathrm{tan}\theta_1 > \mathrm{tan}\theta_2$)
+\[
+	G^0_{23} = G^0_{45} = \frac{1}{2 \pi \alpha'} 
+	 \mathrm{diag} \left( \mathrm{tan}\theta_1,\cdots,\mathrm{tan}\theta_1,
+	 \mathrm{tan}\theta_2,\cdots,\mathrm{tan}\theta_2\right)  
+.\] 
+where
+\[
+\frac{1}{2\pi \alpha'} \mathrm{tan} \theta_i
+=\frac{2\pi}{L_2 L_3} \frac{q_i}{p_i} 
+= \frac{2\pi}{L_4 L_5} \frac{\overline{q}_i}{p_i}
+.\] 
+with $q_i,\overline{q}_i$ are integers,
+and $L_{\hat{\alpha}} = 2 \pi R_{\hat{\alpha}}$ the length of each $T^4$ circles.
+
+\begin{question}
+People are discussing the D5-brane configuration on a compact manifold,
+with certain background gauge field.
+\begin{itemize}
+	\item Why the background gauge field is necessary for the discussion?
+	\item What is the $G^0$ field? 
+		Why the number of components are related to the D5-brane winding number?
+	\item What's special about the value of $\mathrm{tan}\theta$?
+\end{itemize}
+\end{question}
+
+The background gauge field breaks the gauge invariance
+\[
+U(N_1 p_1 \overline{p}_1 + N_2 p_2 \overline{p}_2) 
+\to U(N_1 p_1 \overline{p}_1) \otimes U(N_2 p_2 \overline{p}_2)
+.\] 
+Because the branes are wrapped along the $x^1,x^2,x^4$ directions,
+the gauge invariance is further broken to $U(1)^{\cdots}$.
