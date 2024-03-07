@@ -1,0 +1,166 @@
+%! Tex root: ../master.tex
+
+% understand the Dp-brane and its backreaction on the geometry:  <07-03-24, Xiangwen> %
+
+The Dp-brane is dynamical: oscillating by itself 
+(described by open strings ending on the Dp-brane)
+and scattering with the closed strings.
+Let's first review some physics of the Dirichlet brane
+in the context of the worldsheet string theory.
+
+\begin{problem}
+Understand the D-brane from the T-duality. Refer to the Polchinski.
+\end{problem}
+
+A freely moving open string could be restricted to a hyperplane in the T-dual picture of the toroidal compactification.
+The oscillation of the open string is then interpreted as the oscillation of the hyperplane in the T-dual picture.
+
+\begin{problem}
+An example of the T-duality in the toroidal compactification.	
+\end{problem}
+
+The target-space duality (T-duality) is an equivalence between
+two string theories with different target spaces.
+The simplest example is in the context of the toroidal compactification:
+a certain direction in the target space is periodic
+\[
+X \simeq X + 2\pi R
+.\] 
+
+The closed string and the open string have different dynamics along the periodic direction.
+An extreme case the $R\to 0$ limit:
+the closed string behaves exactly the same as $R\to\infty$;
+the open string has no motion along that direction.
+One can see this by checking the mass spectrum
+in terms of the momentum (and other numbers).
+
+The bosonic closed strings with such a target space has the following mass spectrum
+\begin{equation}
+	m^2 = \frac{n^2}{R^2} + \frac{w^2 R^2}{\alpha'^2}
+	+ \frac{2}{\alpha'} (N + \tilde{N} - 2)
+\end{equation}
+Here $n \in \mathbb{Z}$ labels the quantized momentum along the periodic direction; 
+$w \in \mathbb{Z}$ is the closed string winding number.
+$N,\tilde{N}$ are the levels the left-moving and right-moving string oscillators respectively.
+The interesting point is that the spectrum is invariant under
+\[
+R \to R' = \frac{\alpha'}{R},\quad
+n \to w
+.\] 
+In particular, the $R\to 0$ and $R\to\infty$ limits are physically identical.
+
+The bosonic open strings do not have the winding number,
+but its spectrum can be modified by a flat background for the gauge field
+(the Wilson line).
+The Wilson line will have a very interesting explanation in the T-dual picture.
+
+Consider the open strings with $U(n)$ Chan-Paton factors.
+The background gauge field along the periodic direction is assumed to be
+\[
+A = - \frac{1}{2 \pi R} \mathrm{diag} (\theta_1,\cdots,\theta_n)
+.\] 
+This is diagonal.
+(It may be interesting to consider non-diagonal case.)
+Then the open string spectrum has the form
+\begin{equation}
+m^2 = \frac{(2 \pi l - \theta_j + \theta_i)^2}{4 \pi^2 R^2}
++ \frac{1}{\alpha'} (N-1).
+\end{equation}
+Remember the general states of open strings with the Chan-Paton factor
+transforming under the adjoint representation of the gauge group.
+The gauge field couples to the Chan-Paton factor as $[A,\lambda]$.
+This is the reason for the $(\theta_j-\theta_i)$ part of the spectrum.
+
+Now one can see that
+the open string spectrum has a different $R\to 0$ behavior.
+There is no counterpart of the winding number $wR$
+that leading to a continuum spectrum.
+So the mass gap between $l=0$ and $l=1$ will tend to infinity
+as $R\to 0$.
+Roughly speaking, in the $R\to 0$ limit,
+the open string moves in the $25$ spacetime dimension ($l=0$).
+This requires that, in the dual picture $R'\to\infty$,
+to keep the open string spectrum the same,
+the end points must be fixed along this direction.
+
+
+\begin{problem}[T-duality]
+How the T-duality is realized in the worldsheet theory?	
+\end{problem}
+
+First separate the scalar field $X(z,\overline{z}) = X_L(z) + X_R(\overline{z})$.
+Then define a new field $X'(z,\overline{z})$
+\[
+X'(z,\overline{z}) = X_L(z) - X_R(\overline{z})
+.\] 
+One claims that the worldsheet CFT using $X'$ and $X$
+are T-dual to each other.
+This further means that
+the Neumann condition and the Dirichlet condition
+are exchanged under the T-duality
+\[
+\partial_n X = - i \partial_t X'
+.\] 
+where $n$ is the normal and $t$ is the tangent at the boundary.
+
+\begin{question}
+This is not obvious: the T-duality is formulated for the periodicity of the target space;
+How this can be formulated in an equivalent way in terms of the worldsheet field?
+\end{question}
+
+The string dilaton $\Phi$ will change under the T-duality.
+This bases on the following argument:
+the gravitational coupling $\kappa$ is related to the dilaton field
+\[
+	\kappa \propto \mathrm{e}^{\Phi}
+.\] 
+In the toroidal compactification,
+the gravitational couplings in different dimensiona are related by
+\[
+\frac{1}{\kappa_d^2} = \frac{2 \pi \rho}{\kappa^2}
+.\] 
+with $2\pi\rho$ being the volume of the compactified dimension.
+The point is that
+the lower dimensional gravitational coupling $\kappa_d$
+should be invariant under the T-duality.
+It captures the physics that is un-related to the periodic dimension.
+This implies that $\kappa$, and therefore $\Phi$, must change under the T-duality $\rho\to\rho'$.
+\begin{equation}
+	\rho' = \frac{\alpha'}{\rho},\quad
+	\kappa' = \frac{\alpha'^{1 / 2}}{\rho}\kappa.
+\end{equation}
+
+\begin{todo}[D-brane in type II superstring]
+Understand the physics of D-brane
+and its implication in the superstring theory.  
+\end{todo}
+
+\begin{todo}[the superstring spectrum]
+There are many different kinds of superstrings: try to summarize them.	
+\end{todo}
+
+The worldsheet fields: $X,\psi,\tilde{\psi}$;
+The worldsheet theory of the superstring
+starts from a $(N,\tilde{N})=(1,1)$ SCFT.
+It may be useful to keep in mind the space-time interpretation.
+The center-of-mass modes of the worldsheet current $(\partial X^\mu,\overline{\partial}X^\mu)$ is the space-time momenta $p^\mu$.
+The center-of-mass modes of the worldsheet fermions $\psi_0^\mu,\tilde{\psi}_0^\mu$ is the gamma matrices $\Gamma^\mu$.
+The supercurrents $T_F,T_B$ then has a similar form with
+the Dirac operator and the Klein-Gordon operator.
+(Polchinski 10.1)
+
+\begin{question}
+Why there are two copies $(\partial X,\overline{\partial}X)$
+and $\psi,\tilde{\psi}$: what's the space-time interpretation?
+\end{question}
+
+The superconformal ghosts: $b,c,\beta,\gamma$.
+
+The spectrum of the $X\psi$ SCFT: the R and the NS sector.
+The vertex operators for the spectrum.
+
+The superconformal ghosts: the spectrum and the vertex operators.
+
+The physical states and the consistent superstring theories.
+The superconformal constranits and the BRST formalism.
+Type IIA, Type IIB and Type I $SO(32)$.
