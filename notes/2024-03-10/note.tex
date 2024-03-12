@@ -1,0 +1,208 @@
+%! Tex root: ../master.tex
+
+\begin{question}
+	In \pdfref{DKL94},
+	two kinds of solution was discussed:
+	the elementary solution and the topological solution.
+	The elementary $p$-brane solution carries the ``electric'' Noether charge $e_d$;
+	The topological $\tilde{p}$-brane solution carries the ``magnetic'' charge $g_{\tilde{d}}$.
+	There is a Dirac quantization rule $e_d g_{\tilde{d}}=2\pi n$.
+	How to understand these two dual solutions?
+	Whether there is a singularity in these two solutions?
+\end{question}
+
+\begin{info}
+	The action used in \pdfref{DKL94}.
+	Consider an antisymmetry tensor potential of rank $d$,
+	$A_{M_1 M_2 \cdots M_d}$,
+	in $D$ dimensional space-time $M=0,\cdots,(D-1)$.
+	The field strength is $F_{d+1}=dA_d$.
+	The following action captures the interaction between
+	the gravity $g_{MN}$
+	and the dilaton $\phi$:
+	\begin{equation}
+		I_{D}(d) = \frac{1}{2\kappa^2} \int d^D x
+		\sqrt{-g} \left( R - \frac{1}{2}(\partial \phi)^2
+		-\frac{1}{2(d+1)!} e^{-a(d)\phi} F_{d+1}^2\right) .
+	\end{equation}
+	The $a(d)$ is an yet undetermined constant.
+\end{info}
+
+Let's compare it with the 
+NS-NS sector of the type IIB supergravity action 
+written above \pdfref{Joh03}
+\[
+S_{\text{IIB,NS-NS}} = \frac{1}{2\kappa_0^2}
+	\int d^{10} x (-G)^{1 / 2} 	
+	e^{-2\Phi} \left[ R + 4 \partial_\mu\Phi \partial^\mu\Phi
+		-\frac{1}{12}(H^{(3)})^2\right] 
+.\] 
+One notices that the dilaton field coupling is different.
+One may take one form to another by
+the Weyl transformation on the metric:
+\begin{info}
+	Let's consider a Wely transformation $G\to\tilde{G}$
+	\begin{equation}
+		\tilde{G}_{\mu\nu} (x) = \mathrm{exp}(2\omega(x)) G_{\mu\nu}(x).
+	\end{equation}
+	One has the following formula
+	for the Ricci scalar
+	\begin{equation}
+		\tilde{R} = \mathrm{exp}(-2\omega)
+		\left[ R - 2(D-1)\nabla^2\omega
+		-(D-2)(D-1)\partial_\mu \omega \partial^\mu \omega\right] .
+	\end{equation}
+	where $D$ is the space-time dimension.
+\end{info}
+
+Let's write the $S_{\text{IIB,NS-NS}}$ in terms of the
+$\tilde{G}$ and $\tilde{R}$.
+\[
+	(-G)^{1 / 2} e^{-2\Phi} R = 
+	(- \tilde{G})^{1 / 2} e^{-2\Phi - D\omega}
+	\left[ e^{2\omega} \tilde{R}
+	+ 2(D-1)\nabla^2\omega 
+	+ (D-2)(D-1)\partial_\mu\omega \partial^\mu\omega\right] 
+.\] 
+Then one can choose
+\[
+\omega = \frac{2}{2-D} \Phi
+.\] 
+to decouple $R$ with the dilaton $\Phi$.
+With this choice
+\[
+	(-G)^{1 / 2} e^{-2\Phi} R = 
+	(- \tilde{G})^{1 / 2}\tilde{R}
+	+ (- \tilde{G})^{1 / 2}	e^{- \frac{4}{2-D}\Phi}
+	\left[ \frac{4(D-1)}{2-D}\nabla^2\Phi 
+	- 2(D-1)\partial_\mu\Phi \partial^\mu\Phi\right]
+.\] 
+$D=2$ is special in the sense that
+one can not decouple the dilaton field
+by choosing the Wely scaling factor $\omega(x)$.
+Now the dilaton field terms in the action
+\[
+	(-\tilde{G})^{1 / 2} e^{- \frac{4}{2-D}\Phi}
+	\left[ (6-2D) \partial_\mu\Phi \partial^\mu\Phi 
+	+\frac{4(D-1)}{2-D}\nabla^2\Phi  \right] 
+.\] 
+Then one may use the following identity
+\[
+	e^{- \frac{4}{2-D} \Phi} \cdot \frac{4(D-1)}{2-D}\nabla^2\Phi
+	= \frac{16(D-1)}{(2-D)^2} e^{- \frac{4}{2-D} \Phi} \partial_\mu \Phi \partial^\mu \Phi
+	- (D-1) \nabla^2 e^{- \frac{4}{2-D} \Phi}
+.\] 
+to get rid of $\nabla^2\Phi$ term.
+The last term on the r.h.s. is a boundary term.
+
+\begin{question}
+We will get a term
+\[
+	-2 \frac{D^3-7D^2+8D-4}{(2-D)^2}e^{- \frac{4}{2-D}\Phi}
+	\partial_\mu\Phi \partial^\mu\Phi
+.\] 
+How to get the usual kinetic term $-\frac{1}{2}\partial_\mu\tilde{\Phi}\partial^\mu\tilde{\Phi}$ out of it?
+\end{question}
+
+It's important to note that
+the space-time indices $\mu$ should be raised
+using the new metric $\tilde{G}^{\mu\nu}$.
+$G^{\mu\nu} = e^{2\omega} \tilde{G}^{\mu\nu}= e^{ 4 / (2-D)\Phi} \tilde{G}^{\mu\nu}$.
+This cancels the exponent factor before $\partial_\mu\Phi\partial^\mu\Phi$.
+However, for the gauge field term $(H^{(3)})^2$,
+there are three indices to raise
+which leads to the following dilaton coupling
+\[
+	-\frac{1}{12} e^{\frac{8}{2-D}\Phi} (H^{(3)})^2	
+.\] 
+
+The NS-NS sector $\phi,g_{MN}$ and $A_{M_1 M_2 \cdots M_d}$
+could be sourced by a $(d-1)$-brane.
+One could write down the action that describing
+how the brane couples to the fields.
+(TODO)
+
+\begin{question}
+First, the $(d-1)$-brane that coupling to the NS-NS sector
+is not the Dirichlet brane (confirm this point);
+because the D-brane sources the R-R sector instead of the NS-NS sector.
+
+However, in the action that is used in \pdfref{DKL94};
+it's not clear that the form field $A_{M_1 M_2 \cdots M_d}$
+is in the NS-NS sector or the R-R sector,
+or could be suitable for both sectors.
+\end{question}
+
+The variation of $I_{D}(d)$ with respect to
+$\delta A^{M_1\cdots M_d},\delta g^{MN}$ and $\delta\phi$
+
+\begin{info}
+The convention for the forms:
+\[
+	(F_{d+1})_{N M_1 \cdots M_d} = (d+1) \partial_{[N} A_{M_1\cdots M_d]}
+.\] 
+with
+\[
+\partial_{[N} A_{M_1\cdots M_d]} = \frac{1}{d+1}
+\left( \partial_{N} A_{M_1\cdots M_d} +\partial_{M_1} A_{M_2\cdots N} +\cdots+\partial_{M_d} A_{N\cdots M_{d-1}}  
+ \right) 
+.\] 
+\end{info}
+
+The variation of the form action with respect to $\delta A^{M_1\cdots M_d}$ is
+\begin{align*}
+	\delta \left[e^{-a \phi} F_{d+1}^2\right] &= 2 e^{-a \phi} (F_{d+1})_{N M_1 \cdots M_d}
+	\delta (F_{d+1})^{N M_1 \cdots M_d} \\
+	&= \partial^N \left[ e^{-a\phi} F_{N M_1\cdots M_N} \right] 
+	\delta A^{M_1\cdots M_N}
+	+ \nabla^N (\cdots)_N
+\end{align*}
+The last term contributes to a boundary term.
+Then the equation of motion reads
+\begin{equation}
+	\partial^N \left( e^{-a\phi} F_{N M_1\cdots M_N} \right) = \cdots 	
+\end{equation}
+The r.h.s. comes from the possible source term.
+
+\begin{info}
+	To do the variation of $\delta g^{MN}$,
+	the following formula are necessary
+	\begin{equation}
+		\delta \sqrt{-g} = - \frac{1}{2} \sqrt{-g}
+		g_{MN}\delta g^{MN}
+	\end{equation}
+	and
+	\begin{equation}
+		\delta R = R_{MN} \delta g^{MN}
+		+ \nabla_{P} (g^{MN}\delta \Gamma^P_{MN}
+		-g^{NP}\delta\Gamma^M_{MN})
+	\end{equation}
+\end{info}
+
+Calculations:
+\[
+	-\frac{1}{2}\delta \left[ \sqrt{-g} (\partial \phi)^2\right] 
+	=-\frac{1}{2} \sqrt{-g}\left[ -\frac{1}{2} g_{MN}(\partial\phi)^2
+	+\partial_M\phi \partial_N\phi\right] \delta g^{MN}
+.\] 
+and
+\begin{align*}
+	- \frac{1}{2(d+1)!} \delta \left( \sqrt{-g} e^{-a(d) \phi} F_{d+1}^2 \right)  \\
+	= - \frac{\sqrt{-g}}{2} \frac{1}{d!}
+	\left( F_{M M_1\cdots M_d} F_{N}^{~~M_1\cdots M_d} 
+	-\frac{1}{2(d+1)} g_{MN} F_{d+1}^2\right) 
+	e^{-a(d)\phi} \delta g^{MN}
+\end{align*}
+The variation of the Ricci scalar part
+simple gives the Einstein tensor.
+The equation of motion reads then
+\begin{align*}
+	\sqrt{-g} \Bigg\{ R_{MN} - \frac{1}{2} g_{MN}R
+	-\frac{1}{2} \left[ \partial_M\phi \partial_N\phi-\frac{1}{2} g_{MN}(\partial\phi)^2
+	\right]  \\
+- \frac{1}{2(d!)}\left[ F_{M M_1\cdots M_d} F_{N}^{~~M_1\cdots M_d} 
+	-\frac{1}{2(d+1)} g_{MN} F_{d+1}^2\right] 
+	e^{-a(d)\phi} 
+\Bigg\} = \cdots
+\end{align*}
+The r.h.s. comes from the possible source terms.

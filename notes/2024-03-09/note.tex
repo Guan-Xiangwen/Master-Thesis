@@ -1,0 +1,75 @@
+%! Tex root: ../master.tex
+\begin{todo}
+Review the geometry of the Dp-branes:
+focus on the relation between the supergravity solution
+and the physical properties of the Dp-branes.
+
+Keep in mind the following questions:
+\begin{itemize}
+	\item How the dilaton field profile depends on the dimension?
+	\item The geometry of the solution: the curvature and the area of horizon.
+	\item Comment on the validity regime of the solution.
+\end{itemize}
+\end{todo}
+
+A particular type IIB supergravity solution is proved to be sourced by Dp-branes, which carry the R-R charge and preserve half of the supersymmetry.
+Let's try to understand this, starting by looking at the supergravity theory.
+
+The type IIB supergravity provides a field theory description of the massless states of the corresponding superstring theory.
+The massless states are summarized in the following table: (TODO)
+
+\begin{question}
+	About the Type IIB supergravity:
+	\begin{itemize}
+		\item How to construct the action?
+		\item How the couplings are related to the string couplings
+			and the string length scale?
+		\item How could it reproduce the string interaction?
+		\item What's the supersymmetry algebra?
+		\item How the fields transform under the supersymmetry?
+		\item Clarify that ``the supergravity theory
+			captures the low energy dynamics of the superstrings
+			in the strong coupling regime?''
+	\end{itemize}
+\end{question}
+
+\begin{correct}
+The bosonic part of the type IIB supergravity \urlref{}{Joh03}
+\begin{align}
+	S_{\text{IIB}} = \frac{1}{2\kappa_0^2}
+	\int d^{10} x (-G)^{1 / 2} \Big\{
+		e^{-2\Phi} \left[ R + 4 \partial_\mu\Phi \partial^\mu\Phi
+		-\frac{1}{12}(H^{(3)})^2\right] \notag \\
+		- \frac{1}{12} (G^{(3)} + C^{(0)} H^{(3)})^2
+		- \frac{1}{2} (d C^{(0)})^2
+	-\frac{1}{480} (G^{(5)})^2 \Big\} \notag\\
+	+ \frac{1}{4\kappa_0^2} \int
+	\left( C^{(4)} + \frac{1}{2} B^{(2)} C^{(2)} \right) G^{(3)} H^{(3)}. 
+\end{align}
+$H^{(3)}=dB^{(2)}$ and $\Phi,G$ are in the NS-NS sector;
+$G^{(3)} = dC^{(2)}$, $G^{(5)}=dC^{(4)}+H^{(3)}C^{(2)}$ and $C^{(0)}$
+are in the R-R sector.
+The normalization of the kinetic terms of the forms:
+there is a prefactor of the inverse of $-2\times p!$ for a $p$-form field strength.
+There is a self-dual condition that need to be imposed by hand
+\[
+	F^{(5)} = dC^{(4)},\quad F^{(5)}=*F^{(5)}
+.\] 
+to keep the correct number of degrees of freedom.
+\end{correct}
+
+One can split this action into three parts
+\[
+	S_{\text{IIB}} = S_{\text{NS}} + S_{\text{R}} + S_{\text{CS}}
+.\] 
+The last part is the Chern-Simon action.
+(Check the gauge invariance.)
+The $S_{\text{NS}}$ is written in the string frame;
+while there is no dilaton coupling in $S_{\text{R}}$.
+It's interesting to understand more about the modified strength
+$G^{(5)} = dC^{(4)} + H^{(3)}C^{(2)}$.
+
+\begin{todo}
+Write down the equation of motion of this action.	
+(Maybe it's easier to do it in the Einstein's frame?)
+\end{todo}

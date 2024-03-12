@@ -1,0 +1,188 @@
+%! Tex root: ../master.tex
+
+Questions and Ideas in \pdfref{IMSY98}:
+
+\begin{question}
+	It's counter-intuitive that a large number of branes 
+	corresponds to a small curvature solution of supergravity.
+	Is there any physical interpretation?
+\end{question}
+
+The radial coordinate $r$ transversal to the Dp-branes
+relates to the energy scale of the field theory on the Dp-brane.
+From a field theory perspective, the transverse coordinates
+should be interpreted as the vaccum expectation value of the scalar fields
+that describing the transverse oscillation of the Dp-branes.
+
+\begin{question}
+About the scalar fields:
+\begin{itemize}
+	\item What's the form of the action for those scalar fields?
+	\item What's the dimension of those scalar fields?
+	\item What's the interpretation of the scalar fields?
+		(Higgs? Goldstone?)
+	\item The diagonal and off-diagonal components of the scalar fields
+		(matrix valued in N-coincident Dp-branes)
+		plays different roles?
+\end{itemize}
+\end{question}
+
+The argument given in \pdfref{IMSY98} to relate $r$ with the energy scale:
+
+\begin{info}
+	Consider a D-brane sitting at the position $r$.
+	This will lead to a gauge symmetry broken $U(N)\to U(N-1)\times U(1)$.
+	Large $r$ will correspond to a large vacuum expectation value of the Higgs field (What's the Higgs field here?).
+	The expectation value has the dimension of energy (clarify this)
+	(recall that the energy dimension of a scalar field is $[\varphi]=(d-2)/2$)
+	Therefore, large $r$ corresponds to a large energy scale.
+\end{info}
+
+To have a picture about the couplings that are involved in the discussion,
+let's review the result of the tension of Dp-branes from string theory.
+Let's start by looking at the Dp-brane action (Polchinski (8.7.2))
+\begin{equation}
+	S_p = - T_p \int d^{p+1} \xi e^{-\Phi}	
+	\left[ - \mathrm{det} (G_{ab} + B_{ab} + 
+	2\pi \alpha' F_{ab}) \right]^{\frac{1}{2}} 
+\end{equation}
+When there is a constant background dilaton field $\Phi = \Phi_0 + \tilde{\Phi}$,
+the tension $T_p$ will be modified to $\tau_p = T_p e^{-\Phi_0}$.
+One could calculate the interaction amplitude (one loop) in string theory,
+the result is (Polchinski (13.3.1))
+\begin{equation}
+	\mathcal{A}_{\text{NS-NS}} \approx
+	i V_{p+1} 2\pi (4\pi^2\alpha')^{3-p} G_{9-p}(y).
+\end{equation}
+The $G(y)$ is the scalar Green's function, $y$ is the separation between two Dp-branes.
+The R-R amplitude cancels with the NS-NS amplitude $\mathcal{A}_{\text{R-R}}
+=- \mathcal{A}_{\text{NS-NS}}$.
+One the other hand, the same thing can be calculated by using the field theory.
+(I don't know the detail here)
+The result relates the slope $\alpha'$ with the Dp-brane tension $\tau_p$
+and the supergravity coupling $\kappa$ (Polchinski (13.3.4)).
+\begin{equation}
+	\tau_p^2 = \frac{\pi}{\kappa^2} (4\pi^2 \alpha')^{3-p}	.
+\end{equation}
+The supergravity coupling $\kappa$ is a low energy parameter to describe the closed string interactions.
+The closed string coupling $g_s$ is defined as a normalization of the closed string vertex operator (Polchinski (3.6.1)).
+It relates to the gravitational coupling $\kappa$ in the following way
+(Polchinski (12.3.47))
+\[
+	g_{s} = \frac{\kappa}{2\pi}
+.\] 
+In this way, the Dp-brane tension $\tau_p$ relates directly to the closed string coupling $g_s$.
+Let's define the low energy (the lowest order of $\alpha'$) field theory
+on the Dp-brane from the action $S_p$.
+It's a Yang-Mills theory, the coupling is (Polchinski (13.3.25))
+\[
+	g_{D_p}^2 = \frac{1}{(2\pi\alpha')^2\tau_p}
+.\] 
+All of these allow us to relate the Yang-Mills coupling
+$g_{D_p}^2$ (or $g_{YM}^2$) to the closed string coupling $g_s$.
+The result is the (1) in \pdfref{IMSY98}
+\begin{equation}
+	g_{YM}^2 = (2\pi)^{p-2} g_s {\alpha'}^{(p-3) / 2}	
+\end{equation}
+The open string theory on the Dp-brane can be taken as a field theory
+when $\alpha'\to 0$.
+One could take the limit in such a way that the $g_{YM}$ keeps fixed.
+This is called the ``field theory limit'' in \pdfref{IMSY98}.
+\begin{question}
+It seems like that we don't have a fundamental understanding of the closed string coupling $g_s$ in terms of the slope $\alpha'$.	
+The lack of knowledge about $g_s$ is related to the unkown vacuum value of the dilaton field $\phi_0$?
+\end{question}
+
+\begin{question}
+	What's the open string theory on the Dp-branes?
+	Type I or Heterotic?
+\end{question}
+
+Let's take the example of a collection of D2-branes in \pdfref{IMSY98}.
+The energy scale of the field theory is set by the following value
+(This is general, not depending on the dimension of the branes)
+\[
+U = \frac{r}{\alpha'}
+.\] 
+In terms of the field theory, this is vacuum expectation value of the Higgs.
+
+\begin{question}
+Why this particular combination $U=r / \alpha'$ appears as
+the vacuum expectation value of the Higgs?
+Why this combination does not depend on the dimension of the field theory?
+\end{question}
+
+\begin{wrong}
+One needs to make difference between the dimension of the string theory
+and the dimension of the field theory.
+For example, in string theory,
+$\alpha'$ has the unit of $[\text{length}]^{2}$,
+here the length should be understood as the space-time length.
+Then it's obvious that $U$ has nothing to do with the energy of the space-time.
+Also, let's look at the Yang-Mills coupling $g_{YM}^2$.
+We know from the field theory that 
+it's dimension is $[\text{energy}]^{3-p}$.
+This has nothing to do with the space-time dimension reading from
+$ g_{YM}^2 = (2\pi)^{p-2} g_s {\alpha'}^{(p-3) / 2}$.
+\end{wrong}
+
+\begin{todo}
+It's desirable to have a clear discussion of various dimensions: from a space-time perspective and from the worldvolume field theory perspective.
+\end{todo}
+
+\begin{info}
+It is said that the effective dimensionless coupling of the super-Yang-Mills
+theory at the energy scale $U$ is
+\[
+	g_{eff}^2 \approx g^2_{YM} N U^{p-3}
+.\] 
+This is the coupling constant according to which we do the perturbative calculation in field theory.
+The $N$ appears in the effective coupling because we are interested in such a large $N$ scaling: the coupling $g_{YM}$ changing with $N$ such that $g_{YM}^2 N$ keeps fixed.
+\end{info}
+
+It's necessary to clarify the different limits of string theory
+that appearing in the AdS/CFT duality.
+First, on both sides of the duality we have field theories,
+which in general are the low energy limit of string theories
+$\alpha'\to 0$.
+However, remember that $[\alpha'] = [L]^2$,
+one should always compare $\alpha'$ with some other scales.
+
+The AdS side of the duality is essentially a theory
+in which the string moving in a geometry background.
+Such a theory is in general described by a non-linear sigma model
+which generalizes the Polyakov action (Pol (3.76))
+\begin{equation}
+	S_\sigma = \frac{1}{4 \pi \alpha'}
+	\int_M d^2\sigma g^{1 / 2}
+	\left[ \left( g^{ab} G_{\mu\nu}(X) + i \epsilon^{ab} B_{\mu\nu}(X) \right)
+	\partial_a X^\mu \partial_b X^\nu
+	+ \alpha' R \Phi(X)\right] 
+\end{equation}
+This model could have a field theory description in the following limit:
+Consider the target space has a characteristic radius of curvature
+$R_c$.
+Then the effective dimensionless coupling in this theory is $\alpha'^{\frac{1}{2}} R_c^{-1}$.
+If it is small,
+one can ignore the extended structure of string
+instead using a field theory description of the string states.
+This leads to the use of the ``low energy effective action''.
+For example (Pol (3.7.20) for the bosonic string)
+\begin{equation}
+	\mathbf{S} = \frac{1}{2\kappa_0^2} \int d^D x (-G)^{1 / 2}	
+	e^{-2\Phi} \left[ - \frac{2(D-26)}{3\alpha'} + R - \frac{1}{12} H_{(3)}^2 + 4 (\partial\Phi)^2 + O(\alpha')\right] 
+\end{equation}
+
+%AdS/CFT is interesting.
+%On one hand we have a solution of a theory (the supergravity);
+%on the other hand we are talking about a theory itself (the CFT).
+%Well, it's not necessarily a CFT.
+%It's just a quantum field theory whose action is given by the DBI.
+%Now it's the case that we have two field theories.
+%They are both in the low energy regime of string theory $\alpha'\to 0$.
+%To be specific, the Yang-Mills theory is a good approximation of the Dp-brane dynamics in $\alpha'\to 0$ limit.
+%In the AdS side,
+%we should think about it as a theory of strings moving in a curved background.
+%The action is described by a non-linear sigma model.
+%(Polchinski 3.7)
+%Why we don't use a dimensionless coupling in the ``field theory limit''?
