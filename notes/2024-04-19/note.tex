@@ -1,0 +1,201 @@
+%! Tex root: ../master.tex
+
+\paragraph{summarize the ingredients}
+General assumptions:
+diagonal background $A_\mu$; imagine $(A_\mu)_{ii},i=1,\cdots,N-1$ are small
+while $(A_\mu)_{NN}$ is large:
+\[
+	(A_\mu)_{NN} - (A_\mu)_{ii} \approx d_\mu,\quad
+	(\mathfrak{A}_\mu)_{\mathfrak{a}'\mathfrak{b}'}\equiv
+	(\mathfrak{A}_\mu)_{(i,N)[j,N]}
+	= - (\mathfrak{A}_\mu)_{[j,N](i,N)}
+	= i d_\mu \delta_{ij}
+.\] 
+The idea is just to make the Gaussian term simple.
+
+The bosonic part of IKKT gives
+\begin{equation}
+	\frac{\alpha}{2} \sum_{\mathfrak{a}',\mathfrak{b}'}
+	\alpha_{\mu \mathfrak{a}'}
+	\left[ 
+	(\mathfrak{A}^\rho \mathfrak{A}_\rho)_{\mathfrak{a}'\mathfrak{b}'}
+\eta^{\mu\nu} + (\mathfrak{A}^\mu \mathfrak{A}^\nu)_{\mathfrak{a}' \mathfrak{b}'}
+\right] 
+\alpha_{\nu \mathfrak{b}'}
+\end{equation}
+Define the quadratic matrix
+\begin{equation}
+	(\Delta_{\mathrm{B}})_{\mathfrak{a}' \mathfrak{b}';\mu\nu}
+	\equiv \frac{\alpha}{2} ( d^2 \eta_{\mu\nu} + d_\mu d_\nu)
+	\delta_{\mathfrak{a}' \mathfrak{b}'}	
+\end{equation}
+
+A simplification: gauge fixing
+\[
+	\sum_{\mathfrak{b}'}
+	(\mathfrak{A}^\mu)_{\mathfrak{a}'\mathfrak{b}'} \alpha_{\mu \mathfrak{b}'}
+	=0,\quad
+	\delta_t \alpha_{\mu \mathfrak{a}'} = i \sum_{\mathfrak{b}'} 
+	(\mathfrak{A}_\mu)_{\mathfrak{a}'
+	\mathfrak{b}'} t_{\mathfrak{b}'}
+.\] 
+In gauge fixing action, the bosonic part
+\begin{equation}
+	\frac{\alpha}{2} \sum_{\mathfrak{a}',\mathfrak{b}'}
+	\alpha_{\mu \mathfrak{a}'}
+	\left[ 
+	(\mathfrak{A}^\rho \mathfrak{A}_\rho)_{\mathfrak{a}'\mathfrak{b}'}
+\eta^{\mu\nu} \right] 
+\alpha_{\nu \mathfrak{b}'}
+\end{equation}
+\begin{equation}
+	(\Delta_{\mathrm{B}})_{\mathfrak{a}' \mathfrak{b}';\mu\nu}
+	\equiv \frac{\alpha}{2}  d^2 \eta_{\mu\nu}  
+	\delta_{\mathfrak{a}' \mathfrak{b}'}
+\end{equation}
+Then it's easy to inverse
+\begin{equation}
+	(\Delta^{-1}_{\mathrm{B}} )^{\mu\nu}_{\mathfrak{a}'\mathfrak{b}'}
+	= \frac{2}{\alpha d^2} \eta^{\mu\nu} 
+	\delta_{\mathfrak{a}' \mathfrak{b}'}
+\end{equation}
+
+The fermionic part of IKKT gives
+\begin{equation}
+	- \frac{\alpha}{2} \sum_{\mathfrak{a}'\mathfrak{b}',\alpha\beta}
+	\psi^\alpha_{\mathfrak{a}'}
+	(C\Gamma^\mu)_{\alpha\beta}
+	(\mathfrak{A}_\mu)_{\mathfrak{a}'\mathfrak{b}'}
+	\psi^\beta_{\mathfrak{b}'}
+\end{equation}
+\begin{equation}
+	(\Delta_{\mathrm{F}})_{\mathfrak{a}'\mathfrak{b}';\alpha\beta}
+	\equiv - \frac{\alpha}{2} (C\Gamma^\mu)_{\alpha\beta}
+	d_\mu J_{\mathfrak{a}'\mathfrak{b}'}
+\end{equation}
+$J$ forms a block diagonal form, each block reads
+\[
+	J_{(i,N),[i,N]} = - J_{[i,N],(i,N)} = i,\quad
+	J_i = 
+	\begin{pmatrix}
+		0 & i \\
+		-i & 0
+	\end{pmatrix},\quad
+	J = J_1 \oplus \cdots \oplus J_{N-1}
+.\] 
+The inverse
+\begin{equation}
+	(\Delta_{\mathrm{F}}^{-1})^{\alpha\beta}_{\mathfrak{a}'\mathfrak{b}'} 
+	= - \frac{2}{\alpha d^2}
+	(\overline{C\Gamma}^\mu)^{\alpha\beta} d_\mu J_{\mathfrak{a}'\mathfrak{b}'}
+\end{equation}
+\[
+\overline{C\Gamma}^0 = - C\Gamma^0,\quad
+\overline{C\Gamma}^i =  C\Gamma^i,\quad i=1,\cdots,9
+.\] 
+\[
+	(C\Gamma^\mu)(\overline{C\Gamma}^\nu)
+	= \eta^{\mu\nu} \mathds{1}
+.\] 
+
+Contractions
+\[
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+	(T^{\mathfrak{a}'})_{ij} (T^{\mathfrak{b}'})_{kl}
+	\delta_{\mathfrak{a}'\mathfrak{b}'}
+.\] 
+\[
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+		(T^{\mathfrak{a}'})_{Ni} (T^{\mathfrak{b}'})_{Nj}
+			\delta_{\mathfrak{a}'\mathfrak{b}'}
+			= 0,\quad
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+		(T^{\mathfrak{a}'})_{iN} (T^{\mathfrak{b}'})_{jN}
+			\delta_{\mathfrak{a}'\mathfrak{b}'} = 0
+.\] 
+\[
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+			(T^{\mathfrak{a}'})_{iN} (T^{\mathfrak{b}'})_{Nj}
+						\delta_{\mathfrak{a}'\mathfrak{b}'}
+									=
+										\sum_{\mathfrak{a}'\mathfrak{b}'}
+												(T^{\mathfrak{a}'})_{Ni} (T^{\mathfrak{b}'})_{jN}
+															\delta_{\mathfrak{a}'\mathfrak{b}'}
+																		=2\delta_{ij}
+.\] 
+\[
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+	(T^{\mathfrak{a}'})_{ij} (T^{\mathfrak{b}'})_{kl}
+	J_{\mathfrak{a}'\mathfrak{b}'}
+.\] 
+\[
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+		(T^{\mathfrak{a}'})_{Ni} (T^{\mathfrak{b}'})_{Nj}
+			J_{\mathfrak{a}'\mathfrak{b}'}
+			= 0,\quad
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+		(T^{\mathfrak{a}'})_{iN} (T^{\mathfrak{b}'})_{jN}
+			J_{\mathfrak{a}'\mathfrak{b}'} = 0
+.\] 
+\[
+	\sum_{\mathfrak{a}'\mathfrak{b}'}
+			(T^{\mathfrak{a}'})_{iN} (T^{\mathfrak{b}'})_{Nj}
+						J_{\mathfrak{a}'\mathfrak{b}'}
+									=
+										-\sum_{\mathfrak{a}'\mathfrak{b}'}
+												(T^{\mathfrak{a}'})_{Ni} (T^{\mathfrak{b}'})_{jN}	J_{\mathfrak{a}'\mathfrak{b}'}
+																		=2\delta_{ij}
+.\] 
+
+fermionic interaction
+\begin{equation*}
+	- \frac{\alpha}{2} \psi^\alpha_{\mathfrak{a}'}
+	(C\Gamma^\mu)_{\alpha\beta} \psi^\beta_{\mathfrak{b}'}
+	\mathcal{A}_{\mu \mathfrak{a}}
+	\mathrm{Tr}( T^{\mathfrak{a}'} [ T^{\mathfrak{a}},
+	T^{\mathfrak{b}'}])
+\end{equation*}
+square
+\begin{equation*}
+	 \frac{\alpha^2}{4} \psi^\alpha_{\mathfrak{a}'}
+	(C\Gamma^\mu)_{\alpha\beta} \psi^\beta_{\mathfrak{b}'}
+	\psi^\gamma_{\mathfrak{c}'}
+		(C\Gamma^\nu)_{\gamma\delta} \psi^\delta_{\mathfrak{d}'}
+	\mathcal{A}_{\mu \mathfrak{a}}
+	\mathcal{A}_{\nu \mathfrak{b}}
+	\mathrm{Tr}( T^{\mathfrak{a}'} [ T^{\mathfrak{a}},
+	T^{\mathfrak{b}'}])
+	\mathrm{Tr}( T^{\mathfrak{c}'} [ T^{\mathfrak{b}},
+	T^{\mathfrak{d}'}])
+\end{equation*}
+Contraction 1. $\mathfrak{a}'-\mathfrak{d}'$ and $\mathfrak{b}'-\mathfrak{c}'$
+\[
+\frac{\alpha^2}{4} (\Delta_{\mathrm{F}}^{-1})^{\alpha\delta}_{\mathfrak{a}'\mathfrak{d}'}
+		(\Delta_{\mathrm{F}}^{-1})^{\beta\gamma}_{\mathfrak{b}'\mathfrak{c}'}
+		(C\Gamma^\mu)_{\alpha\beta} (C\Gamma^\nu)_{\gamma\delta}
+	\mathcal{A}_{\mu \mathfrak{a}}
+	\mathcal{A}_{\nu \mathfrak{b}}
+	\mathrm{Tr}( T^{\mathfrak{a}'} [ T^{\mathfrak{a}},
+	T^{\mathfrak{b}'}])
+	\mathrm{Tr}( T^{\mathfrak{c}'} [ T^{\mathfrak{b}},
+	T^{\mathfrak{d}'}])
+.\] 
+\[
+	= -\frac{4 \times 16}{d^4} \mathrm{Tr}(T^{\mathfrak{a}} T^{\mathfrak{b}})
+	 d^\mu d^\nu \mathcal{A}_{\mu \mathfrak{a}}
+	\mathcal{A}_{\nu \mathfrak{b}}
+	= - \frac{64}{d^4} d^\mu d^\nu \mathrm{Tr}(\mathcal{A}_\mu
+	\mathcal{A}_\nu)
+.\]
+Contraction 2 $\mathfrak{a}'-\mathfrak{c}'$ and $\mathfrak{b}'-\mathfrak{d}'$
+gives the same.
+\begin{info}
+	In the contraction 1.
+	\begin{equation*}
+	\mathrm{Tr}( T^{\mathfrak{a}'} [ T^{\mathfrak{a}},
+	T^{\mathfrak{b}'}])
+	\mathrm{Tr}( T^{\mathfrak{c}'} [ T^{\mathfrak{b}},
+	T^{\mathfrak{d}'}])
+	\to - 4 \mathrm{Tr}(T^{\mathfrak{a}} T^{\mathfrak{b}})
+	\end{equation*}
+\end{info}

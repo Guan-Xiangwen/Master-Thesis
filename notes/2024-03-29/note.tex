@@ -1,0 +1,207 @@
+%! Tex root: ../master.tex
+
+To match the near horizon D$p$-brane metric with the standard AdS metric,
+one could use the following coordinate transformation \pdfref{KST08}	
+\[
+	u^2 = \mathcal{R}^{-2} (D_p g_d^2 N)^{-1} U^{5-p}
+.\] 
+Then $u$ is identified with the energy scale of the boundary theory $u\sim E$.
+
+Check the metric in this coordinate.
+Start from the standard solution
+\[
+	\mathrm{d}s^2 = H_p(r)^{-\frac{1}{2}} \left( 
+	-\mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x_i^2\right)
+	+ H_p(r)^{\frac{1}{2}} \left( \mathrm{d}r^2 + r^2 \mathrm{d}\Omega_{8-p}^2 \right) 
+.\] 
+with
+\[
+	H_p(r) = 1 + \frac{Q_p}{r^{7-p}},\quad Q_p = d_p N g_{\text{s}} \alpha'^{\frac{7-p}{2}}
+.\] 
+This is the solution in string frame.
+
+\begin{question}
+	Check the form in Einstein frame?
+\end{question}
+
+The first step is to change from $r$ to $U\equiv r / \alpha'$.
+\[
+	\mathrm{d}s^2 = H_p(U)^{- \frac{1}{2}} \left( -\mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x_i^2\right) + \alpha'^2 H_p(U)^{\frac{1}{2}} \left( \mathrm{d}U^2 + U^2 \mathrm{d}\Omega_{8-p}^2 \right) 
+.\] 
+As given in \pdfref{KST08}, the field theory limit (near horizon limit? decoupling limit?) is
+\[
+	g_s \to 0,\quad \alpha' \to 0,\quad U = \text{fixed},\quad g_d^2 N = \text{fixed}
+.\] 
+The $d$-dimensional Yang-Mills coupling is related to the string coupling $g_{\text{s}}$ as
+\[
+	g_d^2 = g_s (2\pi)^{p-2} \alpha'^{(p-3) / 2}
+.\] 
+Note that it's not clear what's the limit of $g_{d}$ when $p<3$ (to $0$ or to $\infty$?).
+Rem. Field theory works for any $N$, but one may expect that the geometry emerges when $N\to\infty$.
+Then we are also taking the 't Hooft limit.
+In this limit, it's proper to write $Q_p$ as
+\[
+	Q_p = (2\pi)^{2-p} d_p g_d^2 N \alpha'^{5-p}
+.\] 
+with $H_p(U) = 1 + Q_p / (\alpha' U)^{7-p}$, $H_p(U)$ has a $p$-independent $\alpha'$ scaling in this limit
+\[
+	H_p(U) \sim \alpha'^{-2} \frac{(2\pi)^{2-p} d_p g_d^2 N}{U^{7-p}}
+.\] 
+Then $\mathrm{d}s^2$ has a uniform $\alpha'$ scaling
+\[
+	\mathrm{d}s^2 \sim \alpha' \left[ \frac{U^{\frac{7-p}{2}}}{[(2\pi)^{2-p}d_p g_d^2 N]^{1 / 2}} \left( -\mathrm{d} t^2 + \sum_{i=1}^p \mathrm{d}x_i^2 \right) + \frac{[(2\pi)^{2-p}d_p g_d^2 N]^{1 / 2}}{U^{\frac{7-p}{2}}} \left( \mathrm{d}U^2 + U^2 \mathrm{d}\Omega_{8-p}^2 \right)   \right]
+.\] 
+
+\[
+	\mathrm{d}s^2 \sim \alpha' \frac{[(2\pi)^{2-p}d_p g_d^2 N]^{1 / 2}}{U^{\frac{3-p}{2}}}
+	\left[ \frac{U^{5-p}}{(2\pi)^{2-p} d_p g_d^2 N} 
+		\left( - \mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x_i^2 \right) 
+	+ \frac{1}{U^2}\left( \mathrm{d}U^2 + U^2 \mathrm{d}\Omega_{8-p} \right)\right] 
+.\] 
+
+Except for $p=3$, this is not a AdS-type geometry.
+But in \pdfref{KST08}, it's said that the geometry is conformal to AdS.
+This is done by first Weyl rescaling the metric such that the $\mathrm{d}U^2$ term takes the form (the name ``dual frame'' in \pdfref{KST08})
+\[
+	\frac{\mathrm{d}U^2}{U^2}
+.\] 
+This Weyl rescaling is related to the non-constant dilaton background.
+Then the AdS metric
+\[
+	u^2 \left( - \mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x^2 \right)  
+	+	\frac{\mathrm{d}u^2}{u^2}
+.\] 
+can be obtained by simply changing of coordinates $U\to u$.
+\[
+	u^2 = \frac{U^{5-p}}{(2\pi)^{2-p} d_p g_d^2 N}
+.\] 
+Note that $u$ has the same dimension as $U$, so can be regarded as energy as well.
+
+The dual frame is \pdfref{KST08}:
+it's related with the string frame by a Weyl transformation
+\[
+	\mathrm{d}s_{\text{dual}}^2 = (N \mathrm{e}^{\phi})^c \mathrm{d}s_{\text{st}}^2,\quad c = - \frac{2}{7-p}
+.\] 
+such that the supergravity action has the form
+\[
+	S = \frac{N^2}{(2\pi)^7 \alpha'^4}
+	\int \mathrm{d}^{10} x \sqrt{-g}
+	(N \mathrm{e}^\phi)^{2(p-3) / (7-p)}
+	\left( R + 4 \frac{(p-1)(p-4)}{(7-p)^2} (\partial\phi)^2 - 
+	\frac{1}{2(8-p)! N^2} F_{8-p}^2\right) 
+.\] 
+where $F_{8-p}$ is the Hodge dual of the R-R field strength sourced by the D$p$-brane.
+
+Consider the metric and dilaton solution in the dual frame.
+\[
+	N \mathrm{e}^\phi \sim \left(\frac{D_p g_d^2 N}{U^{3-p}}\right)^{\frac{7-p}{4}}
+\] 
+\[
+	N e^\phi \sim \left( \frac{D_p g_d^2 N}{u^{3-p}} \right)^{\frac{7-p}{2(5-p)}}
+.\] 
+\[
+	\mathrm{d}s_{\text{dual}}^2 \sim \alpha' \left[\frac{U^{5-p}}{(2\pi)^{2-p} d_p g_d^2 N} 
+		\left( - \mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x_i^2 \right) 
+	+ \frac{1}{U^2}\left( \mathrm{d}U^2 + U^2 \mathrm{d}\Omega_{8-p} \right)\right]
+.\] 
+\[
+	\mathrm{d}s_{\text{dual}}^2 \sim \alpha' \left[ u^2
+		\left( - \mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x_i^2 \right) 
+	+ \frac{1}{u^2}\left( \mathrm{d}u^2 + u^2 \mathrm{d}\Omega_{8-p} \right)\right]
+.\] 
+
+\begin{question}
+	It's natural(?) to use $U$ in the string frame and $u$ in the dual frame?
+\end{question}
+
+The open string description of the D$p$-brane \pdfref{KST08}
+\begin{equation}
+	S_{\text{st}} = - \frac{1}{(2\pi)^{p-2}\alpha'^{(p-3) / 2}}
+	\int \mathrm{d}^{p+1} x \sqrt{-g_{\text{st}}} \mathrm{e}^{-\phi}
+	\frac{1}{4} \mathrm{Tr}(F_{ij} F_{kl}) g_{\text{st}}^{ik}
+	g_{\text{st}}^{jl}
+\end{equation}
+The subscript is to emphasize it's written in the string frame.
+Use
+\[
+	\sqrt{-g_{\text{dual}}} = (N \mathrm{e}^\phi)^{- \frac{p+1}{7-p}}
+	\sqrt{-g_{\text{st}}}
+.\] 
+\[
+	(g_{\text{dual}})^{ij} = (N \mathrm{e}^\phi)^{\frac{2}{7-p}} (g_{\text{st}})^{ij}
+.\] 
+The dual frame action reads
+\[
+	S_{\text{dual}} = - \frac{1}{(2\pi)^{p-2}\alpha'^{(p-3) / 2}}
+	\int \mathrm{d}^{p+1}x (N \mathrm{e}^\phi)^{\frac{2(p-5)}{7-p}}
+	(N u^{p-3}) \frac{1}{4} \mathrm{Tr} F^2
+.\] 
+All the metric dependences are written out.
+If plugging in the $u$-dependence of $N \mathrm{e}^\phi$,
+we find that the $u$-dependence cancels out,
+left with
+\[
+	(N \mathrm{e}^\phi)^{\frac{2(p-5)}{7-p}} (N u^{p-3}) = \frac{1}{D_p g_d^2}
+.\] 
+This is a good feature of the dual frame?
+
+\begin{question}
+	Is the supergravity action Weyl invariant? (We are not expecting this...
+	What's the idea behind the dual frame?)
+\end{question}
+
+The string frame supergravity action (\pdfref{KST08})
+\begin{equation}
+	S_{\text{st}} = \frac{1}{(2\pi)^7 \alpha'^4}
+	\int \mathrm{d}^{10} x \sqrt{-g}
+	\left[ \mathrm{e}^{-2\phi} (R + 4 (\partial\phi)^2 - \frac{1}{12}H_3^2)
+	- \frac{1}{2(p+2)!}F_{p+2}^2\right] 
+\end{equation}
+The action written in the dual frame is \pdfref{KST08}
+\begin{equation}
+	S_{\text{dual}} = \frac{N^2}{(2\pi)^7 \alpha'^4}
+	\int \mathrm{d}^10 x \sqrt{-g}
+	(N \mathrm{e}^\phi)^\gamma
+	\left( R + 4 \frac{(p-1)(p-4)}{(7-p)^2} (\partial\phi)^2
+	- \frac{1}{2(8-p)! N^2}F_{8-p}^2\right) 
+\end{equation}
+with $\gamma = 2(p-3)/(7-p)$ and $F_{8-p}$ be the dual field strength of $F_{p+2}$, $F_{p+2}= *F_{8-p}$.
+
+It's common to Weyl rescale the metric, for example, transformation between the Einstein's frame and the string frame.
+Here the dual frame is something similar. \pdfref{DGT94}
+Why people use the dual field strength?
+
+An interesting action is discussed in \pdfref{KST08}.
+It's similar to the bosonic part of SYM,
+but there is an extra curvature term to make the action invariant under the Weyl transformation.
+The action is written in the Euclidean metric
+\begin{equation}
+	S = -\int \mathrm{d}^d x \sqrt{g}
+	\left( -\Phi \frac{1}{4} \mathrm{Tr}F_{ij}F^{ij}
+	+ \frac{1}{2}\mathrm{Tr}\left( X (D^2 - \frac{(d-2)}{4(d-1)}R)X \right)  
++ \frac{1}{4\Phi}\mathrm{Tr}[X,X]^2\right) 
+\end{equation}
+$g$ to be understood as a background metric;
+$\Phi$ to be understood as a background scalar field.
+$\Phi$ is a generalization of the Yang-Mills coupling $\frac{1}{g^2}$.
+$D_\mu = \nabla_\mu - i [A_\mu,\cdot]$ is the covariant derivative in the adjoint representation.
+The combination $D^2 - \# R$ is defined such that it transforms under the Wely transformation homogeneously.
+The Weyl transformation is
+\[
+	g \to \mathrm{e}^{2\sigma} g,\quad X\to \mathrm{e}^{(1-\frac{d}{2})\sigma}X,\quad \Phi \to \mathrm{e}^{-(d-4)\sigma}\Phi,\quad A_i\to A_i
+.\] 
+The conformal laplacian $P_1 \equiv D^2 - \# R$ transforms as
+\[
+	P_1 \to \mathrm{e}^{-(d / 2 + 1)} P_1 \mathrm{e}^{(d / 2 - 1)\sigma}
+.\] 
+Remember here the Weyl transformation of $R$ and $\nabla_\mu$.
+
+It's interesting to have a term like $\mathrm{Tr}XRX$.
+Note $A_i$ does not change under the Weyl transformation.
+It's also interesting to note that the normalization $g^2 \mathrm{Tr}[X,X]^2$.
+It's different from what people usually write $\frac{1}{g^2} \mathrm{Tr}[X,X]^2$.
+As said in \pdfref{KST08}, the latter corresponds to the worldvolume D-brane theory in string frame (overall dilaton dependence).
+However, because $\mathrm{Tr}F^2$ and $\mathrm{Tr}[X,X]^2$ behaves differently under the change of the worldvolume metric $g$,
+it's not natural to construct a Weyl invariant action if they have the same $\Phi$ normalization.
+
+The significance of this Weyl invariance?

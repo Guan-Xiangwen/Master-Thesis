@@ -1,0 +1,59 @@
+% Tex root: ../master.tex
+
+Calculate $\Gamma^{a\pm} \xi^{(k)}$:
+\begin{equation*}
+	\Gamma^{a\pm} \xi^{(k)} = \frac{1}{\sqrt{2}} \Gamma^{a\pm}
+	\left( \zeta^{(\mathbf{s})} + B^{-1} \zeta^{(\mathbf{s})*} \right) 
+	=\frac{1}{\sqrt{2}} \Gamma^{a\pm}
+	\left( \zeta^{(\mathbf{s})} + B^{-1}(B\Gamma^{a\pm}B^{-1}) \zeta^{(\mathbf{s})*} \right) 
+\end{equation*}
+\[
+B\Gamma^{a\pm}B^{-1} = (\Gamma^{a\mp})^*
+.\]
+\begin{equation}
+	\Gamma^{a\pm} \xi^{(k)}  = \frac{1}{\sqrt{2}} 	\left(\Gamma^{a\pm}
+ \zeta^{(\mathbf{s})} + B^{-1} (\Gamma^{a\mp}\zeta^{(\mathbf{s})})^* \right) 
+\end{equation}
+Note that only one of the two terms is non-vanishing.
+Also, these two terms have different Lorentz transformations,
+it's consistent to add them together only if one of them is zero.
+The spinor product
+$
+	\overline{\xi^{(l)}} \Gamma^{a\pm} \xi^{(k)} \neq 0
+$
+only if $\xi^{(l)}$ has the opposite Lorentz transformation.
+
+\paragraph{anti-Majorana}
+Just like imagniary number, an anti-Majorana spinor is defined naturally as
+\[
+B \chi  =  - \chi^*
+.\] 
+Note that $i\chi$ is just a Majorana spinor.
+It's easy to construct an anti-Majorana basis as
+\[
+	\chi^{(k)} = \frac{1}{\sqrt{2}} (\zeta^{(\mathbf{s})}
+	- B^{-1} \zeta^{(\mathbf{s})*})
+.\] 
+Is it true that
+\[
+\frac{i}{\sqrt{2}} (\zeta^{(\mathbf{s})}
+	- B^{-1} \zeta^{(\mathbf{s})*})
+ = \frac{1}{\sqrt{2}} (\zeta^{(\mathbf{s})}
+	+ B^{-1} \zeta^{(\mathbf{s})*})
+.\] 
+It can be proved that $\overline{\chi}\xi$ is a pure imaginary number
+(with $\chi$ anti-Majorana, $\xi$ Majorana)
+\[
+	\overline{\chi}\xi = \overline{\chi} B^{-1}\xi^* 
+	= \chi^{\text{T}} C B^{-1} \xi^*
+.\] 
+One can proceed by using
+\[
+	C B^{-1} = B^{-1} B C B^{-1} = B^{-1} B (B\Gamma^0) B^{-1}
+	= B \Gamma^0 B^{-1} = (\Gamma^0)^*
+.\]
+So (the Dirac conj. is the minus of the Majorana conj. for $\chi$)
+\[
+\overline{\chi}\xi = (\chi^\dagger \Gamma^0 \xi)^*
+= - (\overline{\chi}\xi)^*
+.\] 

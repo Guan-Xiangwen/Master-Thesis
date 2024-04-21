@@ -1,0 +1,133 @@
+%! Tex root: ../master.tex
+
+Clarify the near horizon geometry of the extremal $p$-brane solution
+and the energy scaling of the Yang-Mills coupling.
+
+The metric of the solution:
+\begin{equation}
+	\mathrm{d}s^2 = H_p^{-\frac{1}{2}} \left( - \mathrm{d}t^2
+	+ \sum_{i=1}^p \mathrm{d} x_i^2\right) 
+	+ H_p^{\frac{1}{2}} \left( \mathrm{d}r^2
+	+ r^2 \mathrm{d}\Omega_{8-p}^2\right) .
+\end{equation}
+where
+\[
+	H_p(r) = 1 + \frac{Q}{r^{7-p}}
+.\] 
+The $r\to 0$ limit:
+\begin{equation}
+	\mathrm{d}s^2 \to Q^{-\frac{1}{2}} r^{\frac{7-p}{2}}
+	\left( - \mathrm{d}t^2 + \sum_{i=1}^p \mathrm{d}x_i^2 \right) 
+	+ Q^{\frac{1}{2}} r^{-\frac{7-p}{2}} 
+	\left( \mathrm{d}r^2 + r^2 \mathrm{d}\Omega_{8-p}^2 \right) 
+\end{equation}
+
+When $p=3$, the $(t,r,x_i)$ part of the metric is the same as
+the $\mathrm{AdS}_5$ metric in the Poincare coordinate;
+$Q$ controls the $\mathrm{AdS}$ radius $\alpha$.
+\[
+\mathrm{d}s^2 = - \frac{r^2}{\alpha^2}\mathrm{d}t^2
++ \frac{\alpha^2}{r^2} \mathrm{d}r^2
++ \frac{r^2}{\alpha^2} \mathrm{d}\vec{x}^2
+.\] 
+
+Define a length $L$ as
+\[
+	\left( \frac{r}{L} \right)^2  \equiv Q^{-\frac{1}{2}} r^{\frac{7-p}{2}}
+.\] 
+
+How the Yang-Mills theory looks like in the $r\to 0$ geometry?
+The leading order D$p$-brane action is the Yang-Mills theory we are talking about.
+
+The bosonic DBI action for a single D$p$-brane [Pol (8.7.2)]:
+introduce coordinates $\xi^a,a=0,\cdots,p$ on the brane.
+The fields on the brane are the embedding coordinates $X^\mu(\xi)$
+and the gauge fields $A_a(\xi)$.
+The action for these fields is
+\begin{equation}
+	S_{p} = - T_p \int \mathrm{d}^{p+1} \xi \mathrm{e}^{-\Phi}
+	\left[ - \mathrm{det} (G_{ab} + B_{ab} + 2\pi\alpha' F_{ab}) \right] ^{1 / 2}
+\end{equation}
+$T_p$ is related to the D$p$-brane tension,
+$G_{ab}(\xi)$ and $B_{ab}(\xi)$ are the induced fields on the brane
+\[
+	G_{ab}(\xi) = \frac{\partial X^\mu}{\partial \xi^a} \frac{\partial X^\nu}{\partial \xi^b} G_{\mu\nu}(X(\xi)),\quad
+	B_{ab}(\xi) = \frac{\partial X^\mu}{\partial \xi^a}
+	\frac{\partial X^\nu}{\partial \xi^b} B_{\mu\nu}(X(\xi))
+.\] 
+
+There is a T-duality argument for the appearance of $F_{ab}$.
+
+\[
+	\epsilon^{a_0\cdots a_p} = \pm 1,\quad \epsilon^{01\cdots p}=1
+.\] 
+Expand the determinant (set $B_{ab}=0$)
+\[
+	\mathrm{det} (G_{ab} + 2\pi\alpha' F_{ab})
+	= \frac{1}{(p+1)!}\epsilon^{a_0\cdots a_p}\epsilon^{b_0\cdots b_p}
+	(G_{a_0 b_0} + 2\pi\alpha' F_{a_0 b_0})
+	\cdots
+	(G_{a_p b_p} + 2\pi\alpha' F_{a_p b_p})
+.\] 
+Be careful: $\epsilon^{a_0\cdots a_p}$ is symbol, not tensor.
+\[
+	\mathrm{det}(G_{ab} + 2\pi\alpha' F_{ab})
+	= \mathrm{det}G \left( 1 + \frac{1}{2} (2\pi\alpha')^2 F^{ab}F_{ab}+ O(\alpha'^3)
+ \right).\] 
+The first order DBI action gives
+\begin{equation}
+	S_p = - T_p \int (\mathrm{d}^{p+1}\xi )\mathrm{e}^{-\Phi}
+	\sqrt{-G} \left( 1 + (2\pi\alpha')^2 \frac{1}{4}F^{ab}F_{ab} \right) 
+	+ O(\alpha'^3)
+\end{equation}
+The Yang-Mills action is
+\begin{equation}
+	S_{\text{YM}} = - T_p (2\pi\alpha')^2\int (\mathrm{d}^{p+1}\xi)
+	\mathrm{e}^{-\Phi}\sqrt{-G} \frac{1}{4}F^{ab}F_{ab}.
+\end{equation}
+
+Identify the Yang-Mills coupling with the D$p$-brane tension
+for a constant dilaton field $\Phi(r) = \Phi_0$:
+\[
+	g_{\text{YM}}^2 = \frac{1}{(2\pi\alpha')^2\tau_p},\quad \tau_p \equiv
+	T_p \mathrm{e}^{-\Phi_0}
+.\] 
+
+The extremal D$p$-brane dilaton profile: $\Phi(r) \equiv \Phi_0 + \tilde{\Phi}(r)$:
+\begin{equation}
+	\mathrm{e}^{-\tilde{\Phi}(r)} = H_p(r)^{\frac{p-3}{4}}
+\end{equation}
+where \[
+	H_p(r) = 1 + \frac{Q}{r^{7-p}}
+.\] 
+We are interested in $r\to 0$ limit (near horizon)
+\begin{align*}
+	S_{\text{YM}} = -T_p (2\pi\alpha')^2 \mathrm{e}^{-\Phi(r)}
+	\int \mathrm{d}^{p+1}\xi \sqrt{-G} \left( \frac{1}{4}F^{ab}F_{ab} \right) 
+	\\
+	\to -T_p (2\pi\alpha')^2 \mathrm{e}^{-\tilde{\Phi}(r)}
+	\int \mathrm{d}^{p+1}\xi \sqrt{-G} \left( \frac{1}{4}F^{ab}F_{ab} \right) 
+\end{align*}
+This leads to the following identification
+\begin{equation}
+	g_{\text{YM}}^2 = \frac{1}{(2\pi\alpha')^2 T_p}
+	\left( \frac{Q}{r^{7-p}} \right)^{\frac{3-p}{4}}
+\end{equation}
+
+\begin{equation}
+	\left( \frac{Q}{r^{7-p}} \right)^{-\frac{1}{2}} \equiv \left( \frac{r}{L} \right)^2
+\end{equation}
+The ``AdS radius'' $L$ depends on $r$.
+$Q$ is independent of $r$
+\begin{equation*}
+	Q  = d_p (2\pi)^{p-2} \mathrm{e}^{\Phi_0} N {\alpha'}^{\frac{7-p}{2}}
+\end{equation*}
+
+The only way to recover the field theory scaling is to use the following identification
+\[
+	g_{\text{YM}}^2 = \frac{1}{(2\pi\alpha')^2 T_p}
+	\left( \frac{r}{L} \right)^{D-4}
+.\] 
+The dimension $[g_{\text{YM}}^2] = [L^{D-4}]$.
+
+No idea of how to interpret it.

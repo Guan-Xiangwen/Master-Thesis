@@ -1,0 +1,214 @@
+%! Tex root: ../master.tex
+
+\begin{correct}
+	The spinor product matrix in the Weyl-Majorana basis
+	(refer to the figure \emph{$C\Gamma^{a\pm}$ matrx elements})
+	\[
+	\{\xi_1,\chi_1,\xi_2,\chi_2,\xi_3,\chi_3,\xi_4,\chi_4,
+	\xi_5,\chi_5,\xi_6,\chi_6,\xi_7,\chi_7,\xi_8,\chi_8\}
+	.\] 
+	The appearance in $\overline{\varphi}\Gamma^\mu [A_\mu,\varphi]$
+	can be summarized by the following matrix
+	\begin{equation}
+		\begin{pmatrix}
+		\mathfrak{A}_8	& \mathfrak{A}_9 & i \mathfrak{A}_7 & -i \mathfrak{A}_6 & \mathfrak{A}_4 & \mathfrak{A}_5 & i \mathfrak{A}_3 & i \mathfrak{A}_2 \\
+		- \mathfrak{A}_9& \mathfrak{A}_8 & i \mathfrak{A}_6 & i \mathfrak{A}_7 & - \mathfrak{A}_5 & -\mathfrak{A}_4 & i \mathfrak{A}_2 & -i \mathfrak{A}_3 \\
+			-i \mathfrak{A}_7& -i \mathfrak{A}_6 & - \mathfrak{A}_8 & \mathfrak{A}_9 & -i \mathfrak{A}_3 & -i \mathfrak{A}_2 & - \mathfrak{A}_4 & - \mathfrak{A}_5 \\
+			i \mathfrak{A}_6& -i \mathfrak{A}_7 & - \mathfrak{A}_9 & -\mathfrak{A}_8 & -i \mathfrak{A}_2 & i \mathfrak{A}_3 &  \mathfrak{A}_5 &  \mathfrak{A}_4 \\
+			- \mathfrak{A}_4& \mathfrak{A}_5 & i \mathfrak{A}_3 & i \mathfrak{A}_2 & \mathfrak{A}_8 & - \mathfrak{A}_9 & -i \mathfrak{A}_7 & i \mathfrak{A}_6 \\
+			- \mathfrak{A}_5& \mathfrak{A}_4 & i \mathfrak{A}_2 & -i \mathfrak{A}_3 & \mathfrak{A}_9 & \mathfrak{A}_8 & -i \mathfrak{A}_6 & -i \mathfrak{A}_7 \\
+			-i \mathfrak{A}_3	& -i \mathfrak{A}_2 & \mathfrak{A}_4 & - \mathfrak{A}_5 & i \mathfrak{A}_7 & i \mathfrak{A}_6 & - \mathfrak{A}_8 & - \mathfrak{A}_9 \\
+			-i \mathfrak{A}_2& i \mathfrak{A}_3 & \mathfrak{A}_5 & - \mathfrak{A}_4 & -i \mathfrak{A}_6 & i \mathfrak{A}_7 & \mathfrak{A}_9 & - \mathfrak{A}_8 
+		\end{pmatrix}
+	\end{equation}
+The row labels are
+\[
+\xi_1,\chi_1,\xi_2,\chi_2,\xi_3,\chi_3,\xi_4,\chi_4
+.\] 
+The column labels are
+\[
+\xi_5,\chi_5,\xi_6,\chi_6,\xi_7,\chi_7,\xi_8,\chi_8
+.\] 
+$\mathfrak{A}$ is the adjoint matrix of $A$.
+For every term $\xi \mathfrak{A} \chi$, there is another term
+$\chi \mathfrak{A} \xi$.
+They can be combined into one term
+\[
+	\xi_a \mathfrak{A}_{ab} \chi_b + \chi_a \mathfrak{A}_{ab} \xi_b
+	= \xi_a (\mathfrak{A}_{ab} - \mathfrak{A}_{ba})\chi_b
+.\] 
+There are also diagonal terms
+\[
+\xi_1 (\mathfrak{A}_0 - \mathfrak{A}_1) \xi_1 + \chi_1 (\mathfrak{A}_0 - \mathfrak{A}_1) \chi_1
+-\xi_2 (\mathfrak{A}_0 - \mathfrak{A}_1) \xi_2 - \chi_2 (\mathfrak{A}_0 - \mathfrak{A}_1) \chi_2
+.\] 
+\[
+\xi_3 (\mathfrak{A}_0 - \mathfrak{A}_1) \xi_3 + \chi_3 (\mathfrak{A}_0 - \mathfrak{A}_1) \chi_3
+-\xi_4 (\mathfrak{A}_0 - \mathfrak{A}_1) \xi_4 - \chi_4 (\mathfrak{A}_0 - \mathfrak{A}_1) \chi_4
+.\] 
+\[
+-\xi_5 (\mathfrak{A}_0 + \mathfrak{A}_1) \xi_5 - \chi_5 (\mathfrak{A}_0 + \mathfrak{A}_1) \chi_5
++\xi_6 (\mathfrak{A}_0 + \mathfrak{A}_1) \xi_6 + \chi_6 (\mathfrak{A}_0 + \mathfrak{A}_1) \chi_6
+.\] 
+\[
+-\xi_7 (\mathfrak{A}_0 + \mathfrak{A}_1) \xi_7 - \chi_7 (\mathfrak{A}_0 + \mathfrak{A}_1) \chi_7
++\xi_8 (\mathfrak{A}_0 + \mathfrak{A}_1) \xi_8 + \chi_8 (\mathfrak{A}_0 + \mathfrak{A}_1) \chi_8
+.\] 
+\end{correct}
+
+Maybe a useful formula:
+the product of the Pfaffians of anti-symmetric matrices $A$ and $B$
+can be represented in the form of an exponential
+\[
+	\mathrm{Pf}(A) \mathrm{Pf}(B) = \mathrm{exp} \left( \frac{1}{2}
+	\mathrm{tr} ~ \mathrm{log} (A^{\text{T} }B)\right) 
+.\] 
+
+\newpage
+The action of IKKT
+\begin{equation}
+	S = \alpha \left( -\frac{1}{4} \mathrm{Tr} [A_\mu,A_\nu][A^\mu,A^\nu]
+	- \frac{1}{2} \mathrm{Tr}(\overline{\psi}\Gamma^\mu [A_\mu,\psi])\right) 
+	+\beta \mathrm{Tr}\mathds{1}
+\end{equation}
+The supersymmetry \footnote{Multiply $-i$ to the transformation in \pdfref{IKKT96} to preserve the Majorana condition.}
+\begin{align}
+	\label{susy-1}
+	\delta_{\epsilon}\psi &= \frac{1}{2} [A_\mu,A_\nu] \Gamma^{\mu\nu} \epsilon\\
+	\delta_\epsilon A_\mu &=  \overline{\epsilon} \Gamma_\mu \psi
+\end{align}
+
+\begin{info}
+	\begin{equation}
+		\Gamma^{\mu\nu} \equiv \frac{1}{2} [\Gamma^\mu,\Gamma^\nu]
+	\end{equation}
+	The Lorentz generators
+	\begin{equation}
+		\Sigma^{\mu\nu} \equiv - \frac{i}{4} [\Gamma^\mu,\Gamma^\nu]
+		= - \frac{i}{2} \Gamma^{\mu\nu}
+	\end{equation}
+The Lorentz algebra	
+	\begin{equation}
+		i [\Sigma^{\mu\nu},\Sigma^{\sigma \rho}]
+		= \eta^{\nu\sigma} \Sigma^{\mu\rho}
+		+ \eta^{\mu\rho} \Sigma^{\nu\sigma}
+		- \eta^{\nu\rho}\Sigma^{\mu\sigma}
+		- \eta^{\mu\sigma} \Sigma^{\nu\rho}
+	\end{equation}
+	It's the $i \Sigma^{\mu\nu}$ that generates the Lorentz transformation.
+\end{info}
+
+$\psi$ is WM:
+\begin{align}
+	\Gamma \psi = + \psi,\\
+	\psi^* = B \psi \label{Maj-cond}
+\end{align}
+$*$ is for spinor, not for the $\mathfrak{u}(N)$ matrix.
+The defining property of $B$ is
+\begin{equation}
+	B \Gamma^\mu B^{-1} = (\Gamma^\mu)^*
+\end{equation}
+
+\begin{correct}
+	Notations:
+	\[
+		A_\mu \equiv A_{\mu \mathfrak{a}} T^{\mathfrak{a}},\quad T^{\mathfrak{a}}\in \mathfrak{u}(N)
+	.\] 
+	\[
+		(A_\mu)_{ij} =A_{\mu \mathfrak{a}} (T^{\mathfrak{a}})_{ij},\quad i,j=1,\cdots,N
+	.\] 
+	\[
+		[A_\mu,S] \equiv (\mathfrak{A}_\mu S)_{\mathfrak{a}} T^{\mathfrak{a}}
+		\equiv (\mathfrak{A}_\mu)_{\mathfrak{a}}^{~\mathfrak{b}} S_{\mathfrak{b}} T^{\mathfrak{a}}
+	.\] 
+	\[
+		[A_\mu,S] = A_{\mu \mathfrak{a}} 
+		[T^{\mathfrak{a}},T^{\mathfrak{b}}]S_{\mathfrak{b}}
+		= A_{\mu \mathfrak{a}} f^{\mathfrak{a}\mathfrak{b}}_{~~~\mathfrak{c}}
+		S_{\mathfrak{b}} T^{\mathfrak{c}}
+		= (\mathfrak{A}_\mu S)_{\mathfrak{c}} T^{\mathfrak{c}}
+	.\] 
+\end{correct}
+
+Expanding around $A = \mathrm{diag}(0,\cdots,0,a)$, the off-diagonal $\alpha$ become massive:
+\begin{equation}
+	-\frac{1}{4} \mathrm{Tr} [A_\mu,A_\nu][A^\mu,A^\nu]
+	= - \frac{1}{2} (\alpha^\mu)^\dagger (a_\mu a_\nu - a^\rho a_\rho \eta_{\mu\nu}) \alpha^\nu+\cdots
+\end{equation}
+
+\begin{info}
+	$10 \mathrm{d}$ spinors:
+$\Gamma$-matrices:
+\begin{equation}
+    \{\Gamma^\mu,\Gamma^\nu\} = 2 \eta^{\mu\nu},\quad \mu,\nu = 0,\cdots,9
+\end{equation}
+Creation and Annihilation:
+\begin{align*}
+	\Gamma^{0\pm} &= \frac{1}{2} (\pm \Gamma^0 + \Gamma^1)\\
+	\Gamma^{a\pm} &= \frac{1}{2} (\Gamma^{2a} \pm i \Gamma^{2a+1}),\quad
+	a=1,2,3,4
+\end{align*}
+such that
+\begin{equation*}
+    \{\Gamma^{a+},\Gamma^{b-}\} = \delta^{ab},\quad a,b=0,1,2,3,4
+\end{equation*}
+
+The highest weight state:
+\[
+\Gamma^{a-} \zeta^{(-\frac{1}{2},-\frac{1}{2},-\frac{1}{2},-\frac{1}{2},-\frac{1}{2})} = 0,\quad
+\forall a
+\]
+The construction
+\[
+	\zeta^{(\mathbf{s})} \equiv (\Gamma^{4+})^{s_4+\frac{1}{2}}
+	\cdots(\Gamma^{0+})^{s_0 + \frac{1}{2}}
+	\zeta^{(-\frac{1}{2},-\frac{1}{2},-\frac{1}{2},-\frac{1}{2},-\frac{1}{2})}
+.\] 
+
+Lorentz transformation
+\[
+	\Sigma^{2a,2a+1} \zeta^{(\mathbf{s})} = s_a \zeta^{(\mathbf{s})}
+	,\quad a=1,2,3,4
+.\] 
+\[
+	\Sigma^{0,1} \zeta^{(\mathbf{s})} = - i s_0 \zeta^{(\mathbf{s})}
+.\] 
+\end{info}
+
+Each $\zeta^{(\mathbf{s})}$ is a $32$ (complex) components spinor
+with Grassmann value:
+\[
+	\zeta^{(\mathbf{s})} \equiv
+	\begin{pmatrix}
+		\vdots\\
+		\zeta^s \\
+		\vdots\\
+	\end{pmatrix}
+	\equiv \zeta^s v^{(\mathbf{s})}
+.\] 
+$\zeta^s$ is a complex Grassmann variable,
+$v^{(\mathbf{s})}$ is the column vector.
+The measure
+\[
+	[\mathrm{d}\psi] = \prod_{s} [\mathrm{d} \zeta^s]
+	[d \zeta^{s*}]
+.\] 
+The fermionic action
+\[
+	- \frac{\alpha}{2} \sum_{s',s,\mathfrak{a},\mathfrak{b}}
+	\zeta^{s'*}_{\mathfrak{a}} 
+	(\Gamma^0 \Gamma^\mu )_{s',s}
+	(\mathfrak{A}_{\mu})_{\mathfrak{a}\mathfrak{b}} 
+	\zeta^{s}_{\mathfrak{b}}
+.\] 
+\[
+	(\Gamma^0 \Gamma^\mu )_{s',s} \equiv (v^{(\mathbf{s}')})^\dagger
+	(\Gamma^0 \Gamma^\mu) v^{(\mathbf{s})}
+.\] 
+The integration
+\[
+	\left( - \frac{\alpha}{2} \right)^{32N^2}
+	\mathrm{Det} \left[ (\Gamma^0 \Gamma^\mu) \otimes \mathfrak{A}_\mu \right]
+	= \mathrm{exp} \left[ \mathrm{Tr} ~ \mathrm{log} 
+	\left( - \frac{\alpha}{2} (\Gamma^0 \Gamma^\mu) \otimes \mathfrak{A}_\mu \right) \right]
+.\] 

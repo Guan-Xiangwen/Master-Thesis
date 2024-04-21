@@ -1,0 +1,66 @@
+%! Tex root: ../master.tex
+
+Cubic interaction
+\[
+	\mathrm{Tr}[A_\mu,A_\nu][A^\mu,A^\nu] \to 
+	4 \mathrm{Tr}[A_\mu,\mathscr{A}_\nu][\mathscr{A}^\mu,\mathscr{A}^\nu]
+.\] 
+\[
+	4 \sum_{\mathfrak{a},\mathfrak{b},\mathfrak{c},\mathfrak{d}}
+	(\mathfrak{A}_\mu)_{\mathfrak{a}\mathfrak{b}}
+	\mathscr{A}_{\nu \mathfrak{b}} \mathscr{A}^\mu_{\mathfrak{c}}
+	\mathscr{A}^\nu_{\mathfrak{d}}
+	\mathrm{Tr}(T^{\mathfrak{a}}[T^{\mathfrak{c}},T^{\mathfrak{d}}])
+.\] 
+\[
+	4 \sum_{\mathfrak{a}',\mathfrak{b}',\mathfrak{c}',\mathfrak{d}'}
+	(\mathfrak{A}_\mu)_{\mathfrak{a}'\mathfrak{b}'}
+	\alpha_{\nu \mathfrak{b}'} \alpha^\mu_{\mathfrak{c}'}
+	\alpha^\nu_{\mathfrak{d}'}
+	\mathrm{Tr}(T^{\mathfrak{a}'}[T^{\mathfrak{c}'},T^{\mathfrak{d}'}])
+.\] 
+
+Fermionic action
+\[
+	\mathrm{Tr}( \overline{\psi} \Gamma^\mu[A_\mu,\psi])
+	= \mathrm{Tr}( \psi^\alpha (C\Gamma^\mu)_{\alpha\beta}
+	[A_\mu,\psi^\beta])
+.\] 
+fermionic background 
+\[
+\psi + \varphi
+.\] 
+with the direct sum bosonic background
+\[
+	\sum_{\mathfrak{a}' \mathfrak{b}'}
+	\varphi^\alpha_{\mathfrak{a}'}  (C\Gamma^\mu)_{\alpha\beta}
+	(\mathfrak{A}_\mu)_{\mathfrak{a}' \mathfrak{b}'}
+	\varphi^\beta_{\mathfrak{b}'}
+	+\sum_{\mathfrak{a}' \mathfrak{b}' \mathfrak{c}'}
+	\varphi^\alpha_{\mathfrak{a}'}  (C\Gamma^\mu)_{\alpha\beta}
+	\alpha_{\mu \mathfrak{b}'} \varphi^\beta_{\mathfrak{c}'}
+	\mathrm{Tr}(T^{\mathfrak{a}'}[T^{\mathfrak{b}'},T^{\mathfrak{c}'}])
+.\] 
+Also consider
+\[
+	\sum_{\mathfrak{a} \mathfrak{b}' \mathfrak{c}}
+		\psi^\alpha_{\mathfrak{a}}  (C\Gamma^\mu)_{\alpha\beta}
+			\alpha_{\mu \mathfrak{b}'} \psi^\beta_{\mathfrak{c}}
+				\mathrm{Tr}(T^{\mathfrak{a}}[T^{\mathfrak{b}'},T^{\mathfrak{c}}])
+.\] 
+Show that it's vanish.
+Also consider
+\[
+	\mathrm{Tr} \psi^\alpha (C\Gamma^\mu)_{\alpha\beta} 
+	[\alpha_\mu,\varphi^\beta]
+	+ \mathrm{Tr} \varphi^\alpha (C\Gamma^\mu)_{\alpha\beta}
+	[\alpha_\mu,\psi^\beta]
+	= - 2 \mathrm{Tr} \varphi^\alpha (C\Gamma^\mu)_{\alpha\beta}
+	[\psi^\beta,\alpha_\mu]
+.\] 
+Similarly, define the adjoint matrix
+\[
+	\Psi_{\mathfrak{a}\mathfrak{b}} \equiv
+	\sum_{\mathfrak{c}} \psi_{\mathfrak{c}} 
+	\mathrm{Tr} ( T^{\mathfrak{a}} [T^{\mathfrak{c}},T^{\mathfrak{b}}])
+.\] 

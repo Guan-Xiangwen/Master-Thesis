@@ -1,0 +1,229 @@
+%! Tex root: ../master.tex
+
+Trace formula:
+define
+\[
+	(\Sigma^{(\mathcal{A})}_{ab})^c_d \equiv
+	i (\delta^c_b \delta_{ad} - \delta^c_a \delta_{bd})
+.\] 
+This is the Lorentz generators acting on the vector representation of
+$SO(9,1)$.
+\[
+	\mathrm{tr} (
+	\underbrace{
+		\Sigma^{(\mathcal{A})}\cdots \Sigma^{(\mathcal{A})})
+	}_{\text{odd}}
+	=0
+.\] 
+\[
+	\mathrm{tr}(\Sigma^{(\mathcal{A})}_{ab}\Sigma^{(\mathcal{A})}_{cd})
+	= - 2 (\delta_{bc} \delta_{ad} - \delta_{bd} \delta_{ac})
+.\] 
+\[
+	\mathrm{tr}(\Sigma^{(\mathcal{A})}_{ab}
+	\Sigma^{(\mathcal{A})}_{cd}
+	\Sigma^{(\mathcal{A})}_{ef}
+	\Sigma^{(\mathcal{A})}_{gh})
+	=  \delta_{bc}\delta_{de}\delta_{fg}\delta_{ha}
+	+ \text{pert. (ab),(cd),(ef),(gh)}
+.\] 
+define
+\[
+	\Sigma_{ab}^{(\psi)} \equiv \frac{i}{4} [\Gamma_a,\Gamma_b]
+.\] 
+This is the Lorentz generators acting on the spinor representation of
+$SO(9,1)$.
+\[
+	\mathrm{tr} (
+	\underbrace{
+		\Sigma^{(\psi)}\cdots \Sigma^{(\psi)})
+	}_{\text{odd}}
+	=0
+.\] 
+\[
+\mathrm{tr} ( 
+\Sigma_{ab}^{(\psi)} \Sigma_{cd}^{(\psi)}) 
+= -\frac{1}{16} \mathrm{tr}
+([\Gamma_a,\Gamma_b][\Gamma_c,\Gamma_d])
+= - \frac{1}{16}(\mathrm{tr}\mathds{1})
+4(\delta_{bc} \delta_{ad} - \delta_{ac} \delta_{bd})
+.\] 
+\[
+\mathrm{tr} ( 
+\Sigma_{ab}^{(\psi)} \Sigma_{cd}^{(\psi)}) 
+= - 4
+(\delta_{bc} \delta_{ad} - \delta_{ac} \delta_{bd})
+.\] 
+\[
+	(\Sigma_{ab}^{(\psi)} \Sigma_{cd}^{(\psi)}) 
+= 2\mathrm{tr}(\Sigma^{(\mathcal{A})}_{ab}\Sigma^{(\mathcal{A})}_{cd})
+.\] 
+\[
+	\mathrm{tr}(\Sigma^{(\psi)}_{ab}
+	\Sigma^{(\psi)}_{cd}
+	\Sigma^{(\psi)}_{ef}
+	\Sigma^{(\psi)}_{gh})
+	= 
+	\delta_{bc}\delta_{de}\delta_{fg}\delta_{ha}
+	+ (\text{pair constractions } \cdots)
+\] 
+The ``flux'' term in the one-loop (background) effective action
+\[
+	(\mathfrak{A}_\rho \mathfrak{A}^\rho - i \epsilon)^{-1}
+	\Sigma_{\mu\nu}^{(\mathfrak{A},\psi)} \mathfrak{F}^{\mu\nu}
+.\] 
+
+\begin{correct}
+	Consequence of Jacobi identity
+	(adjoint representation)
+	\begin{equation}
+		\mathfrak{F}_{\mu\nu} = [\mathfrak{A}_{\mu},
+		\mathfrak{A}_{\nu}]
+	\end{equation}
+	A map
+	\begin{equation}
+		\text{fund. repr. } \propto \mathds{1}
+		\Longrightarrow \text{adj. repr. }=0
+	\end{equation}
+	\begin{equation}
+		\text{fun. } = \text{ diag. }
+		\Longrightarrow \text{adj. } = \text{ symplectic(?) }
+	\end{equation}
+
+	\paragraph{observations}
+	Adjoint matrix is antisymmetric, therefore traceless.
+	Also Hermitian (?)
+	Diagonalizable with eigenvalues forming $\pm$ pairs.
+
+	When
+	\[
+		[A_\rho,[A_\mu,A_\nu]] \propto \mathds{1} \neq 0
+	.\] 
+	which implies that
+	\[
+		[\mathfrak{A}_\rho,\mathfrak{F}_{\mu\nu}] = 0
+	.\] 
+	Example? 
+	No example in finite dimension $[\cdot,\cdot]\propto \mathds{1}$.
+	Necessary condition $[A_\mu,A_\nu]\neq i\lambda\mathds{1},\lambda\in \mathbb{R}$.
+
+	\begin{idea}
+		The condition is easier to impose on the adjoint matrix?
+	\end{idea}
+\end{correct}
+
+$\Gamma$-matrices
+\[
+	(\Gamma^\mu)^{\alpha}_{~~\beta}:\quad
+	\zeta^\alpha \to {\zeta'}^{\alpha}
+	=(\Gamma^\mu)^\alpha_{~~\beta}\zeta^\beta,\quad
+	\alpha,\beta=1,\cdots,32
+.\] 
+Complex conjugate
+\[
+	(\Gamma^{\mu*})^{\dot{\alpha}}_{~~\dot{\beta}}
+	:\quad
+	\zeta^{*\dot{\alpha}} \to {\zeta'}^{*\dot{\alpha}}
+	= (\Gamma^{\mu*})^{\dot{\alpha}}_{~~\dot{\beta}}
+	{\zeta*}^{\dot{\beta}},\quad
+	\dot{\alpha},\dot{\beta}=1,\cdots,32
+.\] 
+$\alpha,\dot{\alpha}$ transform under different Lorentz generators.
+The transpose
+\[
+		 (- \Gamma^{\mu\text{T}})_{\alpha}^{~~\beta}
+	:\quad
+	(\zeta^{\text{T}})_{\alpha} \to ({\zeta'}^{\text{T}})_{\alpha}
+	=  (- \Gamma^{\mu\text{T}})_{\alpha}^{~~\beta}(\zeta^{\text{T}})_\beta
+.\] 
+The lower index $\alpha$ transform under the transpose $\Gamma$-matrices
+$-\Gamma^{\text{T}}$.
+
+There exists a $B$-matrix that relating $\Gamma$ and $\Gamma^*$:
+$ B \Gamma B^{-1} = \Gamma^*$
+\[
+	B^{\dot{\alpha}}_{~~\alpha} (\Gamma^\mu)^\alpha_{~~\beta}
+	({B^{-1}})^{\beta}_{~~\dot{\beta}} 
+	= (\Gamma^{\mu*})^{\dot{\alpha}}_{~~\dot{\beta}}
+.\] 
+with the property
+\[
+	(B^*)^{\alpha}_{~~\dot{\alpha}}
+	= (B^{-1})^{\alpha}_{~~\dot{\alpha}}
+.\] 
+
+There exits a $C$-matrix that relating $\Gamma$ and $-\Gamma^{\text{T}}$:
+$ C \Gamma C^{-1} = - \Gamma^{\text{T}}$
+\[
+	C_{\alpha \gamma} (\Gamma^\mu)^{\gamma}_{~~\delta} (C^{-1})^{\delta\beta}
+	= (-\Gamma^{\text{T}})_\alpha^{~~\beta}
+.\] 
+
+\begin{correct}
+Consider basis transformation
+\[
+\zeta^\alpha \to \xi^\alpha = \mathrm{U}^\alpha_\beta \zeta^\beta
+.\] 
+$\Gamma$-matrices transform correspondingly
+\[
+	(\Gamma^\mu)^\alpha_{~~\beta} \to (\tilde{\Gamma}^\mu)^\alpha_{~~\beta}=
+	\mathrm{U}^\alpha_\gamma (\Gamma^\mu)^\gamma_{~~\delta}
+	(\mathrm{U}^{-1})^\delta_\beta
+.\] 
+$B$-matrix transforms correspondingly
+\[
+	B^{\dot{\alpha}}_{~~\alpha}
+	\to \tilde{B}^{\dot{\alpha}}_{~~\alpha}
+	= (\mathrm{U}^*)^{\dot{\alpha}}_{\dot{\beta}}B^{\dot{\beta}}_{~~\beta}
+	(\mathrm{U}^{-1})^\beta_\alpha
+.\] 
+$C$-matrix transforms correspondingly
+\[
+	C_{\alpha \beta}\to\tilde{C}_{\alpha\beta}
+	= (\mathrm{U}^{-1 \text{T}})_\alpha^\gamma
+	C_{\gamma \delta} (\mathrm{U}^{-1})^\delta_\beta
+.\] 
+
+Some relations of $B$ and $C$ can be seen in a certain basis.
+Then checking whether it still holds under a certain basis transformation
+(unitary).
+For example
+\[
+	B^{\text{T}} = B
+\] 
+holds under unitary basis transformation.
+
+Properties of $B$ and $C$
+\begin{equation}
+	B^{\text{T}} = B ,\quad B^* = B^{-1},\quad C^{\text{T}} = -C
+\end{equation}
+
+``Wrong properties''
+\[
+	B^* = B,\quad C^* = C,\quad C^{\text{T}} = C^{-1}
+\] 
+can be true in a certain basis,
+but not invariant under unitary basis transformations.
+\end{correct}
+
+\paragraph{conjugation}
+It's about the dual space.
+Define $\overline{\psi}:\text{spinor} \to \text{number}$.
+Require Lorentz invariance and basis independence.
+Consider Majorana spinor space.
+The isomorphic between dual spaces
+\[
+	\psi \mapsto \overline{\psi} = \psi^\dagger \Gamma^0 = \psi^{\text{T}} C
+.\] 
+\[
+	\psi^\alpha \mapsto \overline{\psi}_\alpha = 
+	(\psi^*)^{\dot{\beta}} (\Gamma^0)_{\dot{\beta}\alpha}
+	= \psi^\beta C_{\beta \alpha}
+.\] 
+I think the transpose for representation and the transpose for dual space
+are different.
+\begin{problem}
+	$\overline{\psi}_\alpha$ and $\psi^\alpha$ 
+	as independent Grassmann directions?
+	(NO!)
+\end{problem}

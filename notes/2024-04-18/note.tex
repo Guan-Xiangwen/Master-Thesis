@@ -1,0 +1,290 @@
+%! Tex root: ../master.tex
+
+\paragraph{Gaussian with interaction}
+
+Canonical generator basis (Apr. 10).
+$\mathfrak{a}=(k,l)$, $[k,l] $ or $(k,k)$.
+Fix $k<l$.
+$\mathfrak{a}'=(k,N),[k,N],k=1,\cdots,N-1$.
+Normalize such that $\mathrm{Tr}T^{\mathfrak{a}}T^{\mathfrak{b}} = 
+\delta^{\mathfrak{a} \mathfrak{b}}$.
+\[
+	\sum_{\mathfrak{a}'}(T^{\mathfrak{a}'})_{iN} (T^{\mathfrak{a}'})_{Nj}
+	=  \delta_{ij}
+.\] 												
+$\mathfrak{a}'=(i,N),[i,N]$ contributes to the sum.
+Gaussian from bosonic action (Apr. 10)
+\[
+\frac{\alpha}{2} \left[ 
+\mathcal{A}_\mu 
+(\mathfrak{A}^2 \eta^{\mu\nu} + \mathfrak{A}^\mu \mathfrak{A}^\nu
+- 2 \mathfrak{F}^{\mu\nu})
+\mathcal{A}_\nu\right] 
+.\] 
+\sout{The simplest case $\mathfrak{F}=0$ because $[A,A]=0$.
+$\mathfrak{A}^2$ is diagonal because $A$ is diagonal.}
+Consider $A \oplus a$, $a$ is a number, the $(N,N)$ matrix element;
+$A$ is a general $(N-1)\times(N-1)$ matrix.
+Calculate the adjoint
+\[
+	\mathfrak{A} = \sum_{\mathfrak{c}} (A \oplus a)_{\mathfrak{c}}
+	\mathrm{Tr}(T^{\mathfrak{a}} [T^{\mathfrak{c}},T^{\mathfrak{b}}])
+.\] 
+$\mathfrak{c}\in\{(N,N),(i,i),(k,l),[k,l]\}$.
+First consider $\mathfrak{c}=(N,N)$.
+This contributes to the matrix element
+$(\mathfrak{a}=(i,N),\mathfrak{b}=[i,N])$
+or $(\mathfrak{a}=[i,N],\mathfrak{b}=(i,N))$.
+\begin{info}
+	\begin{equation*}
+		[T^{(N,N)},T^{(i,N)}] = i T^{[i,N]},\quad
+		[T^{(N,N)},T^{[i,N]}] = -i T^{(i,N)}
+	\end{equation*}
+\end{info}
+$\mathfrak{c}=(N,N),(i,i)$ will generate the matrix element
+\[
+	(\mathfrak{A})_{(i,N),[i,N]} = - (\mathfrak{A})_{[i,N],(i,N)}
+	= i (a - A_{ii}) 
+.\] 
+There are matrix elements between different $(i,N),(j,N)$
+(also $(i,N),[j,N]$ and $[i,N],[j,N]$)
+\[
+	(\mathfrak{A})_{(i,N),(j,N)} = \sum_{\mathfrak{c}}A_{\mathfrak{c}}
+	\mathrm{Tr}(T^{(i,N)}[T^{\mathfrak{c}},T^{(j,N)}])
+	= \frac{i}{\sqrt{2}}A_{[i,j]}
+.\] 
+\[
+	(\mathfrak{A})_{(i,N),[j,N]} = \sum_{\mathfrak{c}}A_{\mathfrak{c}}
+	\mathrm{Tr}(T^{(i,N)}[T^{\mathfrak{c}},T^{[j,N]}])
+	= \frac{i}{\sqrt{2}}A_{(i,j)}
+.\] 
+\[
+	(\mathfrak{A})_{[i,N],[j,N]} = \sum_{\mathfrak{c}}A_{\mathfrak{c}}
+	\mathrm{Tr}(T^{[i,N]}[T^{\mathfrak{c}},T^{[j,N]}])
+	= \frac{i}{\sqrt{2}}A_{[i,j]}
+.\] 
+The matrix elements $((i,j),(i,N))$ vanish because $A_{[j,N]}=0$.
+
+The matrix elements of $\mathfrak{A}$:
+\begin{table}[ht]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+        & $(i,N)$                       & $[i,N]$                                                                 & $(j,N)$                       & $[j,N]$                      \\ \hline
+$(i,N)$ & $0$                           & $i(a-A_{ii})$                                                           & $\frac{i}{\sqrt{2}}A_{[ij]}$  & $\frac{i}{\sqrt{2}}A_{(ij)}$ \\ \hline
+$[i,N]$ & $-i(a-A_{ii})$                & $0$                                                                     & $-\frac{i}{\sqrt{2}}A_{(ij)}$ & $\frac{i}{\sqrt{2}}A_{[ij]}$ \\ \hline
+$(j,N)$ & $-\frac{i}{\sqrt{2}}A_{[ij]}$ & $\frac{i}{\sqrt{2}}A_{(ij)}$                                            & $0$                           & $i(a-A_{jj})$                \\ \hline
+$[j,N]$ & $-\frac{i}{\sqrt{2}}A_{(ij)}$ & $-\frac{i}{\sqrt{2}}A_{[ij]}$ & $-i(a-A_{jj})$                & $0$                          \\ \hline
+\end{tabular}
+\end{table}
+
+square
+\begin{table}[ht]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+        & $(i,N)$                       & $[i,N]$                                                                 & $(j,N)$                       & $[j,N]$                      \\ \hline
+	$(i,N)$ & $(a-A_{ii})^2$                           & $0$                                                           & $?$  & $?$ \\ \hline
+	$[i,N]$ & $0$                & $(a-A_{ii})^2$                                                                     & $?$ & $?$ \\ \hline
+	$(j,N)$ & $?$ & $?$                                            & $(a-A_{jj})^2$                           & $0$                \\ \hline
+	$[j,N]$ & $?$ & $?$ & $0$                & $(a-A_{jj})^2$                          \\ \hline
+\end{tabular}
+\end{table}
+
+The simplest approximation $a-A_{ii} \approx a- A_{jj} \equiv d$,
+$A_{(ij)} \approx 0, A_{[ij]} \approx 0$ (classical background).
+The Gaussian from bosonic action for $\alpha_{\mu \mathfrak{a}'}$
+\begin{equation}
+	\frac{\alpha}{2} \sum_{\mathfrak{a}'}
+	\left[ \alpha_{\mu \mathfrak{a}'} 
+		(d^2 \eta^{\mu\nu} + d^\mu d^\nu) 
+	\alpha_{\nu \mathfrak{a}'}\right]
+\end{equation}
+We ignore $d$ depending on $\mathfrak{a}'$ in the approximation.
+
+Consider the interaction
+\[
+	\frac{1}{4}\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{a}}]
+	[T^{\mathfrak{b}'},T^{\mathfrak{b}}])
+	= \sum_{ijkl} T^{[\mathfrak{a}'}_{ij} T^{\mathfrak{a}]}_{jk}
+	T^{[\mathfrak{b}'}_{kl} T^{\mathfrak{b}]}_{li}
+.\] 
+Because one of the index of $T^{\mathfrak{a}'}$ must be $N$,
+while no index of $T^{\mathfrak{a}}$ is $N$,
+only the following terms non-vanishing
+\[
+	- \frac{1}{4}\sum_{ijk} \left(
+	T^{\mathfrak{a}'}_{iN} T^{\mathfrak{b}'}_{Nj}
+	T^{\mathfrak{a}}_{ki} T^{\mathfrak{b}}_{jk}
+	+ T^{\mathfrak{a}'}_{Ni} T^{\mathfrak{a}}_{ik}
+	T^{\mathfrak{b}}_{kj} T^{\mathfrak{b}'}_{jN}\right)
+.\] 
+Contraction between $\mathfrak{a}',\mathfrak{b}'$ gives
+\[
+	\sum_{\mathfrak{a}' \mathfrak{b}'} \delta_{\mathfrak{a}',\mathfrak{b}'}
+	(\cdots)
+	= - \frac{1}{2} \mathrm{Tr}(T^{\mathfrak{a}} T^{\mathfrak{b}})
+.\] 
+This result is applied to
+\[
+- \frac{\alpha}{2} \mathrm{Tr} \left( 
+[\alpha_\mu,\mathcal{A}_\nu][\alpha^\mu,\mathcal{A}^\nu]
++ [\alpha_\mu,\mathcal{A}_\nu][\mathcal{A}^\mu,\alpha^\nu]\right) 
+\] 
+\[
+	= - \frac{\alpha}{2}\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{a}}]
+	[T^{\mathfrak{b}'},T^{\mathfrak{b}}]) 
+	\alpha_{\mu \mathfrak{a}'} \alpha_{\nu \mathfrak{b}'}
+	(\eta^{\mu\nu} \mathcal{A}_{\rho \mathfrak{a}} \mathcal{A}^\rho_{\mathfrak{b}}
+	+ \mathcal{A}^\nu_{\mathfrak{a}} \mathcal{A}^\mu_{\mathfrak{b}})
+.\] 
+Contract $\alpha$
+\[
+	\alpha \mathrm{Tr}(T^{\mathfrak{a}} T^{\mathfrak{b}})
+	(\Delta^{-1})_{\mu\nu}
+	(\eta^{\mu\nu} \mathcal{A}_{\rho \mathfrak{a}} \mathcal{A}^\rho_{\mathfrak{b}}
+	+ \mathcal{A}^\nu_{\mathfrak{a}} \mathcal{A}^\mu_{\mathfrak{b}})
+\] 
+\[
+=\alpha 
+	(\Delta^{-1})_{\mu\nu}
+\mathrm{Tr} \left( 
+\eta^{\mu\nu} \mathcal{A}_\rho \mathcal{A}^\rho
++ \mathcal{A}^\mu \mathcal{A}^\nu\right) 
+.\] 
+$\Delta^{-1}$ is the inverse of $\eta^{\mu\nu} d^2 + d^\mu d^\nu$.
+
+\begin{correct}
+	\begin{equation}
+- \frac{\alpha}{2} \mathrm{Tr} \left( 
+[\alpha_\rho,\mathcal{A}_\mu][\alpha_\sigma,\mathcal{A}_\nu]
+\right) 
+\to \alpha 
+	(\Delta^{-1})_{\rho\sigma}
+	\mathrm{Tr} \left( 
+		\mathcal{A}_\mu \mathcal{A}_\nu
+\right) 
+\end{equation}
+\end{correct}
+Note. there is no $\mathfrak{A}_{\mathfrak{a}\mathfrak{b}}$ dependence.
+What is $d$?
+
+\paragraph{fermionic contribution}
+the action
+\begin{equation}
+	- \frac{\alpha}{2} \mathrm{Tr}(\overline{\psi} \Gamma^\mu
+	[A_\mu,\psi])
+	= - \frac{\alpha}{2} \psi^\alpha_{\mathfrak{a}}
+	(C\Gamma^\mu)_{\alpha\beta} (\mathfrak{A}_\mu)^{\mathfrak{a}\mathfrak{b}}
+	\psi^\beta_{\mathfrak{b}}
+\end{equation}
+\[
+	\int [\mathrm{d}\psi] \mathrm{e}^{
+	- \frac{\alpha}{2} \mathrm{Tr}(\overline{\psi} \Gamma^\mu
+	[A_\mu,\psi])}
+	= \mathrm{Pf}\left( -\frac{\alpha}{2} 
+	(C\Gamma^\mu)_{\alpha\beta}
+	(\mathfrak{A}_\mu)^{\mathfrak{a}\mathfrak{b}}\right) 
+.\] 
+The matrix elements are labeled by $(\alpha,\mathfrak{a}),(\beta,\mathfrak{b})$.
+
+The RG setting, background $\mathfrak{A}=\mathfrak{A}_1 \oplus \mathfrak{A}_2$,
+$\mathfrak{A}_2$ in the directions $\mathfrak{a}',\mathfrak{b}'$.
+\[
+	\mathrm{Pf}\left( -\frac{\alpha}{2} 
+			(C\Gamma^\mu)_{\alpha\beta}
+				(\mathfrak{A}_\mu)^{\mathfrak{a}\mathfrak{b}}\right) 
+\approx \mathrm{Pf} \left( 
+-\frac{\alpha}{2} (C\Gamma^\mu)_{\alpha\beta}
+(\mathfrak{A}_{1\mu})^{\mathfrak{a}\mathfrak{b}}\right) 
+\mathrm{Pf} \left( 
+-\frac{\alpha}{2} (C\Gamma^\mu)_{\alpha\beta}
+(\mathfrak{A}_{2\mu})^{\mathfrak{a}'\mathfrak{b}'}\right) 
+\]
+Factorization only works for background, not for fluctuation.
+\[
+	\tilde{\mathfrak{A}} = \sum_{\mathfrak{c}} \alpha_{\mathfrak{c}}
+	\mathrm{Tr}(T^{\mathfrak{a}} [T^{\mathfrak{c}},T^{\mathfrak{b}}])
+\] 
+No simple relation between $\mathrm{Pf}(A\otimes B)$ and $\mathrm{Pf}(A)$,
+$\mathrm{Pf}(B)$.
+
+Write
+\[
+M_{(\alpha,\mathfrak{a}),(\beta,\mathfrak{b})}  
+\equiv (C\Gamma^\mu)_{\alpha,\beta} \otimes (\mathfrak{A}_\mu)_{\mathfrak{a},\mathfrak{b}}
+.\] 
+Use
+\[
+\mathrm{Pf} \left( - \frac{\alpha}{2} M \right) 
+= \pm \mathrm{\exp} \left[ 
+\frac{1}{4} \mathrm{Tr}~\log \left( -\frac{\alpha^2}{4} M^2 \right)
+\right] 
+.\] 
+\[
+	M
+	= C\Gamma^\mu \otimes (\mathfrak{A}_{1\mu} \oplus \mathfrak{A}_{2\mu})
+.\] 
+\[
+M^2 = (C\Gamma^\mu C\Gamma^\nu) \otimes 
+(\mathfrak{A}_{1\mu} \mathfrak{A}_{1\nu} \oplus
+\mathfrak{A}_{2\mu} \mathfrak{A}_{2\nu})
+.\] 
+$\mathfrak{A}_2$ for the RG directions.
+Factor out
+\[
+	\mathrm{\exp}\left[ \frac{1}{4} \mathrm{Tr}~ \log
+\left( - \frac{\alpha^2}{4} (C\Gamma^\mu \otimes \mathfrak{A}_{2\mu})^2 \right) \right] 
+.\] 
+Background $(\mathfrak{A}_2)^2_{\mathfrak{a}'\mathfrak{b}'} = d^2 
+\delta_{\mathfrak{a}'\mathfrak{b}'}$ (the approximation).
+\[
+(C\Gamma^\mu \otimes \mathfrak{A}_{2\mu})^2
+= \left( \sum_{\mu=2}^9 (d_\mu)^2 \right) \mathds{1}\otimes\mathds{1}
++ (\cdots ?)
+.\] 
+$\log(-\cdots)$?
+For simplicity, assume $d_0 = 0$,
+\[
+(C\Gamma^\mu \otimes \mathfrak{A}_{2\mu})^2
+= \left( \sum_{\mu=1}^9 (d_\mu)^2 \right) \mathds{1}\otimes\mathds{1}
+\equiv d^2 \mathds{1}
+.\] 
+$\mathrm{Tr} = 16 \cdot 2(N-1)$, for $\mathfrak{a}'\in \{ (i,N),[i,N]\}$.
+\[
+	\mathrm{\exp}\left[ \frac{1}{4} \mathrm{Tr}~ \log
+\left( - \frac{\alpha^2}{4} (C\Gamma^\mu \otimes \mathfrak{A}_{2\mu})^2 \right) \right] 
+= \left( - \frac{\alpha^2}{4} d^2 \right) ^{8(N-1)}
+.\] 
+\begin{question}
+	where is the scaling?
+\end{question}
+
+Clarify $M$
+\[
+	M_{(\alpha,\mathfrak{a}),(\beta,\mathfrak{b})}  
+	\equiv (C\Gamma^\mu)_{\alpha,\beta} \otimes (\mathfrak{A}_\mu)_{\mathfrak{a},\mathfrak{b}}
+.\] 
+The inverse of $M$: $M^{-1}$?
+Diagonal background
+\[
+	\sum_{\mathfrak{c}}
+	(\mathfrak{A}_\mu)_{\mathfrak{a}\mathfrak{c}}
+	(\mathfrak{A}_\nu)_{\mathfrak{c}\mathfrak{b}}
+	= \delta_{\mathfrak{a},\mathfrak{b}} d_{\mathfrak{a}\mu}
+	d_{\mathfrak{a}\nu}
+.\] 
+Spinor part is not easy, but easy if $d_0 = 0$.
+\[
+	\{(C\Gamma^i),(C\Gamma^j)\} = 2\delta^{ij}\mathds{1},\quad
+	C\Gamma^0 = -  \mathds{1}
+\] 
+\[
+	\{ (C\Gamma^0),(C\Gamma^i)\} = - 2 (C\Gamma^i)
+.\] 
+Define $\overline{C\Gamma}^\mu$
+\[
+	\overline{C\Gamma}^0 = - C\Gamma^0,\quad
+	\overline{C\Gamma}^i = C\Gamma^i
+.\] 
+Reminiscent of Pauli $4$-vector?
+If $d_0=0$, $M^{-1} \propto M$.
+$M^{-1} \propto \overline{C\Gamma}^\mu \otimes \mathfrak{A}_\mu$?

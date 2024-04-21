@@ -1,0 +1,223 @@
+%! Tex root: ../master.tex
+
+The holographic dual between supergravity and QFT:
+What's the QFT correspondence of the dilaton profile in the supergravity
+solution?
+
+The relation (2.21) in \pdfref{KST08} is non-trivial if the QFT is a matrix model
+\begin{equation}\label{dilaton-coupling}
+	\mathrm{e}^{\phi} = \frac{1}{N} c_d [g^2_{\text{eff}}(u)]^{\frac{7-p}{2(5-p)}}
+\end{equation}
+The reason is that the meaning of
+``the effective dimensionless coupling constant'' $g_{\text{eff}}^2(E)$
+\[
+	g_{\text{eff}}^2(E) = g_d^2 N E^{p-3}
+\] 
+is not clear.
+The following is the use of dual frame in the DBI action
+\[
+	S_{\text{dual}} = - \frac{1}{(2\pi)^{p-2}\alpha'^{(p-3) / 2}}
+	\int \mathrm{d}^{p+1}x (N \mathrm{e}^\phi)^{\frac{2(p-5)}{7-p}}
+	(N u^{p-3}) \frac{1}{4} \mathrm{Tr} F^2
+.\] 
+Note that one recovers the correct classical scaling of Yang-Mills theory from the AdS geometry $\sim N u^{p-3}$.
+However, the dilaton profile does not play a significant role in determining the scaling of the field theory.
+Look at \eqref{dilaton-coupling}, the power reads $p=3: \# = 1$,
+$p=2: \# = 5 / 6$, $p=1: \# = 3 / 4$, $p=0: \# = 7 / 10$,
+$p=-1: \# = 2 / 3$.
+We are interested in the $p=-1$ case
+\[
+	N \mathrm{e}^\phi = c (g^2 N)^{\frac{2}{3}} u^{-\frac{8}{3}}
+.\] 
+This seems a modified version of
+\begin{equation}
+	g_{YM}^2 = (2\pi)^{p-2} g_s {\alpha'}^{(p-3) / 2}	
+\end{equation}
+if one identifies the $\mathrm{e}^\phi$ with $g_{\text{s}}$.
+But it's not clear how to understand this modification.
+
+What's the interpretation of the Weyl rescaling of metric from the QFT point of view?
+
+What's the meaning of ``the geometry is conformal to AdS'' from the QFT point of view?
+
+The running of coupling $g(\mu)$ in (maximally) super-Yang-Mills theory:
+the classical scaling is protected by supersymmetry?
+How this is reflected in the IKKT model?
+To understand this point, I should be equipped with the correct method to deal with the fermionic integration.
+Especially the technique to deal with the non-quadratic fermionic terms
+in the matrix model integration.
+
+In \pdfref{IKKT96}, a double scaling limit is discussed.
+The limit is derived from $10\mathrm{d}$ super-Yang-Mills,
+where the mass scale $m=g_0^{1 / 3}a$ is kept fixed.
+This is the limit which the author expects to describe type IIB string theory.
+What's the limit that we want in the holographic setting?
+
+\begin{problem}
+	The ultimate goal is to reproduce the dilaton profile of D-instanton solution from the IKKT matrix model.
+	There are some sub-problems along this way
+	\begin{itemize}
+		\item What's the most natural coordinate to describe the dilaton profile $\mathrm{e}^{\phi}$? (gravity side)
+		\item What's the RG flow of the IKKT matrix model? (matrix model side)
+		\item One expects that there are different fixed points around different vacua, which have different scaling dimensions. (matrix model side)
+		\item There are two sorts of effective action in \pdfref{IKKT96}:
+			the effective potential for certain vacuum solution $W$;
+			the effective action for the partition function $S_{\text{eff}}\equiv -\log (\frac{Z(n)}{Z_0(N)})$.
+	\end{itemize}
+\end{problem}
+
+\newpage
+
+Understand the fermionic integration in the IKKT model.
+
+The Grassmann integration formula
+\begin{equation}
+	\int [\mathrm{d}\psi]
+	\mathrm{e}^{\int \mathrm{d}^d x \psi_i \Delta_{ij} \psi_j}
+	= \mathrm{Pf} \Delta
+\end{equation}
+We want to apply this formula to the following action
+\[
+\mathrm{Tr} \left( \overline{\varphi} \Gamma^\mu
+[A_\mu,\varphi]\right) 
+.\] 
+To make the quadratic structure clear,
+let's work in a particular basis.
+
+In $10 \mathrm{d}$, spinor space is of $32$ (complex) dimension.
+A particular basis can be constructed using ``creation and annihilation operators'' (I refer to Pol (Appendix B)):
+\begin{align*}
+	\Gamma^{0\pm} &= \frac{1}{2} (\pm \Gamma^0 + \Gamma^1)\\
+	\Gamma^{a\pm} &= \frac{1}{2} (\Gamma^{2a} \pm i \Gamma^{2a+1}),\quad
+	a=1,2,3,4
+\end{align*}
+Here $\Gamma^-$ is annihilation and $\Gamma^+$ is creation.
+The representation is constructed as usual.
+We will label the states as
+\[
+	\zeta^{(\mathbf{s})},\quad \mathbf{s}\equiv (s_0,s_1,s_2,s_3,s_4)
+,\] 
+with $s_a = \pm \frac{1}{2}$.
+The highest weight state is $(-\frac{1}{2},-\frac{1}{2},-\frac{1}{2},-\frac{1}{2},-\frac{1}{2})$.
+
+In the model, $\varphi$ is Majorana-Weyl spinor.
+Let's impose the conditions.
+
+For the Weyl condition, let's use the following chirality operator
+\[
+	\Gamma \equiv i^{-k} \Gamma^0 \Gamma^1 \cdots \Gamma^9
+.\]
+It turns out that $\Gamma$ is diagonal in the above basis,
+with eigenvalues
+\[
+\Gamma = 2^5 s_0 s_1 s_2 s_3 s_4
+.\] 
+In the following, we will use the chirality $\Gamma = +1$.
+The (complex) dimension then is $16$.
+
+The complex conjugate spinor $\zeta^{(s)*}$ is defined by
+the complex conjugate of Gamma-matrices $\Gamma^{\mu*}$.
+Note that $\Gamma^{a\pm *}$ acting on $\zeta^{(s)*}$
+is the same as $\Gamma^{a\pm}$ acting on $\zeta^{(s)}$
+because the coefficients are real numbers.
+However, this means that $\Gamma^{\mu*}$ will act differently.
+In particular, $\zeta$ and $\zeta^*$ have different Lorentz transformation
+property.
+
+The Majorana condition 
+\[
+\zeta^* = B\zeta,\quad B = \Gamma^3 \Gamma^5 \Gamma^7 \Gamma^9
+.\] 
+This makes sense because $B^{-1}\zeta^*$ has the same Lorentz property as $\zeta$.
+One can write
+\[
+	B = (\Gamma^{1+} - \Gamma^{1-})(\Gamma^{2+} - \Gamma^{2-})
+	(\Gamma^{3+} - \Gamma^{3-})(\Gamma^{4+} - \Gamma^{4-})
+.\] 
+So it will flip $s_1,s_2,s_3,s_4$ with a sign depending on the number of fliping $+\to -$.
+For example
+\[
+	B \zeta^{(+++++)} = (-1)^4 \zeta^{(+----)} = \zeta^{(+----)}
+.\] 
+We will also use the following identity
+\[
+B^* B = 1
+.\] 
+
+Let's define the Majorana basis
+\begin{align*}
+	\xi^{(1)} = \frac{1}{\sqrt{2}} (\zeta^{(+++++)} + B^{-1}\zeta^{(+++++)*}),\quad
+	\xi^{(2)} = \frac{1}{\sqrt{2}} (\zeta^{(+++--)} + B^{-1}\zeta^{(+++--)*})
+	\\
+	\xi^{(3)} = \frac{1}{\sqrt{2}} (\zeta^{(++-+-)} + B^{-1}\zeta^{(++-+-)*}),\quad
+	\xi^{(4)} = \frac{1}{\sqrt{2}} (\zeta^{(+-++-)} + B^{-1}\zeta^{(+-++-)*})
+	\\
+	\xi^{(5)} = \frac{1}{\sqrt{2}} (\zeta^{(-+++-)} + B^{-1}\zeta^{(-+++-)*}),\quad
+	\xi^{(6)} = \frac{1}{\sqrt{2}} (\zeta^{(++--+)} + B^{-1}\zeta^{(++--+)*})
+	\\
+	\xi^{(7)} = \frac{1}{\sqrt{2}} (\zeta^{(+-+-+)} + B^{-1}\zeta^{(+-+-+)*}),\quad
+	\xi^{(8)} = \frac{1}{\sqrt{2}} (\zeta^{(-++-+)} + B^{-1}\zeta^{(-++-+)*})
+	\\
+	\xi^{(9)} = \frac{1}{\sqrt{2}} (\zeta^{(+--++)} + B^{-1}\zeta^{(+--++)*}),\quad
+	\xi^{(10)} = \frac{1}{\sqrt{2}} (\zeta^{(-+-++)} + B^{-1}\zeta^{(-+-++)*})
+	\\
+	\xi^{(11)} = \frac{1}{\sqrt{2}} (\zeta^{(--+++)} + B^{-1}\zeta^{(--+++)*}),\quad
+	\xi^{(12)} = \frac{1}{\sqrt{2}} (\zeta^{(+----)} + B^{-1}\zeta^{(+----)*})
+	\\
+	\xi^{(13)} = \frac{1}{\sqrt{2}} (\zeta^{(-+---)} + B^{-1}\zeta^{(-+---)*}),\quad
+	\xi^{(14)} = \frac{1}{\sqrt{2}} (\zeta^{(--+--)} + B^{-1}\zeta^{(--+--)*})
+	\\
+	\xi^{(15)} = \frac{1}{\sqrt{2}} (\zeta^{(---+-)} + B^{-1}\zeta^{(---+-)*}),\quad
+	\xi^{(16)} = \frac{1}{\sqrt{2}} (\zeta^{(----+)} + B^{-1}\zeta^{(----+)*})
+\end{align*}
+For example let's check for $\xi^{(1)}$:
+\[
+	B \xi^{(1)} = \frac{1}{\sqrt{2}} 
+	(B \zeta^{(+++++)} + \zeta^{(+++++)*})
+	= \frac{1}{\sqrt{2}}
+	(\zeta^{(+----)} + \zeta^{(+++++)*})
+.\] 
+\[
+	(\xi^{(1)})^* = \frac{1}{\sqrt{2}}
+	(\zeta^{(+++++)*} + (B^{-1})^* \zeta^{(+++++)})
+	= \frac{1}{\sqrt{2}}
+	(\zeta^{(+++++)*} + B \zeta^{(+++++)})
+.\] 
+
+Decompose $\varphi$ in the bove basis
+\[
+	\varphi = \sum_{k=1}^{16} c_{(k)} \xi^{(k)} 
+\] 
+where $c_{(k)}$ are real coefficients.
+The real dimension is $16$.
+
+The spinor product is constructed using the Majorana conjugation. 
+It is defined as:
+\[
+	\overline{\varphi} \equiv \varphi^{\text{T}} C,\quad C\equiv B \Gamma^0
+.\] 
+We have
+\[
+C = \Gamma^0 \Gamma^3 \Gamma^5 \Gamma^7 \Gamma^9
+.\] 
+It acts on the spinor basis $\zeta^{(\mathbf{s})}$ will flip all spins $s_a$.
+
+We also need to generalize $\varphi$ to the adjoint representation of $\mathfrak{u}(N)$.
+\[
+	\varphi = \varphi_{\mathfrak{a}} T^{\mathfrak{a}}
+	= \left( \sum_{k} b_{(k),\mathfrak{a}} \xi^{(k)} + i c_{(k),\mathfrak{a}} \chi^{(k)}\right) T^{\mathfrak{a}},\quad \mathfrak{a} = 1,\cdots,N^2
+.\] 
+$T^{\mathfrak{a}}$ are Hermitian matrices.
+
+It's useful to define
+\[
+B_a \equiv A_{2a} - i A_{2a+1},\quad a=1,2,3,4
+\] 
+and
+\[
+B_0 \equiv A_0 + A_1,\quad \overline{B}_0 \equiv -A_0 + A_1
+.\] 
+such that
+\[
+\Gamma^\mu A_\mu = \sum_{a=0}^4 (\Gamma^{a+}B_a + \Gamma^{a-}\overline{B}_a)
+.\] 

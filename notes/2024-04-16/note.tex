@@ -1,0 +1,258 @@
+%! Tex root: ../master.tex
+
+\paragraph{quartic interaction}
+Schematically
+\begin{align*}
+	-\frac{\alpha}{4} \mathrm{Tr} [A_\mu,A_\nu][A^\mu,A^\nu]
+	\to \mathrm{Tr}[\mathfrak{a},\mathfrak{a}][\mathfrak{a},\mathfrak{a}] \\
+	+ \mathrm{Tr}[\mathfrak{a}',\mathfrak{a}'][\mathfrak{a},\mathfrak{a}]
+	+ \mathrm{Tr}[\mathfrak{a}',\mathfrak{a}][\mathfrak{a}',\mathfrak{a}]
+	+\mathrm{Tr} [\mathfrak{a}',\mathfrak{a}']
+	[\mathfrak{a}',\mathfrak{a}']
+\end{align*}
+the quartic interaction terms
+\begin{align*}
+	-\frac{\alpha}{4} \mathrm{Tr} 
+	[\mathcal{A}_\mu,\mathcal{A}_\nu][\mathcal{A}^\mu,\mathcal{A}^\nu]
+	-\frac{\alpha}{4} \mathrm{Tr} 
+	[\alpha_\mu,\alpha_\nu][\alpha^\mu,\alpha^\nu] \\
+ - \frac{\alpha}{2} \mathrm{Tr}
+ [\alpha_\mu,\alpha_\nu][\mathcal{A}^\mu,\mathcal{A}^\nu]
+ - \frac{\alpha}{2} \mathrm{Tr}
+ \left( [\alpha_\mu,\mathcal{A}_\nu][\alpha^\mu,\mathcal{A}^\nu]
+ + [\alpha_\mu,\mathcal{A}_\nu][\mathcal{A}^\mu,\alpha^\nu]\right) 
+\end{align*}
+$\mathfrak{u}(N)$ index $\mathfrak{a},\mathfrak{a}'$ structure:
+\[
+	\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{b}'}]
+	[T^{\mathfrak{a}},T^{\mathfrak{b}}]),\quad
+	\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{a}}]
+	[T^{\mathfrak{b}'},T^{\mathfrak{b}}]),\quad
+	\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{b}'}]
+	[T^{\mathfrak{c}'},T^{\mathfrak{d}'}])
+.\] 
+\[
+ - \frac{\alpha}{2} \mathrm{Tr}
+ [\alpha_\mu,\alpha_\nu][\mathcal{A}^\mu,\mathcal{A}^\nu]
+ =-\frac{\alpha}{2}	\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{b}'}]
+	[T^{\mathfrak{a}},T^{\mathfrak{b}}])
+	\alpha_{\mu \mathfrak{a}'} \alpha_{\nu \mathfrak{b}'}
+	\mathcal{A}^\mu_{\mathfrak{a}} \mathcal{A}^\nu_{\mathfrak{b}}
+.\] 
+\begin{align*}
+ - \frac{\alpha}{2} \mathrm{Tr}
+\left( [\alpha_\mu,\mathcal{A}_\nu][\alpha^\mu,\mathcal{A}^\nu]
++ [\alpha_\mu,\mathcal{A}_\nu][\mathcal{A}^\mu,\alpha^\nu]\right) \\
+= -\frac{\alpha}{2} 	\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{a}}]
+	[T^{\mathfrak{b}'},T^{\mathfrak{b}}])
+	\alpha_{\mu \mathfrak{a}'} \alpha_{\nu \mathfrak{b}'}
+	(\eta^{\mu\nu} \mathcal{A}_{\rho \mathfrak{a}} \mathcal{A}^\rho_{\mathfrak{b}}
+	+ \mathcal{A}^\nu_{\mathfrak{a}} \mathcal{A}^\mu_{\mathfrak{b}})
+\end{align*}
+\[
+	-\frac{\alpha}{4} \mathrm{Tr} 
+		[\alpha_\mu,\alpha_\nu][\alpha^\mu,\alpha^\nu] 
+		= -\frac{\alpha}{4}	\mathrm{Tr}([T^{\mathfrak{a}'},T^{\mathfrak{b}'}]
+			[T^{\mathfrak{c}'},T^{\mathfrak{d}'}])
+			\alpha_{\mu \mathfrak{a}'} \alpha_{\nu \mathfrak{b}'}
+		\alpha^{\mu }_{\mathfrak{c}'} \alpha^\nu_{\mathfrak{d}'}
+	\]
+\begin{info}
+	Maybe useful formula:
+	\[
+		\mathrm{Tr}
+		\left( [T^{\mathfrak{a}'},T^{\mathfrak{a}'}]
+		[T^{\mathfrak{a}},T^b]\right) 
+		=0
+	.\] 
+	\[
+		\sum_{\mathfrak{a}'} \mathrm{Tr}
+		\left( [T^{\mathfrak{a}'},T^{\mathfrak{a}}]
+		[T^{\mathfrak{a}'},T^b]\right) 
+		\propto \mathrm{Tr} T^{\mathfrak{a}} T^{\mathfrak{b}}
+	.\] 
+	what's the coefficient?
+\end{info}
+
+\paragraph{susy, Ward identity?, BRST?}
+Formula
+\begin{align*}
+	[ \overline{\epsilon} \Gamma_\mu \psi,\psi]
+	= [ \overline{\epsilon}_\alpha (\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta,
+	\psi^\gamma]
+	= \overline{\epsilon}_\alpha\{ (\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta,
+	\psi^\gamma\} \\
+	+ \{ \overline{\epsilon}_\alpha,\psi^\gamma\}
+(\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta
+\end{align*}
+The last term is zero if $\overline{\epsilon}_\alpha \propto \mathds{1}$.
+\begin{align*}
+	\mathrm{Tr}(\overline{\psi}\Gamma^\mu [ \overline{\epsilon}
+	\Gamma_\mu \psi,\psi])
+	= \mathrm{Tr} \bigg( \overline{\psi}_\delta (\Gamma^\mu)^\delta_{~~\gamma}
+	[ \overline{\epsilon}_\alpha (\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta,
+	\psi^\gamma]\bigg) \\
+	= \mathrm{Tr} \bigg( \overline{\psi}_\delta (\Gamma^\mu)^\delta_{~~\gamma}
+	\overline{\epsilon}_\alpha\{ (\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta,
+	\psi^\gamma\} - \overline{\psi}_\delta (\Gamma^\mu)^\delta_{~~\gamma}
+	\{ \overline{\epsilon}_\alpha,\psi^\gamma\}
+	(\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta
+	\bigg)\\
+	= - \mathrm{Tr} \bigg( 	\overline{\epsilon}_\alpha
+		\big\{ 
+			(\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta,
+		 (\Gamma^\mu)^\delta_{~~\gamma} \psi^\gamma
+	 \big\} 
+	 \overline{\psi}_\delta 
+	 - 	\big\{ 
+		 \overline{\epsilon}_\alpha, 
+		 (\Gamma^\mu)^\delta_{~~\gamma}\psi^\gamma
+	 \big\}
+	(\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta
+	\overline{\psi}_\delta 	\bigg)
+\end{align*}
+The first term
+\[
+	- \mathrm{Tr} \bigg( 	\overline{\epsilon}_\alpha
+		\big\{ 
+			(\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta,
+		 (\Gamma^\mu)^\delta_{~~\gamma} \psi^\gamma
+	 \big\} 
+	 \overline{\psi}_\delta 
+ \bigg)
+ = 
+	- \mathrm{Tr} \bigg( 	\epsilon^\alpha
+		\big\{ 
+			(C\Gamma_\mu)_{\alpha\beta} \psi^\beta,
+		 (C\Gamma^\mu)_{\delta\gamma} \psi^\gamma
+	 \big\} 
+	 \psi^\delta
+ \bigg)
+.\] 
+The last term
+\[
+   \mathrm{Tr} \bigg(  	
+	  \big\{ 
+		 \overline{\epsilon}_\alpha, 
+		 (\Gamma^\mu)^\delta_{~~\gamma}\psi^\gamma
+	 \big\}
+	(\Gamma_\mu)^\alpha_{~~\beta} \psi^\beta
+	\overline{\psi}_\delta 	
+\bigg)
+=
+   \mathrm{Tr} \bigg(  	
+	  \epsilon^\alpha
+		 \left[
+		 (C\Gamma^\mu)_{\delta\gamma}\psi^\gamma,
+	(C\Gamma_\mu)_{\alpha\beta} \psi^\beta
+	\psi^\delta
+\right]
+\bigg)
+.\] 
+Add them to get
+\[
+	\mathrm{Tr}(\overline{\psi}\Gamma^\mu [ \overline{\epsilon}
+	\Gamma_\mu \psi,\psi]) = 
+	- 2 (C\Gamma_\mu)_{\alpha\beta} (C\Gamma^\mu)_{\delta\gamma}
+	\mathrm{Tr}(\epsilon^\alpha \psi^\beta \psi^\delta \psi^\gamma)
+.\] 
+Vanishes if $\epsilon \propto \mathds{1}$. Non-vanishing part
+\[
+3\mathrm{Tr}(\epsilon^\alpha \psi^\beta \psi^\delta \psi^\gamma)
+= \mathrm{Tr} (\epsilon^\alpha \psi^\beta \psi^\delta \psi^\gamma)
++ (\text{cyclic } \beta,\delta,\gamma)
+.\] 
+\[
+	+ \mathrm{Tr}(\{\epsilon^\alpha,\psi^\beta\}\psi^{(\delta} \psi^{\gamma)})
+	- \mathrm{Tr}(\{\epsilon^\alpha,\psi^{(\gamma}\}\psi^{|\beta|}
+	\psi^{\delta)})
+.\] 
+First part vanishes, second part is symmetrized for $(\gamma,\delta)$.
+\begin{info}
+	$\Gamma$-matrix $(\Gamma_\mu)^\alpha_{~~\beta}$:
+	$(C\Gamma_\mu)_{\alpha\beta} = C_{\alpha \gamma} 
+	(\Gamma_\mu)^\gamma_{~~\beta}$.
+	Spinor product: $\overline{\psi}_{\alpha}(\Gamma_\mu)^\alpha_{~~\beta}
+	\psi^\beta$
+	\[
+	=	\psi^\alpha (C\Gamma_\mu)_{\alpha\beta} \psi^\beta
+	.\] 
+	$(C\Gamma_\mu)_{\alpha\beta}$ is symmetric.
+	In our case:
+	\begin{equation*}
+		(C\Gamma_\mu)_{\alpha\beta} (C\Gamma^\mu)_{\gamma\delta}
+		+ (C\Gamma_\mu)_{\alpha\gamma} (C\Gamma^\mu)_{\delta\beta}
+		+ (C\Gamma_\mu)_{\alpha\delta} (C\Gamma^\mu)_{\beta\gamma}
+		=0
+	\end{equation*}
+	Check by looking at the explicit $C\Gamma^\mu$ in MW basis.
+	Procedure: fix $\gamma,\delta$ (MW directions).
+	Only one $\mu$ is non-zero (remarkable).
+	Choose another two directions $\alpha,\beta$ with that $\mu$.
+	Then two vector directions $\mu,\nu$ in the formula.
+	Locate the matrix elements.
+\end{info}
+Understand the property of $\Gamma^\mu \otimes \Gamma_\mu$...
+
+The susy transformation of $\mathrm{Tr}[A_\mu,A_\nu][A^\mu,A^\nu]$,
+consider
+\[
+	\mathrm{Tr}[\overline{\epsilon}\Gamma_\mu \psi, A_\nu]
+	[A^\mu,A^\nu]
+	= \mathrm{Tr} \epsilon^{\alpha} (C\Gamma_\mu)_{\alpha\beta}	\psi^\beta
+	[A_\nu,[A^\mu,A^\nu]]
+.\] 
+
+Susy vary $\psi$ in $\mathrm{Tr} \overline{\psi}\Gamma^\mu[A_\mu,\psi]$
+\begin{align*}
+	\mathrm{Tr}( \psi^\alpha (C\Gamma^\mu)_{\alpha\beta} [A_\mu,\psi^\beta])
+	\to \mathrm{Tr} \left( [A_\mu,A_\nu](\Gamma^{\mu\nu})^\gamma_{~~\alpha} 
+	\epsilon^\alpha
+(C\Gamma^\rho)_{\gamma\beta}[A_\rho,\psi^\beta]\right) 
+\\
++\mathrm{Tr}(\psi^\beta (C\Gamma^\rho)_{\beta\gamma} [A_\rho,
+[A_\mu,A_\nu](\Gamma^{\mu\nu})^{\gamma}_{~~\alpha}\epsilon^\alpha])\\
+= 2 (C\Gamma^\rho)_{\beta\gamma} (\Gamma^{\mu\nu})^\gamma_{~~\alpha}
+\mathrm{Tr}(\epsilon^\alpha [A_\rho,\psi^\beta][A_\mu,A_\nu])\\
+= 2 (C\Gamma^\rho \Gamma^{\mu\nu})_{\beta\alpha}
+\mathrm{Tr}(\epsilon^\alpha [A_\rho,\psi^\beta][A_\mu,A_\nu])
+\end{align*}
+\begin{align*}
+		2 (C\Gamma^\rho \Gamma^{\mu\nu})_{\beta\alpha}
+		\mathrm{Tr}(\epsilon^\alpha [A_\rho,\psi^\beta][A_\mu,A_\nu])
+		=\left[ 2 (C \Gamma^{\mu\nu\rho})_{\beta\alpha}
+		+ 4 \eta^{\rho[\mu} (C\Gamma^{\nu]})_{\beta\alpha}\right]\\
+		\cdot \left[ \mathrm{Tr}(\epsilon^\alpha 
+			[A_\rho,\psi^\beta [A_\mu,A_\nu]])
+			+ \mathrm{Tr}(\epsilon^\alpha \psi^\beta
+			[A_\rho,[A_\nu,A_\mu]])
+		\right]
+\end{align*}
+\begin{info}
+	Use the Jacobi identity
+	\[
+		[A_\rho,[A_\mu,A_\nu]] + (\text{cyclic } \rho,\mu\nu) = 0
+	\] 
+	to prove
+	\[
+		(C\Gamma^{\mu\nu\rho}) \mathrm{Tr} ( \cdots
+		[A_\rho,[A_\nu,A_\mu]]) = 0
+	.\] 
+	The last term
+	\[
+	4 \eta^{\rho[\mu} (C\Gamma^{\nu]})_{\beta\alpha}
+	\mathrm{Tr}(\epsilon^\alpha \psi^\beta
+		[A_\rho,[A_\nu,A_\mu]])
+	\] 
+	will cancel with $	\mathrm{Tr}[\overline{\epsilon}\Gamma_\mu \psi, A_\nu]
+		[A^\mu,A^\nu]
+		$.
+\end{info}
+Left with (vanish when $\epsilon \propto \mathds{1}$)
+\[
+\left[ 2 (C \Gamma^{\mu\nu\rho})_{\beta\alpha}
+		+ 4 \eta^{\rho[\mu} (C\Gamma^{\nu]})_{\beta\alpha}\right]
+		\cdot  \mathrm{Tr}(\epsilon^\alpha 
+			[A_\rho,\psi^\beta [A_\mu,A_\nu]])
+.\] 
+...

@@ -1,0 +1,133 @@
+%! Tex root: ../master.tex
+
+The dilaton profile plays a central role.
+Check the dilaton equation derived from supergravity action.
+Use the action in \pdfref{DGT94}
+\begin{equation}
+	S = \frac{1}{2\kappa^2} \int \mathrm{d}^{10} x \sqrt{-g}
+	\mathrm{e}^{-2\phi} \left[ R + 4(\partial\phi)^2 - \frac{1}{12} F_3^2 \right] 
+\end{equation}
+
+Review the variation
+\begin{align*}
+	\delta_{(\phi)} S = \frac{1}{2\kappa^2} \int \mathrm{d}^{10} x \sqrt{-g}
+	\left[ -2 \mathrm{e}^{-2\phi} (R+4\partial_\mu\phi \partial^\mu\phi
+	-\frac{1}{12}F_3^2)\delta\phi 
++ 8 \mathrm{e}^{-2\phi} \partial_\mu\phi \nabla^\mu\delta\phi\right] 
+\end{align*}
+To get the boundary term, it's important to use $\nabla_\mu$.
+\begin{equation}
+	\delta_{(\phi)} S = \delta_{(\phi),\text{bulk}}S
++	\delta_{(\phi),\text{boundary}}S
+\end{equation}
+where
+\begin{align*}
+	\delta_{(\phi),\text{bulk}}S = \frac{1}{2\kappa^2} \int \mathrm{d}^{10} x \sqrt{-g}
+	\Big[ -8 \nabla^\mu (\mathrm{e}^{-2\phi} \partial_\mu\phi)\\
+	+\mathrm{e}^{-2\phi}(-2R - 8 \partial_\mu\phi\partial^\mu\phi
++\frac{1}{6}F_3^2)\Big] \delta\phi
+\end{align*}
+and
+\begin{equation*}
+	\delta_{(\phi),\text{boundary}}S = \frac{1}{2\kappa^2} \int \mathrm{d}^{10} x \sqrt{-g}
+	\nabla^\mu (8 \mathrm{e}^{-2\phi} \partial_\mu\phi \delta\phi)
+\end{equation*}
+
+The metric variation $\delta_{(g)}$ should be carried out carefully.
+Because the dilaton coupling with the scalar curvature,
+the second term in
+\[
+	\delta_{(g)} R = R_{\mu \nu} \delta g^{\mu\nu}
+	+ \nabla_\rho (g^{\mu\nu} \delta \Gamma^\rho_{\mu\nu}
+	- g^{\nu\rho}\delta\Gamma^\mu_{\mu\nu})
+\] 
+will not simply gives a boundary term.
+\begin{equation}
+	\delta_{(g)}S = \delta_{(g),\text{bulk 1}} S
+	+ \delta_{(g), \text{bulk 2}} S
+	+ \delta_{(g), \text{boundary}} S
+\end{equation}
+
+\begin{gather*}
+	\delta_{(g),\text{bulk 1}} S = \frac{1}{2\kappa^2} \int \mathrm{d}^{10} x \sqrt{-g}
+	\mathrm{e}^{-2\phi} \bigg[ R_{\mu\nu} - \frac{1}{2}g_{\mu\nu} R
+		\\
+ +4 \left( \partial_\mu \phi \partial_\nu \phi 
+ -\frac{1}{2} g_{\mu\nu}(\partial\phi)^2\right) 
+-\frac{1}{12} \left( 3 F_{\mu\rho\sigma}F^{~\rho\sigma}_{\nu}-\frac{1}{2} g_{\mu\nu} F_3^2 \right) \bigg]
+\delta g^{\mu\nu}
+\end{gather*}
+
+\begin{gather*}
+	\delta_{(g),\text{2}} S = \frac{1}{2\kappa^2}\int \mathrm{d}^{10}x
+	\sqrt{-g} \mathrm{e}^{-2\phi} \cdot \frac{1}{2} \nabla_\rho
+	\bigg[ g^{\mu\nu} g^{\rho\lambda}
+		(\nabla_\nu \delta g_{\mu\lambda} + \nabla_\mu \delta g_{\nu\lambda} - \nabla_\lambda \delta g_{\mu\nu})
+		\\
+		- g^{\nu\rho} g^{\mu\lambda}
+	(\nabla_\nu \delta g_{\mu\lambda} + \nabla_\mu \delta g_{\nu\lambda} - \nabla_\lambda \delta g_{\mu\nu}) \bigg]
+	\\
+	 = \frac{1}{2\kappa^2}\int \mathrm{d}^{10}x
+	\sqrt{-g} \mathrm{e}^{-2\phi} \cdot \frac{1}{2} \nabla_\rho
+	\bigg( -\nabla_\nu \delta g^{\nu\rho} - \nabla_\mu \delta g^{\mu\rho}
+		+g_{\mu\nu}g^{\rho\lambda} \nabla_\lambda \delta g^{\mu\nu}
+		\\
+		+ g^{\nu\rho} g_{\mu\lambda} \nabla_\nu \delta g^{\mu\lambda}
+	+ \nabla_\mu \delta g^{\rho\mu} - \nabla_\lambda \delta g^{\rho\lambda} \bigg)
+	\\
+	 = \frac{1}{2\kappa^2}\int \mathrm{d}^{10}x
+	\sqrt{-g} \mathrm{e}^{-2\phi} \cdot  \nabla_\rho
+	\bigg( -\nabla_\nu \delta g^{\nu\rho} 
+	+g_{\mu\nu}g^{\rho\lambda} \nabla_\lambda \delta g^{\mu\nu}\bigg)
+\end{gather*}
+
+\begin{equation*}
+	\delta_{(g),\text{bulk 2}} S= \frac{1}{2\kappa^2} \int \mathrm{d}^{10}x
+	\sqrt{-g} \left( -\nabla_\mu \nabla_\nu \mathrm{e}^{-2\phi}
+		+ g_{\mu\nu} \nabla^\rho \nabla_\rho \mathrm{e}^{-2\phi}
+	\right)\delta g^{\mu\nu} 
+\end{equation*}
+
+\begin{gather*}
+	\delta_{(g),\text{boundary}} S =  \frac{1}{2\kappa^2} \int \mathrm{d}^{10} x \sqrt{-g}
+	\nabla_\mu \bigg[\mathrm{e}^{-2\phi} 
+	( -\nabla_\nu \delta g^{\nu\mu} 
+	+g_{\rho\sigma}\nabla^\mu \delta g^{\rho\sigma})
+	\\
+	+ (\nabla_\nu \mathrm{e}^{-2\phi}) \delta g^{\mu\nu}
+	- (\nabla^\mu \mathrm{e}^{-2\phi}) g_{\rho\sigma}\delta g^{\rho\sigma}
+  \bigg] 
+\end{gather*}
+
+\begin{equation*}
+	\delta_{(A),\text{bulk}} S = \frac{1}{2\kappa^2} \int \mathrm{d}^{10}x \sqrt{-g}
+	\nabla^\mu \left( \mathrm{e}^{-2\phi} \cdot \frac{1}{2}
+	F_{\mu\nu\rho}\right) \delta A^{\nu\rho}
+\end{equation*}
+
+\begin{equation*}
+	\delta_{(A),\text{boundary}} S =- \frac{1}{2\kappa^2} \int \mathrm{d}^{10}x \sqrt{-g}
+	\nabla^\mu \left( \mathrm{e}^{-2\phi} \cdot \frac{1}{2}
+	F_{\mu\nu\rho}\delta A^{\nu\rho}\right) 
+\end{equation*}
+
+The equation of motion
+\begin{equation}
+	\nabla^2 \phi =(\partial\phi)^2- \frac{1}{4}R + \frac{1}{48}F_3^2
+\end{equation}
+note. the $(\partial \phi)^2$ term is due to the coupling between $\mathrm{e}^{-2\phi}$ and the usual kinetic term $(\partial\phi)^2$.
+\begin{equation}
+	R_{\mu\nu} - \frac{1}{2} g_{\mu\nu} R = 
+	2 \left[ g_{\mu\nu}(\nabla^2\phi - (\partial\phi)^2) - 
+	\nabla_\mu \nabla_\nu\phi\right] 
+	+ \frac{1}{4} F_{\mu\rho\sigma} F^{~\rho\sigma}_\nu
+	-\frac{1}{24} g_{\mu\nu}F_3^2
+\end{equation}
+The coupling between $\mathrm{e}^{-2\phi}$ and $R$ modifies the $\phi$ terms in this equation.
+\begin{equation}
+	\nabla^\mu \left( \mathrm{e}^{-2\phi} F_{\mu\nu\rho} \right) =0
+\end{equation}
+
+\begin{question}
+	Is it possible to write the equations using only $\Phi\equiv \mathrm{e}^{-2\phi}$?
+\end{question}

@@ -1,0 +1,224 @@
+%! Tex root: ../master.tex
+
+\begin{correct}
+	\begin{equation*}
+		A_\mu =
+		\begin{pmatrix}
+			& & & (\alpha_\mu)_1 \\
+			& & & \vdots \\
+			& & & (\alpha_\mu)_N \\
+			(\alpha_\mu)_1^* & \cdots & (\alpha_\mu)_N^* & a_\mu
+		\end{pmatrix}
+	\end{equation*}
+
+	\begin{equation*}
+	\left[ 
+	\begin{pmatrix}
+		& & & (\alpha_\mu)_1 \\
+		& & & \vdots \\
+		& & & (\alpha_\mu)_N \\
+		(\alpha_\mu)_1^* & \cdots & (\alpha_\mu)_N^* & a_\mu
+	\end{pmatrix},
+	\begin{pmatrix}
+		& & & \vdots \\
+		& & & 1 \\
+		& & & \vdots \\
+		\cdots & 1 & \cdots & 0
+	\end{pmatrix}
+\right] 	
+	\end{equation*}
+	\[
+	 =
+	 \begin{pmatrix}
+		& (\alpha_\mu)_1 & & \vdots\\
+		- (\alpha_\mu)_1^*& \vdots& -(\alpha_\mu)_N^*& -a_\mu\\
+		& (\alpha_\mu)_N & & \vdots\\
+		 \cdots & a_\mu & \cdots & (\alpha_\mu)_k^* - (\alpha_\mu)_k
+	 \end{pmatrix}
+	.\] 
+	\begin{equation}
+		(\mathfrak{A}_\mu)^{\mathfrak{a}\mathfrak{b}}
+		= \sum_{\mathfrak{c}} A_{\mu \mathfrak{c}}
+		\mathrm{tr}(T^{\mathfrak{a}}[T^{\mathfrak{c}},T^{\mathfrak{b}}])
+	\end{equation}
+	label
+	\[
+		\mathfrak{a} \equiv (k,l)\text{ or } [k,l],\quad k,l\in \{1,\cdots,N+1\}
+	.\] 
+	\[
+	T^{(k,l)} = T^{(l,k)},\quad T^{[k,l]} = -T^{[l,k]}
+	.\] 
+	\[
+		T^{(k,l)}\equiv
+		\begin{pmatrix}
+			 & \vdots& & \vdots& \\
+			 \cdots& 0 & \cdots & 1 & \cdots\\
+			 & \vdots& & \vdots& \\
+			 \cdots& 1 & \cdots& 0 &\cdots \\
+			 & \vdots& & \vdots& \\
+		\end{pmatrix},\quad
+		T^{[k,l]}\equiv
+		\begin{pmatrix}
+			 & \vdots& & \vdots& \\
+			 \cdots& 0 & \cdots & i & \cdots\\
+			 & \vdots& & \vdots& \\
+			 \cdots& -i & \cdots& 0 &\cdots \\
+			 & \vdots& & \vdots& \\
+		\end{pmatrix}
+	.\] 
+	\[
+		T^{(k,k)} \equiv
+		\begin{pmatrix}
+			\ddots & &\\
+				   & 2 & \\
+				   & & \ddots
+		\end{pmatrix}
+	.\] 
+	\[
+		(T^{(k,l)})_{i,j} = \delta_{k,i}\delta_{l,j} + \delta_{k,l}\delta_{l,i},\quad
+		(T^{[k,l]})_{i,j} = i (\delta_{k,i}\delta_{l,j} - \delta_{k,l}\delta_{l,i})
+	.\] 
+	\[
+		(A_\mu)_{(k,l)} = \mathfrak{Re} (A_\mu)_{k,l},\quad
+		(A_\mu)_{[k,l]} = \mathfrak{Im} (A_\mu)_{k,l}
+	.\] 
+	\[
+		\mathrm{tr} T^{(k,l)} T^{(k',l')} = 2(\delta_{k,k'} \delta_{l,l'}
+		+ \delta_{k,l'} \delta_{l,k'}),\quad
+		\mathrm{tr} T^{[k,l]} T^{[k',l']} = 2(\delta_{k,k'} \delta_{l,l'}
+		- \delta_{k,l'} \delta_{l,k'})
+	.\] 
+For $[\cdot,\cdot]$, consider
+\[
+	[T^{(k,k)},T^{(k,l)}] = -2 i T^{[k,l]},\quad
+	[T^{(k,k)},T^{[k,l]}] =  2i T^{(k,l)}
+.\]
+\[
+	[T^{(k,s)},T^{(s,l)}]= -i T^{[k,l]},\quad
+	[T^{(k,s)},T^{[s,l]}] = i T^{(k,l)} - i \delta_{k,l} T^{(s,s)}
+.\] 
+\[
+	[T^{[k,s]},T^{[s,l]}] = i T^{[k,l]}
+.\] 
+\end{correct}
+
+Understand the relation between $A_{\mu \mathfrak{a}}$ 
+and $\mathfrak{A}^{\mathfrak{a}\mathfrak{b}}_\mu$.
+Shift $A_{\mu}$ by diagonal matrices
+\[
+	A_\mu \to A_\mu + D_\mu,\quad D_\mu = \sum_{\mathfrak{a}} D_{\mu \mathfrak{a}} T^{\mathfrak{a}}
+	= \sum_{k=1}^N D_{\mu (k,k)} T^{(k,k)}
+.\] 
+\begin{equation}
+	\mathfrak{D}_\mu^{\mathfrak{a}\mathfrak{b}}
+	= \sum_{k=1}^N D_{\mu (k,k)}
+	\mathrm{tr} (T^{\mathfrak{a}}[T^{(k,k)},T^{\mathfrak{b}}])
+\end{equation}
+\[
+	\mathfrak{D}_\mu^{\mathfrak{a}\mathfrak{b}} \neq 0 ,\text{ if }
+		\mathfrak{a} = (k,l) \text{ and } \mathfrak{b} = [k,l]
+		,\quad \mathfrak{D}_\mu^{\mathfrak{a}\mathfrak{b}} = 4i (\mathfrak{D}_{\mu(k,k)}- \mathfrak{D}_{\mu (l,l)})
+.\] 
+\[
+	\mathfrak{D}_{\mu}^{\mathfrak{a}\mathfrak{b}} = - \mathfrak{D}_\mu^{\mathfrak{b}\mathfrak{a}}
+.\] 
+\[
+	\mathfrak{D}_\mu^{(k,l)[k,l]} = - \mathfrak{D}_\mu^{[k,l](k,l)}
+	= - \mathfrak{D}_\mu^{(k,l)[l,k]}
+	= 4i (\mathfrak{D}_{\mu(k,k)} - \mathfrak{D}_{\mu (l,l)})
+.\] 
+
+\begin{correct}
+	Example $N=3$:
+	\[
+	D_\mu = \mathrm{diag}((d_1)_\mu,(d_2)_\mu,(d_3)_\mu)
+	.\] 
+	\[
+	\mathfrak{a} \in 
+	\{(1,1),(2,2),(3,3),(1,2),[1,2],(1,3),[1,3],(2,3),[2,3]\}
+	.\] 
+	\[
+	\mathfrak{D}_\mu = 4i
+	\begin{pmatrix}
+		0 & & & & & & & & \\
+		& 0 & & & & & & & \\
+		& & 0 & & & & & & \\
+		& & & 0 & (\Delta_{12})_\mu& & & & \\
+		& & & (\Delta_{21})_\mu& 0 & & & & \\
+		& & & & & 0 & (\Delta_{13})_\mu& & \\
+		& & & & & (\Delta_{31})_\mu& 0 & & \\
+		& & & & & & & 0 & (\Delta_{23})_\mu\\
+		& & & & & & & (\Delta_{32})_\mu& 0 
+	\end{pmatrix}
+	.\] 
+	\[
+		\Delta_{12} = d_1 - d_2
+	.\] 
+	Note the zero directions.
+\end{correct}
+
+Bosonic
+\[
+	- \frac{\alpha}{4} \mathrm{Tr} [A_\mu,A_\nu][A^\mu,A^\nu]
+.\] 
+Consider $A$ as background, fluctuation $\mathscr{A}$:
+\[
+A^\mu \to A^\mu + \mathscr{A}^\mu
+.\] 
+The terms that are quadratic in $\mathscr{A}$
+\begin{equation}
+	- \frac{\alpha}{2} \mathrm{tr} \left( 
+	[A_\mu,\mathscr{A}_\nu][A^\mu,\mathscr{A}^\nu]
++[A_\mu,\mathscr{A}^\mu][A_\nu,\mathscr{A}^\nu]
+- 2 [A_\mu,A_\nu][\mathscr{A}^\mu,\mathscr{A}^\nu]\right) 
+\end{equation}
+
+\begin{info}
+	Recall
+	\begin{equation}
+		([A_\mu,S])_{\mathfrak{a}} = \sum_{\mathfrak{b}} (\mathfrak{A}_\mu)_{\mathfrak{a}\mathfrak{b}}
+		S_{\mathfrak{b}}
+	\end{equation}
+	\[
+		([A_\mu,[A_\nu,S]])_{\mathfrak{a}}
+		= \sum_{\mathfrak{b}}
+		(\mathfrak{A}_\mu)_{\mathfrak{a}\mathfrak{b}}
+		([A_\nu,S])_{\mathfrak{b}}
+		=\sum_{\mathfrak{b},\mathfrak{c}}
+		(\mathfrak{A}_\mu)_{\mathfrak{a}\mathfrak{b}}
+		(\mathfrak{A}_\nu)_{\mathfrak{b}\mathfrak{c}}
+		S_{\mathfrak{c}}
+	.\] 
+	Define
+	\begin{equation}
+		F_{\mu\nu} \equiv [A_\mu,A_\nu]
+	\end{equation}
+	\[
+		F_{\mu\nu} = (F_{\mu\nu})_{\mathfrak{a}} T^{\mathfrak{a}}
+		,\quad
+		([F_{\mu\nu},S])_{\mathfrak{a}}
+		\equiv \sum_{\mathfrak{b}}
+		(\mathfrak{F}_{\mu\nu})_{\mathfrak{a}\mathfrak{b}}
+		S_{\mathfrak{b}}
+	.\] 
+\end{info}
+
+The quadratic term
+\[
+\frac{\alpha}{2} \mathrm{tr} \left( 
+\mathscr{A}_\nu [A_\mu,[A^\mu,\mathscr{A}^\nu]]
++ \mathscr{A}^\mu [A_\mu,[A_\nu,\mathscr{A}^\nu]]
+- 2 \mathscr{A}^\mu [[A_\mu,A_\nu],\mathscr{A}^\nu]\right) 
+.\] 
+or
+\[
+	\frac{\alpha}{2}\sum_{\mathfrak{a}\mathfrak{b}\mathfrak{c}\mathfrak{d}}
+	\mathscr{A}_{\mu \mathfrak{a}}
+	(\mathrm{tr}T^{\mathfrak{a}}T^{\mathfrak{b}})
+	\left[(\mathfrak{A}_\rho)_{\mathfrak{b} \mathfrak{c}}
+	(\mathfrak{A}^\rho)_{\mathfrak{c}\mathfrak{d}} \eta^{\mu\nu} + 
+(\mathfrak{A}^\mu)_{\mathfrak{b} \mathfrak{c}}
+	(\mathfrak{A}^\nu)_{\mathfrak{c}\mathfrak{d}} 
+- 2 (\mathfrak{F}^{\mu\nu})_{\mathfrak{b}\mathfrak{d}}\right]
+	\mathscr{A}_{\nu \mathfrak{d}}
+.\] 

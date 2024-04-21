@@ -1,13 +1,12 @@
-\contentsline {section}{Wednesday, 28 Feb}{1}{section*.1}%
-\contentsline {section}{Thursday, 29 Feb}{1}{section*.1}%
-\contentsline {section}{Friday, 01 Mar}{1}{section*.1}%
-\contentsline {section}{Sunday, 03 Mar}{3}{idea.1}%
-\contentsline {section}{Monday, 04 Mar}{5}{remark.1}%
-\contentsline {section}{Tuesday, 05 Mar}{8}{idea.5}%
-\contentsline {section}{Wednesday, 06 Mar}{9}{problem.3}%
-\contentsline {section}{Thursday, 07 Mar}{11}{question.7}%
-\contentsline {section}{Friday, 08 Mar}{14}{question.9}%
-\contentsline {section}{Saturday, 09 Mar}{14}{question.9}%
-\contentsline {section}{Sunday, 10 Mar}{15}{todo.7}%
-\contentsline {section}{Monday, 11 Mar}{18}{equation.0.19}%
-\contentsline {section}{Tuesday, 12 Mar}{19}{question.14}%
+\contentsline {section}{Monday, 15 Apr}{1}{section*.1}%
+\contentsline {paragraph}{background matrices configuration}{1}{section*.2}%
+\contentsline {paragraph}{``RG directions'' in the background}{2}{section*.3}%
+\contentsline {section}{Tuesday, 16 Apr}{2}{equation.0.2}%
+\contentsline {paragraph}{quartic interaction}{2}{section*.4}%
+\contentsline {paragraph}{susy, Ward identity?, BRST?}{3}{section*.5}%
+\contentsline {section}{Thursday, 18 Apr}{5}{section*.5}%
+\contentsline {paragraph}{Gaussian with interaction}{5}{section*.6}%
+\contentsline {paragraph}{fermionic contribution}{7}{section*.7}%
+\contentsline {section}{Friday, 19 Apr}{8}{question.1}%
+\contentsline {paragraph}{summarize the ingredients}{8}{section*.8}%
+\contentsline {section}{Saturday, 20 Apr}{10}{equation.0.13}%

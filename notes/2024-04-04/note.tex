@@ -1,0 +1,127 @@
+%! Tex root: ../master.tex
+
+\begin{correct}
+	Calculate the spinor product in the Majorana basis.
+\end{correct}
+
+The following are non-vanishing products for $\overline{\xi^{(1)}}$
+\begin{gather*}
+	\overline{\xi^{(1)}} \Gamma^{1-} \xi^{(8)},\quad
+	\overline{\xi^{(1)}} \Gamma^{1-} \chi^{(8)},\quad
+	\overline{\xi^{(1)}} \Gamma^{1+} \xi^{(8)},\quad
+	\overline{\xi^{(1)}} \Gamma^{1+} \chi^{(8)} \\
+	\overline{\xi^{(1)}} \Gamma^{2-} \xi^{(7)},\quad
+	\overline{\xi^{(1)}} \Gamma^{2-} \chi^{(7)},\quad
+	\overline{\xi^{(1)}} \Gamma^{2+} \xi^{(7)},\quad
+	\overline{\xi^{(1)}} \Gamma^{2+} \chi^{(7)}\\
+	\overline{\xi^{(1)}} \Gamma^{3-} \xi^{(6)},\quad
+	\overline{\xi^{(1)}} \Gamma^{3-} \chi^{(6)},\quad
+	\overline{\xi^{(1)}} \Gamma^{3+} \xi^{(6)},\quad
+	\overline{\xi^{(1)}} \Gamma^{3+} \chi^{(6)}\\
+	\overline{\xi^{(1)}} \Gamma^{4-} \xi^{(5)},\quad
+	\overline{\xi^{(1)}} \Gamma^{4-} \chi^{(5)},\quad
+	\overline{\xi^{(1)}} \Gamma^{4+} \xi^{(5)},\quad
+	\overline{\xi^{(1)}} \Gamma^{4+} \chi^{(5)}
+\end{gather*}
+There is only one term involving $\Gamma^{0\pm}$,
+$\overline{\xi^{(1)}} \Gamma^{0-} \xi^{(1)}$.
+Note that above $\xi^{(k)},\chi^{(k)},k=5,6,7,8$ appear on an equal footing.
+Also $\Gamma^{a\pm},a=1,2,3,4$ appears on an equal footing.
+
+One could make the following table to clarify the product structure
+in the Majorana basis.
+\begin{table}[ht]
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+$\xi^{(1)},\chi^{(1)}$ & $\Gamma^{0-}$        &                        &                        &                        & $\Gamma^{4\pm}$        & $\Gamma^{3\pm}$        & $\Gamma^{2\pm}$        & $\Gamma^{1\pm}$        \\ \hline
+$\xi^{(2)},\chi^{(2)}$ &                        & $\Gamma^{0-}$        &                        &                        & $\Gamma^{3\pm}$        & $\Gamma^{4\pm}$        & $\Gamma^{1\pm}$        & $\Gamma^{2\pm}$        \\ \hline
+$\xi^{(3)},\chi^{(3)}$ &                        &                        & $\Gamma^{0-}$        &                        & $\Gamma^{2\pm}$        & $\Gamma^{1\pm}$        & $\Gamma^{4\pm}$        & $\Gamma^{3\pm}$        \\ \hline
+$\xi^{(4)},\chi^{(4)}$ &                        &                        &                        & $\Gamma^{0-}$        & $\Gamma^{1\pm}$        & $\Gamma^{2\pm}$        & $\Gamma^{3\pm}$        & $\Gamma^{4\pm}$        \\ \hline
+$\xi^{(5)},\chi^{(5)}$ & $\Gamma^{4\pm}$        & $\Gamma^{3\pm}$        & $\Gamma^{2\pm}$        & $\Gamma^{1\pm}$        & $\Gamma^{0+}$        &                        &                        &                        \\ \hline
+$\xi^{(6)},\chi^{(6)}$ & $\Gamma^{3\pm}$        & $\Gamma^{4\pm}$        & $\Gamma^{1\pm}$        & $\Gamma^{2\pm}$        &                        & $\Gamma^{0+}$        &                        &                        \\ \hline
+$\xi^{(7)},\chi^{(7)}$ & $\Gamma^{2\pm}$        & $\Gamma^{1\pm}$        & $\Gamma^{4\pm}$        & $\Gamma^{3\pm}$        &                        &                        & $\Gamma^{0+}$        &                        \\ \hline
+$\xi^{(8)},\chi^{(8)}$ & $\Gamma^{1\pm}$        & $\Gamma^{2\pm}$        & $\Gamma^{3\pm}$        & $\Gamma^{4\pm}$        &                        &                        &                        & $\Gamma^{0+}$        \\ \hline
+                       & $\xi^{(1)},\chi^{(1)}$ & $\xi^{(2)},\chi^{(2)}$ & $\xi^{(3)},\chi^{(3)}$ & $\xi^{(4)},\chi^{(4)}$ & $\xi^{(5)},\chi^{(5)}$ & $\xi^{(6)},\chi^{(6)}$ & $\xi^{(7)},\chi^{(7)}$ & $\xi^{(8)},\chi^{(8)}$ \\ \hline
+\end{tabular}
+\end{table}
+
+Let's write 
+\[
+	\varphi = \sum_{k=1}^8 \xi^{(k)} +  \chi^{(k)}
+.\] 
+Then
+\[
+	\overline{\varphi} \Gamma^\mu [A_\mu,\varphi]
+	=  \sum_{k=1}^8 \left( \overline{\xi^{(k)}} + \overline{\chi^{(k)}}  \right) 
+	\sum_{a=0}^4 [\left( \Gamma^{a+} B_a + \Gamma^{a-} \overline{B}_a \right) ,
+	\sum_{l=1}^8 \left(\xi^{(l)} +  \chi^{(l)}  \right) ]
+.\] 
+
+To avoid clustering of notation, let's denote
+$ [B,\cdot] \equiv \mathfrak{B}$, which is understood as the adjoint matrix.
+
+For those non-vanishing terms
+\[
+	\overline{(\xi,\chi)^{(k)}} \Gamma^{a \pm} \mathfrak{B}^\pm_a 
+	(\xi,\chi)^{(l)}
+	=
+	{(\xi,\chi)^{(k)}}^{\text{T}} C \Gamma^{a \pm} \mathfrak{B}^\pm_a 
+	(\xi,\chi)^{(l)}
+,\] 
+we want to check the action
+\[
+	C \Gamma^{a\pm} (\xi,\chi)^{(l)} = B \Gamma^0 \Gamma^{a\pm} (\xi,\chi)^{(l)} = B (\Gamma^{0+} - \Gamma^{0-})\Gamma^{a\pm} (\xi,\chi)^{(l)}
+.\] 
+
+Take one example (bad notation, $B_a$ use for bosonic matrices and $B$ use for Majorana conjugation)
+\[
+	C \Gamma^{4+} \mathfrak{B}_4 \xi^{(1)} 
+	+ C \Gamma^{4-} \overline{\mathfrak{B}}_4 \xi^{(1)}
+	=
+	-B \mathfrak{B}_4 \Gamma^{0-}\Gamma^{4+}\xi^{(1)} 
+	- B \Gamma^{4-} \overline{\mathfrak{B}}_4\Gamma^{0-}\Gamma^{4-} \xi^{(1)}
+.\] 
+\[
+	-\Gamma^{0-}\Gamma^{4+}\xi^{(1)} = -\frac{1}{\sqrt{2}}
+	\zeta^{(----+)} = \frac{1}{2} (\xi^{(5)} + i \chi^{(5)})
+.\] 
+\[
+	-\Gamma^{0-}\Gamma^{4-}\xi^{(1)} = -\frac{1}{\sqrt{2}}
+	\zeta^{(----+)} = -\frac{1}{2} (\xi^{(5)} - i \chi^{(5)})
+.\] 
+The Majorana basis $B (\xi,\chi) = \xi,\chi$, so we have
+\[
+	C \Gamma^{4+} \mathfrak{B}_4 \xi^{(1)} 
+	+ C \Gamma^{4-} \overline{\mathfrak{B}}_4 \xi^{(1)}
+	= \frac{1}{2} \left( \mathfrak{B}_4 - \overline{\mathfrak{B}}_4 \right)\xi^{(5)} 
+	+ \frac{i}{2} (\mathfrak{B}_4 + \overline{\mathfrak{B}}_4)\chi^{(5)}
+.\] 
+
+Then we would like to understand the integration
+\[
+	\int \prod_{k=1}^8 [\mathrm{d}\xi^{(k)}] [\mathrm{d}\chi^{(k)}]
+.\] 
+
+To simplify the consideration a little bit,
+let's focus on a particular combination
+\[
+\overline{\xi} \Gamma^+ \xi
+.\] 
+Then other terms follow just by replacing one or several $\xi,\Gamma^+$
+by $\chi,\Gamma^-$.
+However, be careful to the $\Gamma^0$ terms:
+many combinations vanish, like $\overline{\xi}\Gamma^0 \chi$.
+
+
+There are three different ways to saturate the measure
+$\prod_{k=1}^8 \mathrm{d}\xi^{(k)}$:
+the first kind is like
+\begin{align*}
+	(\overline{\xi^{(1)}} \mathfrak{B}_1 \xi^{(8)})
+	(\overline{\xi^{(2)}} \mathfrak{B}_1 \xi^{(7)})
+	(\overline{\xi^{(3)}} \mathfrak{B}_1 \xi^{(6)})
+	(\overline{\xi^{(4)}} \mathfrak{B}_1 \xi^{(5)})
+	+ (\text{all permutations like $(1) \leftrightarrow (8)$})
+\end{align*}
+These terms will cancel in pairs due to the interchange of Grassmann variables.
+(the same cancellation happens for all terms not involving $\Gamma^0$?)

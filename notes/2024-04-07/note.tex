@@ -1,0 +1,52 @@
+%! Tex root: ../master.tex
+
+\paragraph{spinor product}
+Consider the spinor product in the basis $\zeta^{(\mathbf{s})}$
+using the Dirac and Majorana conjugation respectively.
+The Lorentz transformation property of the basis
+\[
+	i^{\delta_{a,0}}\Sigma^{2a,2a+1} \zeta^{(\mathbf{s})} = s_a\zeta^{(\mathbf{s})},\quad
+	\Sigma^{2a,2a+1} = -\frac{i}{4} [\Gamma^{2a},\Gamma^{2a+1}]
+.\]
+Some properties of the $i^{\delta_{a,0}}\Sigma^{2a,2a+1}$:
+\begin{align*}
+	\Gamma^0 i^{\delta_{a,0}}\Sigma^{2a,2a+1} (\Gamma^0)^{-1}
+	=i^{\delta_{a,0}} (-\frac{i}{4})
+	[\Gamma^0 \Gamma^{2a} (\Gamma^0)^{-1},
+	\Gamma^0 \Gamma^{2a+1} (\Gamma^0)^{-1}]\\
+	=i^{\delta_{a,0}} (-\frac{i}{4})
+	[ (\Gamma^{2a})^\dagger ,
+	(\Gamma^{2a+1})^\dagger ]
+	= i^{\delta_{a,0}}(\Sigma^{2a,2a+1})^\dagger
+\end{align*}
+Note in the last step $(\Gamma^0)^\dagger = -\Gamma^0$, while
+$(\Gamma^a)^\dagger = \Gamma^a,a=1,2,3,4$.
+We have for the Dirac conjugation
+\begin{equation}
+	s_a \overline{\zeta^{(\mathbf{s}')}}\zeta^{(\mathbf{s})}
+	= s_a (\zeta^{(\mathbf{s}')})^{\dagger} \Gamma^0 \zeta^{(\mathbf{s})}
+	=(-1)^{\delta_{a,0}}s'_a \overline{\zeta^{(\mathbf{s}')}}\zeta^{(\mathbf{s})}
+\end{equation}
+However, under the charge conjugation
+\[
+	C \Sigma^{\mu\nu} C^{-1} = - (\Sigma^{\mu\nu})^{\text{T}}
+.\] 
+We have for the Majorana conjugation
+\begin{equation}
+s_a \overline{\zeta^{(\mathbf{s}')}}	\zeta^{(\mathbf{s})}
+= s_a (\zeta^{(\mathbf{s}')})^{\text{T}} C \zeta^{(\mathbf{s})}
+=- s_a'\overline{\zeta^{(\mathbf{s}')}}	\zeta^{(\mathbf{s})}
+\end{equation}
+
+\paragraph{Dirac and Majorana conjugation}
+about the normalization:
+the spinor product defined by Dirac conjugation fix the normalization up to a phase factor;
+while the Majorana fix only up to a minus sign.
+It's also interesting to note that
+\[
+	(B^{-1}\zeta^{(\mathbf{s}')*})^{\text{T}} C \zeta^{(\mathbf{s})}	=(\zeta^{(\mathbf{s}')})^{\dagger} \Gamma^0 \zeta^{(\mathbf{s})} 
+.\] 
+and
+\[
+	(B^{-1}\zeta^{(\mathbf{s}')*})^{\text{T}} C B^{-1}\zeta^{(\mathbf{s})*}	= \left[(\zeta^{(\mathbf{s}')})^{\text{T}} C \zeta^{(\mathbf{s})}\right]^*
+.\] 

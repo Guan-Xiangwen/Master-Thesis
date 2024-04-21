@@ -1,0 +1,196 @@
+%! Tex root: ../master.tex
+
+\begin{todo}
+	Learn something about ``membrane regularization''.
+\end{todo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Green-Schwarz Action  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+In \pdfref{IKKT96},
+the matrix model (IKKT model) is proposed as a regularization of
+the Green-Schwarz type IIB superstring.
+
+The Green-Schwarz action \pdfref{GS84} used in \pdfref{IKKT96} is
+\begin{align}\label{GS-IKKT96}
+	S_{\text{GS}} = -T \int \mathrm{d}^2\sigma
+	\sqrt{-\frac{1}{2}\Sigma^2}
+	+ i \epsilon^{ab} \partial_a X^\mu
+	\left( \overline{\theta}^1 \Gamma_\mu \partial_b \theta^1 
+	+ \overline{\theta}^2 \Gamma_{\mu} \partial_b \theta^2\right) \notag\\
+	+ \epsilon^{ab} (\overline{\theta}^1 \Gamma^\mu \partial_a \theta^1)
+	(\overline{\theta}^2\Gamma_\mu\partial_b\theta^2)
+\end{align}
+with
+\begin{align*}
+	\Sigma^{\mu\nu} &= \epsilon^{ab} \Pi^\mu_a \Pi^\nu_b,\\
+	\Pi^\mu_a &= \partial_a X^\mu - i \overline{\theta}^1 \Gamma^\mu \partial_a \theta^1 + i \overline{\theta}^2 \Gamma^\mu \partial_a \theta^2
+\end{align*}
+Here $\theta^1,\theta^2$ is understood as $10 \mathrm{d}$
+Majorana-Weyl spinor with the same chirality.
+
+%%%%%%%%%%%%
+%  Remark  %
+%%%%%%%%%%%%
+
+\eqref{GS-IKKT96} differs from the one proposed in \pdfref{GS84}
+by a redefinition $\theta^2\to i\theta^2$.
+
+\eqref{GS-IKKT96} uses the Nambu-Goto form $\sqrt{-\frac{1}{2}\Sigma^2}$;
+\pdfref{GS84} uses the Polyakov form $\frac{1}{2}\sqrt{-g}g^{\alpha\beta}
+\Pi^\mu_{\alpha}\Pi_{\mu\beta}$.
+
+\begin{question}
+	I don't understand how this action is derived in \pdfref{GS84}.
+	The $\kappa$ symmetry seems play an important role there.
+	The motivation of \pdfref{GS84} is to derive a covariant action
+	for superstring theory (compare to the light-cone gauge).
+	I don't understand the idea of $\theta^2\to i\theta^2$
+	used in \pdfref{IKKT96}.
+	It is said that this prescription will give the correct supersymmetry
+	algebra.
+\end{question}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Space-time Supersymmetry  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+There is a $\mathcal{N}=2$ space-time supersymmetry
+\begin{align}
+	\delta_{\text{SUSY}} \theta^1 &= \epsilon^1,\notag\\
+	\delta_{\text{SUSY}} \theta^2 &= \epsilon^2,\notag\\
+	\delta_{\text{SUSY}} X^\mu &= i \overline{\epsilon}^1 \Gamma^\mu \theta^1
+- i \overline{\epsilon}^2 \Gamma^\mu \theta^2.
+\end{align}
+
+\begin{align*}
+	\delta_{\text{SUSY}} \Pi_{a}^\mu = \delta_{\text{SUSY}}
+	\left( \partial_a X^\mu - i \overline{\theta}^1 \Gamma^\mu \partial_a\theta^1 + i \overline{\theta}^2 \Gamma^\mu \partial_a \theta^2\right) = 0
+\end{align*}
+
+\begin{gather*}
+	\delta_{\text{SUSY}}
+	\left[ i \epsilon^{ab} \partial_a X^\mu
+	(\overline{\theta}^1 \Gamma_\mu \partial_b \theta^1
++ \overline{\theta}^2 \Gamma_\mu \partial_b \theta^2)
++ \epsilon^{ab} (\overline{\theta}^1 \Gamma^\mu \partial_a \theta^1)
+(\overline{\theta}^2 \Gamma_\mu \partial_b\theta^2)\right] \\
+= - \epsilon^{ab}
+( \overline{\epsilon}^1 \Gamma^\mu \partial_a \theta^1
+-  \overline{\epsilon}^2 \Gamma^\mu \partial_a \theta^2)
+	(\overline{\theta}^1 \Gamma_\mu \partial_b \theta^1
++ \overline{\theta}^2 \Gamma_\mu \partial_b \theta^2)\\
++i \epsilon^{ab} \partial_a X^\mu
+	(\overline{\epsilon}^1 \Gamma_\mu \partial_b \theta^1
++ \overline{\epsilon}^2 \Gamma_\mu \partial_b \theta^2) \\
++ \epsilon^{ab} \left[(\overline{\epsilon}^1 \Gamma^\mu \partial_a \theta^1)
+(\overline{\theta}^2 \Gamma_\mu \partial_b\theta^2) + 
+(\overline{\theta}^1 \Gamma^\mu \partial_a \theta^1)
+(\overline{\epsilon}^2 \Gamma_\mu \partial_b\theta^2 )\right] \\
+= -\epsilon^{ab} (\overline{\epsilon}^1\Gamma^\mu\partial_a\theta^1)
+(\overline{\theta}^1\Gamma_\mu\partial_b\theta^1)
++\epsilon^{ab} (\overline{\epsilon}^2\Gamma^\mu\partial_a\theta^2)
+(\overline{\theta}^2 \Gamma_\mu\partial_b\theta^2) \\
++i \epsilon^{ab} \partial_a X^\mu
+	(\overline{\epsilon}^1 \Gamma_\mu \partial_b \theta^1
++ \overline{\epsilon}^2 \Gamma_\mu \partial_b \theta^2) 
+\end{gather*}
+
+An identity mentioned in \pdfref{GS84}
+\[
+\gamma_\mu \psi_1 \overline{\psi}_2 \gamma^\mu \psi_3
++ \gamma_\mu \psi_2 \overline{\psi}_3 \gamma^\mu \psi_1
++ \gamma_\mu \psi_3 \overline{\psi}_1 \gamma^\mu \psi_2
+=0
+.\] 
+Apply it
+\[
+- (\overline{\epsilon}^1 \Gamma^\mu \partial_a \theta^1)
+(\overline{\theta}^1 \Gamma_\mu \partial_b \theta^1)
+= (\overline{\epsilon}^1 \Gamma^\mu \theta^1)
+(\partial_b \overline{\theta}^1 \Gamma_\mu \partial_a \theta^1)
++ (\overline{\epsilon}^1 \Gamma^\mu \partial_b \theta^1)
+(\partial_a \overline{\theta}^1 \Gamma_\mu \theta^1)
+.\] 
+Play with the last term:
+\[
+	\epsilon^{ab}(\overline{\epsilon}^1 \Gamma^\mu \partial_b \theta^1)
+	(\partial_a \overline{\theta}^1 \Gamma_\mu \theta^1)
+	= -\epsilon^{ab}(\overline{\epsilon}^1 \Gamma^\mu \partial_b\theta^1)
+	(\overline{\theta}^1 \Gamma_\mu \partial_a \theta)
+	= \epsilon^{ab}(\overline{\epsilon}^1 \Gamma^\mu \partial_a \theta^1)
+	(\overline{\theta}^1 \Gamma_\mu \partial_b \theta)
+.\] 
+This gives back to the first term!
+So we have
+\[
+	\epsilon^{ab} (\overline{\epsilon}^1 \Gamma^\mu \partial_a \theta^1)
+	(\overline{\theta}^1 \Gamma_\mu \partial_b \theta^1)
+	=  \frac{1}{2} \epsilon^{ab} (\overline{\epsilon}^1 \Gamma^\mu \theta^1)
+	(\partial_a \overline{\theta}^1 \Gamma_\mu \partial_b \theta^1)
+.\] 
+This further implies
+\[
+	\epsilon^{ab} (\overline{\epsilon}^1 \Gamma^\mu \partial_a \theta^1)
+	(\overline{\theta}^1 \Gamma_\mu \partial_b \theta^1)
+	=
+	\frac{1}{3}\partial_a \left[ \epsilon^{ab} (\overline{\epsilon}^1
+	\Gamma^\mu \theta^1) (\overline{\theta}^1 \Gamma_\mu
+\partial_b \theta^1)\right]
+.\] 
+Conclusion: $\delta_{\text{SUSY}}$ gives a total derivative term.
+
+%%%%%%%%%%%%%%%%%%%%
+%  kappa-symmetry  %
+%%%%%%%%%%%%%%%%%%%%
+
+In \pdfref{IKKT96},
+the $\kappa$-symmetry is given
+\begin{align*}
+	\delta_{\kappa} \theta^1 &= \alpha^1,\\
+	\delta_{\kappa} \theta^2 &= \alpha^2,\\ 
+	\delta_{\kappa} X^\mu &= i \overline{\theta}^1 \Gamma^\mu \alpha^1
+	- i \overline{\theta}^2 \Gamma^\mu \alpha^2.
+\end{align*}
+with
+\[
+	\alpha^1 = (1 + \tilde{\Gamma}) \kappa^1,\quad
+	\alpha^2 = (1 - \tilde{\Gamma}) \kappa^2
+.\] 
+$\kappa^{1,2}$ are local fermionic parameters.
+The $\tilde{\Gamma}$ is
+\[
+	\tilde{\Gamma} = \frac{1}{2\sqrt{-\frac{1}{2}\Sigma^2}} \Sigma_{\mu\nu}
+	\Gamma^{\mu\nu}
+.\] 
+
+\[
+	\tilde{\Gamma}^2 = - \frac{1}{2\Sigma^2}
+	\Sigma_{\mu\nu} \Sigma_{\rho\sigma}
+	\Gamma^{\mu\nu} \Gamma^{\rho\sigma}
+.\] 
+
+\[
+	\Gamma^{\mu\nu} \Gamma_{\rho\sigma}
+	= \Gamma^{\mu\nu}_{~~~\rho\sigma}
+	+ 4 \Gamma^{[\mu}_{~~[\sigma} \delta^{\nu]}_{~~\rho]}
+	+ 2 \delta^{[\mu}_{~~[\sigma} \delta^{\nu]}_{~~\rho]}
+.\] 
+
+\[
+	\tilde{\Gamma}^2 = -\frac{1}{2\Sigma^2}
+	\left( \Sigma_{\mu\nu}\Sigma_{\rho\sigma}\Gamma^{\mu\nu\rho\sigma} 
+	+ 4 \Sigma_{\mu\rho}\Sigma^\rho_{~\nu}\Gamma^{\mu\nu}
++ 2 \Sigma_{\mu\nu}\Sigma^{\nu\mu}\right) 
+.\] 
+
+\[
+	\tilde{\Gamma}^2 \stackrel{?}{=} 1
+.\] 
+
+\[
+	\Sigma_{\mu\rho}\Sigma^\rho_{~\nu}\Gamma^{\mu\nu}
+	\stackrel{?}{=} 0
+.\] 

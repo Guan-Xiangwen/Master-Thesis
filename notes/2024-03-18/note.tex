@@ -1,0 +1,250 @@
+%! Tex root: ../master.tex
+
+The idea of the Gaussian expansion method is to expand the action
+\[
+	S[A_0] = -\frac{1}{g_0^2} \mathrm{Tr}[A_0,A_0]^2
+.\] 
+around a Gaussian action,
+such that one can do the calculation order by order.
+There is no unique choice of the Gaussian action beforehand,
+so one usually introduce a family of them,
+which are parameterized by some free parameters.
+Practically,
+the calculation result will depend on these free parameters
+if one truncates at certain order,
+which is understood as an artifact due to the truncation.
+The hope is that,
+the truncated result could be a good approximation for the true result
+at point of the parameter space.
+
+For example, one could take the Gaussian action as
+\[
+	S_G[A_0] = \frac{N_0}{2v} \mathrm{Tr}A_0^2
+.\] 
+and write the action $S[A_0]$ as
+\[
+	S[A_0] = S[A_0] - S_G[A_0] + S_G[A_0]
+.\] 
+Here the free parameter is $v$,
+which controls the variance of the Gaussian distribution.
+This is a natural choice because the Lorentzian index $\mu$
+is contracted by the metric tensor $\eta_{\mu\nu}$.
+However, the translation symmetry mentioned above
+$A_0 \to A_0 + \lambda \mathds{1}$
+is violated by this Gaussian action.
+This means that this symmetry will not be manifest
+during the perturbative calculation.
+
+The partition function could then be written as
+\begin{equation}
+	Z[g_0,N_0] = \int \mathrm{e}^{-S[A_0]} [\mathrm{d}A_0]
+	= \int \mathrm{e}^{-(S[A_0] - S_G[A_0])-S_G[A_0]} [\mathrm{d}A_0]
+	= \left<\mathrm{e}^{-(S[A_0] - S_G[A_0])} \right>_G
+\end{equation}
+The goal of our calculation is to find the effective action
+$S_{eff}[A']$
+such that
+\[
+	\left<\mathcal{O}(A)\mathrm{e}^{-(S[A_0] - S_G[A_0])} \right>_{G,N_0} = 
+	\left<\mathcal{O}(A) e^{-(S_{eff}[A'] - S_G[A'])} \right>_{G,N}
+.\] 
+$\mathcal{O}(A)$ represents any function of the submatrix $A$.
+$A'$ is a matrix related with $A$ by a rescaling $A' = \lambda A$.
+This rescaling is usually necessary to make the RG calculation repeatable
+in each step of the iteration,
+by keeping the structure of the action the same,
+especially the normalization of the quadratic term.
+However, the difficulty in this calculation is that
+we don't have an intrinsic quadratic term with a canonical normalization.
+This will lead to an \emph{ambiguity} on how to rescale $A$.
+If $\mathcal{O}(A)$ is homogenous in $A$ with power $\Delta$, then
+\[
+	\mathcal{O}(A) = \mathcal{O}(\lambda^{-1} A')
+	= \lambda^{-\Delta} \mathcal{O}(A')
+.\] 
+The desired equality should be
+\[
+	\left<\mathcal{O}(A)\mathrm{e}^{-(S[A_0] - S_G[A_0])} \right>_{G,N_0} = 
+	\lambda^{-\Delta}
+	\left<\mathcal{O}(A') e^{-(S_{eff}[A'] - S_G[A'])} \right>_{G,N}
+.\] 
+
+In principle, we should start with the most general form action
+that is allowed by assumed symmetries.
+This is because all possible terms that are compatible with symmetries
+will be generated along the RG flow.
+However, this requirement is hard to realize in a practical calculation.
+One possible idea is to use certain Schwinger-Dyson equation
+to reduce the number of independent operators.
+However, at this stage, it's not clear how to implement this idea.
+
+According to the RG method, we write the action in the following way
+\begin{align*}
+	S[A_0] = S[A] + S'[\alpha,a;A],\\
+	S_0[A_0] = S_0[A] + S_0'[\alpha,a].
+\end{align*}
+Schematically, $S'[\alpha,a;A]$ has the form
+\[
+	S'[\alpha,a;A] =- \frac{1}{g_0^2}
+	\left( \alpha^\dagger A^2 \alpha + \alpha^\dagger a A \alpha
+	+ \alpha^\dagger a^2 \alpha + (\alpha^\dagger \alpha)^2\right) 
+.\] 
+$S_0'[\alpha,a]$ has the form
+\[
+	S_0'[\alpha,a] = \frac{N_0}{v}
+	\left( (\alpha^\mu)^\dagger \alpha_\mu + \frac{1}{2}a^\mu a_\mu\right) 
+.\] 
+
+What we need to do to get from $\left<\cdots \right>_{G,N_0}$ to
+$\left<\cdots \right>_{G,N}$ is to integrate out $\alpha,\alpha^\dagger$ and $a$.
+The contraction rule is given by the Gaussian action
+\begin{align*}
+	\left<(\alpha^\mu_i)^* \alpha^\nu_j \right>_{G,N_0} = \frac{v}{N_0}
+	\eta^{\mu\nu}\delta_{ij}
+	\\
+	\left<a^\mu a^\nu \right>_{G,N_0} = \frac{v}{N_0}\eta^{\mu\nu}
+\end{align*}
+
+The exponential function is expanded as
+\[
+	\mathrm{e}^{-(S'-S_0')} = 1 - (S' - S_0') + \frac{1}{2} (S' - S_0')^2
+	- \frac{1}{6} (S'- S_0')^3 + \frac{1}{24} (S' - S_0')^4 + \cdots
+\]
+One problem in this calculation is that there is no small parameter
+to give a hierarchy for the expansion.
+It's not clear whether or not what we obtain by truncating the expansion
+will capture certain asymptotic behavior of the integration.
+
+There are many terms in the expansion.
+Let's try to organize them in terms of
+1. how many $A$
+2. the order of $\frac{1}{g^2_0}$.
+One expects that only even number of $A$ will appear, say $0,2,4,6,8,\cdots$.
+Some shorthand notations
+\begin{align*}
+	(\overline{\alpha} A^2 \alpha) \equiv -2(\alpha^\mu)^\dagger (2 A_\nu A_\mu - A_\mu A_\nu -  A^2 \eta_{\mu\nu}) \alpha^\nu
+	\\
+	(\overline{\alpha} a A \alpha) \equiv
+	 2 (\alpha^\mu)^\dagger (a_\mu A_\nu + a_\nu A_\mu - 2 a^\rho A_\rho \eta_{\mu\nu}) \alpha^\nu
+	 \\
+	 (\overline{\alpha} a^2 \alpha) \equiv -2 (\alpha^\mu)^\dagger
+	(a_\mu a_\nu - a^\rho a_\rho \eta_{\mu\nu}) \alpha^\nu
+	\\
+	(\overline{\alpha}\alpha\overline{\alpha}\alpha) \equiv 
+	-2 \left[	(\alpha^\mu)^\dagger \alpha^\nu (\alpha_\mu)^\dagger \alpha_\nu 
+	- (\alpha^\mu)^\dagger \alpha^\nu (\alpha_\nu)^\dagger \alpha_\mu
+	- (\alpha^\mu)^\dagger \alpha_\mu (\alpha^\nu)^\dagger \alpha_\nu \right]
+\end{align*}
+Then the $S'[\alpha,a;A]$ is written as
+\[
+	S'[\alpha,a;A] = \frac{1}{g_0^2} \left[ (\overline{\alpha} A^2 \alpha)
+	+ (\overline{\alpha} a A \alpha) + (\overline{\alpha} a^2 \alpha) +(\overline{\alpha}\alpha\overline{\alpha}\alpha) \right] 
+.\] 
+
+Let's check some contractions:
+\[
+	(\overline{\alpha} A^2 \alpha) \to 2 \frac{1}{N_0} (D-1) v\mathrm{Tr}A^2
+.\] 
+\[
+	(\overline{\alpha} a a \alpha) \to 2 \frac{N}{N_0^2} D (D-1) v^2
+.\] 
+\[
+	(\overline{\alpha}\alpha \overline{\alpha}\alpha)
+	\to 2 \left( \frac{N^2}{N_0^2} + \frac{N}{N_0^2} \right)D^2 v^2   
+.\] 
+When dealing with multiple brackets contraction $(\cdots)(\cdots)...(\cdots)$
+let's focus only on the connected part.
+The all possible contractions can be recovered by exponentiate the connected part.
+When $(\overline{\alpha}\alpha)$ or $(aa)$ from $S_0'$ comes into play
+\[
+	(\overline{\alpha} A^2 \alpha) (\overline{\alpha} \alpha)
+	\to 2 \frac{1}{N_0} (D-1) v\mathrm{Tr}A^2
+.\] 
+This is the same as $(\overline{\alpha}A^2\alpha)$.
+It's easy to calculate also the following contraction
+\[
+	(\overline{\alpha}A^2\alpha)(\overline{\alpha}\alpha)^k
+	\to 2 k! \frac{1}{N_0} (D-1) v \mathrm{Tr}A^2
+.\] 
+It's a general result that attaching $(\overline{\alpha}\alpha)$
+and considering only connected contractions will only modify the result
+by a combinatoric number.
+But the exact number depends on the way you contract.
+Attaching $(aa)$ has a similar effect.
+
+Now let's consider the contraction between two $S'$.
+The followings are the possibilities
+\[
+	(\overline{\alpha}A^2\alpha) (\overline{\alpha}A^2\alpha)
+	\to
+	4 \left( \frac{v}{N_0} \right)^2 \left[ (3+D) \mathrm{Tr}(A^\mu A_\mu A^\nu A_\nu) - 4 \mathrm{Tr}(A^\mu A^\nu A_\mu A_\nu) \right] 
+.\] 
+\[
+	(\overline{\alpha} A^2 \alpha) (\overline{\alpha} a a \alpha)
+	\to
+	4\left( \frac{v}{N_0} \right)^3 (D-1)^2 \mathrm{Tr}A^2 
+.\] 
+
+While integrating out $v,a$, the $S'[v,a;A]$ will provide new terms of $A$.
+The strategy for integration is as usual:
+first expand the exponential function to a certain order
+according to the $N_0\to\infty$ reigme that we are interested in.
+Also there are connected terms as well as disconnected terms in the expansion.
+If one is interested in the free energy $F=-\ln Z$,
+one could only consider the connected terms.
+(This point need to be justified although it's quite standard in QFT):
+
+One should first be careful about how $S$ depends on $N_0$.
+If one wants to take the 't Hooft limit $\lambda = g_0^2 N_0$ fixed as $N_0\to\infty$.
+This will lead to the prefactor that is proportional to $N_0$.
+Then expanding the exponential will not give terms with a proper $N_0$ hirarchy.
+
+Let's try to do the calcuation to the order of $\frac{1}{\lambda}$ and $\frac{1}{\lambda^2}$.
+For $S',S_0'$, let's ignore $a$ terms temporarily
+\begin{align*}
+	S'[v;A] &= - \frac{2}{g_0^2} (v^\mu)^\dagger
+	(2 A_\nu A_\mu - A_\mu A_\nu - 2 A^2 \eta_{\mu\nu}) v^\nu \\
+	S'_0[v] &= \frac{N_0}{2 v} (v^\mu)^\dagger v_\mu
+\end{align*}
+Denote
+\[
+	M_{\mu\nu}\equiv 2 A_\nu A_\mu - A_\mu A_\nu - 2 A^2 \eta_{\mu\nu}
+.\] 
+The expansion then gives
+\begin{align*}
+	1 + \frac{2}{g_0^2} (v^\mu)^\dagger M_{\mu\nu} v^\nu
+	+ \frac{N_0}{2v} (v^\mu)^\dagger v_\mu
+	+ \frac{2}{g_0^4} (v^\mu)^\dagger M_{\mu\nu} v^\nu
+	(v^\rho)^\dagger M_{\rho\sigma} v^\sigma \\
+	+ \frac{N_0}{g_0^2 v} (v^\mu)^\dagger M_{\mu\nu} v^\nu (v^\rho)^\dagger v_\rho
+	+ \frac{N_0^2}{8 v^2} (v^\mu)^\dagger v_\mu (v^\nu)^\dagger v_\nu
+\end{align*}
+Focus on the connected contraction, using the contraction rule
+\[
+	\left<(v^\mu)^*_i v^\nu_j \right> = \frac{v}{N_0}\eta^{\mu\nu}\delta_{ij}
+.\] 
+For example, the term $ \frac{2}{g_0^2} (v^\mu)^\dagger M_{\mu\nu} v^\nu$
+will be contracted to give
+\[
+	\frac{2}{g_0^2} \frac{v}{N_0} \eta^{\mu\nu} \mathrm{Tr} M_{\mu\nu}
+	= \frac{2v}{g_0^2 N_0} (1-2D) \mathrm{Tr}A^2
+.\] 
+The term
+\[
+	\frac{N_0}{g_0^2 v} (v^\mu)^\dagger M_{\mu\nu} v^\nu
+	(v^\rho)^\dagger v_\rho
+.\] 
+has two possible contractions, but one is disconnected.
+The connected one gives
+\[
+\frac{v}{g_0^2 N_0} (1-2D) \mathrm{Tr} A^2
+.\] 
+So at this expansion order,
+we will have a $\mathrm{Tr}A^2$ term that contributed to the free energy,
+arising from integrating out the variable $v,v^\dagger$.
+The coefficient is $ (3v)(1-2D)/(g_0^2 N_0)$.
+This shift in $\mathrm{tr}A^2$ makes it impossible to take the partition function back to the original form.
+This implies the RG method is not applicable?
+Note also that this shift depends on $v$,
+which implies that it's an artifact follows from the truncation of the exponential function.
+Maybe we need to calculate higher order terms to see whether there is indeed a ``physical'' shift in $\mathrm{tr} A^2$.

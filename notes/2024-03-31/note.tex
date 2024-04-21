@@ -1,0 +1,203 @@
+%! Tex root: ../master.tex
+\newpage
+Read \pdfref{IKKT96}.
+
+The reduced Yang-Mills matrix model is not taken as the D(-1)-brane action;
+rather it seems more ambitious: the non-perturbative definition of type IIB superstring.
+
+The $\mathcal{N}=2$ supersymmetry:
+it's interesting that this model has $\mathcal{N}=2$ supersymmetry;
+because it's reduced from the $10\mathrm{d}$ $\mathcal{N}=1$
+super-Yang-Mills theory.
+It has the same supersymmetry structure as the
+GS action in the Schild gauge \pdfref{IKKT96}.
+
+The partition function of this model is
+\begin{equation}
+	Z = \sum_{n=0}^\infty \int \mathrm{d}A \mathrm{d}\psi \mathrm{e}^{-S}.
+\end{equation}
+with
+\begin{equation}
+	S = \alpha \left( -\frac{1}{4} \mathrm{Tr}[A_\mu,A_\nu]^2
+	-\frac{1}{2} \mathrm{Tr}(\overline{\psi}\Gamma^\mu [A_\mu,\psi])\right) 
+	+\beta \mathrm{Tr}\mathds{1}.
+\end{equation}
+Some observations:
+There is a sum over $n$
+(this does not happen in the partition function for the Yang-Mills theory
+because $n$ is the rank of the gauge group);
+Note that the chemical potential term $\beta \mathrm{Tr}\mathds{1}$
+(this term is natural for the matrix model as a regularization of surface
+where $n$ is related with the area of the surface,
+but not natural in the Yang-Mills theory).
+
+The important problem in \pdfref{IKKT96} is the continuum limit:
+the limit such that $n\to\infty$ dominates the partition function $Z$.
+Also one could ask that in the continuum limit (if exist),
+whether the dominated eigenvalue distribution of $A,\psi$ is smooth.
+
+A related discussion is in the section 4,
+where ``the matrix model is interpreted as an effective theory for the large-$N$ reduced model of $10\mathrm{d}$ super-Yang-Mills.
+The ``effective theory'' means that:
+the matrix model is obtained by integrating out the degrees of freedom in the Yang-Mills theory (done in a diagonal background).
+Compare the effective theory (4.17) and the Yang-Mills action (4.1).
+Note the chemical potential term and the divergence terms.
+
+Review the effective action in the section 4 \pdfref{IKKT96}.
+The action for the large N reduced model of $10\mathrm{d}$ super-Yang-Mills.
+\begin{equation}
+	S_0 = \frac{N a^4}{g_0^2} \left[  -\frac{1}{4} \mathrm{Tr}[A_\mu,A_\nu]^2 
+	- \frac{1}{2} \mathrm{Tr}(\overline{\psi}\Gamma^\mu [A_\mu,\psi])\right] .
+\end{equation}
+$a$ is a cut-off for the eigenvalues of $A_\mu$ ($N\times N$ hermitian)
+\[
+	- \frac{\pi}{a} \leq \text{eigenvalues of } A_\mu \leq \frac{\pi}{a}
+.\] 
+
+Instead of considering the full partition function of $S_0$,
+\pdfref{IKKT96} considers the partition function for a diagonal backgound.
+(fermionic background is set to zero)
+\[
+	A_{\mu,\text{background}} \equiv p_\mu =
+	\begin{pmatrix}
+		d_\mu^{(1)} & ~ & ~ & ~ \\
+		~ & d_\mu^{(2)} & ~ & ~ \\
+		~ & ~ & \ddots & ~ \\
+		~ & ~ & ~ & d_\mu^{(N)}
+	\end{pmatrix}
+.\] 
+with $ - \pi /a \leq d_\mu^{(i)} \leq \pi / a$.
+$U(N)\to U(1)^N$ for general $d^{(i)}$.
+That is, consider the following action
+\begin{align*}
+	S[a,\varphi;p] = - \frac{N a^4}{g_0^2}
+	\mathrm{Tr} \bigg( \frac{1}{2} [p_\mu,a_\nu]^2 + 
+	\frac{1}{2} [p_\mu,a_\nu][a^\mu,p^\nu]
+\\
++ \frac{1}{2} \overline{\varphi} \Gamma^\mu [p_\mu,\varphi]
++ \frac{1}{2} \overline{\varphi} \Gamma^\mu [a_\mu,\varphi]\bigg)
+\end{align*}
+
+\[
+	\mathrm{Tr} [p_\mu,a_\nu]^2 = 
+	- \sum_{i,j} (d_\mu^{(i)} - d_\mu^{(j)})^2 (a_\nu)_{ij} (a^\nu)_{ji}
+.\] 
+
+\[
+	\mathrm{Tr}[p_\mu,a_\nu][a^\mu,p^\nu]
+	= \sum_{ij} (d_\mu^{(i)} - d_\mu^{(j)}) (a^\mu)_{ij}
+	(d_\nu^{(j)} - d_\nu^{(i)}) (a^\nu)_{ji}
+.\] 
+project $a^\mu$ on the direction $\Delta d_\mu$?
+\[
+	\mathrm{Tr}[p_\mu,a_\nu][a^\mu,p^\nu]
+	=- \mathrm{Tr} \tilde{a} \tilde{a}^*,\quad
+	\tilde{a}_{ij} \equiv (d_\mu^{(i)} - d_\mu^{(j)}) (a^\mu)_{ij}
+.\] 
+note also that $\tilde{a}^\dagger = - \tilde{a}$.
+
+\begin{gather*}
+	- \frac{N a^4}{g_0^2}
+	\mathrm{Tr} \left( \frac{1}{2} [p_\mu,a_\nu]^2 + 
+	\frac{1}{2} [p_\mu,a_\nu][a^\mu,p^\nu] \right)
+	\\
+	=\frac{N a^4}{g_0^2} \sum_{ij}
+	(a_\mu)_{ij} 
+	\bigg[ \eta^{\mu\nu} (d_\rho^{(i)} - d_{\rho}^{(j)}) (d^{\rho (i)} - d^{\rho(j)}) \\
+	+ (d^{\mu(i)} - d^{\mu (j)}) (d^{\nu (i)} - d^{\nu (j)})\bigg]
+	(a_\nu)_{ji}
+\end{gather*}
+Schematically, for fixed $i\neq j$, the term looks like
+\[
+	(\Delta d)^2 a_\mu (\eta^{\mu\nu} + n^\mu n^\nu) a_\nu
+.\] 
+It's a reminiscence of the photon propagator.
+The diagonal elements $i=j$ are zero modes.
+If $d^{(i)} \to d^{(j)},i\neq j$, there is a divergence problem.
+
+\begin{equation}
+	\frac{1}{2}\mathrm{Tr} \overline{\varphi}\Gamma^\mu [p_\mu,\varphi]
+	= \frac{1}{2} \sum_{ij} (d_\mu^{(j)} - d_\mu^{(i)})
+	\overline{\varphi}_{ij} \Gamma^\mu \varphi_{ji}.
+\end{equation}
+
+\begin{question}
+	Is there a supersymmetry at this level?
+	Consider the supersymmetry transformation on this background.
+\end{question}
+
+Check the following supersymmetry transformation for $S_0$
+\begin{align}
+	\delta_{\epsilon} \psi &= \frac{i}{2} [A_\mu,A_\nu]\Gamma^{\mu\nu}\epsilon,\\
+	\delta_{\epsilon}A_\mu &= i \overline{\epsilon} \Gamma_\mu \psi.
+\end{align}
+
+\begin{equation*}
+	\mathrm{Tr} \overline{\psi} \Gamma^\mu [\delta A_\mu,\psi]
+	= \mathrm{Tr} \overline{\psi} \Gamma^\mu [(\overline{\epsilon}
+	\Gamma_\mu \psi),\psi]
+\end{equation*}
+write out the matrix indices
+\begin{equation*}
+	=\sum_{ijk} (\overline{\psi}_{ij} \Gamma^\mu \psi_{ki})
+	(\overline{\epsilon}\Gamma_\mu \psi_{jk})
+	-(\overline{\psi}_{ij} \Gamma^\mu \psi_{jk})
+	(\overline{\epsilon}\Gamma_\mu \psi_{ki})
+\end{equation*}
+three copies
+\begin{align*}
+	=\frac{1}{3}\sum_{ijk} (\overline{\psi}_{ij} \Gamma^\mu \psi_{ki})
+	(\overline{\epsilon}\Gamma_\mu \psi_{jk})
+	-(\overline{\psi}_{ij} \Gamma^\mu \psi_{jk})
+	(\overline{\epsilon}\Gamma_\mu \psi_{ki})
+\\
++(\overline{\psi}_{jk} \Gamma^\mu \psi_{ij})
+	(\overline{\epsilon}\Gamma_\mu \psi_{ki})
+	-(\overline{\psi}_{jk} \Gamma^\mu \psi_{ki})
+	(\overline{\epsilon}\Gamma_\mu \psi_{ij})
+\\
++(\overline{\psi}_{ki} \Gamma^\mu \psi_{jk})
+	(\overline{\epsilon}\Gamma_\mu \psi_{ij})
+	-(\overline{\psi}_{ki} \Gamma^\mu \psi_{ij})
+	(\overline{\epsilon}\Gamma_\mu \psi_{jk})
+\end{align*}
+It vanishes due to the following identity \pdfref{GS84}
+(Work only for MW fermion?)
+\begin{equation}
+	\gamma_\mu \psi_1 \overline{\psi}_2 \gamma^\mu \psi_3
+	+\gamma_\mu \psi_2 \overline{\psi}_3 \gamma^\mu \psi_1
+	+\gamma_\mu \psi_3 \overline{\psi}_1 \gamma^\mu \psi_2
+	=0
+\end{equation}
+
+\begin{align*}
+	\mathrm{Tr}[\delta A_\mu,A_\nu][A^\mu,A^\nu]
+	+ \frac{1}{2} \mathrm{Tr} \delta \overline{\psi} \Gamma^\mu [A_\mu,\psi]
+	+\frac{1}{2} \mathrm{Tr}  \overline{\psi} \Gamma^\mu [A_\mu,\delta\psi]
+	\\
+	= i \mathrm{Tr} (\overline{\epsilon} \Gamma_\mu \psi)
+	[A_\nu,[A^\mu,A^\nu]]
+	\pm(?) \frac{i}{4} \mathrm{Tr} \overline{\epsilon}
+	\Gamma^{\mu\nu} [A_\mu,A_\nu] \Gamma^\rho [A_\rho,\psi]
+	\\
+	+ \frac{i}{4} \mathrm{Tr} \overline{\psi}\Gamma^\rho
+	[A_\rho,[A_\mu,A_\nu]] \Gamma^{\mu\nu}\epsilon
+	\\
+	= i \mathrm{Tr} (\overline{\epsilon} \Gamma_\mu \psi)
+	[A_\nu,[A^\mu,A^\nu]]
+	\pm(?) \frac{i}{4} \mathrm{Tr} \overline{\epsilon}
+	\Gamma^{\mu\nu}\Gamma^\rho\psi[ [A_\mu,A_\nu] ,A_\rho]
+	\\
+	+ \frac{i}{4} \mathrm{Tr} \overline{\psi}\Gamma^\rho \Gamma^{\mu\nu}\epsilon
+	[A_\rho,[A_\mu,A_\nu]] 
+	\\
+	=0
+\end{align*}
+
+Supersymmetry transformation for the background $p_\mu$
+\begin{align}
+	\delta a_\mu &= i \overline{\epsilon} \Gamma_\mu \varphi \notag \\
+	\delta \varphi &= i [p_\mu , a_\nu] \Gamma^{\mu\nu}\epsilon
+	+ \frac{i}{2} [a_\mu,a_\nu]\Gamma^{\mu\nu}\epsilon
+\end{align}
+The action $S[a,\varphi;p]$ should be invariant under it (to check).

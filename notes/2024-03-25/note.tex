@@ -1,0 +1,124 @@
+%! Tex root: ../master.tex
+\newpage
+
+\begin{todo}
+	What should I do this week?
+	\begin{itemize}
+		\item Explore the auxillary field method:
+			Do the integration with the help of the auxillary field $H$;
+			What's the effective action?
+		\item Extend the matrix RG calculation to the next orders:
+			What's the method to do a systematic expansion?
+		\item How to deal with the model with fermionic matrix?
+		\item Think about the radial coordinate $r$ and the matrix size $N$:
+			is there a match between the $r$ scaling of supergravity
+			and the $N$ scaling of the matrix model?
+		\item Learn more about the D(-1)/D7 system:
+			What's the matrix model?
+			What's the supergravity solution?
+	\end{itemize}
+	Some new stuff to learn:
+	\begin{itemize}
+		\item The Generalized Conformal Symmetry (GCS):
+			What's the counterpart of conformal symmetry for D$p$-brane
+			background $p<3$.
+		\item Relevent, irrelevent and marginal deformation of CFT:
+			What's the definition?
+			What's the significance in the context of AdS/CFT?
+	\end{itemize}
+\end{todo}
+
+Some important problems to keep in mind:
+
+\begin{problem}
+	The 't Hooft coupling $\lambda$ in the supergravity solution;
+	How does it change along the holographic RG flow?
+\end{problem}
+
+\begin{problem}
+	Near horizon geometry from field theory perspective:
+	radial coordinte = energy scale;
+	transverse direction versus longitudinal direction;
+\end{problem}
+
+\begin{problem}
+	Always be careful about the difference between the ``bare quantity''
+	(in the context of QFT, without radiative correction dressing)
+	and the ``renormalized quantity''
+	(in our context, it's more proper to call it ``effective quantity'').
+	We are not sure about the value of the bare quantity:
+	they can be set arbitrarily such that the renormalized quantity
+	reproduces the measured value.
+	It makes sense to ask ``how the effective quantity changes with
+	certain scale'';
+	It makes no sense to ask ``how the bare quantity changes with
+	certain scale".
+\end{problem}
+
+\begin{problem}
+	How could the matrix RG result tells us something about the holography.
+\end{problem}
+
+\newpage
+The near horizon limit $r\to 0$:
+It's not proper to still use $r$ as coordinate
+because all the things happen for $r\to 0$; 
+Instead we define a finite parameter $U\equiv r / \alpha'$
+($\alpha'\to 0$)
+as the proper coordinate to describe the near horizon geometry.
+
+The dilaton field profile $\Phi(r)$ is related to the running of coupling
+in the dual Yang-Mills theory.
+\[
+	\mathrm{e}^{\Phi(r)} = \mathrm{e}^{\Phi_0} H_p(r)^{\frac{3-p}{4}}
+.\] 
+The holography happens in the following limit
+\begin{equation}
+	U \equiv \frac{r}{\alpha'} = \text{fixed},\quad \alpha'\to 0
+\end{equation}
+$U$ has the dimension of energy.
+In this limit
+\[
+H_p(r) \to H_p(U) = \frac{d_p g_{\text{YM}}^2 N}{\alpha'^2 U^{7-p}},\quad
+d_p = 2^{7-2p} \pi^{\frac{9-3p}{2}} \Gamma \left(\frac{7-p}{2}\right)
+.\] 
+Here the Yang-Mills coupling is defined for the asymptotic infinity $r\to\infty$:
+\[
+	g_{\text{YM}}^2 = (2\pi)^{p-2} g_s \alpha'^{(p-3) / 2}, \quad g_s \equiv \mathrm{e}^{\Phi_0}
+.\] 
+This is not the Yang-Mills coupling for the field theory on the D$p$-brane.
+
+\begin{wrong}
+	The following identification is wrong?
+	A factor of $N$ should be added?
+\end{wrong}
+
+Previously we identify $\tilde{g}_{\text{YM}}^2$ (use this to refer to the coupling on the D$p$-brane)
+\[
+	\tilde{g}_{\text{YM}}^2 (U) = \frac{1}{(2\pi\alpha')^2 T_p}
+	\left( \frac{d_p g_{\text{YM}}^2 N}{\alpha'^2 U^{7-p}} \right)^{\frac{3-p}{4}} 
+.\] 
+This does not lead to the correct $U$ scaling of the Yang-Mills coupling.
+
+Think about the the corresponding geometry as AdS,
+but the AdS radius changes with $U$:
+\[
+	H_p(U)^{-\frac{1}{2}} = \left( \frac{r}{L} \right)^2 
+.\] 
+\[
+	L(U) = \left( \frac{\alpha'^2 d_p g_{\text{YM}}^2 N}{U^{3-p}} \right) ^{\frac{1}{4}}
+.\] 
+The $\tilde{g}$ is then written as
+\[
+	\tilde{g}_{\text{YM}}^2 (U) = \frac{1}{(2\pi\alpha')^2 T_p}
+	\left( \frac{\alpha' U}{L}\right)^{p-3} 
+.\] 
+We see that if $L$ is kept fixed, the $\tilde{g}$ has the correct $U$ scaling.
+
+Interestingly, one can change $U$ and $N$ simultaneously such that $L$ kept fixed.
+This may provide a relation between the scaling of $N$ and the scaling of $U$.
+In particular, $p=-1$ case, the field theory is a matrix model.
+The only scale is the matrix size $N$.
+In the 't Hooft limit, the effective coupling $\lambda \sim N^{-1}$.
+With the restriction that $N \sim U^4$,
+one could recover $\lambda \sim U^{-4}$.

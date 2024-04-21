@@ -1,0 +1,98 @@
+%! Tex root: ../master.tex
+\newpage
+
+\begin{problem}[IKKT]
+	Apply the RG method to IKKT,
+	try to find out the scaling behavior of the $g_{YM}$.
+	There are various motivations that lead to consider the $N\to\infty$ limit.
+	A natural question is then whether this limit is well-defined?
+	What's the meaning of ``well-defined''?
+\end{problem}
+
+The bosonic part of IKKT based on the matrix function
+\[
+	\mathrm{Tr}[A^\mu,A^\nu][A_\mu,A_\nu],\quad \mu,\nu=0,\cdots,9
+.\] 
+$A^\mu$ are $N\times N$ Hermitian matrices.
+It's natural to take $A^\mu$ as elements in the Lie algebra
+$\mathfrak{su}(N)$,
+because the IKKT model is obtained by reducing the Yang-Mills theory.
+One could be more careful:
+the gauge algebra could be $\mathfrak{u}(N)$;
+also one could equivalent two matrices that are equal up to a permutation of rows and columns.
+
+The difference between
+$\mathfrak{su}(N)$ and $\mathfrak{u}(N)$ is
+whether the matrices are traceless.
+Looking at the matrix function, one notices that
+$A\to A + \lambda\mathds{1}$
+is a symmetry of it.
+This means that one could impose the traceless condition
+by ``gauge fixing''
+(properly factor out the integral over the trace).
+However, it's not always possible to construct a $(N-1)\times(N-1)$ traceless matrix from a $N\times N$ traceless matrix by killing one row and one column.
+
+\begin{question}
+	What's the proper way to deal with the trace?
+\end{question}
+
+Consider $A_0^\mu$ be $(N+1)\times(N+1)$ Hermitian matrices.
+$A^\mu$ be $N\times N$ Hermitian matrices embedded as
+\[
+	A_0^\mu = \begin{pmatrix} A^\mu & \alpha^\mu \\ (\alpha^\mu)^\dagger & a^\mu \end{pmatrix}
+.\] 
+Note that the symmetry $A_0 \to A_0 + \lambda \mathds{1}$ will
+not be realized as a similar translation symmetry of $A$
+because one should translate $a$ at the same time.
+
+The action $\mathrm{Tr}[A_0,A_0]^2$ decomposes as the following:
+\begin{align*}
+	\mathrm{Tr}[A_0^\mu,A_0^\nu][A_{0\mu},A_{0\nu}] = 
+	\mathrm{Tr}[A^\mu,A^\nu][A_{\mu},A_{\nu}] 
+	\\
+	+ 2(\alpha^\mu)^\dagger (2 A_\nu A_\mu - A_\mu A_\nu -  A^2 \eta_{\mu\nu}) \alpha^\nu
+	\\
+	- 2 (\alpha^\mu)^\dagger (a_\mu A_\nu + a_\nu A_\mu - 2 a^\rho A_\rho \eta_{\mu\nu}) \alpha^\nu
+	\\
+	+ 2 (\alpha^\mu)^\dagger (a_\mu a_\nu - a^\rho a_\rho \eta_{\mu\nu}) \alpha^\nu
+\end{align*}
+the terms that are quartic in $\alpha^\mu$
+\[
+2 \left[	(\alpha^\mu)^\dagger \alpha^\nu (\alpha_\mu)^\dagger \alpha_\nu 
+- (\alpha^\mu)^\dagger \alpha^\nu (\alpha_\nu)^\dagger \alpha_\mu
+- (\alpha^\mu)^\dagger \alpha_\mu (\alpha^\nu)^\dagger \alpha_\nu \right].
+\] 
+Is it possible to ``complete the square''?
+For example consider
+\[
+\mathrm{Tr} \left( \alpha^\mu (\alpha^\nu)^\dagger
+ + a \alpha^\nu (\alpha^\mu)^\dagger
++ b \eta^{\mu\nu} \alpha^\rho (\alpha_\rho)^\dagger\right)^2
+.\]
+It's equal to
+\[
+	(1+a^2) (\alpha^\mu)^\dagger \alpha^\nu (\alpha_\mu)^\dagger \alpha_\nu
+	+ (D b^2 + 2 b + 2 a b) (\alpha^\mu)^\dagger \alpha^\nu (\alpha_\nu)^\dagger \alpha_\mu
+	+ 2a (\alpha^\mu)^\dagger \alpha_\mu (\alpha^\nu)^\dagger \alpha_\nu
+.\] 
+By choosing $a,b$ we could recover the quartic term (up to an overall constant).
+
+\begin{problem}[scaling with N]
+	On one hand, we want to take the 't Hooft limit
+	\[
+		g_0^2 N_0 = \text{fix},\quad N_0\to\infty
+	.\] 
+	We use the subscript ``0'' to indicate these quantities are defined at the ``cut-off'' in the RG sense.
+	Consider along the RG flow, we get a theory with matrix size $N$,
+	with the following action
+	\[
+		\frac{1}{g^2} \mathrm{Tr} [A,A]^2
+	.\] 
+	The question is how $g$ flows with $N$.
+	(not how $g_0$ changes with $N_0$ in the 't Hooft limit)
+\end{problem}
+
+\begin{todo}
+	Learn about the ``Gaussian expansion method''.
+	Think about the large D expansion.
+\end{todo}

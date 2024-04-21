@@ -1,0 +1,142 @@
+%! Tex root: ../master.tex
+
+\paragraph{background matrices configuration}
+$A_\mu$ appears in the model only through $\mathfrak{A}_\mu$.
+$A_\mu$ are $N\times N$ Hermitian;
+$\mathfrak{A}_\mu$ are $N^2\times N^2$ Hermitian, also antisymmetric.
+Consider the Cartan directions
+\[
+	H \equiv
+	\sum_{\mathfrak{a}\in \text{Cart.}} H_{\mathfrak{a}} T^{\mathfrak{a}},\quad
+.\] 
+\begin{enumerate}
+	\item If $A_\mu$ are diagonal (along the Cartan directions),
+		then $\mathfrak{A}_\mu H = 0$ because Cartan directions commute.
+	\item For any $A_\mu$, $\mathfrak{A}_\mu H$ has no component
+		along the Cartan directions,
+		but has components along the off-diagonal directions.
+	\item Diagonal $A_\mu$ gives zero modes,
+		but can be lift by including non-diagonal elements.
+	\item $U(N)$ transformation can diagonalize one of $A_\mu$,
+		thus generates zero modes along certain spacetime direction.
+\end{enumerate}
+
+Extremal configuration:
+\begin{equation}\label{eom-IKKT}
+	[A^\mu,[A_\mu,A_\nu]]=0
+\end{equation}
+Or
+\[
+	\sum_{\mathfrak{b}}
+	(\mathfrak{A}^\mu \mathfrak{A}_\mu)^{\mathfrak{a}\mathfrak{b}}
+	(A_\nu)_{\mathfrak{b}} = 0
+.\] 
+Note: $A_\mu$ along the zero direction of $\mathfrak{A}^\mu \mathfrak{A}_\mu$.
+Or
+\[
+	([A^\mu,F_{\mu\nu}])^{\mathfrak{a}} = \sum_{\mathfrak{b}}
+	(\mathfrak{A}^\mu)^{\mathfrak{a}\mathfrak{b}} (F_{\mu\nu})_{\mathfrak{b}}
+	= - \sum_{\mathfrak{b}} (\mathfrak{F}_{\mu\nu})^{\mathfrak{a}\mathfrak{b}}
+	(A^\mu)_{\mathfrak{b}}
+	=0
+.\] 
+The existence of zero modes is quite general.
+The e.o.m. \eqref{eom-IKKT} is $U(N)$ invariant.
+
+\paragraph{``RG directions'' in the background}
+Decomposition
+\[
+	A \stackrel{\text{background}}{\to} A + \mathcal{A}
+	\stackrel{\text{RG}}{\to} A + (\mathcal{A}_1 + \mathcal{A}_2)
+.\] 
+$\mathcal{A}_1$ is effectively the $(N-1)\times(N-1)$ Hermitian;
+$\mathcal{A}_2$ is the integrated-out part.
+
+The Gaussian term, assume diagonal $A_\mu$
+(ignore zero modes temporarily)
+\[
+	\mathcal{A}_{\mu \mathfrak{a}} 
+	( \mathfrak{A}^2)^{\mathfrak{a}\mathfrak{b}} 
+	\eta^{\mu\nu} \mathcal{A}_{\nu \mathfrak{b}}
+	\to
+	\mathcal{A}_{\mu \mathfrak{a}} 
+	( \mathfrak{A}^2)^{\mathfrak{a}\mathfrak{b}} 
+	\eta^{\mu\nu} \mathcal{A}_{\nu \mathfrak{b}}
+	+ \alpha_{\mu \mathfrak{a}'}
+	(\mathfrak{A}^2)^{\mathfrak{a}'\mathfrak{b}'}
+	\eta^{\mu\nu} \alpha_{\nu \mathfrak{b}'}
+.\] 
+\[
+	\mathfrak{a}',\mathfrak{b}' \in \{(N,i),[N,i] \vert i=1,\cdots,N-1\}
+.\] 
+\[
+	\mathfrak{A}_\mu \alpha_\nu = \sum_{\mathfrak{a}',\mathfrak{b}'}
+	(\mathfrak{A}_\mu)_{\mathfrak{a}'}^{~~\mathfrak{b}'}
+	\alpha_{\nu \mathfrak{b}'} T^{\mathfrak{a}'}
+.\] 
+
+The interaction terms, cubic part
+\begin{equation}
+	- \frac{\alpha}{4} \mathrm{Tr}[A_\mu,A_\nu][A^\mu,A^\nu]
+	\to
+	- \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \mathcal{A}_{\nu]}
+	[\mathcal{A}^\mu,\mathcal{A}^\nu]\right) 
+\end{equation}
+The direction of $\mathcal{A}$: $\mathfrak{a}'$ or $\mathfrak{a}$.
+Commutators, schematically
+\[
+	[\mathfrak{a}',\mathfrak{a}'] \in \mathfrak{a},\quad
+	[\mathfrak{a},\mathfrak{a}]\in \mathfrak{a},\quad
+	[\mathfrak{a}',\mathfrak{a}]\in \mathfrak{a}'
+.\] 
+Diagonal $A$: $\mathfrak{A}$ keeps the separation 
+$\mathfrak{a}'\to \mathfrak{a}'$, $\mathfrak{a}\to \mathfrak{a}$.
+
+Separate the RG direction
+\begin{align*}
+	- \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \mathcal{A}_{\nu]}
+	[\mathcal{A}^\mu,\mathcal{A}^\nu]\right) 
+	\to 
+	- \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \mathcal{A}_{\nu]}
+	[\mathcal{A}^\mu,\mathcal{A}^\nu]\right)  \\
+	- 2 \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \alpha_{\nu]}
+	[\alpha^\mu,\mathcal{A}^\nu]\right) 
+	- \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \mathcal{A}_{\nu]}
+	[\alpha^\mu,\alpha^\nu]\right) 
+\end{align*}
+Indicies notation
+\begin{equation*}
+	- \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \mathcal{A}_{\nu]}
+	[\alpha^\mu,\alpha^\nu]\right) 
+	=-\alpha \sum_{\mathfrak{a}',\mathfrak{b}',\mathfrak{c},\mathfrak{d}}
+	\mathrm{Tr}(T^{\mathfrak{c}}[T^{\mathfrak{a}'},T^{\mathfrak{b}'}])
+	\mathfrak{A}_{[\mu|\mathfrak{c}|}^{~~~~\mathfrak{d}}
+	\mathcal{A}_{\nu]\mathfrak{d}}
+	\alpha^\mu_{\mathfrak{a}'} \alpha^\nu_{\mathfrak{b}'}
+\end{equation*}
+\begin{equation*}
+	- 2 \alpha \mathrm{Tr} \left( 
+	\mathfrak{A}_{[\mu} \alpha_{\nu]}
+	[\alpha^\mu,\mathcal{A}^\nu]\right) 
+	= -2 \alpha \sum_{\mathfrak{a}',\mathfrak{b}',\mathfrak{c},\mathfrak{d}'}
+	\mathrm{Tr}(T^{\mathfrak{a}'} [T^{\mathfrak{b}'},T^{\mathfrak{c}}])
+	\mathfrak{A}_{[\mu|\mathfrak{a}'|}^{~~~~~\mathfrak{d}'}
+	\alpha_{\nu]\mathfrak{d}'}
+	\alpha^\mu_{\mathfrak{b}'}
+	\mathcal{A}^\nu_{\mathfrak{c}}
+\end{equation*}
+Some infomation: $A$ diagonal $\to$ $\mathfrak{A}$ has ``almost diagonal''
+structure: $(N,i),[N,j]$-elements only for $i=j$.
+Trace of $T$ depends on the choice of normalization.
+In both traces, if $\mathfrak{a}',\mathfrak{b}'$ in the same $2\times 2$ block:
+$i=j$,
+$\mathfrak{c}$ must be the Cartan directions $(i,i)$ or $(N,N)$.
+We ignore the fluctuation along those directions?
+
+The quartic interaction...
