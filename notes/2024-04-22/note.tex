@@ -1,0 +1,126 @@
+%! Tex root: ../master.tex
+
+The product and trace of the $C\Gamma^\mu$ matrices
+\[
+	\mathrm{Tr}(C \Gamma^\mu \overline{C\Gamma}^\nu ) = \eta^{\mu\nu}
+	\mathrm{Tr}\mathds{1}
+.\] 
+This is checked by considering three cases separately:
+$\mu = i,\nu = j$; $\mu = 0,\nu = i$ or $\mu = i, \nu=0$;
+$\mu=0,\nu=0$.
+Also use $\mathrm{Tr}(C\Gamma^i)=0$.
+
+Use $\{C\Gamma^i,C\Gamma^j\} = 2 \delta^{ij} \mathds{1}$,
+we can prove that (cyclic property of trace)
+\[
+\mathrm{Tr}(C\Gamma^1 C\Gamma^2 )=0,\quad
+\mathrm{Tr}(C\Gamma^1 C\Gamma^2 C\Gamma^3 C\Gamma^4)=0
+.\] 
+Is it the case? $\mathrm{Tr}(C\Gamma^1 C\Gamma^2 C\Gamma^3) = 0$.
+
+\paragraph{a contraction}
+Consider the following contraction
+\[
+	\left<\varphi^\alpha_{\mathfrak{a}} (C\Gamma^\mu)_{\alpha\beta}
+	\mathcal{A}_{\mu \mathfrak{a}\mathfrak{b}} \varphi^\beta_{\mathfrak{b}}
+	\varphi^\gamma_{\mathfrak{c}} (C\Gamma^\mu)_{\gamma\delta}
+		\mathcal{A}_{\mu \mathfrak{c}\mathfrak{d}} \varphi^\delta_{\mathfrak{d}}
+		\right>
+.\] 
+There are three possible contractions
+\begin{align*}
+	(\Delta^{-1})_{\mathfrak{a}\mathfrak{b}}^{\alpha\beta}
+	(C\Gamma^\mu)_{\alpha\beta}
+	\mathcal{A}_{\mu \mathfrak{a}\mathfrak{b}}
+	(\Delta^{-1})_{\mathfrak{c}\mathfrak{d}}^{\gamma\delta}
+	(C\Gamma^\nu)_{\gamma\delta}
+	\mathcal{A}_{\nu \mathfrak{c}\mathfrak{d}} \\
+	+(\Delta^{-1})_{\mathfrak{a}\mathfrak{d}}^{\alpha\delta}
+	(C\Gamma^\mu)_{\alpha\beta}
+	\mathcal{A}_{\mu \mathfrak{a}\mathfrak{b}}
+	(\Delta^{-1})_{\mathfrak{b}\mathfrak{c}}^{\beta\gamma}
+	(C\Gamma^\nu)_{\gamma\delta}
+	\mathcal{A}_{\nu \mathfrak{c}\mathfrak{d}}\\
+	- (\Delta^{-1})_{\mathfrak{a}\mathfrak{c}}^{\alpha\gamma}
+	(C\Gamma^\mu)_{\alpha\beta}
+	\mathcal{A}_{\mu \mathfrak{a}\mathfrak{b}}
+	(\Delta^{-1})_{\mathfrak{b}\mathfrak{d}}^{\beta\delta}
+	(C\Gamma^\nu)_{\gamma\delta}
+	\mathcal{A}_{\nu \mathfrak{c}\mathfrak{d}}
+\end{align*}
+The sign is obtained by comparing the ``reverse order of $\Delta^{-1}$'':
+$ \mathfrak{d} \mathfrak{c} \mathfrak{b} \mathfrak{a}$ for the first line
+to the order in $\left<\cdots \right>$: $\mathfrak{a}\mathfrak{b}
+\mathfrak{c}\mathfrak{d}$.
+First deal with $\mathfrak{a}$-indices: $(\Delta^{-1})_{\mathfrak{a}\mathfrak{b}}$ include $J_{\mathfrak{a}\mathfrak{b}}$.
+The first term gives $\mathrm{Tr}(\mathcal{A}_\mu J)
+\mathrm{Tr}(\mathcal{A}_\nu J)$;
+the second and third terms give $- 2\mathrm{Tr}(\mathcal{A}_\mu \mathcal{A}_\nu)$.
+The spinor part: the first term
+\[
+	\mathrm{Tr} (C\Gamma^\mu \overline{C\Gamma}^\rho)
+	\mathrm{Tr} (C\Gamma^\nu \overline{C\Gamma}^\sigma)
+.\] 
+The second term and the third term are the same
+\[
+\mathrm{Tr}( C\Gamma^\mu \overline{C\Gamma}^\rho C\Gamma^\nu
+\overline{C\Gamma}^\sigma)
+.\] 
+(Note that $C\Gamma^\mu$ is symmetric)
+The contraction reads then
+\[
+	\mathrm{Tr} (C\Gamma^\mu \overline{C\Gamma}^\rho)
+	\mathrm{Tr} (C\Gamma^\nu \overline{C\Gamma}^\sigma)
+	\mathrm{Tr}(\mathcal{A}_\mu J)
+	\mathrm{Tr}(\mathcal{A}_\nu J)
+	a_\rho a_\sigma
+.\] 
+\[
+	- 2
+\mathrm{Tr}( C\Gamma^\mu \overline{C\Gamma}^\rho C\Gamma^\nu
+\overline{C\Gamma}^\sigma)
+\mathrm{Tr}(\mathcal{A}_\mu \mathcal{A}_\nu) a_\rho a_\sigma
+.\] 
+Don't forget to multiply $\frac{g^4}{a^4}$ from propagator
+and $\frac{1}{8g^4}$ from expansion of the interaction.
+
+It's possible to obtain the following terms
+\[
+32 \mathrm{Tr}(\mathcal{A}^2) a^2,\quad
+-64\mathrm{Tr}(\mathcal{A}_\mu \mathcal{A}_\nu) a^\mu a^\nu,\quad
+	(16 \mathrm{Tr}(\mathcal{A}_\mu) a^\mu)^2
+.\] 
+Multiply the $\frac{1}{8a^4}$
+\[
+\frac{4}{a^2} \mathrm{Tr}(\mathcal{A}^2) ,\quad
+-\frac{8}{a^4} \mathrm{Tr}(\mathcal{A}_\mu \mathcal{A}_\nu) a^\mu a^\nu,\quad
+	\frac{32}{a^4}( \mathrm{Tr}(\mathcal{A}_\mu J) a^\mu)^2
+.\] 
+tech remark. Because $C\Gamma^0 = - \mathds{1}$, $\mathrm{Tr}(C\Gamma^0 C\Gamma^0) = \mathrm{Tr}\mathds{1}$.
+This seems to lead the wrong sign in the time direction
+(compare to $\mathrm{Tr}(C\Gamma^i C\Gamma^j) = \delta^{ij}\mathds{1}$).
+However, an extra minus is provided by $C\Gamma^0 C\Gamma^i = C\Gamma^i C\Gamma^0$ (compare to $C\Gamma^i C\Gamma^j = - C\Gamma^j C \Gamma^i,i\neq j$).
+
+Simpler contractions
+\[
+- \frac{1}{2g^2}
+\left<\alpha_\mu( 2 a_\rho \mathcal{A}^\rho J \eta^{\mu\nu}
++ \mathcal{A}^2 \eta^{\mu\nu}
+- 2 \mathcal{F}^{\mu\nu})\alpha_\nu\right>
+= - \frac{5}{a^2} \mathrm{Tr}( 2 a_\rho \mathcal{A}^\rho J
++ \mathcal{A}^2)
+.\] 
+\[
+\frac{1}{2g^2} \left<\varphi^\alpha
+(C\Gamma^\mu)_{\alpha\beta} \mathcal{A}_\mu \varphi^\beta\right>
+= \frac{8}{a^2} a^\rho \mathrm{Tr}(A_\rho J)
+.\] 
+use $\mathrm{Tr}(\overline{C\Gamma}^\mu C\Gamma^\nu) = 16 \eta^{\mu\nu}$.
+\[
+	\frac{1}{g^2} \left<b ( 2a_\rho \mathcal{A}^\rho J
+	+ \mathcal{A}^2)\right>
+ = \frac{1}{a^2} \mathrm{Tr}(2a_\rho \mathcal{A}^\rho J + \mathcal{A}^2)
+.\] 
+Some cancellations...
+Also the $\mathrm{Tr}(\mathcal{A}_\mu \mathcal{A}_\nu) a^\mu a^\nu$
+is canceled from the bosonic and ghost quadratic term expansion.

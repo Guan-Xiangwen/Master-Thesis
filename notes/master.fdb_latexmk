@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1713629366 "master.tex" "master.pdf" "master" 1713629367
+["pdflatex"] 1713801305 "master.tex" "master.pdf" "master" 1713801306
   "/etc/texmf/web2c/texmf.cnf" 1652867606 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -254,16 +254,17 @@
   "2024-04-16/note.tex" 1713300036 8743 49dbdda1d729799084e69d11f2bfca74 ""
   "2024-04-18/note.tex" 1713453255 10463 b632e8798dfbc1dcfe6d9e8b3416f96c ""
   "2024-04-19/note.tex" 1713621341 6321 e16992a49e6d41a55ded62de604a2be6 ""
-  "2024-04-20/note.tex" 1713629366 2135 f4bcdde6544faae108d1057f352afe57 ""
-  "master.aux" 1713629367 2727 480657e8bfe8f7276e298dffd63d963c "pdflatex"
+  "2024-04-20/note.tex" 1713630459 2135 f4bcdde6544faae108d1057f352afe57 ""
+  "2024-04-22/note.tex" 1713801304 4792 6d13e9dceb623157457401466616812d ""
+  "master.aux" 1713801306 3021 e07270dd66e3861f6ec05777134f5260 "pdflatex"
   "master.tex" 1713621383 1225 e9cc26ce6f6b6563d08d420df0432d17 ""
-  "master.toc" 1713629367 785 f988ca2f1b531f5fe2a997f5277362ed "pdflatex"
+  "master.toc" 1713801306 903 861b2fb9d6fd8faac19528d62f0ccbe2 "pdflatex"
   "preamble.tex" 1713424072 1473 c9f66cfa055da4c2425be279552edcd3 ""
   "reference.tex" 1710065616 1076 a10ff28eb868aa4d038e04dceb06ecef ""
   "symbols.tex" 1708677145 31 d67423f87bec0e7ffb14ccff3ebad4da ""
   "theorems.tex" 1713208930 1417 b198a89bd4733fb33177158a2dae50f4 ""
   (generated)
-  "master.log"
   "master.toc"
-  "master.pdf"
+  "master.log"
   "master.aux"
+  "master.pdf"

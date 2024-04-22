@@ -10,3 +10,5 @@
 \contentsline {section}{Friday, 19 Apr}{8}{question.1}%
 \contentsline {paragraph}{summarize the ingredients}{8}{section*.8}%
 \contentsline {section}{Saturday, 20 Apr}{10}{equation.0.13}%
+\contentsline {section}{Monday, 22 Apr}{10}{equation.0.13}%
+\contentsline {paragraph}{a contraction}{11}{section*.9}%

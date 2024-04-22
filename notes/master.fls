@@ -438,6 +438,9 @@ INPUT ./2024-04-19/note.tex
 INPUT ./2024-04-20/note.tex
 INPUT ./2024-04-20/note.tex
 INPUT ./2024-04-20/note.tex
+INPUT ./2024-04-22/note.tex
+INPUT ./2024-04-22/note.tex
+INPUT ./2024-04-22/note.tex
 INPUT master.aux
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
