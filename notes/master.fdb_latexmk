@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1713969608 "master.tex" "master.pdf" "master" 1713969609
+["pdflatex"] 1713983781 "master.tex" "master.pdf" "master" 1713983783
   "/etc/texmf/web2c/texmf.cnf" 1652867606 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -256,16 +256,18 @@
   "2024-04-20/note.tex" 1713630459 2135 f4bcdde6544faae108d1057f352afe57 ""
   "2024-04-22/note.tex" 1713803322 4792 6d13e9dceb623157457401466616812d ""
   "2024-04-23/note.tex" 1713897368 7158 4edfd43dfa840832aad9352737045461 ""
-  "2024-04-24/note.tex" 1713969606 4744 e385c20fd1ea763040b2e44137684f67 ""
-  "master.aux" 1713969609 2834 9dccc08dff8bdd8ae85f4fca18f58663 "pdflatex"
+  "2024-04-24/note.tex" 1713983780 5555 f419c4e02c9bea95755d5b70ad34fb29 ""
+  "2024-04-24/notes-a.pdf" 1713982110 406101 623d04837558f4e3b03716c477bf4c01 ""
+  "2024-04-24/notes-b.pdf" 1713983381 316987 e54c63c93bda3c5919b87c90382fe634 ""
+  "master.aux" 1713983782 2834 0f9582ed90f24fc562a186ae795d338d "pdflatex"
   "master.tex" 1713621383 1225 e9cc26ce6f6b6563d08d420df0432d17 ""
-  "master.toc" 1713969609 700 0de6b303dd12cf80aeacc8528744a359 "pdflatex"
-  "preamble.tex" 1713424072 1473 c9f66cfa055da4c2425be279552edcd3 ""
+  "master.toc" 1713983782 700 933f9f4f0c1716962eb9f93a5d546e55 "pdflatex"
+  "preamble.tex" 1713982237 1515 7f0bec1c2a6e5736b6847f88845e6248 ""
   "reference.tex" 1710065616 1076 a10ff28eb868aa4d038e04dceb06ecef ""
   "symbols.tex" 1708677145 31 d67423f87bec0e7ffb14ccff3ebad4da ""
   "theorems.tex" 1713960974 1413 9094419fb6c2a2d0871006e0baf44893 ""
   (generated)
-  "master.log"
-  "master.aux"
   "master.pdf"
+  "master.log"
   "master.toc"
+  "master.aux"

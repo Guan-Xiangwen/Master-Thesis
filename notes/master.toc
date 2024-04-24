@@ -8,4 +8,4 @@
 \contentsline {paragraph}{a contraction}{7}{section*.5}%
 \contentsline {section}{Tuesday, 23 Apr}{8}{section*.5}%
 \contentsline {section}{Wednesday, 24 Apr}{10}{equation.0.12}%
-\contentsline {paragraph}{conceptual discussion of renormalization}{12}{section*.6}%
+\contentsline {paragraph}{conceptual discussion of renormalization}{14}{section*.6}%

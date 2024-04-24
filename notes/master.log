@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  24 APR 2024 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2024.3.15)  24 APR 2024 20:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -765,37 +765,37 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \ULC@box=\box110
 Package: ulem 2019/11/18
 \ULdepth=\dimen299
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+)
+\AM@pagewidth=\dimen300
+\AM@pageheight=\dimen301
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box111
+\AM@global@opts=\toks53
+\AM@pagecnt=\count310
+\AM@toc@title=\toks54
+\c@AM@survey=\count311
+\AM@templatesizebox=\box112
 ) (/usr/share/texlive/texmf-dist/tex/latex/import/import.sty
 Package: import 2009/03/23  v 5.1
 ) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip79
-\enit@outerparindent=\dimen300
-\enit@toks=\toks53
-\enit@inbox=\box111
-\enit@count@id=\count310
-\enitdp@description=\count311
+\enit@outerparindent=\dimen302
+\enit@toks=\toks55
+\enit@inbox=\box113
+\enit@count@id=\count312
+\enitdp@description=\count313
 ) (/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
  (/usr/share/texlive/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
-)) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
- (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
-)
-\AM@pagewidth=\dimen301
-\AM@pageheight=\dimen302
- (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
-)
-\AM@pagebox=\box112
-\AM@global@opts=\toks54
-\AM@pagecnt=\count312
-\AM@toc@title=\toks55
-\c@AM@survey=\count313
-\AM@templatesizebox=\box113
-) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 )) (./reference.tex (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
@@ -1097,19 +1097,82 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
- [10] [11]
+ [10]
+<2024-04-24/notes-a.pdf, id=90, 597.51233pt x 845.0471pt>
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf  used on input line 86.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf  used on input line 86.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+<2024-04-24/notes-a.pdf, id=93, page=1, 597.51233pt x 845.0471pt>
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf , page1 used on input line 86.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf , page1 used on input line 86.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+ [11]
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf , page1 used on input line 86.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf , page1 used on input line 86.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: 2024-04-24/notes-a.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-a.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-a.pdf , page1 used on input line 86.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+ [12 <./2024-04-24/notes-a.pdf>]
+<2024-04-24/notes-b.pdf, id=335, 597.51233pt x 845.0471pt>
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf  used on input line 88.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf  used on input line 88.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+<2024-04-24/notes-b.pdf, id=338, page=1, 597.51233pt x 845.0471pt>
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf , page1 used on input line 88.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf , page1 used on input line 88.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf , page1 used on input line 88.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf , page1 used on input line 88.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: 2024-04-24/notes-b.pdf Graphic file (type pdf)
+<use 2024-04-24/notes-b.pdf, page 1>
+Package pdftex.def Info: 2024-04-24/notes-b.pdf , page1 used on input line 88.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+ [13 <./2024-04-24/notes-b.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 93.
-Package hyperref Info: bookmark level for unknown problem defaults to 0 on input line 94.
+(mdframed)              on input line 120.
+Package hyperref Info: bookmark level for unknown problem defaults to 0 on input line 121.
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <7> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 94.
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 121.
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <5> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 94.
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 121.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 103.
-) [12]
+(mdframed)              on input line 130.
+) [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
  (./master.aux)
@@ -1118,18 +1181,18 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 37.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
- 27082 strings out of 481239
- 501350 string characters out of 5920377
+ 27107 strings out of 481239
+ 502013 string characters out of 5920377
  799148 words of memory out of 5000000
- 41596 multiletter control sequences out of 15000+600000
+ 41614 multiletter control sequences out of 15000+600000
  549249 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,12n,86p,982b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,18n,86p,982b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbbx10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbmo10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbmr10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbmr17.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbmr8.pfb>
-Output written on master.pdf (12 pages, 172011 bytes).
+Output written on master.pdf (14 pages, 835132 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 11325 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 11365 words of extra memory for PDF output out of 12000 (max. 10000000)
 
