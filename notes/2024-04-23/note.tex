@@ -1,0 +1,182 @@
+%! Tex root: ../master.tex
+
+Notations
+\[
+	(\Sigma_{(\alpha)})^{\mu\nu}_{\mathfrak{a}\mathfrak{b}}
+	\equiv \left[
+	2 a_\rho (\mathcal{A}^\rho J)_{\mathfrak{a}\mathfrak{b}}
+	+ \mathcal{A}^2_{\mathfrak{a}\mathfrak{b}}
+\right] \eta^{\mu\nu}
+- 2 \mathcal{F}^{\mu\nu}_{\mathfrak{a}\mathfrak{b}}
+.\] 
+note. this term couples to the fluctuations $\alpha_{mu \mathfrak{a}}$
+through the form $\alpha_{\mu \mathfrak{a}} 
+(\Sigma_{(\alpha)})^{\mu\nu}_{\mathfrak{a}\mathfrak{b}}
+\alpha_{\nu \mathfrak{b}}$.
+Also
+\[
+	(\Sigma_{(\varphi)})_{\alpha \mathfrak{a};\beta \mathfrak{b}}
+	\equiv (C\Gamma^\mu)_{\alpha\beta}
+	\mathcal{A}_{\mu \mathfrak{a}\mathfrak{b}}
+.\] 
+\[
+	(\Sigma_{(\text{g})})_{\mathfrak{a}\mathfrak{b}}
+	\equiv 2 a_\mu (\mathcal{A}^\mu J)_{\mathfrak{a}\mathfrak{b}}
+	+ \mathcal{A}^2_{\mathfrak{a}\mathfrak{b}}
+.\] 
+Maybe simply use number to denote the index:
+$\Sigma_{12}$ for example.
+
+The action to expand
+\begin{align}
+	- S = 
+	- \frac{1}{2} \alpha (\Delta_{\mathrm{B}}) \alpha
+	+ \frac{1}{2} \varphi (\Delta_{\mathrm{F}}) \varphi
+	- b ( \Delta_{ \mathrm{G}}) c \notag \\
+	- \frac{1}{2g^2} \alpha (\Sigma_{(\alpha)}) \alpha
+	+ \frac{1}{2g^2} \varphi (\Sigma_{(\varphi)}) \varphi
+	- \frac{1}{g^2} b ( \Sigma_{(\text{g})}) c \notag \\
+	- \frac{1}{g^2} \varphi (C\Gamma^\mu) \Psi \alpha_\mu
+	+ \frac{1}{4 g^2} \mathrm{Tr}([\alpha_\mu,\alpha_\nu]
+	[\alpha^\mu,\alpha^\nu])
+\end{align}
+
+First consider the contribution getting from the first two lines:
+$ \mathrm{e}^x = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3 + \frac{1}{24}x^4 + \cdots$,
+$x$-term
+\[
+	- \frac{1}{2g^2} \alpha_1 \Sigma_{(\alpha)1,2} \alpha_2
+	+ \frac{1}{2g^2} \varphi_1 \Sigma_{(\varphi)1,2} \varphi_2
+	- \frac{1}{g^2} b_1 \Sigma_{(\text{g})1,2} c_2
+.\] 
+Contract by the propagators:
+\[
+	- \frac{1}{2 g^2} \Sigma_{(\alpha)1,2} 
+	(\Delta_{\mathrm{B}}^{-1})_{2,1}
+	+ \frac{1}{2 g^2} \Sigma_{(\varphi)1,2}
+	(\Delta_{\mathrm{F}}^{-1})_{2,1}
+	- \frac{1}{g^2} \Sigma_{(\text{g})1,2}
+	(-\Delta_{\mathrm{g}}^{-1})_{2,1}
+.\] 
+$\frac{1}{2}x^2$-term
+\begin{align*}
+	\frac{1}{8 g^4} \alpha_1 \Sigma_{(\alpha)1,2} \alpha_2
+	\alpha_3 \Sigma_{(\alpha)3,4} \alpha_4
+	+ \frac{1}{8 g^4} \varphi_1 \Sigma_{(\varphi)1,2} \varphi_2
+	\varphi_3 \Sigma_{(\varphi)3,4} \varphi_4 \\
+	+ \frac{1}{2g^4} b_1 \Sigma_{(\text{g})1,2} c_2
+	b_3 \Sigma_{(\text{g})3,4} c_4
+	-\frac{1}{4g^4} \alpha_1 \Sigma_{(\alpha)1,2} \alpha_2
+	\varphi_3 \Sigma_{(\varphi)3,4} \varphi_4 \notag\\
+	- \frac{1}{2 g^4} \varphi_1 \Sigma_{(\varphi)1,2} \varphi_2
+	b_3 \Sigma_{(\text{g})3,4} c_4
+	+ \frac{1}{2 g^4} \alpha_1 \Sigma_{(\alpha)1,2} \alpha_2
+	b_3 \Sigma_{(\text{g})3,4} c_4
+\end{align*}
+Consider only ``connected'' contractions
+\begin{align*}
+	\frac{1}{8g^4}\left[
+		\Sigma_{(\alpha)1,2} (\Delta_{\mathrm{B}}^{-1})_{2,3}
+	\Sigma_{(\alpha)3,4} (\Delta_{\mathrm{B}}^{-1})_{4,1}
+		+\Sigma_{(\alpha)1,2} (\Delta_{\mathrm{B}}^{-1})_{1,3}
+	\Sigma_{(\alpha)3,4} (\Delta_{\mathrm{B}}^{-1})_{4,2}
+\right] \notag \\
+\frac{1}{8g^4} \left[
+	\Sigma_{(\varphi)1,2} (\Delta_{\mathrm{F}}^{-1})_{3,2}
+	\Sigma_{(\varphi)3,4} (\Delta_{\mathrm{F}}^{-1})_{4,1}
+	+\Sigma_{(\varphi)1,2} (\Delta_{\mathrm{F}}^{-1})_{1,3}
+	\Sigma_{(\varphi)3,4} (\Delta_{\mathrm{F}}^{-1})_{4,2}
+\right] \notag \\
+\frac{1}{2g^4}\left[
+	- \Sigma_{(\text{g})1,2} (-\Delta_{\mathrm{g}}^{-1})_{2,3}
+	\Sigma_{(\text{g})3,4} (-\Delta_{\mathrm{g}}^{-1})_{4,1}
+\right]
+\end{align*}
+Note: how to think about the order and the sign?
+First order the contraction pair $\left<(x_1 y_1)(x_2 y_2)\cdots \right>$.
+Imagine couple them with sources in the action
+$u_1 x_1 + v_1 y_1 + u_2 x_2 + v_2 y_2 + \cdots$.
+Then $\left<(x_1 y_1) (x_2 y_2) \cdots \right>$ is obtained by taking the derivatives
+$\partial_{u_1} \partial_{v_1} \partial_{u_2} \partial_{v_2} \cdots$ to the generating functional.
+The plus or minus sign of the source term doesn't matter because we always have an even number of them.
+The propagator appears from the same action (rewriting)
+having the form $ x_i \Delta_{ij} y_j \to v_i (\Delta^{-1})_{ij} u_j$.
+Be careful about the position of $u,v$.
+So acting the derivative we get $(\Delta^{-1})_{v_1 u_1}
+(\Delta^{-1})_{v_2 u_2}\cdots$.
+The only sign in this procedure comes from the initial ordering.
+
+$\frac{1}{6}x^3$-term (for simplification, only show the terms leading to some connected contractions)
+(also, the last line of the action is ignored)
+\begin{align*}
+	- \frac{1}{48 g^6} \alpha_1 \Sigma_{(\alpha)1,2} \alpha_2
+	\alpha_3 \Sigma_{(\alpha)3,4} \alpha_4
+	\alpha_5 \Sigma_{(\alpha)5,6} \alpha_6 \notag\\
+	\frac{1}{48 g^6} \varphi_1 \Sigma_{(\varphi)1,2} \varphi_2
+	\varphi_3 \Sigma_{(\varphi)3,4} \varphi_4
+	\varphi_5 \Sigma_{(\varphi)5,6} \varphi_6 \notag \\
+	- \frac{1}{6 g^6} b_1 \Sigma_{(\text{g})1,2} c_2
+	b_3 \Sigma_{(\text{g})3,4} c_4
+	b_5 \Sigma_{(\text{g})5,6} c_6
+\end{align*}
+Contractions
+\[
+	(23)(45)(16) \text{ with all possible interchanges }
+	(1 \leftrightarrow 2)(3 \leftrightarrow 4)(5 \leftrightarrow 6)
+.\] 
+For the ghost part, only one possibility: all interchanges happen at once.
+\begin{align*}
+	- \frac{1}{48 g^6} \Sigma_{(\alpha)1,2} (\Delta_{\mathrm{B}}^{-1})_{2,3}
+	\Sigma_{(\alpha)3,4} (\Delta_{\mathrm{B}}^{-1})_{4,5}
+	\Sigma_{(\alpha)5,6} (\Delta_{\mathrm{B}}^{-1})_{6,1}\notag\\
+	\frac{1}{48 g^6} \Sigma_{(\varphi)1,2} (\Delta_{\mathrm{F}}^{-1})_{3,2}
+	\Sigma_{(\varphi)3,4}(\Delta_{\mathrm{F}}^{-1})_{5,4}
+	\Sigma_{(\varphi)5,6} (\Delta_{\mathrm{F}}^{-1})_{6,1} \notag\\
+	-\frac{1}{6g^6}\Sigma_{(\text{g})1,2} (-\Delta_{\mathrm{g}}^{-1})_{2,3}
+	\Sigma_{(\text{g})3,4}(-\Delta_{\mathrm{g}}^{-1})_{4,5}
+	\Sigma_{(\text{g})5,6}(-\Delta_{\mathrm{g}}^{-1})_{6,1}\notag\\
+	+ \text{ all possible interchanges } \cdots
+\end{align*}
+
+$\frac{1}{24}x^4$-term (for simplification, only show the terms leading to some connected contractions)
+(also, the last line of the action is ignored)
+\begin{align*}
+	\frac{1}{384 g^8} \alpha_1 \Sigma_{(\alpha)1,2} \alpha_2
+	\alpha_3 \Sigma_{(\alpha)3,4} \alpha_4
+	\alpha_5 \Sigma_{(\alpha)5,6} \alpha_6 
+	\alpha_7 \Sigma_{(\alpha)7,8} \alpha_8\notag\\
+	\frac{1}{384 g^6} \varphi_1 \Sigma_{(\varphi)1,2} \varphi_2
+	\varphi_3 \Sigma_{(\varphi)3,4} \varphi_4
+	\varphi_5 \Sigma_{(\varphi)5,6} \varphi_6 
+	\varphi_7 \Sigma_{(\varphi)7,8} \varphi_8\notag \\
+	\frac{1}{24 g^6} b_1 \Sigma_{(\text{g})1,2} c_2
+	b_3 \Sigma_{(\text{g})3,4} c_4
+	b_5 \Sigma_{(\text{g})5,6} c_6
+	b_7 \Sigma_{(\text{g})7,8} c_8
+\end{align*}
+More contraction possibilities...
+$\text{number}=6(3)\times 2^4 = 96(48)$.
+(todo. find a systematic way to consider all connected contractions)
+
+\begin{correct}
+Further calculation for the fermionic $x^3$-term
+Contractions:
+\[
+	\frac{8}{48g^6}\Sigma_{12}\Delta_{23}\Sigma_{34}\Delta_{45}
+	\Sigma_{56}\Delta_{61}
+	,\quad
+	\Delta = \overline{C\Gamma}\cdot a J,~\Sigma = C\Gamma\cdot \mathcal{A}
+.\] 
+next:
+\[
+\frac{1}{6 a^6} \mathrm{Tr}(\Gamma^1 \overline{\Gamma}^2 \Gamma^3
+\overline{\Gamma}^4 \Gamma^5 \overline{\Gamma}^6)
+a^2 a^4 a^6 \mathrm{Tr}(\mathcal{A}^1  \mathcal{A}^3 \mathcal{A}^5 J)
+.\] 
+\[
+= \frac{32}{3a^6}\mathrm{Tr}(a\cdot \mathcal{A} a \cdot \mathcal{A}
+a\cdot \mathcal{A} J)
+- \frac{8}{ a^4} \mathrm{Tr}(a\cdot \mathcal{A} \mathcal{A}^2 J)
+.\] 
+Something wrong or not?
+\end{correct}

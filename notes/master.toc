@@ -1,14 +1,11 @@
-\contentsline {section}{Monday, 15 Apr}{1}{section*.1}%
-\contentsline {paragraph}{background matrices configuration}{1}{section*.2}%
-\contentsline {paragraph}{``RG directions'' in the background}{2}{section*.3}%
-\contentsline {section}{Tuesday, 16 Apr}{2}{equation.0.2}%
-\contentsline {paragraph}{quartic interaction}{2}{section*.4}%
-\contentsline {paragraph}{susy, Ward identity?, BRST?}{3}{section*.5}%
-\contentsline {section}{Thursday, 18 Apr}{5}{section*.5}%
-\contentsline {paragraph}{Gaussian with interaction}{5}{section*.6}%
-\contentsline {paragraph}{fermionic contribution}{7}{section*.7}%
-\contentsline {section}{Friday, 19 Apr}{8}{question.1}%
-\contentsline {paragraph}{summarize the ingredients}{8}{section*.8}%
-\contentsline {section}{Saturday, 20 Apr}{10}{equation.0.13}%
-\contentsline {section}{Monday, 22 Apr}{10}{equation.0.13}%
-\contentsline {paragraph}{a contraction}{11}{section*.9}%
+\contentsline {section}{Thursday, 18 Apr}{1}{section*.1}%
+\contentsline {paragraph}{Gaussian with interaction}{1}{section*.2}%
+\contentsline {paragraph}{fermionic contribution}{3}{section*.3}%
+\contentsline {section}{Friday, 19 Apr}{4}{question.1}%
+\contentsline {paragraph}{summarize the ingredients}{4}{section*.4}%
+\contentsline {section}{Saturday, 20 Apr}{6}{equation.0.11}%
+\contentsline {section}{Monday, 22 Apr}{7}{equation.0.11}%
+\contentsline {paragraph}{a contraction}{7}{section*.5}%
+\contentsline {section}{Tuesday, 23 Apr}{8}{section*.5}%
+\contentsline {section}{Wednesday, 24 Apr}{10}{equation.0.12}%
+\contentsline {paragraph}{conceptual discussion of renormalization}{12}{section*.6}%
