@@ -11,7 +11,7 @@
 \let\d=\pgfcalendarshorthand	% \pgfcalendarshorthand{<kind>}{<representations>}, expand to a <representation> of current date depending on <kind>: d, m, y, etc.
 \newcommand\formatdate[2]{\pgfcalendar{cal}{#1}{#1}{#2}}	% use \pgfcalendar to represent the date (#1) in a way specified by #2
 
-\newcommand\firstdate{\year-\month-\day+-7}
+\newcommand\firstdate{\year-\month-\day+-1}
 \newcommand\lastdate{\year-\month-\day}
 
 \begin{document}

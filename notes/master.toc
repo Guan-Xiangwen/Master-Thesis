@@ -1,11 +1,10 @@
-\contentsline {section}{Thursday, 18 Apr}{1}{section*.1}%
-\contentsline {paragraph}{Gaussian with interaction}{1}{section*.2}%
-\contentsline {paragraph}{fermionic contribution}{3}{section*.3}%
-\contentsline {section}{Friday, 19 Apr}{4}{question.1}%
-\contentsline {paragraph}{summarize the ingredients}{4}{section*.4}%
-\contentsline {section}{Saturday, 20 Apr}{6}{equation.0.11}%
-\contentsline {section}{Monday, 22 Apr}{7}{equation.0.11}%
-\contentsline {paragraph}{a contraction}{7}{section*.5}%
-\contentsline {section}{Tuesday, 23 Apr}{8}{section*.5}%
-\contentsline {section}{Wednesday, 24 Apr}{10}{equation.0.12}%
-\contentsline {paragraph}{conceptual discussion of renormalization}{14}{section*.6}%
+\contentsline {section}{Monday, 29 Apr}{1}{section*.1}%
+\contentsline {section}{\numberline {1}D$p$/D$(6-p)$ bound states}{1}{section.1}%
+\contentsline {paragraph}{$p$-brane and $F_{p+2}$ gauge field}{2}{section*.2}%
+\contentsline {paragraph}{fluxes}{2}{section*.3}%
+\contentsline {paragraph}{supersymmetry of the bound states}{3}{section*.4}%
+\contentsline {paragraph}{harmonic rules?}{3}{section*.5}%
+\contentsline {paragraph}{D-brane profile}{3}{section*.6}%
+\contentsline {section}{Tuesday, 30 Apr}{3}{equation.1.2}%
+\contentsline {paragraph}{the ansatz for D$(-1)$/D$7$}{3}{section*.7}%
+\contentsline {paragraph}{the D$1$/D$5$ example}{4}{section*.8}%
