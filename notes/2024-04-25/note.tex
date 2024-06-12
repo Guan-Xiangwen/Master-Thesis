@@ -1,0 +1,76 @@
+%! Tex root: ../master.tex
+
+\paragraph{contraction game: $\mathcal{A}^8$-term from spinor part}
+This means that we are looking at the following term
+\[
+	\frac{\#}{g^{16}} (\varphi \Sigma \varphi)^{16}
+.\] 
+Any term after contraction contains a trace of $16$-$\Gamma$ matrices:
+\[
+\mathrm{Tr}(\underbrace{\Gamma \overline{\Gamma} \cdots 
+\Gamma \overline{\Gamma}}_{16})
+.\]
+
+\paragraph{an observation}
+Maybe starting with a case that we have already done,
+and try to develop another method that avoiding the combinatoric complexity.
+That is $8$-$\Gamma$-matrices:
+\[
+\mathrm{Tr}(\Gamma^1 \Gamma^2 \Gamma^3 \Gamma^4 
+\Gamma^5 \Gamma^6 \Gamma^7 \Gamma^8)
+.\] 
+The first thing is to separate it into two groups: odd and even.
+We restrict to the case that contraction happens only among the each group.
+The result of the contraction is given by the product of $\eta^{\mu\nu}$.
+\begin{align*}
+	(\eta^{13} \eta^{57} - \eta^{15} \eta^{37} + \eta^{17} \eta^{35})
+	(\eta^{24} \eta^{68} - \eta^{26} \eta^{48} + \eta^{28} \eta^{46})
+\end{align*}
+This structure reminds me of the Pfaffine of a $4\times 4$ matrix.
+\begin{equation*}
+	H =
+	\begin{pmatrix}
+		0 & \eta^{24} & \eta^{26} & \eta^{28} \\
+		0 & 0 & \eta^{46} & \eta^{48} \\
+		0& 0& 0 & \eta^{68} \\
+		0& 0& 0& 0
+	\end{pmatrix}
+\end{equation*}
+
+\paragraph{compare with bosonic part}
+In the bosonic part, we are dealing with the contraction of the following structure
+\[
+	\mathcal{F}^{12} \mathcal{F}^{34}
+	= (\mathcal{A}_1 \mathcal{A}_2 - \mathcal{A}_2 \mathcal{A}_1)
+	(\mathcal{A}_3 \mathcal{A}_4 - \mathcal{A}_4 \mathcal{A}_3)
+.\] 
+\[
+=\mathcal{A}_1 \mathcal{A}_2 \mathcal{A}_3 \mathcal{A}_4
+- \mathcal{A}_1 \mathcal{A}_2 \mathcal{A}_4 \mathcal{A}_3
+- \mathcal{A}_2 \mathcal{A}_1 \mathcal{A}_3 \mathcal{A}_4
++ \mathcal{A}_2 \mathcal{A}_1 \mathcal{A}_3 \mathcal{A}_4
+.\] 
+The index only about the Lorentz index $\mu$, not the matrix index $\mathfrak{a}$.
+The contraction must be $\eta^{14} \eta^{23}$
+(already specified by the matrix product structure)
+\[
+	= \eta^{14} \eta^{23}\mathcal{A}_1 \mathcal{A}_2 \mathcal{A}_3 \mathcal{A}_4
+-\eta^{14} \eta^{23} \mathcal{A}_1 \mathcal{A}_2 \mathcal{A}_4 \mathcal{A}_3
+-\eta^{14} \eta^{23} \mathcal{A}_2 \mathcal{A}_1 \mathcal{A}_3 \mathcal{A}_4
++\eta^{14} \eta^{23} \mathcal{A}_2 \mathcal{A}_1 \mathcal{A}_3 \mathcal{A}_4
+.\] 
+But then let's rewrite it as
+\[
+	= (\eta^{14} \eta^{23} - \eta^{13} \eta^{24}
+	- \eta^{24} \eta^{13} + \eta^{14} \eta^{23})
+	\mathcal{A}_1 \mathcal{A}_2 \mathcal{A}_3 \mathcal{A}_4
+.\] 
+\[
+	= 2(\eta^{14} \eta^{23} - \eta^{13} \eta^{24})
+	\mathcal{A}_1 \mathcal{A}_2 \mathcal{A}_3 \mathcal{A}_4
+.\] 
+
+A crucial difference between fermionic and bosonic part:
+for the fermionic part, there are two separate contractions:
+matrix $\mathfrak{a}$ and Lorentz index $\mu$ (from $\Gamma$-trace);
+however, for the bosonic part, they happen simultaneously, thus related.
